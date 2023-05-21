@@ -1,0 +1,48 @@
+.Home {
+    background-color: white;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    height: 400px;
+    width:100%;
+    font-family: "Georgia"
+}
+
+.DXC {
+    background: url("https://dxc.com/content/dam/dxc/projects/dxc-com/us/images/about-us/newsroom/logos-for-media/horizontal/DXC%20Logo%20Horiz_Purple+Black%20RGB.png");
+    background-repeat:no-repeat;
+    background-position:right;
+    height: 50px;
+    width: auto;
+    background-size:380px;
+    font-family: "Arial"
+}
+
+.content {
+    height: 10px;
+    width: auto;
+    padding-top: 25px;
+    font-family: "Georgia";
+    font-weight: bold;
+}
+
+
+.text {
+    
+    color:bisque;
+    position: absolute;
+    left: 12%;
+    text-align: left;
+    margin-right: 32%;
+}
+
+.Vertical{
+    display: inline-block;
+    border-left: 1.8px solid rgb(236, 238, 211);
+    margin: 0 10px;
+    height: 260px;
+    top: 17%;
+    justify-content: top;
+    position: absolute;
+    right: 29%;
+}
