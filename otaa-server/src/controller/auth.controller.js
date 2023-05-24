@@ -64,6 +64,11 @@ exports.login = catchAsync(async (req, res, next) => {
   }
   //2. check email and password match with any user or not.
   const userMatch = await User.findOne({ email: email }).select("+password");
+  if (!userMatch) {
+    return res
+      .status(401)
+      .json({ status: "failed", message: "User not Exists" });
+  }
   if (
     !userMatch ||
     !(await userMatch.comparePassword(password, userMatch.password))

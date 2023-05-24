@@ -30,6 +30,7 @@ import PersonIcon from "@mui/icons-material/Person";
 import LogoutIcon from "@mui/icons-material/Logout";
 import Chip from "@mui/material/Chip";
 import { Cookies, useCookies } from "react-cookie";
+import logo1 from "../../../img/Logo.png";
 
 const drawerWidth = 240;
 
@@ -108,8 +109,8 @@ const Navbar = () => {
   const [cookies, setCookie] = useCookies(["hop"]);
   const navigate = useNavigate();
   const cookieProfile = new Cookies();
-  const uData = cookieProfile?.get("UserObj");
-  const fullName = uData?.userData?.user?.FullName;
+  const uData = cookieProfile.get("UserObj");
+  const fullName = uData?.firstname + " " + uData?.lastname;
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -235,11 +236,7 @@ const Navbar = () => {
             }}
           >
             <div style={{ paddingRight: "35%" }}>
-              <img
-                height={55}
-                src="/img/DXC_Logo_Purple_Black_RGB.png"
-                alt=""
-              ></img>
+              <img height={55} src={logo1} alt=""></img>
             </div>
             <IconButton onClick={handleDrawerClose}>
               {theme.direction === "rtl" ? (

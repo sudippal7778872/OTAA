@@ -1,13 +1,10 @@
 import { Cookies } from "react-cookie";
 const cookiesData = new Cookies();
-const userData = cookiesData.get("UserObj");
-const user = userData?.userData?.user;
-const accessToken = user?.accessToken;
-// console.log("this is auth header", user.accessToken);
+const accessToken = cookiesData.get("auth");
 
 function authHeader() {
-  if (user && accessToken) {
-    return { "x-access-token": user.accessToken };
+  if (accessToken) {
+    return { "x-access-token": accessToken };
   } else {
     return {};
   }

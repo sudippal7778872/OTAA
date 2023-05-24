@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { Button } from "@mui/material/";
 import CssBaseline from "@mui/material/CssBaseline";
 import TextField from "@mui/material/TextField";
@@ -17,10 +17,15 @@ import Avatar from "@mui/material/Avatar";
 import { pink } from "@mui/material/colors";
 import Link from "@mui/material/Link";
 import { useCookies } from "react-cookie";
+import { UserContext } from "../../../App";
 
 const CreateUser = () => {
   const navigate = useNavigate();
-  const [cookies, setCookie] = useCookies(["UserObj"]);
+  const [userDetailsCookie, setUserDetailsCookie] = useCookies([
+    "UserObj",
+    "loggedin",
+    "token",
+  ]);
   const [openModal, setOpenModal] = useState(false);
   const [open, setOpen] = React.useState(false);
   const [alertMsg, setAlertMsg] = React.useState(null);
@@ -32,6 +37,7 @@ const CreateUser = () => {
     password: "",
     confirmPassword: "",
   });
+  const { login, dispatchLogin } = useContext(UserContext);
 
   const validationSchema = Yup.object().shape({
     firstname: Yup.string().required(`First Name cant be Blank`),
@@ -54,8 +60,10 @@ const CreateUser = () => {
       .CreateUser(values)
       .then((res) => {
         console.log("response is ", res.data);
-        setCookie("UserObj", res.data.data, { path: "/" });
-        setCookie("loggedin", true, { path: "/" });
+        setUserDetailsCookie("UserObj", res.data.data, { path: "/" });
+        setUserDetailsCookie("token", res.data.token, { path: "/" });
+        setUserDetailsCookie("loggedin", true, { path: "/" });
+        dispatchLogin({ type: "LOGIN", payload: true });
         setAlertMsg("User registered successfully");
         setSeverity("success");
         setOpen(true);

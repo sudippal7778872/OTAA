@@ -28,6 +28,11 @@ const ChangePassword = lazy(() => import("./components/admin/ChangePassword"));
 const User = lazy(() => import("./components/user/User"));
 const EditUser = lazy(() => import("./components/user/EditUser"));
 
+//main
+const UploadFile = lazy(() =>
+  import("./components/main/uploadfile/uploadFile")
+);
+
 function SecuredRoute({ children }) {
   //const { login, dispatchLogin } = useContext(UserContext);
   const [cookies, setCookie] = useCookies(["hop"]);
@@ -125,6 +130,15 @@ const AppRoute = () => {
             element={
               <SecuredRoute>
                 <EditProfile />
+              </SecuredRoute>
+            }
+          />
+
+          <Route
+            path="/uploadfile"
+            element={
+              <SecuredRoute>
+                <UploadFile />
               </SecuredRoute>
             }
           />

@@ -9,16 +9,16 @@ const Home = () => {
       <div className="DXC"></div>
       <div className="Home">
         <h1>
-          <b>HOP PORTAL</b>
+          <b>OTAA PORTAL</b>
         </h1>
         <h6>
-          <b>DXC Service Transition governance process for Rolls Royce</b>
+          <b>OTAA Service Transition of Security Analyzer for Qualys</b>
         </h6>
         <br />
         <Divider></Divider>
         <div className="content">
           <h3>
-            <b>Welcome to HOP Portal</b>
+            <b>Welcome to OTAA Portal</b>
           </h3>
           <br />
           <h6>

@@ -8,8 +8,7 @@ import MUISnackbar from "../common/snackbar/Snackbar";
 import LogoutSuccess from "../../../src/img/green check.png";
 
 const Logout = () => {
-  const [cookies, setCookie, removeCookie] = useCookies(["hop"]);
-  const { login, dispatchLogin } = useContext(UserContext);
+  const [cookies, setCookie, removeCookie] = useCookies([]);
   const [open, setOpen] = React.useState(true);
   const [alertMsg, setAlertMsg] = React.useState("Logout Successfully");
   const [severity, setSeverity] = React.useState("success");
@@ -17,9 +16,9 @@ const Logout = () => {
 
   useEffect(() => {
     localStorage.clear();
-    dispatchLogin({ type: "LOGIN", payload: false });
     setCookie("loggedin", false, { path: "/" });
     removeCookie("UserObj");
+    removeCookie("auth");
 
     setTimeout(() => {
       window.location.reload();

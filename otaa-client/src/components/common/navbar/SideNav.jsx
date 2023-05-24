@@ -29,56 +29,9 @@ import { Button } from "@mui/material";
 
 const SideNav = () => {
   const { login, dispatchLogin } = useContext(UserContext);
-  // const { admin, dispatchAdmin } = useContext(RoleContext);
   const [cookies, setCookie] = useCookies(["hop"]);
   const cookiesData = new Cookies();
   const userdata = cookiesData.get("UserObj");
-  console.log("cookies data", userdata);
-
-  let Dashboard = false;
-  let Hop = false;
-  let Contact = false;
-  let ContactMatrix = false;
-  let ManageUser = false;
-  let ManageRole = false;
-
-  const entity = userdata?.userData?.entity;
-  if (entity) {
-    entity.forEach((item) => {
-      if (item.Name === "Dashboard") {
-        const data = Object.values(item).map((val) => {
-          return val;
-        });
-        Dashboard = data.includes(1);
-      } else if (item.Name === "Hop") {
-        const data = Object.values(item).map((val) => {
-          return val;
-        });
-        Hop = data.includes(1);
-      } else if (item.Name === "Contact") {
-        const data = Object.values(item).map((val) => {
-          return val;
-        });
-        Contact = data.includes(1);
-      } else if (item.Name === "Contact Matrix") {
-        const data = Object.values(item).map((val) => {
-          return val;
-        });
-        ContactMatrix = data.includes(1);
-      } else if (item.Name === "Manage User") {
-        const data = Object.values(item).map((val) => {
-          return val;
-        });
-        ManageUser = data.includes(1);
-      } else if (item.Name === "Manage Role") {
-        const data = Object.values(item).map((val) => {
-          return val;
-        });
-        ManageRole = data.includes(1);
-      }
-    });
-    console.log("this is", ContactMatrix);
-  }
 
   return (
     <div style={{ background: "#eee" }}>
@@ -96,122 +49,33 @@ const SideNav = () => {
 
         {cookies.loggedin === "true" || login ? (
           <>
-            {/* <Link
-              to={"home2"}
+            <Link
+              to={"/dashboard"}
               style={{ textDecoration: "none", color: "black" }}
             >
-              <ListItem button key="Home2">
+              <ListItem button key="Dashboard">
                 <ListItemIcon>
-                  <Tooltip title="Home">
-                    <HomeIcon />
+                  <Tooltip title="Dashboard">
+                    <DvrIcon />
                   </Tooltip>
                 </ListItemIcon>
-                <ListItemText
-                  primary="Home"
-                  secondary={
-                    <React.Fragment>
-                      <Typography
-                        sx={{ display: "inline" }}
-                        component="span"
-                        variant="body2"
-                        color="text.primary"
-                      ></Typography>
-                    </React.Fragment>
-                  }
-                />
+                <ListItemText primary="Dashboard" />
               </ListItem>
-            </Link> */}
-            {Dashboard ? (
-              <>
-                <Link
-                  to={"/dashboard"}
-                  style={{ textDecoration: "none", color: "black" }}
-                >
-                  <ListItem button key="Dashboard">
-                    <ListItemIcon>
-                      <Tooltip title="Dashboard">
-                        <DvrIcon />
-                      </Tooltip>
-                    </ListItemIcon>
-                    <ListItemText primary="Dashboard" />
-                  </ListItem>
-                </Link>
-              </>
-            ) : (
-              <></>
-            )}
+            </Link>
 
-            {Hop ? (
-              <>
-                <Link
-                  disabled={Hop}
-                  to={"/hops"}
-                  style={{ textDecoration: "none", color: "black" }}
-                >
-                  <ListItem button key="HOP">
-                    <ListItemIcon>
-                      <Tooltip title="HOP">
-                        <InboxIcon />
-                      </Tooltip>
-                    </ListItemIcon>
-                    <ListItemText primary="HOP" />
-                  </ListItem>
-                </Link>
-              </>
-            ) : (
-              <></>
-            )}
-
-            {/* <Link to={"/DisplayTailoring"} style={{ textDecoration: "none", color: "black" }}>
-          <ListItem button key="Tailoring">
-            <ListItemIcon>
-              <Tooltip title="Tailoring">
-                <DescriptionIcon />
-              </Tooltip>
-            </ListItemIcon>
-            <ListItemText primary="Tailoring" />
-          </ListItem>
-        </Link> */}
-
-            {Contact ? (
-              <>
-                <Link
-                  to={"/contact"}
-                  style={{ textDecoration: "none", color: "black" }}
-                >
-                  <ListItem button key="Contact">
-                    <ListItemIcon>
-                      <Tooltip title="Contact">
-                        <ContactPageIcon />
-                      </Tooltip>
-                    </ListItemIcon>
-                    <ListItemText primary="Contact" />
-                  </ListItem>
-                </Link>
-              </>
-            ) : (
-              <></>
-            )}
-
-            {ContactMatrix ? (
-              <>
-                <Link
-                  to={"/contactmatrix"}
-                  style={{ textDecoration: "none", color: "black" }}
-                >
-                  <ListItem button key="ContactMatrix">
-                    <ListItemIcon>
-                      <Tooltip title="Contact Matrix">
-                        <ContactMailIcon />
-                      </Tooltip>
-                    </ListItemIcon>
-                    <ListItemText primary="Contact Matrix" />
-                  </ListItem>
-                </Link>
-              </>
-            ) : (
-              <></>
-            )}
+            <Link
+              to={"/contact"}
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <ListItem button key="Contact">
+                <ListItemIcon>
+                  <Tooltip title="Contact">
+                    <ContactPageIcon />
+                  </Tooltip>
+                </ListItemIcon>
+                <ListItemText primary="Contact" />
+              </ListItem>
+            </Link>
 
             <Link
               to={"/assignment & signoff matrix"}
@@ -252,58 +116,46 @@ const SideNav = () => {
         {cookies.loggedin === "true" || login ? (
           <>
             <Link
-              to={"/uploadppmcdata"}
+              to={"/uploadfile"}
               style={{ textDecoration: "none", color: "black" }}
             >
-              <ListItem button key="Upload PPMC Data">
+              <ListItem button key="Upload File">
                 <ListItemIcon>
-                  <Tooltip title="Upload PPMC Data">
+                  <Tooltip title="Upload File">
                     <BackupIcon />
                   </Tooltip>
                 </ListItemIcon>
-                <ListItemText primary="Upload PPMC Data" />
+                <ListItemText primary="Upload File" />
               </ListItem>
             </Link>
 
-            {ManageUser ? (
-              <>
-                <Link
-                  to={"/user"}
-                  style={{ textDecoration: "none", color: "black" }}
-                >
-                  <ListItem button key="Manage User">
-                    <ListItemIcon>
-                      <Tooltip title="Manage User">
-                        <ManageAccountsIcon />
-                      </Tooltip>
-                    </ListItemIcon>
-                    <ListItemText primary="Manage User" />
-                  </ListItem>
-                </Link>
-              </>
-            ) : (
-              <></>
-            )}
+            <Link
+              to={"/user"}
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <ListItem button key="Manage User">
+                <ListItemIcon>
+                  <Tooltip title="Manage User">
+                    <ManageAccountsIcon />
+                  </Tooltip>
+                </ListItemIcon>
+                <ListItemText primary="Manage User" />
+              </ListItem>
+            </Link>
 
-            {ManageRole ? (
-              <>
-                <Link
-                  to={"/role"}
-                  style={{ textDecoration: "none", color: "black" }}
-                >
-                  <ListItem button key="Manage Role">
-                    <ListItemIcon>
-                      <Tooltip title="Manage Role">
-                        <EngineeringIcon />
-                      </Tooltip>
-                    </ListItemIcon>
-                    <ListItemText primary="Manage Role" />
-                  </ListItem>
-                </Link>
-              </>
-            ) : (
-              <></>
-            )}
+            <Link
+              to={"/role"}
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <ListItem button key="Manage Role">
+                <ListItemIcon>
+                  <Tooltip title="Manage Role">
+                    <EngineeringIcon />
+                  </Tooltip>
+                </ListItemIcon>
+                <ListItemText primary="Manage Role" />
+              </ListItem>
+            </Link>
 
             <Link
               to={"/appsetting"}
@@ -316,6 +168,19 @@ const SideNav = () => {
                   </Tooltip>
                 </ListItemIcon>
                 <ListItemText primary="Setting" />
+              </ListItem>
+            </Link>
+            <Link
+              to={"/about"}
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <ListItem button key="About">
+                <ListItemIcon>
+                  <Tooltip title="About">
+                    <SettingsApplicationsIcon />
+                  </Tooltip>
+                </ListItemIcon>
+                <ListItemText primary="About" />
               </ListItem>
             </Link>
 

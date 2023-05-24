@@ -5,7 +5,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import { UserContext, RoleContext } from "../../../App";
+import { UserContext } from "../../../App";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./Login.css";
 import { useCookies } from "react-cookie";
@@ -32,8 +32,12 @@ const Login = () => {
   const [alertMsg, setAlertMsg] = React.useState(null);
   const [severity, setSeverity] = React.useState(null);
   // const [showPassword, setShowPassword] = useState(false);
-  const [userDetailsCookie, setUserDetailsCookie] = useCookies(["UserObj"]);
-  const [loginCookie, setLoginCookie] = useCookies(["loggedin"]);
+  const [userDetailsCookie, setUserDetailsCookie] = useCookies([
+    "UserObj",
+    "loggedin",
+    "auth",
+  ]);
+  const { login, dispatchLogin } = useContext(UserContext);
 
   const validationSchema = Yup.object().shape({
     email: Yup.string().email().required("Email is requires"),
@@ -48,12 +52,13 @@ const Login = () => {
     console.log("form submitted", values);
     LoginService.validateLogin(values)
       .then((res) => {
-        console.log("response is", res.data);
         setUserDetailsCookie("UserObj", res.data.data, { path: "/" });
+        setUserDetailsCookie("auth", res.data.token, { path: "/" });
+        setUserDetailsCookie("loggedin", true, { path: "/" });
+        dispatchLogin({ type: "LOGIN", payload: true });
         setAlertMsg("Login Successfully");
         setSeverity("success");
         setOpen(true);
-        setLoginCookie("loggedin", true, { path: "/" });
 
         setTimeout(() => {
           if (location.state == null) {
@@ -67,18 +72,25 @@ const Login = () => {
       })
 
       .catch((err) => {
-        console.log("error", err.message);
         if (
-          err.response.data.message === "Invalid Password!" ||
-          err.response.data.message === "User Not found." ||
-          err.response.data === "User invalid"
+          err.response.data.message === "User not Exists" ||
+          err.response.status === 401
+        ) {
+          setAlertMsg("User Does not exists");
+          setSeverity("error");
+          setOpen(true);
+        } else if (
+          err.response.data.message === "Incorrect email or password" ||
+          err.response.status === 401
         ) {
           setAlertMsg("Invalid user name or password!");
           setSeverity("error");
           setOpen(true);
+        } else {
+          setAlertMsg("Unknown Error Occured");
+          setSeverity("error");
+          setOpen(true);
         }
-
-        console.log(err.message);
       });
   };
 

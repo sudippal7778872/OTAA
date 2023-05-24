@@ -9,6 +9,7 @@ const mongoSanitize = require("express-mongo-sanitize");
 const xss = require("xss-clean");
 const hpp = require("hpp");
 const cors = require("cors");
+const fileupload = require("express-fileupload");
 
 env.config({ path: `${__dirname}/.env` });
 const app = express();
@@ -51,6 +52,7 @@ app.use(
 app.get("/", (req, res) => {
   res.status(200).send("welcome to OTAA project");
 });
+app.use(fileupload());
 
 //DB connection part
 const DB = process.env.DATABASE_URL.replace(
@@ -80,6 +82,7 @@ const defaultUrl = "/api/v1";
 //import Router
 const userRouter = require("./src/route/user.route");
 const roleRouter = require("./src/route/role.route");
+require("./src/route/fileUpload.route")(app);
 
 // use Router
 app.use(defaultUrl, userRouter);

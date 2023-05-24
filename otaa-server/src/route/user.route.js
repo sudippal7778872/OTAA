@@ -14,6 +14,8 @@ access to delete any tour.
 Router.get(`${path}`, controller.getAllUser);
 Router.get(`${path}/:id`, controller.getUser);
 Router.post(`${path}`, controller.createUser);
+Router.post(`${path}/signup`, authController.signup);
+Router.post(`${path}/login`, authController.login);
 Router.put(`${path}/:id`, controller.updateOneUser);
 Router.delete(
   `${path}/:id`,
@@ -21,8 +23,6 @@ Router.delete(
   authController.restrictTo("admin", "lead-guide"),
   controller.deleteOneUser
 );
-Router.post(`${path}/signup`, authController.signup);
-Router.post(`${path}/login`, authController.login);
 Router.post(`${path}/forgetpassword`, authController.forgetPassword);
 Router.patch(`${path}/resetpassword/:token`, authController.resetPassword);
 Router.patch(
