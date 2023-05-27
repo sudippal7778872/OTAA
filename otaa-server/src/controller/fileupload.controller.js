@@ -49,7 +49,9 @@ exports.Upload = (req, res) => {
         //     UploadedSuccessfully: 1,
         //   })
         //     .then((result) => {
-        return res.status(200).json({ status: "success" });
+        return res
+          .status(200)
+          .json({ status: "success", fileName: `${newpath}${filename}` });
         //     })
         //     .catch((err) => {
         //       console.log(err);

@@ -82,11 +82,13 @@ const defaultUrl = "/api/v1";
 //import Router
 const userRouter = require("./src/route/user.route");
 const roleRouter = require("./src/route/role.route");
+const assetRouter = require("./src/route/asset.route");
 require("./src/route/fileUpload.route")(app);
 
 // use Router
 app.use(defaultUrl, userRouter);
 app.use(defaultUrl, roleRouter);
+app.use(defaultUrl, assetRouter);
 
 // now handle all other route for which does not exist
 app.all("*", (req, res, next) => {

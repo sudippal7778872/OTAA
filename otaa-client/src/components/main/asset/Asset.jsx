@@ -1,10 +1,10 @@
-import React, { useEffect, memo } from "react";
+import React, { memo } from "react";
 import { Typography, Button, Stack, Input, Divider, Box } from "@mui/material/";
 import MUISnackbar from "../../common/snackbar/Snackbar";
-import { useNavigate, useParams } from "react-router-dom";
-// import PPMCHOPService from "../../../services/ppmcHop.service";
+import { useNavigate } from "react-router-dom";
 import { useRef } from "react";
 import fileUploadService from "../../../services/fileupload/fileupload.service";
+import AssetService from "../../../services/asset/asset.service";
 import SaveIcon from "@material-ui/icons/Save";
 import DeleteIcon from "@mui/icons-material/Delete";
 import LinearProgress from "@mui/material/LinearProgress";
@@ -19,6 +19,7 @@ const UploadPPMCData = memo(() => {
   const initialState = {
     AttachmentPID: null,
     userId: userId,
+    fileNamePath: null,
   };
   const navigate = useNavigate();
   const [open, setOpen] = React.useState(false);
@@ -29,10 +30,10 @@ const UploadPPMCData = memo(() => {
   const [disableUpload, setDisableBtnUpload] = React.useState(true);
   const [uploadedFile, setUploadFile] = React.useState([]);
   const [progress, setProgress] = React.useState(null);
-  const [PPMCHOPValues, setPPMCHOPValues] = React.useState(initialState);
-  const [attachmentData, setAttachmentData] = React.useState(null);
+  const [uploadFileInformation, setUploadFileInformation] =
+    React.useState(initialState);
+  // const [attachmentData, setAttachmentData] = React.useState(null);
   const ref = useRef();
-  const username = localStorage.getItem("UserName");
 
   const handleClose = () => {
     setOpen(false);
@@ -60,9 +61,10 @@ const UploadPPMCData = memo(() => {
     fileUploadService
       .UploadFile(formData, onUploadProgress)
       .then((res) => {
-        setAttachmentData(res.data);
+        console.log("response", res.data);
+        // setAttachmentData(res.data);
         // clearInterval(timer);
-        let attachmentPid = +res.data.AttachmentPID;
+        let attachmentPid = +res?.data?.AttachmentPID;
         setAlertMsg("Uploaded Successfully");
         setSeverity("success");
         setOpen(true);
@@ -72,7 +74,11 @@ const UploadPPMCData = memo(() => {
         ref.current.value = "";
         setUploadFile([...uploadedFile, fileName]);
         setDisableBtnUpload(true);
-        setPPMCHOPValues({ ...PPMCHOPValues, AttachmentPID: attachmentPid });
+        setUploadFileInformation({
+          ...uploadFileInformation,
+          AttachmentPID: attachmentPid,
+          fileNamePath: res.data.fileName,
+        });
       })
       .catch((error) => {
         setAlertMsg("Uploaded Failed");
@@ -104,34 +110,32 @@ const UploadPPMCData = memo(() => {
     value: PropTypes.number.isRequired,
   };
 
-  const handleChange = (event) => {
-    const name = event.target.name;
-    const value = event.target.value;
-    setPPMCHOPValues({ ...PPMCHOPValues, [name]: value });
-  };
+  // const handleChange = (event) => {
+  //   const name = event.target.name;
+  //   const value = event.target.value;
+  //   setUploadFileInformation({ ...uploadFileInformation, [name]: value });
+  // };
 
   const onSubmit = () => {
-    // console.log("form submitted");
-    // PPMCHOPService.createPPMCHop(attachmentData)
-    //   .then((res) => {
-    //     console.log("successfully saved", res);
-    //     window.alert("Saved Successfully");
-    //     setAlertMsg("Submitted Successfully");
-    //     setSeverity("success");
-    //     setOpen(true);
-    //     setTimeout(() => {
-    //       handleClose();
-    //     }, 1000);
-    //   })
-    //   .catch((err) => {
-    //     console.log("error occured in submit", err);
-    //     setAlertMsg("Submit Failed");
-    //     setSeverity("error");
-    //     setOpen(true);
-    //   });
+    console.log("form submitted", uploadFileInformation);
+    AssetService.createAnalyzerData(uploadFileInformation)
+      .then((res) => {
+        console.log("successfully saved", res);
+        window.alert("Saved Successfully");
+        setAlertMsg("Submitted Successfully");
+        setSeverity("success");
+        setOpen(true);
+        setTimeout(() => {
+          handleClose();
+        }, 1000);
+      })
+      .catch((err) => {
+        console.log("error occured in submit", err);
+        setAlertMsg("Submit Failed");
+        setSeverity("error");
+        setOpen(true);
+      });
   };
-
-  useEffect(() => {}, []);
 
   return (
     <>
