@@ -2,6 +2,8 @@ const Asset = require("./../model/asset.model");
 const appError = require("../utils/appError");
 const catchAsync = require("../utils/catchAsync");
 const { exec } = require("child_process");
+// const { spawn } = require('child_process');
+const { PythonShell } = require('python-shell');
 
 exports.getAllAssets = catchAsync(async (req, res, next) => {
   const document = await Asset.find();
@@ -11,30 +13,35 @@ exports.getAllAssets = catchAsync(async (req, res, next) => {
   res.status(200).json({ status: "success", data: document });
 });
 
+const executeScript = async (userId, fileNamePath) => {
+  try{
+    let options = {
+      mode: 'json',
+      pythonPath: '/bin/python3',
+      pythonOptions: ['-u'], // get print results in real-time
+      scriptPath: './src/scripts/',
+      args: [fileNamePath, userId]
+    };
+  
+    const result  = await PythonShell.run('read_pk.py', options)
+      // results is an array consisting of messages collected during execution
+      // console.log('results: %j', result);
+      return result;
+  }catch(err){
+    console.log("error occured");
+  }
+}
+
 exports.createAsset = catchAsync(async (req, res, next) => {
   // console.log("response", req.body);
-  // const document = await Asset.create(req.body);
-  // res.status(200).json({
-  //   status: "success",
-  //   data: document,
-  // });
-
-  //integration
-  //call powershell script and MaintainanceID
-  exec(
-    `./src/scripts/testScript.ps1`,
-    { shell: "powershell.exe" },
-    (error, stdout, stderr) => {
-      if (error) {
-        console.log("error occured", error + "stderr" + stderr.message);
-        logger.error(stderr.message);
-        // return result.status(500).send({ message: stderr.message });
-      } else {
-        console.log("success result", stdout);
-        // return res.status(200).send();
-      }
-    }
-  );
+  const { userId, fileNamePath } = req.body;
+  const result =  await executeScript(userId, fileNamePath );
+  // console.log("here result is",result)
+  const document = await Asset.insertMany(result[0]);
+  return res.status(200).json({
+    status: "success",
+    data: document,
+  });
 });
 
 //Import PythonShell module.

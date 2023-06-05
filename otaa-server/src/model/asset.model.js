@@ -1,23 +1,24 @@
 const mongoose = require("mongoose");
 
 const assetSchema = new mongoose.Schema({
-  VendorId: {
+  
+  "Vendor Id": {
     type: String,
     default: "-",
   },
-  DeviceType: {
+  "Device Type": {
     type: String,
     default: "-",
   },
-  ProductName: {
+  "Product Name": {
     type: String,
     default: "-",
   },
-  FirmwareVersion: {
+  "Firmware Version": {
     type: String,
     default: "-",
   },
-  SerialNumber: {
+  "Serial Number": {
     type: String,
     default: "-",
   },
@@ -29,23 +30,23 @@ const assetSchema = new mongoose.Schema({
     type: String,
     default: "-",
   },
-  SystemName: {
+  "System Name": {
     type: String,
     default: "-",
   },
-  SystemDescription: {
+  "System Description": {
     type: String,
     default: "-",
   },
-  ModuleNumber: {
+  "Module Number": {
     type: String,
     default: "-",
   },
-  CPUType: {
+  "CPU Type": {
     type: String,
     default: "-",
   },
-  AddtionalComponent: {
+  "Addtional Component": {
     type: String,
     default: "-",
   },
@@ -53,9 +54,9 @@ const assetSchema = new mongoose.Schema({
     type: Date,
     default: Date.now(),
   },
-  CreatedBy: {
+  userId:{
     type: String,
-    required: [true, "User Id is Required"],
+    required:[true, "User id is required"],
   },
   UpdatedAt: {
     type: Date,
