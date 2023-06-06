@@ -1,8 +1,7 @@
 const mongoose = require("mongoose");
 
 const assetSchema = new mongoose.Schema({
-  
-  "Vendor Id": {
+  "Vendor ID": {
     type: String,
     default: "-",
   },
@@ -54,9 +53,9 @@ const assetSchema = new mongoose.Schema({
     type: Date,
     default: Date.now(),
   },
-  userId:{
+  userId: {
     type: String,
-    required:[true, "User id is required"],
+    required: [true, "User id is required"],
   },
   UpdatedAt: {
     type: Date,

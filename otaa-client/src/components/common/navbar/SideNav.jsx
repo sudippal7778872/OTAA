@@ -116,16 +116,16 @@ const SideNav = () => {
         {cookies.loggedin === "true" || login ? (
           <>
             <Link
-              to={"/uploadfile"}
+              to={"/assets"}
               style={{ textDecoration: "none", color: "black" }}
             >
-              <ListItem button key="Upload File">
+              <ListItem button key="Upload PCAP">
                 <ListItemIcon>
-                  <Tooltip title="Upload File">
+                  <Tooltip title="Upload PCAP">
                     <BackupIcon />
                   </Tooltip>
                 </ListItemIcon>
-                <ListItemText primary="Upload File" />
+                <ListItemText primary="Upload PCAP" />
               </ListItem>
             </Link>
 

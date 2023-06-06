@@ -30,6 +30,7 @@ const EditUser = lazy(() => import("./components/user/EditUser"));
 
 //main
 const Asset = lazy(() => import("./components/main/asset/Asset"));
+const Dashboard = lazy(() => import("./components/main/dashboard/Dashboard"));
 
 function SecuredRoute({ children }) {
   //const { login, dispatchLogin } = useContext(UserContext);
@@ -133,10 +134,18 @@ const AppRoute = () => {
           />
 
           <Route
-            path="/uploadfile"
+            path="/assets"
             element={
               <SecuredRoute>
                 <Asset />
+              </SecuredRoute>
+            }
+          />
+          <Route
+            path="/dashboard"
+            element={
+              <SecuredRoute>
+                <Dashboard />
               </SecuredRoute>
             }
           />

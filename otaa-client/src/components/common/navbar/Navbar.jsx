@@ -138,11 +138,12 @@ const Navbar = () => {
     navigate("/logout");
     setAnchorElUser(false);
   };
+  // dxc color code: #5F249F
 
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open} sx={{ backgroundColor: "#5F249F" }}>
+      <AppBar position="fixed" open={open} sx={{ backgroundColor: "#000" }}>
         <Toolbar justifyContent="right" style={{ display: "flex" }}>
           <IconButton
             color="inherit"
@@ -157,7 +158,7 @@ const Navbar = () => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
-            HOP PORTAL
+            OTAA PORTAL
           </Typography>
           {cookies.loggedin === "true" || login ? (
             <>
@@ -174,7 +175,7 @@ const Navbar = () => {
                   >
                     <Chip
                       color="primary"
-                      style={{ background: "#330072", cursor: "pointer" }}
+                      style={{ background: "#000", cursor: "pointer" }}
                       avatar={<Avatar>{fullName?.substr(0, 1)}</Avatar>}
                       label={fullName}
                       // variant="outlined"
