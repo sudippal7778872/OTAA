@@ -53,13 +53,13 @@ const SideNav = () => {
               to={"/dashboard"}
               style={{ textDecoration: "none", color: "black" }}
             >
-              <ListItem button key="Dashboard">
+              <ListItem button key="Assets">
                 <ListItemIcon>
-                  <Tooltip title="Dashboard">
+                  <Tooltip title="Assets">
                     <DvrIcon />
                   </Tooltip>
                 </ListItemIcon>
-                <ListItemText primary="Dashboard" />
+                <ListItemText primary="Assets" />
               </ListItem>
             </Link>
 

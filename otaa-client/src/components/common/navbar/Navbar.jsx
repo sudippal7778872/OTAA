@@ -158,7 +158,7 @@ const Navbar = () => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
-            OTAA PORTAL
+            OT Asset Analyzer
           </Typography>
           {cookies.loggedin === "true" || login ? (
             <>

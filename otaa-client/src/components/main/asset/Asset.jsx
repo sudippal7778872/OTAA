@@ -147,9 +147,6 @@ const UploadPPMCData = memo(() => {
       />
       <form noValidate>
         <Stack>
-          <Typography variant="h6" gutterBottom sx={{ fontWeight: "bold" }}>
-            Upload PPMC Data
-          </Typography>
           <Divider />
           <br />
         </Stack>

@@ -234,15 +234,6 @@ const Dashboard = () => {
         xposition={xposition}
         yposition={yposition}
       />
-      <Typography
-        variant="h6"
-        gutterBottom
-        sx={{ fontWeight: "bold", textAlign: "center" }}
-      >
-        OTAA Asset's Details
-      </Typography>
-      <Divider />
-      <br />
       <Card className="center" style={{ padding: 15 }}>
         <br />
         <Box
