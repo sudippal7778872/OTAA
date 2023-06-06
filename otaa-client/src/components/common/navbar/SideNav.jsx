@@ -64,16 +64,16 @@ const SideNav = () => {
             </Link>
 
             <Link
-              to={"/contact"}
+              to={"/network"}
               style={{ textDecoration: "none", color: "black" }}
             >
-              <ListItem button key="Contact">
+              <ListItem button key="Network Stats">
                 <ListItemIcon>
-                  <Tooltip title="Contact">
+                  <Tooltip title="Network Stats">
                     <ContactPageIcon />
                   </Tooltip>
                 </ListItemIcon>
-                <ListItemText primary="Contact" />
+                <ListItemText primary="Network Stats" />
               </ListItem>
             </Link>
 

@@ -6,21 +6,13 @@ import Divider from "@mui/material/Divider";
 const Home = () => {
   return (
     <div>
-      <div className="DXC"></div>
       <div className="Home">
         <h1>
-          <b>OTAA PORTAL</b>
+          <b>OT Asset Analyzer</b>
         </h1>
-        <h6>
-          <b>OTAA Service Transition of Security Analyzer for Qualys</b>
-        </h6>
         <br />
         <Divider></Divider>
         <div className="content">
-          <h3>
-            <b>Welcome to OTAA Portal</b>
-          </h3>
-          <br />
           <h6>
             It ensures that the transfer of ownership for infrastructure and
             applications between Project and RUN (BAU) is formally managed with
