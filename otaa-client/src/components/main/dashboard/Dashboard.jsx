@@ -1,23 +1,11 @@
 import React from "react";
 import { DataGrid } from "@mui/x-data-grid";
-import { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import InfoIcon from "@mui/icons-material/Info";
 import { useNavigate } from "react-router-dom";
-import { Button } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
-import Stack from "@mui/material/Stack";
-import {
-  Card,
-  CardHeader,
-  CardContent,
-  Typography,
-  Divider,
-} from "@mui/material";
-import { grey } from "@mui/material/colors";
-import AddIcon from "@mui/icons-material/Add";
+import { Card } from "@mui/material";
 import { Cookies } from "react-cookie";
-import Delete from "@mui/icons-material/Delete";
 import MUISnackbar from "../../common/snackbar/Snackbar";
 import DashboardService from "../../../services/dashboard/dashboard.service";
 
@@ -212,12 +200,11 @@ const Dashboard = () => {
 
   const handlePageChange = (pagenumber) => {
     setPageNumber(pagenumber);
-
     getAssetDetails(pagenumber, pageSize);
   };
+
   const handlePageSizeChange = (pagesize) => {
     setPageSize(pagesize);
-
     getAssetDetails(pageNumber, pagesize);
   };
 

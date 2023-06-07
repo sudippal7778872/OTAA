@@ -32,6 +32,10 @@ const EditUser = lazy(() => import("./components/user/EditUser"));
 const Asset = lazy(() => import("./components/main/asset/Asset"));
 const Dashboard = lazy(() => import("./components/main/dashboard/Dashboard"));
 
+const NetworkStats = lazy(() =>
+  import("./components/main/network/NetworkStats")
+);
+
 function SecuredRoute({ children }) {
   //const { login, dispatchLogin } = useContext(UserContext);
   const [cookies, setCookie] = useCookies(["hop"]);
@@ -146,6 +150,22 @@ const AppRoute = () => {
             element={
               <SecuredRoute>
                 <Dashboard />
+              </SecuredRoute>
+            }
+          />
+          <Route
+            path="/network"
+            element={
+              <SecuredRoute>
+                <Dashboard />
+              </SecuredRoute>
+            }
+          />
+          <Route
+            path="/networkstats"
+            element={
+              <SecuredRoute>
+                <NetworkStats />
               </SecuredRoute>
             }
           />

@@ -64,7 +64,7 @@ const SideNav = () => {
             </Link>
 
             <Link
-              to={"/network"}
+              to={"/networkstats"}
               style={{ textDecoration: "none", color: "black" }}
             >
               <ListItem button key="Network Stats">
