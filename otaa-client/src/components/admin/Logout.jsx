@@ -62,7 +62,7 @@ const Logout = () => {
           <LogoutIcon></LogoutIcon>
         </h1>
         <h5>
-          <b>Thank you for using HOP Portal. Visit again!</b>
+          <b>Thank you for using Our Portal. Visit again!</b>
         </h5>
         <Divider />
         <Button
