@@ -13,7 +13,7 @@ const Home = () => {
         <br />
         <Divider></Divider>
         <div className="content">
-          <h6>"Let's Demystify the challenge of OT visibility"</h6>
+          <h3>"Let's Demystify the challenge of OT visibility"</h3>
         </div>
       </div>
     </div>
