@@ -13,7 +13,7 @@ const assetSchema = new mongoose.Schema({
     type: String,
     default: "-",
   },
-  "Firmware Version": {
+  "Version": {
     type: String,
     default: "-",
   },

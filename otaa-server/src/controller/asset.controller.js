@@ -25,7 +25,7 @@ const executeScript = async (userId, fileNamePath) => {
 
     const result = await PythonShell.run("read_pk.py", options);
     // results is an array consisting of messages collected during execution
-    console.log("results: %j", result);
+    // console.log("results: %j", result);
     return result;
   } catch (err) {
     console.log("error occured");

@@ -96,7 +96,7 @@ const Dashboard = () => {
       sortable: false,
     },
     {
-      field: "Firmware Version",
+      field: "Version",
       headerName: "Firmware Version",
       width: 190,
       disableClickEventBubbling: true,
