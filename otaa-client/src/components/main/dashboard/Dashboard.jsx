@@ -1,6 +1,6 @@
 import React from "react";
 import { DataGrid } from "@mui/x-data-grid";
-import Box from "@mui/material/Box";
+import { Box, Divider } from "@mui/material";
 import InfoIcon from "@mui/icons-material/Info";
 import { useNavigate } from "react-router-dom";
 import DeleteIcon from "@mui/icons-material/Delete";
@@ -8,6 +8,8 @@ import { Card } from "@mui/material";
 import { Cookies } from "react-cookie";
 import MUISnackbar from "../../common/snackbar/Snackbar";
 import DashboardService from "../../../services/dashboard/dashboard.service";
+import "./Dashboard.css";
+import SearchBar from "./SearchBar";
 
 const Dashboard = () => {
   const [open, setOpen] = React.useState(false);
@@ -221,9 +223,44 @@ const Dashboard = () => {
         xposition={xposition}
         yposition={yposition}
       />
+      <SearchBar placeholder="Search..." />
+      <Box
+        className="box-origin"
+        display="grid"
+        gridTemplateColumns="repeat(13, 1fr)"
+        gridAutoRows="80px"
+        gap="15px"
+        margin="8px 0"
+        backgroundColor="#eaeef1"
+      >
+        <Box className="box-1">
+          <h6>186</h6>
+          <h6>Vulnerability</h6>
+        </Box>
+
+        <Box className="box-2">
+          <h6>186</h6>
+          <Divider />
+          <h6>Vulnerability</h6>
+        </Box>
+
+        <Box className="box-3">
+          <h6>186</h6>
+          <Divider />
+          <h6>Vulnerability</h6>
+        </Box>
+
+        <Box className="box-4">
+          <h6>186</h6>
+          <Divider />
+          <h6>Vulnerability</h6>
+        </Box>
+      </Box>
+
       <Card className="center" style={{ padding: 15 }}>
         <br />
         <Box
+          className="Datagrid-box"
           sx={{
             height: 500,
             width: "100%",

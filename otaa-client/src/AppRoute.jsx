@@ -58,6 +58,10 @@ function SecuredRoute({ children }) {
   }
 }
 
+const PageNotFound = lazy(() =>
+  import("./components/PageNotFound/PageNotFound")
+);
+
 const AppRoute = () => {
   return (
     <div>
@@ -166,6 +170,14 @@ const AppRoute = () => {
             element={
               <SecuredRoute>
                 <NetworkStats />
+              </SecuredRoute>
+            }
+          />
+          <Route
+            path="*"
+            element={
+              <SecuredRoute>
+                <PageNotFound />
               </SecuredRoute>
             }
           />

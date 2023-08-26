@@ -1,0 +1,47 @@
+body{
+  background: radial-gradient(circle, rgba(191,211,226,1) 8%, rgba(197,216,240,1) 56%, rgba(205,198,224,1) 92%);
+}
+.box-origin {
+  display: grid;
+  grid-template-columns: repeat(13, 1fr);
+  grid-auto-rows: 90px;
+  gap: 15px;
+  margin: 8px 0;
+  /* background-color: #f1f3f5; */
+  background: rgb(159,201,221);
+background: linear-gradient(180deg, rgba(159,201,221,1) 17%, rgba(181,146,244,1) 55%, rgba(162,197,233,1) 84%);
+}
+.box-1, .box-2, .box-3, .box-4{
+  grid-column: span 2;
+  background-color: #fbfbfb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+    margin:8px 0;
+  border-radius: 5px;
+}
+.box-1{
+    margin-left: 15px;
+    
+    border-inline-end: 4px solid ;
+    border-block-end: 4px solid ;
+    border-image-source: radial-gradient(circle at bottom right, rgb(1, 55, 112),transparent 100% );
+    border-image-slice: 1;
+}
+.center{
+   /* border: 10px solid  ;
+  
+    border-image-source: linear-gradient(45deg, #58ece0, #7841df); 
+    border-image-slice: 1;  */
+    /* background: rgb(102,183,222);
+background: linear-gradient(180deg, rgba(102,183,222,1) 17%, rgba(104,219,194,1) 60%, rgba(177,151,223,1) 87%); */
+background: rgb(159,201,221);
+background: linear-gradient(180deg, rgba(159,201,221,1) 17%, rgba(181,146,244,1) 55%, rgba(162,197,233,1) 84%);
+
+    
+  
+}
+.Datagrid-box{
+  background-color: #fbfbfb;
+}

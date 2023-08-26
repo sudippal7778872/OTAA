@@ -83,12 +83,14 @@ const defaultUrl = "/api/v1";
 const userRouter = require("./src/route/user.route");
 const roleRouter = require("./src/route/role.route");
 const assetRouter = require("./src/route/asset.route");
+const networkRouter = require("./src/route/network.route");
 require("./src/route/fileUpload.route")(app);
 
 // use Router
 app.use(defaultUrl, userRouter);
 app.use(defaultUrl, roleRouter);
 app.use(defaultUrl, assetRouter);
+app.use(defaultUrl, networkRouter);
 
 // now handle all other route for which does not exist
 app.all("*", (req, res, next) => {
@@ -137,7 +139,7 @@ process.on("unhandledRejection", (err) => {
 uncaught error
 */
 process.on("uncaughtException", (err) => {
-  console.log("Uncaught exception- shutting Down");
+  console.log("Uncaught exception- shutting Down", err);
   //let close the server
   server.close(() => {
     process.exit(1);

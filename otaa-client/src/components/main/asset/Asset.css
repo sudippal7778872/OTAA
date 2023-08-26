@@ -1,0 +1,94 @@
+body{
+    /* display: flex;
+    justify-content: center;
+    margin-top: 6vh; */
+    background-color: #cedbeb;
+}
+/* main{
+  display: flex;
+    justify-content: center;
+    margin-top: 6vh;
+   
+} */
+.border-design{
+  margin-top: 6vh;
+  margin-left: 20vw;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    background-color: #cedbeb;
+    width: 50vw;
+    height:70vh;
+    border-radius: 10px;
+    border: 10px double ;
+    border-image-source: linear-gradient(45deg, #58ece0, #7841df);
+    border-image-slice: 2;
+}
+
+.File-Upload-Section{
+  grid-column: span-4;
+  grid-row:span 4;
+  display:flex; 
+  flex-direction: column;
+  align-items: center;
+  
+ 
+}
+
+.container {
+    text-align: center;
+   margin-top: 10px;
+  }
+  
+  .medium-input {
+    padding: 10px;
+    font-size: 15px;
+    width: 17vw;
+    /* max-width: 300px; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .medium-button {
+    padding: 10px 24px;
+    font-size: 16px;
+    /* background-color: #007bff;
+    color: white; */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .medium-button:hover {
+    background-color: #0056b3;
+  }
+  
+.Drag-Drop-Form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px dashed blueviolet;
+    height: 300px;
+    width: 500px;
+    cursor: pointer;
+    border-radius: 5px;
+   
+}
+  
+
+  .button-section{
+    width: 500px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgba(87,155,230,1) 15%, rgba(162,122,235,1) 87%);
+  }
+
+
+  .new-row{
+    width: 46.3vw;
+    padding: 10px 0;
+}
+  

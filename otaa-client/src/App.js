@@ -3,6 +3,13 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Navbar from "./components/common/navbar/Navbar";
 import ErrorBoundary from "./ErrorBoundary";
+// import { LicenseInfo } from "@mui/x-data-grid-pro";
+import { ThemeProvider } from "@mui/material";
+import { ColorModeContext, useMode } from "./pages/theme";
+
+// LicenseInfo.setLicenseKey(
+//   "x0jTPl0USVkVZV0SsMjM1kDNyADM5cjM2ETPZJVSQhVRsIDN0YTM6IVREJ1T0b9586ef25c9853decfa7709eee27a1e"
+// );
 
 export const UserContext = createContext();
 export const RoleContext = createContext();
@@ -25,19 +32,25 @@ function reducer(state, action) {
 const App = () => {
   const [login, dispatchLogin] = useReducer(reducer, initialState);
   const [admin, dispatchAdmin] = useReducer(reducer, false);
+  const [theme, colorMode] = useMode();
 
   return (
-    <div>
-      {/* <ErrorBoundary> */}
-        <Router>
-          <UserContext.Provider value={{ login, dispatchLogin }}>
-            <RoleContext.Provider value={{ admin, dispatchAdmin }}>
-              <Navbar />
-            </RoleContext.Provider>
-          </UserContext.Provider>
-        </Router>
-      {/* </ErrorBoundary> */}
-    </div>
+    <ColorModeContext.Provider value={colorMode}>
+      <ThemeProvider theme={theme}>
+        {/* <CssBaseline /> */}
+        <div>
+          {/* <ErrorBoundary> */}
+          <Router>
+            <UserContext.Provider value={{ login, dispatchLogin }}>
+              <RoleContext.Provider value={{ admin, dispatchAdmin }}>
+                <Navbar />
+              </RoleContext.Provider>
+            </UserContext.Provider>
+          </Router>
+          {/* </ErrorBoundary> */}
+        </div>
+      </ThemeProvider>
+    </ColorModeContext.Provider>
   );
 };
 

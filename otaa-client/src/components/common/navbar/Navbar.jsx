@@ -31,6 +31,12 @@ import LogoutIcon from "@mui/icons-material/Logout";
 import Chip from "@mui/material/Chip";
 import { Cookies, useCookies } from "react-cookie";
 import logo1 from "../../../img/Logo.png";
+import { ColorModeContext, tokens } from "../../../pages/theme";
+import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
+import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
+import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
+import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 
 const drawerWidth = 240;
 
@@ -111,6 +117,8 @@ const Navbar = () => {
   const cookieProfile = new Cookies();
   const uData = cookieProfile.get("UserObj");
   const fullName = uData?.firstname + " " + uData?.lastname;
+  const colors = tokens(theme.palette.mode);
+  const colorMode = useContext(ColorModeContext);
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -143,7 +151,15 @@ const Navbar = () => {
   return (
     <Box sx={{ display: "flex" }}>
       <CssBaseline />
-      <AppBar position="fixed" open={open} sx={{ backgroundColor: "#000" }}>
+      <AppBar
+        position="fixed"
+        open={open}
+        sx={{
+          //Topbar new background color added
+          background:
+            "linear-gradient(90deg, rgba(33,130,109,1) 11%, rgba(49,103,167,1) 46%, rgba(104,44,125,1) 95%)",
+        }}
+      >
         <Toolbar justifyContent="right" style={{ display: "flex" }}>
           <IconButton
             color="inherit"
@@ -157,9 +173,40 @@ const Navbar = () => {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
-            OT Asset Analyzer
-          </Typography>
+          <Box
+            display="flex"
+            width={"96%"}
+            justifyContent="space-between"
+            p={2}
+          >
+            <Box
+              display="flex"
+              background={colors.primary[400]}
+              borderRadius="3px"
+            >
+              <h3>OT Asset Analyzer</h3>
+              {/* ICONS */}
+            </Box>
+
+            <Box display="flex" justifyContent="left">
+              <IconButton onClick={colorMode.toggleColorMode}>
+                {theme.palette.mode === "dark" ? (
+                  <DarkModeOutlinedIcon />
+                ) : (
+                  <LightModeOutlinedIcon />
+                )}
+              </IconButton>
+              <IconButton>
+                <NotificationsOutlinedIcon />
+              </IconButton>
+              <IconButton>
+                <SettingsOutlinedIcon />
+              </IconButton>
+              <IconButton>
+                <PersonOutlinedIcon />
+              </IconButton>
+            </Box>
+          </Box>
           {cookies.loggedin === "true" || login ? (
             <>
               <Tooltip title="Profile Settings">
