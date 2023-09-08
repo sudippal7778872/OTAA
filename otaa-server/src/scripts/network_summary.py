@@ -84,6 +84,16 @@ def get_packet_summary(user_id, capture_file, output_file):
     # with open("network_graph.json", 'w') as json_file:
     #     json.dump(network_json, json_file)
 
+    # Modify the network_json dictionary
+    for node in network_json["nodes"]:
+        node["label"] = node["id"]
+
+    for edge in network_json["links"]:
+        edge["from"] = edge.pop("source")
+        edge["to"] = edge.pop("target")
+
+    network_json["edges"] = network_json.pop("links")
+    
     packet_summary = list(conversations.values())
     
     # Create the final JSON structure
