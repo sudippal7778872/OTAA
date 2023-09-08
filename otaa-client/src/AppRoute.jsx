@@ -36,6 +36,10 @@ const NetworkStats = lazy(() =>
   import("./components/main/network/NetworkStats")
 );
 
+const NetworkGraph = lazy(() =>
+  import("./components/main/network/NetworkGraph")
+);
+
 function SecuredRoute({ children }) {
   //const { login, dispatchLogin } = useContext(UserContext);
   const [cookies, setCookie] = useCookies(["hop"]);
@@ -162,6 +166,14 @@ const AppRoute = () => {
             element={
               <SecuredRoute>
                 <Dashboard />
+              </SecuredRoute>
+            }
+          />
+          <Route
+            path="/network-graph"
+            element={
+              <SecuredRoute>
+                <NetworkGraph />
               </SecuredRoute>
             }
           />

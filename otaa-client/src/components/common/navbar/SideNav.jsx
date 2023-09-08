@@ -78,6 +78,20 @@ const SideNav = () => {
             </Link>
 
             <Link
+              to={"/network-graph"}
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <ListItem button key="Network Graph">
+                <ListItemIcon>
+                  <Tooltip title="Network Graph">
+                    <ContactPageIcon />
+                  </Tooltip>
+                </ListItemIcon>
+                <ListItemText primary="Network Graph" />
+              </ListItem>
+            </Link>
+
+            <Link
               to={"/assignment & signoff matrix"}
               style={{
                 textDecoration: "none",

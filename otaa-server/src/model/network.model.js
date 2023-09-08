@@ -13,32 +13,30 @@ const conversionSchema = new mongoose.Schema({
   Protocol: {
     type: String,
   },
-  SourcePort: {
+  Source_Port: {
     type: String,
   },
-  DestinationPort: {
+  Destination_Port: {
     type: String,
   },
 });
 
-const networkSchema = new mongoose.Schema({
-  DeviceA: {
+const networkSummerySchema = new mongoose.Schema({
+  Device_A: {
     type: String,
     default: "-",
   },
-  DeviceB: {
+  Device_B: {
     type: String,
     default: "-",
   },
-  FirstSeenDate: {
+  First_Seen_Date: {
     type: Date,
-    // default: Date.now(),
   },
-  LastSeenDate: {
+  Last_Seen_Date: {
     type: Date,
-    // default: Date.now(),
   },
-  TotalBandwidth: {
+  Total_Bandwidth: {
     type: String,
   },
   Protocol: {
@@ -52,16 +50,56 @@ const networkSchema = new mongoose.Schema({
   Conversation: {
     type: [conversionSchema],
   },
+});
+
+const graphSchema = new mongoose.Schema({
+  directed: {
+    type: Boolean,
+  },
+  multigraph: {
+    type: Boolean,
+  },
+  graph: {
+    type: Object,
+  },
+  nodes: {
+    type: [
+      {
+        id: String,
+        label: String,
+      },
+    ],
+  },
+  edges: {
+    type: [
+      {
+        from: String,
+        to: String,
+      },
+    ],
+  },
+});
+
+const networkSchema = new mongoose.Schema({
+  UserID: {
+    type: String,
+    required: [true, "User id is required"],
+  },
+  Network_Summary: {
+    type: [networkSummerySchema],
+  },
+  Network_Graph: {
+    type: [graphSchema],
+  },
   CreatedAt: {
     type: Date,
     default: Date.now(),
   },
-  userId: {
-    type: String,
-    required: [true, "User id is required"],
-  },
   UpdatedAt: {
     type: Date,
+  },
+  CreatedBy: {
+    type: String,
   },
   UpdatedBy: {
     type: String,

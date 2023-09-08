@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import networkServices from "../../../services/network/network.service";
 import { Box, Grid, Typography, Paper, Stack } from "@mui/material";
 import { DataGridPro } from "@mui/x-data-grid-pro";
+import { Cookies } from "react-cookie";
 
 function DetailPanelContent({ row: rowProp }) {
   return (
@@ -32,12 +33,12 @@ function DetailPanelContent({ row: rowProp }) {
                 width: 150,
               },
               {
-                field: "SourcePort",
+                field: "Source_Port",
                 headerName: "Source Port",
                 width: 130,
               },
               {
-                field: "DestinationPort",
+                field: "Destination_Port",
                 headerName: "Destination Port",
                 width: 150,
               },
@@ -55,11 +56,11 @@ function DetailPanelContent({ row: rowProp }) {
 
 //columns
 const columns = [
-  { field: "DeviceA", headerName: "Device A", width: 200 },
-  { field: "DeviceB", headerName: "Device B", width: 200 },
-  { field: "FirstSeenDate", headerName: "First Seen Date", width: 150 },
-  { field: "LastSeenDate", headerName: "Last Seen Date", width: 150 },
-  { field: "TotalBandwidth", headerName: "Total Bandwidth", width: 150 },
+  { field: "Device_A", headerName: "Device A", width: 200 },
+  { field: "Device_B", headerName: "Device B", width: 200 },
+  { field: "First_Seen_Date", headerName: "First Seen Date", width: 150 },
+  { field: "Last_Seen_Date", headerName: "Last Seen Date", width: 150 },
+  { field: "Total_Bandwidth", headerName: "Total Bandwidth", width: 150 },
   { field: "Protocol", headerName: "Protocol", width: 150 },
   { field: "Port", headerName: "Port", width: 150 },
 ];
@@ -71,10 +72,20 @@ const NetworkStats = () => {
   const [loading, setLoading] = React.useState(false);
   const [totalAssets, setTotalAssets] = React.useState(100);
 
-  const getNetworkStatDataByUserId = async () => {
+  //getting user data from cookies
+  const cookiesData = new Cookies();
+  const userData = cookiesData.get("UserObj");
+  const userId = userData?._id;
+
+  const getNetworkStatDataByUserId = async (userId, pageSize, pageNumber) => {
     try {
-      const response = await networkServices.getAllNetworkStatByUserId();
-      setNetworkStatData(response.data.data);
+      const response = await networkServices.getAllNetworkStatByUserId(
+        userId,
+        pageSize,
+        pageNumber
+      );
+      console.log("response is", response.data.data[0].Network_Summary);
+      setNetworkStatData(response.data.data[0].Network_Summary);
     } catch (error) {
       console.log(
         `Error Occured in NetworkStats getNetworkStatDataByUserId ${error}`
@@ -83,7 +94,7 @@ const NetworkStats = () => {
   };
 
   useEffect(() => {
-    getNetworkStatDataByUserId(pageSize, pageNumber);
+    getNetworkStatDataByUserId(userId, pageSize, pageNumber);
   }, [pageSize, pageNumber]);
 
   const getDetailPanelContent = React.useCallback(

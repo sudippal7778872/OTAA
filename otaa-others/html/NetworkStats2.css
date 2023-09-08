@@ -1,0 +1,25 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+​
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+​
+.conversation-row {
+    display: none;
+    background-color: #f2f2f2;
+}
+​
+.conversation-row td {
+    padding-left: 40px;
+}
+​
+#mynetwork {
+    width: 100%;
+    height: 500px;
+    border: 1px solid lightgray;
+}

@@ -4,6 +4,7 @@ const networkController = require("./../controller/network.controller");
 const Router = express.Router();
 const path = "/networks";
 
-Router.get(`${path}`, networkController.getAllNetworkDetails);
+Router.post(`${path}`, networkController.getAllNetworkDetails);
+Router.post(`${path}/graph`, networkController.getNetworkGraphDetailsById);
 
 module.exports = Router;
