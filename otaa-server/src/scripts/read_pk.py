@@ -4,12 +4,18 @@ import sys
 import concurrent.futures
 import re
 import xml.etree.ElementTree as ET
+import pymongo
 
 get_file = sys.argv[1]
 get_username= sys.argv[2]
 #get_file = "./appdata/test.pcap"
 #get_username= "sudip"
 username= "userId: "+ get_username
+
+# Replace these with your MongoDB connection details
+mongodb_url = "mongodb+srv://sudip:11VaqrpNHegrc2xH@cluster0.kwt4qdm.mongodb.net/otaa?retryWrites=true&w=majority"  # Replace with your MongoDB URL
+database_name = "otaa"  # Replace with your database name
+collection_name = "assets"  # Replace with your collection name
 
 filtered_cap_s7comm = pyshark.FileCapture(get_file, display_filter="s7comm.szl.xy11.0001.ausbg || s7comm.szl.001c.0001.name")
 filtered_cap_enip = pyshark.FileCapture(get_file, display_filter="enip.lir.name")
@@ -281,8 +287,23 @@ if len(bacnet_devices) > 0:
         data_list.append(data)
 
 if data_list:
+    #print(json_data)
     #print(data_list)
     json_data = json.dumps(data_list)
-    print(json_data)
+
+
+    # Connect to the MongoDB server
+    client = pymongo.MongoClient(mongodb_url)
+
+    # Access the specific database
+    db = client[database_name]
+
+    # Access the specific collection
+    collection = db[collection_name]
+
+    insert_result = collection.insert_many(json_data)
+    print(f"Documents inserted with IDs: {insert_result.inserted_ids}")
 else:
     pass
+
+

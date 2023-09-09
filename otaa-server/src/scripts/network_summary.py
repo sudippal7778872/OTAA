@@ -4,6 +4,13 @@ import networkx as nx
 from datetime import datetime
 from pyvis.network import Network
 import json
+import pymongo
+
+
+# Replace these with your MongoDB connection details
+mongodb_url = "mongodb+srv://sudip:11VaqrpNHegrc2xH@cluster0.kwt4qdm.mongodb.net/otaa?retryWrites=true&w=majority"  # Replace with your MongoDB URL
+database_name = "otaa"  # Replace with your database name
+collection_name = "networks"  # Replace with your collection name
 
 
 def get_high_level_protocol(packet):
@@ -103,8 +110,24 @@ def get_packet_summary(user_id, capture_file, output_file):
         "Network_Graph": network_json
     }
 
-    print(user_data)
+    #print(user_data)
 
+    # Connect to the MongoDB server
+    client = pymongo.MongoClient(mongodb_url)
+
+    # Access the specific database
+    db = client[database_name]
+
+    # Access the specific collection
+    collection = db[collection_name]
+
+    # Access the specific collection
+    collection = db[collection_name]
+
+    insert_result = collection.insert_many(user_data)
+
+    
+    
     # Save the JSON to the output file
     with open(output_file, 'w') as json_file:
         json.dump(user_data, json_file, indent=2)
@@ -117,5 +140,10 @@ def main():
     get_packet_summary(user_id, pcapfile, outputfile)
 
 
+
+
 if __name__ == "__main__":
     main()
+
+
+

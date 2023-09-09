@@ -27,6 +27,7 @@ const executeScript = async (userId, fileNamePath) => {
     const result = await PythonShell.run("read_pk.py", options);
     // results is an array consisting of messages collected during execution
     // console.log("results: %j", result);
+    console.log("came here with result exe",result)
     return result;
   } catch (err) {
     console.log("error occured");
@@ -45,6 +46,7 @@ const executeNetworkScript = async (userId, fileNamePath) => {
     };
 
     const result = await PythonShell.run("network_summary.py", options);
+    console.log("came here with result",result)
     // results is an array consisting of messages collected during execution
     // console.log("results: %j", result);
     return result;
@@ -56,6 +58,7 @@ const executeNetworkScript = async (userId, fileNamePath) => {
 exports.createAsset = catchAsync(async (req, res, next) => {
   // console.log("response", req.body);
   const { userId, fileNamePath } = req.body;
+  console.log("user is ",userId)
   const result = await executeScript(userId, fileNamePath);
 
   // console.log("here result is",result)
