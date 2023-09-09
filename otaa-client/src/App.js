@@ -36,20 +36,20 @@ const App = () => {
 
   return (
     <ColorModeContext.Provider value={colorMode}>
-      <ThemeProvider theme={theme}>
-        {/* <CssBaseline /> */}
-        <div>
-          {/* <ErrorBoundary> */}
-          <Router>
-            <UserContext.Provider value={{ login, dispatchLogin }}>
-              <RoleContext.Provider value={{ admin, dispatchAdmin }}>
-                <Navbar />
-              </RoleContext.Provider>
-            </UserContext.Provider>
-          </Router>
-          {/* </ErrorBoundary> */}
-        </div>
-      </ThemeProvider>
+      {/* <ThemeProvider theme={theme}> */}
+      {/* <CssBaseline /> */}
+      <div>
+        {/* <ErrorBoundary> */}
+        <Router>
+          <UserContext.Provider value={{ login, dispatchLogin }}>
+            <RoleContext.Provider value={{ admin, dispatchAdmin }}>
+              <Navbar />
+            </RoleContext.Provider>
+          </UserContext.Provider>
+        </Router>
+        {/* </ErrorBoundary> */}
+      </div>
+      {/* </ThemeProvider> */}
     </ColorModeContext.Provider>
   );
 };

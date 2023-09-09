@@ -2,9 +2,38 @@ import React, { useEffect, useState } from "react";
 import networkServices from "../../../services/network/network.service";
 import { Box, Grid, Typography, Paper, Stack } from "@mui/material";
 import { DataGridPro } from "@mui/x-data-grid-pro";
+import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import { Cookies } from "react-cookie";
 
 function DetailPanelContent({ row: rowProp }) {
+  const columns = [
+    { field: "Timestamp", headerName: "Timestamp", width: 250 },
+    {
+      field: "Source",
+      headerName: "Source",
+      width: 180,
+    },
+    {
+      field: "Destination",
+      headerName: "Destination",
+      width: 180,
+    },
+    {
+      field: "Protocol",
+      headerName: "Protocol",
+      width: 150,
+    },
+    {
+      field: "Source_Port",
+      headerName: "Source Port",
+      width: 130,
+    },
+    {
+      field: "Destination_Port",
+      headerName: "Destination Port",
+      width: 150,
+    },
+  ];
   return (
     <Stack
       sx={{ py: 2, height: "100%", boxSizing: "border-box" }}
@@ -13,7 +42,7 @@ function DetailPanelContent({ row: rowProp }) {
       <Paper sx={{ flex: 1, mx: "auto", width: "90%", p: 1 }}>
         <Stack direction="column" spacing={1} sx={{ height: 1 }}>
           {/* <Typography variant="h6">{`Order #${rowProp.id}`}</Typography> */}
-          <DataGridPro
+          {/* <DataGridPro
             density="compact"
             columns={[
               { field: "Timestamp", headerName: "Timestamp", width: 250 },
@@ -46,7 +75,22 @@ function DetailPanelContent({ row: rowProp }) {
             rows={rowProp.Conversation}
             getRowId={(row) => row.Timestamp}
             sx={{ flex: 1 }}
+            autoPageSize={true}
             hideFooter
+          /> */}
+          <DataGrid
+            rows={rowProp.Conversation}
+            getRowId={(row) => row.Timestamp}
+            disableColumnFilter
+            disableColumnSelector
+            disableDensitySelector
+            columns={columns}
+            slots={{ toolbar: GridToolbar }}
+            slotProps={{
+              toolbar: {
+                showQuickFilter: true,
+              },
+            }}
           />
         </Stack>
       </Paper>
