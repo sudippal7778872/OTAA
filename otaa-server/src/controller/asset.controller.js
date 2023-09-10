@@ -24,8 +24,8 @@ const executeScript = async (userId, fileNamePath) => {
       args: [fileNamePath, userId],
     };
 
-     await PythonShell.run("read_pk.py", options);
-    console.log("server reach here")
+    await PythonShell.run("read_pk.py", options);
+    console.log("server reach here");
     return true;
   } catch (err) {
     console.log("error occured");
@@ -44,7 +44,7 @@ const executeNetworkScript = async (userId, fileNamePath) => {
     };
 
     const result = await PythonShell.run("network_summary.py", options);
-    console.log("came here with result",result)
+    console.log("came here with result", result);
     // results is an array consisting of messages collected during execution
     // console.log("results: %j", result);
     return result;
@@ -54,13 +54,20 @@ const executeNetworkScript = async (userId, fileNamePath) => {
 };
 
 exports.createAsset = catchAsync(async (req, res, next) => {
-  
   const { userId, fileNamePath } = req.body;
-  console.log("user is ",userId)
- await executeScript(userId, fileNamePath);
+  console.log("user is ", userId);
+  await executeScript(userId, fileNamePath);
 
   // console.log("here result is",result)
   // const document = await Asset.insertMany(result[0]);
+  return res.status(200).json({
+    status: "success",
+  });
+});
+
+exports.parsePCAPFile = catchAsync(async (req, res, next) => {
+  const { userId, fileNamePath } = req.body;
+  await executeScriptTestWithArgument(userId, fileNamePath);
   return res.status(200).json({
     status: "success",
   });
@@ -90,76 +97,71 @@ exports.getAssetsForDashboard = catchAsync(async (req, res, next) => {
 });
 
 // testing///////////////////////////////////
-exports.executeScriptTest = async () => {
-  try {
-    console.log("function started", getTime());
-    const scriptPaths = [
-      "./src/scripts/PsScript1.ps1",
-      "./src/scripts/PsScript2.ps1",
-      "./src/scripts/PsScript3.ps1",
-    ];
+// exports.executeScriptTest = async () => {
+//   try {
+//     console.log("function started", getTime());
+//     const scriptPaths = [
+//       "./src/scripts/PsScript1.ps1",
+//       "./src/scripts/PsScript2.ps1",
+//       "./src/scripts/PsScript3.ps1",
+//     ];
 
-    function runPowerShellScript(scriptPath) {
-      console.log(`psscript ${scriptPath} start at ${getTime()}`);
-      const childProcess = spawn("powershell.exe", [
-        "-File",
-        scriptPath,
-        "Hi Sudip",
-        "Hello",
-      ]);
+//     function runPowerShellScript(scriptPath) {
+//       console.log(`psscript ${scriptPath} start at ${getTime()}`);
+//       const childProcess = spawn("powershell.exe", [
+//         "-File",
+//         scriptPath,
+//         "Hi Sudip",
+//         "Hello",
+//       ]);
 
-      childProcess.stdout.on("data", (data) => {
-        console.log("spawned: " + childProcess.pid);
-        console.log(`Script Output (${scriptPath}): ${data.toString()}`);
-      });
+//       childProcess.stdout.on("data", (data) => {
+//         console.log("spawned: " + childProcess.pid);
+//         console.log(`Script Output (${scriptPath}): ${data.toString()}`);
+//       });
 
-      childProcess.stderr.on("data", (data) => {
-        console.error(`Script Error (${scriptPath}): ${data.toString()}`);
-      });
+//       childProcess.stderr.on("data", (data) => {
+//         console.error(`Script Error (${scriptPath}): ${data.toString()}`);
+//       });
 
-      childProcess.on("close", (code) => {
-        console.log(`Script (${scriptPath}) exited with code ${code}`);
-        console.log(`psscript ${scriptPath} end at ${getTime()}`);
-      });
-    }
+//       childProcess.on("close", (code) => {
+//         console.log(`Script (${scriptPath}) exited with code ${code}`);
+//         console.log(`psscript ${scriptPath} end at ${getTime()}`);
+//       });
+//     }
 
-    //calling
-    scriptPaths.forEach((scriptPath) => {
-      runPowerShellScript(scriptPath);
-    });
+//     //calling
+//     scriptPaths.forEach((scriptPath) => {
+//       runPowerShellScript(scriptPath);
+//     });
 
-    console.log("function ended", getTime());
-  } catch (err) {
-    console.log("error occured in testing", err);
-  }
-};
+//     console.log("function ended", getTime());
+//   } catch (err) {
+//     console.log("error occured in testing", err);
+//   }
+// };
 
 /////// testing with argument/////////////////////
-exports.executeScriptTestWithArgument = async () => {
+const executeScriptTestWithArgument = async (userId, fileNamePath) => {
   try {
-    console.log("function started", getTime());
     const scripts = [
       {
-        scriptPath: "./src/scripts/PsScript1.ps1",
-        arguments: ["HiSudip", "HowAreyou?"],
+        scriptPath: "./src/scripts/read_pk.py",
+        arguments: [fileNamePath, userId],
       },
       {
-        scriptPath: "./src/scripts/PsScript2.ps1",
-        arguments: ["HiSuman", " hello"],
-      },
-      {
-        scriptPath: "./src/scripts/PsScript3.ps1",
-        arguments: ["HiJonti", "Whatsup?"],
+        scriptPath: "./src/scripts/network_summary.py",
+        arguments: [fileNamePath, userId],
       },
     ];
 
-    function runPowerShellScript(script) {
-      console.log(`psscript ${script.scriptPath} start at ${getTime()}`);
+    function runScript(script) {
+      // console.log(`psscript ${script.scriptPath} start at ${getTime()}`);
       const scriptInfo = [script.scriptPath, ...script.arguments];
-      const childProcess = spawn("powershell.exe", scriptInfo);
+      const childProcess = spawn("/bin/python3", scriptInfo);
 
       childProcess.stdout.on("data", (data) => {
-        console.log("spawned: " + childProcess.pid);
+        // console.log("spawned: " + childProcess.pid);
         console.log(`Script Output (${script.scriptPath}): ${data.toString()}`);
       });
 
@@ -171,27 +173,26 @@ exports.executeScriptTestWithArgument = async () => {
 
       childProcess.on("close", (code) => {
         console.log(`Script (${script.scriptPath}) exited with code ${code}`);
-        console.log(`psscript ${script.scriptPath} end at ${getTime()}`);
+        // console.log(`psscript ${script.scriptPath} end at ${getTime()}`);
       });
     }
 
     //calling
     scripts.forEach((script) => {
-      runPowerShellScript(script);
+      runScript(script);
     });
 
-    console.log("function ended", getTime());
+    // console.log("function ended", getTime());
   } catch (err) {
     console.log("error occured in testing", err);
   }
 };
 
 ///////////
-
-function getTime() {
-  const date = new Date();
-  let H = date.getHours();
-  let M = date.getMinutes();
-  let S = date.getSeconds();
-  return `${H}:${M}:${S}`;
-}
+// function getTime() {
+//   const date = new Date();
+//   let H = date.getHours();
+//   let M = date.getMinutes();
+//   let S = date.getSeconds();
+//   return `${H}:${M}:${S}`;
+// }
