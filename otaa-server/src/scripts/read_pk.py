@@ -287,23 +287,24 @@ if len(bacnet_devices) > 0:
         data_list.append(data)
 
 if data_list:
-    #print(json_data)
-    #print(data_list)
+    
+    # Convert the data_list to a JSON string
     json_data = json.dumps(data_list)
-
 
     # Connect to the MongoDB server
     client = pymongo.MongoClient(mongodb_url)
-
-    # Access the specific database
     db = client[database_name]
 
-    # Access the specific collection
     collection = db[collection_name]
 
-    insert_result = collection.insert_many(json_data)
-    print(f"Documents inserted with IDs: {insert_result.inserted_ids}")
-else:
+    # Parse the JSON data back into a list of dictionaries
+    parsed_data = json.loads(json_data)
+
+    # Insert the JSON documents into the collection
+    result = collection.insert_many(parsed_data)
+    # print(f"Inserted {len(result.inserted_ids)} documents")
+
+else:#
     pass
 
 

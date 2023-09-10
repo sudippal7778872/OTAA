@@ -121,16 +121,17 @@ def get_packet_summary(user_id, capture_file, output_file):
     # Access the specific collection
     collection = db[collection_name]
 
-    # Access the specific collection
-    collection = db[collection_name]
+    # parsed_data = json.loads(user_data)
 
-    insert_result = collection.insert_many(user_data)
+    # Insert the JSON documents into the collection
+    result = collection.insert_one(user_data)
+    print(f"Inserted document with ID: {result.inserted_id}")
 
     
     
     # Save the JSON to the output file
-    with open(output_file, 'w') as json_file:
-        json.dump(user_data, json_file, indent=2)
+    # with open(output_file, 'w') as json_file:
+    #     json.dump(user_data, json_file, indent=2)
 
 def main():
     user_id = sys.argv[2]
