@@ -29,12 +29,13 @@ const createAnalyzerData = (uploadFileInformation) => {
 //   return axios.put(`/api/ppmchops/datafilter/data/${id}`, { PPMCHop });
 // };
 
+const deleteAssetsCollection = () => {
+  return axios.delete(`/api/v1/assets`);
+};
+
 const PPMCHOPService = {
-  //   getHOPBySearch,
   createAnalyzerData,
-  //   deletePPMCHop,
-  //   getPPMCHopById,
-  //   updatePPMCHopById,
+  deleteAssetsCollection,
 };
 
 export default PPMCHOPService;

@@ -1,13 +1,15 @@
 import React from "react";
 import { DataGrid } from "@mui/x-data-grid";
-import { Box, Divider } from "@mui/material";
-import InfoIcon from "@mui/icons-material/Info";
+import { Box, Button, Divider, Stack } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import InfoIcon from "@mui/icons-material/Info";
 import DeleteIcon from "@mui/icons-material/Delete";
+import ImportExportIcon from "@mui/icons-material/ImportExport";
 import { Card } from "@mui/material";
 import { Cookies } from "react-cookie";
 import MUISnackbar from "../../common/snackbar/Snackbar";
 import DashboardService from "../../../services/dashboard/dashboard.service";
+import AssetService from "../../../services/asset/asset.service";
 import "./Dashboard.css";
 import SearchBar from "./SearchBar";
 
@@ -180,7 +182,7 @@ const Dashboard = () => {
         pagenumber
       );
       if (result.data?.data) {
-        console.log("response is", result.data);
+        // console.log("response is", result);
         setAssetDetails(result.data?.data);
         setTotalAssets(result.data?.total);
         setLoading(false);
@@ -208,6 +210,19 @@ const Dashboard = () => {
   const handlePageSizeChange = (pagesize) => {
     setPageSize(pagesize);
     getAssetDetails(pageNumber, pagesize);
+  };
+
+  const DeleteAssetsCollection = async () => {
+    const response = await AssetService.deleteAssetsCollection();
+    if (response.status == 200) {
+      setAlertMsg("Deleted Successfully");
+      setSeverity("success");
+      setOpen(true);
+    } else {
+      setAlertMsg("Some error occured");
+      setSeverity("error");
+      setOpen(true);
+    }
   };
 
   React.useEffect(() => {
@@ -258,6 +273,28 @@ const Dashboard = () => {
       </Box>
 
       <Card className="center" style={{ padding: 15 }}>
+        <Box style={{ display: "flex", justifyContent: "right" }}>
+          <Stack style={{ marginRight: "1%" }}>
+            <Button
+              variant="contained"
+              color="primary"
+              endIcon={<DeleteIcon />}
+              onClick={DeleteAssetsCollection}
+            >
+              Delete Assets Collection
+            </Button>
+          </Stack>
+          <Stack>
+            <Button
+              variant="contained"
+              color="primary"
+              endIcon={<ImportExportIcon />}
+            >
+              Export
+            </Button>
+          </Stack>
+        </Box>
+
         <br />
         <Box
           className="Datagrid-box"

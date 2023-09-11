@@ -6,5 +6,6 @@ const path = "/networks";
 
 Router.post(`${path}`, networkController.getAllNetworkDetails);
 Router.post(`${path}/graph`, networkController.getNetworkGraphDetailsById);
+Router.delete(`${path}`, networkController.deleteNetworkCollection);
 
 module.exports = Router;

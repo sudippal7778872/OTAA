@@ -22,3 +22,11 @@ exports.getNetworkGraphDetailsById = catchAsync(async (req, res, next) => {
   }
   res.status(200).json({ status: "success", data: graphDocument });
 });
+
+exports.deleteNetworkCollection = catchAsync(async (req, res, next) => {
+  const result = await Network.deleteMany();
+  if (!result) {
+    return next(appError("No Document found", 404));
+  }
+  return res.status(200).json({ status: "success", data: result });
+});

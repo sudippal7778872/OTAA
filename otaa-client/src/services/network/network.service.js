@@ -11,9 +11,14 @@ const getNetworkGraphByUserId = (userId) => {
   return axios.post(`/api/v1/networks/graph`, { userId });
 };
 
+const deleteNetworksCollection = () => {
+  return axios.delete(`/api/v1/networks/`);
+};
+
 const networkServices = {
   getAllNetworkStatByUserId,
   getNetworkGraphByUserId,
+  deleteNetworksCollection,
 };
 
 export default networkServices;

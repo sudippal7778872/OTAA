@@ -1,9 +1,21 @@
 import React, { useEffect, useState } from "react";
 import networkServices from "../../../services/network/network.service";
-import { Box, Grid, Typography, Paper, Stack } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Typography,
+  Paper,
+  Stack,
+  Card,
+  Button,
+} from "@mui/material";
 import { DataGridPro } from "@mui/x-data-grid-pro";
 import { DataGrid, GridToolbar } from "@mui/x-data-grid";
 import { Cookies } from "react-cookie";
+import MUISnackbar from "../../common/snackbar/Snackbar";
+import InfoIcon from "@mui/icons-material/Info";
+import DeleteIcon from "@mui/icons-material/Delete";
+import ImportExportIcon from "@mui/icons-material/ImportExport";
 
 function DetailPanelContent({ row: rowProp }) {
   const columns = [
@@ -110,6 +122,11 @@ const columns = [
 ];
 
 const NetworkStats = () => {
+  const [open, setOpen] = React.useState(false);
+  const [alertMsg, setAlertMsg] = React.useState(null);
+  const [severity, setSeverity] = React.useState(null);
+  const [xposition, setXposition] = React.useState("right");
+  const [yposition, setYposition] = React.useState("bottom");
   const [networkStatData, setNetworkStatData] = useState([]);
   const [pageNumber, setPageNumber] = React.useState(0);
   const [pageSize, setPageSize] = React.useState(25);
@@ -137,6 +154,19 @@ const NetworkStats = () => {
     }
   };
 
+  const deleteNetworksCollection = async () => {
+    const response = await networkServices.deleteNetworksCollection();
+    if (response.status == 200) {
+      setAlertMsg("Deleted Successfully");
+      setSeverity("success");
+      setOpen(true);
+    } else {
+      setAlertMsg("Some error occured");
+      setSeverity("error");
+      setOpen(true);
+    }
+  };
+
   useEffect(() => {
     getNetworkStatDataByUserId(userId, pageSize, pageNumber);
   }, [pageSize, pageNumber]);
@@ -152,6 +182,9 @@ const NetworkStats = () => {
     setPageNumber(pagenumber);
     getNetworkStatDataByUserId(pagenumber, pageSize);
   };
+  const handleCloseSnackbar = () => {
+    setOpen(false);
+  };
 
   const handlePageSizeChange = (pagesize) => {
     setPageSize(pagesize);
@@ -160,25 +193,58 @@ const NetworkStats = () => {
 
   return (
     <>
-      <Box sx={{ width: "100%", height: "80vh" }}>
-        <DataGridPro
-          getRowId={(row) => row._id}
-          columns={columns}
-          rows={networkStatData}
-          loading={loading}
-          paginationMode="server"
-          pageSize={pageSize}
-          rowCount={totalAssets}
-          rowThreshold={0}
-          getDetailPanelHeight={getDetailPanelHeight}
-          getDetailPanelContent={getDetailPanelContent}
-          onPageChange={handlePageChange}
-          onPageSizeChange={handlePageSizeChange}
-          getRowClassName={(params) =>
-            params.indexRelativeToCurrentPage % 2 === 0 ? "even" : "odd"
-          }
-        />
-      </Box>
+      <MUISnackbar
+        open={open}
+        handleClose={handleCloseSnackbar}
+        alertMsg={alertMsg}
+        severity={severity}
+        xposition={xposition}
+        yposition={yposition}
+      />
+      <Card className="center" style={{ padding: 15 }}>
+        <Box style={{ display: "flex", justifyContent: "right" }}>
+          <Stack style={{ marginRight: "1%" }}>
+            <Button
+              variant="contained"
+              color="primary"
+              endIcon={<DeleteIcon />}
+              onClick={deleteNetworksCollection}
+            >
+              Delete Assets Collection
+            </Button>
+          </Stack>
+          <Stack>
+            <Button
+              variant="contained"
+              color="primary"
+              endIcon={<ImportExportIcon />}
+            >
+              Export
+            </Button>
+          </Stack>
+        </Box>
+
+        <br />
+        <Box sx={{ width: "100%", height: "80vh" }}>
+          <DataGridPro
+            getRowId={(row) => row._id}
+            columns={columns}
+            rows={networkStatData}
+            loading={loading}
+            paginationMode="server"
+            pageSize={pageSize}
+            rowCount={totalAssets}
+            rowThreshold={0}
+            getDetailPanelHeight={getDetailPanelHeight}
+            getDetailPanelContent={getDetailPanelContent}
+            onPageChange={handlePageChange}
+            onPageSizeChange={handlePageSizeChange}
+            getRowClassName={(params) =>
+              params.indexRelativeToCurrentPage % 2 === 0 ? "even" : "odd"
+            }
+          />
+        </Box>
+      </Card>
     </>
   );
 };

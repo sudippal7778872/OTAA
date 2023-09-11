@@ -96,6 +96,14 @@ exports.getAssetsForDashboard = catchAsync(async (req, res, next) => {
     .json({ status: "success", data: document, total: allAssets.length });
 });
 
+exports.deleteAssetsCollection = catchAsync(async (req, res, next) => {
+  const result = await Asset.deleteMany();
+  if (!result) {
+    return next(appError("No Document found", 404));
+  }
+  return res.status(200).json({ status: "success", data: result });
+});
+
 // testing///////////////////////////////////
 // exports.executeScriptTest = async () => {
 //   try {
