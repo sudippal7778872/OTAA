@@ -26,7 +26,7 @@ function DetailPanelContent({ row: rowProp }) {
       width: 180,
     },
     {
-      field: "to",
+      field: "Destination",
       headerName: "Destination",
       width: 180,
     },
@@ -41,7 +41,7 @@ function DetailPanelContent({ row: rowProp }) {
       width: 130,
     },
     {
-      field: "to_Port",
+      field: "Destination_Port",
       headerName: "Destination Port",
       width: 150,
     },

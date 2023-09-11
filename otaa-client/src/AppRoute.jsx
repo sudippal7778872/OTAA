@@ -10,7 +10,7 @@ import { RoleContext, UserContext } from "./App";
 import { useCookies } from "react-cookie";
 import { useNavigate, useLocation } from "react-router-dom";
 
-const Home = lazy(() => import("./pages/home/Home"));
+// const Home = lazy(() => import("./pages/home/Home"));
 
 const Login = lazy(() => import("./components/admin/login/Login"));
 const ForgotPassword = lazy(() => import("./components/admin/ForgotPassword"));
@@ -71,9 +71,9 @@ const AppRoute = () => {
     <div>
       <Suspense fallback={<h6>Loading...</h6>}>
         <Routes>
-          <Route path="/" element={<Home />} />
+          {/* <Route path="/" element={<Home />} /> */}
           <Route path="/login" element={<Login />} />
-          <Route path="/home" element={<Home />} />
+          {/* <Route path="/home" element={<Home />} /> */}
           <Route path="/logincheck" element={<Logincheck />} />
           <Route path="/forgotPassword" element={<ForgotPassword />} />
 
