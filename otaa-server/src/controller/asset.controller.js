@@ -24,8 +24,8 @@ const executeScript = async (userId, fileNamePath) => {
       args: [fileNamePath, userId],
     };
 
-    await PythonShell.run("read_pk.py", options);
-    console.log("server reach here");
+    const result  = await PythonShell.run("read_pk_copy.py", options);
+    console.log("it is here",result)
     return true;
   } catch (err) {
     console.log("error occured");
