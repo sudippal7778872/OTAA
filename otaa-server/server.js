@@ -84,6 +84,7 @@ const userRouter = require("./src/route/user.route");
 const roleRouter = require("./src/route/role.route");
 const assetRouter = require("./src/route/asset.route");
 const networkRouter = require("./src/route/network.route");
+const eventRouter = require("./src/route/event.route");
 require("./src/route/fileUpload.route")(app);
 
 // use Router
@@ -91,6 +92,7 @@ app.use(defaultUrl, userRouter);
 app.use(defaultUrl, roleRouter);
 app.use(defaultUrl, assetRouter);
 app.use(defaultUrl, networkRouter);
+app.use(defaultUrl, eventRouter);
 
 // now handle all other route for which does not exist
 app.all("*", (req, res, next) => {

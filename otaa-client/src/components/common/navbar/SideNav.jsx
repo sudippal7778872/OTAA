@@ -11,6 +11,9 @@ import {
 //import "./Navbar.css";
 import Tooltip from "@mui/material/Tooltip";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
+import EventAvailableIcon from "@mui/icons-material/EventAvailable";
+import CellTowerIcon from "@mui/icons-material/CellTower";
+import EqualizerIcon from "@mui/icons-material/Equalizer";
 import { Link } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 import LockIcon from "@mui/icons-material/Lock";
@@ -70,7 +73,7 @@ const SideNav = () => {
               <ListItem button key="Network Stats">
                 <ListItemIcon>
                   <Tooltip title="Network Stats">
-                    <ContactPageIcon />
+                    <CellTowerIcon />
                   </Tooltip>
                 </ListItemIcon>
                 <ListItemText primary="Network Stats" />
@@ -84,10 +87,24 @@ const SideNav = () => {
               <ListItem button key="Network Graph">
                 <ListItemIcon>
                   <Tooltip title="Network Graph">
-                    <ContactPageIcon />
+                    <EqualizerIcon />
                   </Tooltip>
                 </ListItemIcon>
                 <ListItemText primary="Network Graph" />
+              </ListItem>
+            </Link>
+
+            <Link
+              to={"/events"}
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <ListItem button key="Events">
+                <ListItemIcon>
+                  <Tooltip title="Events">
+                    <EventAvailableIcon />
+                  </Tooltip>
+                </ListItemIcon>
+                <ListItemText primary="Events" />
               </ListItem>
             </Link>
 
