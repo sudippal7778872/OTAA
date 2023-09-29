@@ -38,13 +38,15 @@ exports.getAllNetworkDetails = catchAsync(async (req, res, next) => {
 });
 
 exports.getNetworkGraphDetailsById = catchAsync(async (req, res, next) => {
-  const document = await Network.find({ UserID: req.body.userId });
-  const graphDocument = await document[0].Network_Graph;
+  const document = await Network.find(
+    { UserID: req.body.userId },
+    { Network_Graph: 1 }
+  );
   // console.log(document[0].Network_Graph);
   if (!document) {
     return next(appError("No Document found", 404));
   }
-  res.status(200).json({ status: "success", data: graphDocument });
+  res.status(200).json({ status: "success", data: document[0] });
 });
 
 exports.deleteNetworkCollection = catchAsync(async (req, res, next) => {

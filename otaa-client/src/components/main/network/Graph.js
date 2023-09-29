@@ -12,7 +12,7 @@ const Graph = () => {
   const getNetworkGraphByUserId = async (userId) => {
     try {
       const response = await networkServices.getNetworkGraphByUserId(userId);
-      console.log("response is", response.data.data[0]);
+      console.log("response is", response.data);
       setGraphData(response.data.data[0]);
     } catch (error) {
       console.log(`Error Occured in Graph.js`, error);
@@ -54,7 +54,8 @@ const Graph = () => {
     networkServices
       .getNetworkGraphByUserId(userId)
       .then((res) => {
-        const data = res.data.data[0];
+        console.log("respose", res.data);
+        const data = res.data.data.Network_Graph[0];
         const nodes = new DataSet(data.nodes);
         const edges = new DataSet(data.edges);
 
@@ -70,7 +71,7 @@ const Graph = () => {
     <div>
       <h2>Network Graph</h2>
       <div
-        id="network-container"
+        id='network-container'
         style={{ width: "100%", height: "60vh", background: "lightgray" }}
       ></div>
     </div>
