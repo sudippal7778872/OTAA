@@ -23,12 +23,12 @@ function DetailPanelContent({ row: rowProp }) {
     {
       field: "Source",
       headerName: "Source",
-      width: 180,
+      width: 200,
     },
     {
-      field: "Destination",
+      field: "to",
       headerName: "Destination",
-      width: 180,
+      width: 200,
     },
     {
       field: "Protocol",
@@ -36,14 +36,24 @@ function DetailPanelContent({ row: rowProp }) {
       width: 150,
     },
     {
-      field: "Source_Port",
-      headerName: "Source Port",
-      width: 130,
+      field: "Bytes_Exchanged",
+      headerName: "Byte Exchange",
+      width: 150,
     },
     {
-      field: "Destination_Port",
+      field: "Higher_Layer_Protocols",
+      headerName: "Higher Layer Protocols",
+      width: 200,
+    },
+    {
+      field: "Source_Port",
+      headerName: "Source Port",
+      width: 170,
+    },
+    {
+      field: "to_Port",
       headerName: "Destination Port",
-      width: 150,
+      width: 170,
     },
   ];
   return (
@@ -114,11 +124,11 @@ function DetailPanelContent({ row: rowProp }) {
 const columns = [
   { field: "Device_A", headerName: "Device A", width: 200 },
   { field: "Device_B", headerName: "Device B", width: 200 },
-  { field: "First_Seen_Date", headerName: "First Seen Date", width: 150 },
-  { field: "Last_Seen_Date", headerName: "Last Seen Date", width: 150 },
+  { field: "First_Seen_Date", headerName: "First Seen Date", width: 170 },
+  { field: "Last_Seen_Date", headerName: "Last Seen Date", width: 170 },
   { field: "Total_Bandwidth", headerName: "Total Bandwidth", width: 150 },
   { field: "Protocol", headerName: "Protocol", width: 150 },
-  { field: "Port", headerName: "Port", width: 150 },
+  { field: "Port", headerName: "Port", width: 230 },
 ];
 
 const NetworkStats = () => {
@@ -129,9 +139,13 @@ const NetworkStats = () => {
   const [yposition, setYposition] = React.useState("bottom");
   const [networkStatData, setNetworkStatData] = useState([]);
   const [pageNumber, setPageNumber] = React.useState(0);
-  const [pageSize, setPageSize] = React.useState(25);
+  const [pageSize, setPageSize] = React.useState(10);
   const [loading, setLoading] = React.useState(false);
-  const [totalAssets, setTotalAssets] = React.useState(100);
+  const [totalNetworks, setTotalNetworks] = React.useState(100);
+  const [paginationModel, setPaginationModel] = React.useState({
+    pageNumber: 0,
+    pageSize: 10,
+  });
 
   //getting user data from cookies
   const cookiesData = new Cookies();
@@ -145,8 +159,9 @@ const NetworkStats = () => {
         pageSize,
         pageNumber
       );
-      console.log("response is", response.data.data[0].Network_Summary);
-      setNetworkStatData(response.data.data[0].Network_Summary);
+      console.log("response is", response.data.data);
+      setNetworkStatData(response.data.data.Network_Summary);
+      setTotalNetworks(response.data.data.Total_Count);
     } catch (error) {
       console.log(
         `Error Occured in NetworkStats getNetworkStatDataByUserId ${error}`
@@ -169,7 +184,7 @@ const NetworkStats = () => {
 
   useEffect(() => {
     getNetworkStatDataByUserId(userId, pageSize, pageNumber);
-  }, [pageSize, pageNumber]);
+  }, [pageNumber, pageSize]);
 
   const getDetailPanelContent = React.useCallback(
     ({ row }) => <DetailPanelContent row={row} />,
@@ -178,19 +193,17 @@ const NetworkStats = () => {
 
   const getDetailPanelHeight = React.useCallback(() => 400, []);
 
-  const handlePageChange = (pagenumber) => {
-    setPageNumber(pagenumber);
-    getNetworkStatDataByUserId(pagenumber, pageSize);
-  };
   const handleCloseSnackbar = () => {
     setOpen(false);
   };
-
-  const handlePageSizeChange = (pagesize) => {
-    setPageSize(pagesize);
-    getNetworkStatDataByUserId(pageNumber, pagesize);
+  //page number change
+  const handlePageChange = (newPageModel) => {
+    console.log("call back fired", newPageModel);
+    setPageNumber(newPageModel.page);
+    setPageSize(newPageModel.pageSize);
   };
 
+  const paginationModel2 = { pageSize, pageNumber };
   return (
     <>
       <MUISnackbar
@@ -227,21 +240,18 @@ const NetworkStats = () => {
         <br />
         <Box sx={{ width: "100%", height: "80vh" }}>
           <DataGridPro
-            getRowId={(row) => row._id}
+            getRowId={(row) => row.First_Seen_Date}
             columns={columns}
             rows={networkStatData}
             loading={loading}
             paginationMode="server"
-            pageSize={pageSize}
-            rowCount={totalAssets}
-            rowThreshold={0}
+            pagination
+            paginationModel={paginationModel}
+            pageSizeOptions={[5, 10, 25]}
+            rowCount={totalNetworks}
+            onPaginationModelChange={handlePageChange}
             getDetailPanelHeight={getDetailPanelHeight}
             getDetailPanelContent={getDetailPanelContent}
-            onPageChange={handlePageChange}
-            onPageSizeChange={handlePageSizeChange}
-            getRowClassName={(params) =>
-              params.indexRelativeToCurrentPage % 2 === 0 ? "even" : "odd"
-            }
           />
         </Box>
       </Card>

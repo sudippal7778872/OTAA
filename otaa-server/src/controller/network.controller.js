@@ -5,8 +5,32 @@ const { exec } = require("child_process");
 const { PythonShell } = require("python-shell");
 
 exports.getAllNetworkDetails = catchAsync(async (req, res, next) => {
-  // console.log("body is", req.body);
-  const document = await Network.find({ UserID: req.body.userId });
+  const pageSize = req.body.pageSize;
+  const pageNumber = req.body.pageNumber;
+  console.log("body is ", req.body);
+  // const projection = {
+  //   _id: 0,
+  //   Network_Graph: 0,
+  //   Network_Summary: {
+  //     $slice: [pageSize * (pageNumber - 1), pageSize],
+  //   }
+  // };
+  const query = { UserID: req.body.userId };
+  const pipeline = [
+    { $match: query }, // Filter documents with userId: 1
+    {
+      $project: {
+        Network_Summary: {
+          $slice: ["$Network_Summary", pageSize * pageNumber, pageSize],
+        }, // Select the first 4 objects
+        Total_Count: { $size: "$Network_Summary" }, // Calculate the total count of objects in network_summary
+      },
+    },
+  ];
+
+  const doc = await Network.aggregate(pipeline);
+  const document = doc[0];
+
   if (!document) {
     return next(appError("No Document found", 404));
   }

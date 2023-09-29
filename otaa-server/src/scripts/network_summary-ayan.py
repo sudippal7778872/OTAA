@@ -4,6 +4,7 @@ import json
 import networkx as nx
 from pyvis.network import Network
 import pymongo
+from datetime import datetime
 
 get_file=sys.argv[1]
 get_UserID=sys.argv[2]
@@ -90,37 +91,39 @@ def driver_function():
                 network_summary[key]={
                 "Device_A":s_ip,
                 "Device_B":d_ip,
-                "First_Arrival":pkt.frame_info.time,
-                "Total_Bytes_Exchanged":length,
-                "Transport_Layer_Protocols_Involved":get_transport_protocol(pkt),
-                "Ports_Involved":set([s_port,d_port]),
+                "First_Seen_Date":pkt.frame_info.time,
+                "Last_Seen_Date": "",
+                "Total_Bandwidth":length,
+                "Protocol":get_transport_protocol(pkt),
+                "Port":set([s_port,d_port]),
                 "Conversation":[],
 
             }
             else:
-                network_summary[key]["Total_Bytes_Exchanged"] = network_summary[key]["Total_Bytes_Exchanged"]+length
-                network_summary[key]["Ports_Involved"].add(s_port)
-                network_summary[key]["Ports_Involved"].add(d_port)
-            
+                network_summary[key]["Total_Bandwidth"] = network_summary[key]["Total_Bandwidth"]+length
+                network_summary[key]["Port"].add(s_port)
+                network_summary[key]["Port"].add(d_port)
+
+            network_summary[key]["Last_Seen_Date"] = str(datetime.fromtimestamp(float(pkt.sniff_timestamp)))
             higher_protocols=get_higher_layer_protocol(pkt)
             network_graph.add_edge(s_ip, d_ip)
             conver = {
-                "Frame_Number":pkt.frame_info.number,
+                #"Frame_Number":pkt.frame_info.number,
                 "Timestamp":get_timestamps(pkt) ,
                 "Source": s_ip,
-                "Destination": d_ip,
-                "Transport_Layer_Protocol": get_transport_protocol(pkt),
+                "to": d_ip,
+                "Protocol": get_transport_protocol(pkt),
                 "Higher_Layer_Protocols":higher_protocols.replace("tcp","").replace("udp","") ,
                 "Bytes_Exchanged":length,
                 "Source_Port": s_port,
-                "Destination_Port": d_port,
-                "Source_MAC":pkt.eth.src,
-                "Destination_MAC":pkt.eth.dst
+                "to_Port": d_port,
+                #"Source_MAC":pkt.eth.src,
+                #"Destination_MAC":pkt.eth.dst
             }
 
             network_summary[key]["Conversation"].append(conver)
         for conversation in network_summary.values():
-            conversation["Ports_Involved"] = ", ".join(map(str, conversation["Ports_Involved"]))
+            conversation["Port"] = ", ".join(map(str, conversation["Port"]))
         
         network_json = nx.node_link_data(network_graph)
         

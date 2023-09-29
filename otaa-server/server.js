@@ -22,7 +22,7 @@ const port = process.env.PORT || 7000;
 
 // Rate Limit from same ip
 const limiter = rateLimit({
-  max: 100,
+  max: 500,
   windowMs: 60 * 60 * 1000,
   message:
     " Too Many Request from this same IP. Please try again after 1 hour.",

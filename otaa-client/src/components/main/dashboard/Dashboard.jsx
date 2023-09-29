@@ -21,7 +21,7 @@ const Dashboard = () => {
   const [yposition, setYposition] = React.useState("bottom");
   const [loading, setLoading] = React.useState(false);
   const [pageNumber, setPageNumber] = React.useState(0);
-  const [pageSize, setPageSize] = React.useState(25);
+  const [pageSize, setPageSize] = React.useState(10);
   const [assetDetails, setAssetDetails] = React.useState([]);
   const [totalAssets, setTotalAssets] = React.useState(0);
   const navigate = useNavigate();
@@ -39,7 +39,7 @@ const Dashboard = () => {
           type="button"
           color="primary"
           onClick={() => {
-            navigate(`/assets/info/${params.row._id}`);
+            navigate(`/detail-dashboard/${params.row._id}`);
           }}
         />
         <DeleteIcon
@@ -203,13 +203,12 @@ const Dashboard = () => {
   };
 
   const handlePageChange = (pagenumber) => {
+    console.log("call back fired");
     setPageNumber(pagenumber);
-    getAssetDetails(pagenumber, pageSize);
   };
 
   const handlePageSizeChange = (pagesize) => {
     setPageSize(pagesize);
-    getAssetDetails(pageNumber, pagesize);
   };
 
   const DeleteAssetsCollection = async () => {
@@ -309,6 +308,7 @@ const Dashboard = () => {
             columns={columns}
             loading={loading}
             paginationMode="server"
+            pageSizeOptions={[5, 10, 25]}
             pageSize={pageSize}
             rowCount={totalAssets}
             onPageChange={handlePageChange}
