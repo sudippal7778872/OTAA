@@ -74,26 +74,18 @@ exports.parsePCAPFile = catchAsync(async (req, res, next) => {
 });
 
 exports.getAssetsForDashboard = catchAsync(async (req, res, next) => {
-  const userId = req.params.id;
-  if (Object.keys(req.query).length !== 0) {
-    if (req.query.pageSize != undefined && req.query.pageSize != "") {
-      pageSize = parseInt(req.query.pageSize) || 25;
-    }
-    if (req.query.pageNumber != undefined && req.query.pageNumber != "") {
-      pageNumber = parseInt(req.query.pageNumber) || 1;
-    }
-  }
-  let skip = (pageNumber - 1) * pageSize;
-  const allAssets = await Asset.find({ userId: userId });
+  const { userId, pagesize, pagenumber } = req.body;
   const document = await Asset.find({ userId: userId })
-    .skip(skip)
-    .limit(pageSize);
+    .limit(pagesize)
+    .skip(pagesize * pagenumber);
+
+  const totalDocumentCount = await Asset.countDocuments({ userId: userId });
   if (!document) {
     return next(appError("No Document found", 404));
   }
   return res
     .status(200)
-    .json({ status: "success", data: document, total: allAssets.length });
+    .json({ status: "success", data: document, total: totalDocumentCount });
 });
 
 exports.deleteAssetsCollection = catchAsync(async (req, res, next) => {
