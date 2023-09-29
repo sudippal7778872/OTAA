@@ -157,7 +157,7 @@ const Navbar = () => {
         sx={{
           //Topbar new background color added
           background:
-            "linear-gradient(90deg, rgba(33,130,109,1) 11%, rgba(49,103,167,1) 46%, rgba(104,44,125,1) 95%)",
+          " linear-gradient(138deg, rgba(29,140,187,1) 18%, rgba(77,196,213,1) 50%, rgba(31,179,200,1) 86%)",
         }}
       >
         <Toolbar justifyContent="right" style={{ display: "flex" }}>

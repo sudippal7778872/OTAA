@@ -12,6 +12,7 @@ import LinearProgress from "@mui/material/LinearProgress";
 import PropTypes from "prop-types";
 import { Cookies } from "react-cookie";
 import { MdCloudUpload } from "react-icons/md";
+import {useState} from "react";
 
 const UploadPPMCData = memo(() => {
   const cookiesData = new Cookies();
@@ -263,10 +264,31 @@ const UploadPPMCData = memo(() => {
                       <Button variant="contained" color="error" type="button">
                         Cancel
                       </Button>
+                      
                     </Stack>
                   </div>
+                  
                 </div>
+                
               </div>
+              {/* {progress > 0 && onSubmit ? (
+                  <>
+                    <LinearProgressWithLabel value={progress} />
+                    <b>Uploaded file :</b> {[uploadFileInformation]}
+                    &nbsp;
+                    <DeleteIcon
+                      type="button"
+                      color="error"
+                      onClick={() => {
+                        handleDelete(uploadedFile);
+                      }}
+                    />
+                  </>
+                ) : (
+                  <></>
+                )}
+                <br />
+                &nbsp;&nbsp; */}
             </>
           </Box>
         </Box>

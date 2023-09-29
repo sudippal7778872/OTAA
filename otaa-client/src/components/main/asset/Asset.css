@@ -26,7 +26,7 @@ body{
 }
 
 .File-Upload-Section{
-  grid-column: span-4;
+  grid-column: span-5;
   grid-row:span 4;
   display:flex; 
   flex-direction: column;
@@ -38,6 +38,7 @@ body{
 .container {
     text-align: center;
    margin-top: 10px;
+   
   }
   
   .medium-input {
@@ -51,7 +52,7 @@ body{
   }
   
   .medium-button {
-    padding: 10px 24px;
+    padding: 10px 22px;
     font-size: 16px;
     /* background-color: #007bff;
     color: white; */
@@ -70,9 +71,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 4px dashed blueviolet;
-    height: 300px;
-    width: 500px;
+    border: 0.25rem dashed blueviolet;
+    height: 18.75rem;
+    width: 31.25rem;
     cursor: pointer;
     border-radius: 5px;
    
@@ -80,15 +81,54 @@ body{
   
 
   .button-section{
-    width: 500px;
+    display: flex;
+    width: 31.25rem;
     margin-top: 10px;
     border-radius: 5px;
     background: linear-gradient(90deg, rgba(87,155,230,1) 15%, rgba(162,122,235,1) 87%);
   }
 
 
+  .freespace{
+    width: 40vw;
+  }
   .new-row{
-    width: 46.3vw;
-    padding: 10px 0;
+    padding: 10px 11px;
+}
+.Form{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px dashed green;
+    height: 300px;
+    width: 500px;
+}
+@media (max-width: 1058px ) {
+  .Drag-Drop-Form{
+    width: 26.25rem;
+  }
+  .button-section{
+    width: 26.265rem;
+  }
+}
+@media (max-width: 893px ) {
+  .Drag-Drop-Form{
+    width: 21.25rem;
+    height: 16.75rem;
+  }
+  .button-section{
+    width: 21.265rem;
+  }
+}
+@media (max-width: 731px ) {
+  
+  .Drag-Drop-Form{
+    width: 21.25rem;
+    height: 16.75rem;
+  }
+  .button-section{
+    width: 17.265rem;
+  }
 }
   

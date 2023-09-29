@@ -36,9 +36,20 @@ def get_packet_summary(user_id, capture_file, output_file):
     for packet in cap:
         src_ip = packet.ip.src
         dst_ip = packet.ip.dst
-        src_port = packet[packet.transport_layer].srcport
-        dst_port = packet[packet.transport_layer].dstport
+        #due to some error 23-09-2023
+        #src_port = packet[packet.transport_layer].srcport
+        #dst_port = packet[packet.transport_layer].dstport
+        #protocol = packet.transport_layer
         protocol = packet.transport_layer
+        if protocol.islower()=="tcp":
+            src_port = packet.tcp.srcport
+            dst_port = packet.tcp.dstport
+        elif protocol.islower()=="udp":
+            src_port = packet.udp.srcport
+            dst_port = packet.udp.dstport
+        else:
+            src_port=0
+            dst_port=0
         length = int(packet.length)
         high_level_protocol = get_high_level_protocol(packet)
 
@@ -53,14 +64,16 @@ def get_packet_summary(user_id, capture_file, output_file):
                 "Last_Seen_Date": "",
                 "Total_Bandwidth": length,
                 "Protocol": set([protocol]),
-                "Port": set([src_port, dst_port]),
+                #"Port": set([src_port, dst_port]),
+                "SourcePort": src_port,
+                "DestinationPort": dst_port,
                 "Conversation": [],
             }
         else:
             conversations[key]["Total_Bandwidth"] += length
             conversations[key]["Protocol"].add(protocol)
-            conversations[key]["Port"].add(src_port)
-            conversations[key]["Port"].add(dst_port)
+            #conversations[key]["Port"].add(src_port)
+            #conversations[key]["Port"].add(dst_port)
 
         conversations[key]["Last_Seen_Date"] = str(datetime.fromtimestamp(float(packet.sniff_timestamp)))
 
@@ -84,7 +97,7 @@ def get_packet_summary(user_id, capture_file, output_file):
     # Convert sets to lists to make the JSON serializable
     for conversation in conversations.values():
         conversation["Protocol"] = ", ".join(conversation["Protocol"])
-        conversation["Port"] = ", ".join(map(str, conversation["Port"]))
+        #conversation["Port"] = ", ".join(map(str, conversation["Port"]))
 
     # Save the network graph to a .json file
     network_json = nx.node_link_data(network_graph)

@@ -153,7 +153,6 @@ def get_overall_details():
     user_data = {
         "UserID": get_UserID,
         "events": filtered_event_list,
-        "isActive": true
     }
 
     client = pymongo.MongoClient(mongodb_url)
