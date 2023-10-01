@@ -36,16 +36,16 @@ const Dashboard = () => {
       <strong>
         <InfoIcon
           style={{ marginLeft: 15, marginRight: 15 }}
-          type="button"
-          color="primary"
+          type='button'
+          color='primary'
           onClick={() => {
             navigate(`/detail-dashboard/${params.row._id}`);
           }}
         />
         <DeleteIcon
           // style={{ marginLeft: 20, color: "#006975" }}
-          type="button"
-          color="error"
+          type='button'
+          color='error'
           onClick={() => {
             // navigate(`/delete/${params.row.StudentID}`);
             if (window.confirm("are you sure want to delete this record?"))
@@ -164,8 +164,8 @@ const Dashboard = () => {
       sortable: false,
     },
     {
-      field: "Addtional Component",
-      headerName: "Addtional Component",
+      field: "Additional Component",
+      headerName: "Additional Component",
       width: 190,
       disableClickEventBubbling: true,
       disableColumnMenu: true,
@@ -237,46 +237,46 @@ const Dashboard = () => {
         xposition={xposition}
         yposition={yposition}
       />
-      <SearchBar placeholder="Search..." />
+      <SearchBar placeholder='Search...' />
       <Box
-        className="box-origin"
-        display="grid"
-        gridTemplateColumns="repeat(13, 1fr)"
-        gridAutoRows="80px"
-        gap="15px"
-        margin="8px 0"
-        backgroundColor="#eaeef1"
+        className='box-origin'
+        display='grid'
+        gridTemplateColumns='repeat(13, 1fr)'
+        gridAutoRows='80px'
+        gap='15px'
+        margin='8px 0'
+        backgroundColor='#eaeef1'
       >
-        <Box className="box-1">
+        <Box className='box-1'>
           <h6>186</h6>
           <h6>Vulnerability</h6>
         </Box>
 
-        <Box className="box-2">
-          <h6>186</h6>
-          <Divider />
-          <h6>Vulnerability</h6>
-        </Box>
-
-        <Box className="box-3">
+        <Box className='box-2'>
           <h6>186</h6>
           <Divider />
           <h6>Vulnerability</h6>
         </Box>
 
-        <Box className="box-4">
+        <Box className='box-3'>
+          <h6>186</h6>
+          <Divider />
+          <h6>Vulnerability</h6>
+        </Box>
+
+        <Box className='box-4'>
           <h6>186</h6>
           <Divider />
           <h6>Vulnerability</h6>
         </Box>
       </Box>
 
-      <Card className="center" style={{ padding: 15 }}>
+      <Card className='center' style={{ padding: 15 }}>
         <Box style={{ display: "flex", justifyContent: "right" }}>
           <Stack style={{ marginRight: "1%" }}>
             <Button
-              variant="contained"
-              color="primary"
+              variant='contained'
+              color='primary'
               endIcon={<DeleteIcon />}
               onClick={DeleteAssetsCollection}
             >
@@ -285,8 +285,8 @@ const Dashboard = () => {
           </Stack>
           <Stack>
             <Button
-              variant="contained"
-              color="primary"
+              variant='contained'
+              color='primary'
               endIcon={<ImportExportIcon />}
             >
               Export
@@ -296,7 +296,7 @@ const Dashboard = () => {
 
         <br />
         <Box
-          className="Datagrid-box"
+          className='Datagrid-box'
           sx={{
             height: 500,
             width: "100%",
@@ -307,7 +307,7 @@ const Dashboard = () => {
             rows={assetDetails}
             columns={columns}
             loading={loading}
-            paginationMode="server"
+            paginationMode='server'
             pageSizeOptions={[5, 10, 25]}
             pageSize={pageSize}
             rowCount={totalAssets}
