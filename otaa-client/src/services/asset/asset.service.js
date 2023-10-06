@@ -33,9 +33,14 @@ const deleteAssetsCollection = () => {
   return axios.delete(`/api/v1/assets`);
 };
 
-const PPMCHOPService = {
-  createAnalyzerData,
-  deleteAssetsCollection,
+const getAssetById = (id) => {
+  return axios.post(`api/v1/assets/assetsummary/${id}`);
 };
 
-export default PPMCHOPService;
+const assetServices = {
+  createAnalyzerData,
+  deleteAssetsCollection,
+  getAssetById,
+};
+
+export default assetServices;

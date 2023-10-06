@@ -15,10 +15,15 @@ const deleteNetworksCollection = () => {
   return axios.delete(`/api/v1/networks/`);
 };
 
+const getNetworkStatByAssetsId = (param) => {
+  return axios.post(`/api/v1/networks/network-semmery-for-assets`, param);
+};
+
 const networkServices = {
   getAllNetworkStatByUserId,
   getNetworkGraphByUserId,
   deleteNetworksCollection,
+  getNetworkStatByAssetsId,
 };
 
 export default networkServices;

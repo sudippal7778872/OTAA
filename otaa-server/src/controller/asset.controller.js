@@ -200,3 +200,16 @@ const executeScriptTestWithArgument = async (userId, fileNamePath) => {
 //   let S = date.getSeconds();
 //   return `${H}:${M}:${S}`;
 // }
+
+//-------------------------------------------------------------
+//get assets for assetSummary page
+exports.getAssetById = catchAsync(async (req, res, next) => {
+  const { id } = req.params;
+  // console.log("id is", id)
+  const document = await Asset.findById({ _id: id });
+  // console.log("Document is", document)
+  if (!document) {
+    return next(appError("No Document found", 404));
+  }
+  res.status(200).json({ status: "success", data: document });
+});

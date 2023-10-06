@@ -6,6 +6,10 @@ const path = "/networks";
 
 Router.post(`${path}`, networkController.getAllNetworkDetails);
 Router.post(`${path}/graph`, networkController.getNetworkGraphDetailsById);
+Router.post(
+  `${path}/network-semmery-for-assets`,
+  networkController.getNetworkForAssets
+);
 Router.delete(`${path}`, networkController.deleteNetworkCollection);
 
 module.exports = Router;

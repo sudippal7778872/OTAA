@@ -1,4 +1,5 @@
 const Network = require("../model/network.model");
+const Asset = require("./../model/asset.model");
 const appError = require("../utils/appError");
 const catchAsync = require("../utils/catchAsync");
 const { exec } = require("child_process");
@@ -55,4 +56,72 @@ exports.deleteNetworkCollection = catchAsync(async (req, res, next) => {
     return next(appError("No Document found", 404));
   }
   return res.status(200).json({ status: "success", data: result });
+});
+
+//get network for specific Assets by assets id
+const findAssetById = async (param) => {
+  try {
+    const { id, userId } = param;
+    const result = await Asset.findOne({ _id: id, userId });
+    return result;
+  } catch (err) {
+    console.log(`Error ocuured in NetworkController findAssetById ${err}`);
+  }
+};
+
+exports.getNetworkForAssets = catchAsync(async (req, res, next) => {
+  console.log("body is", req.body);
+  const { id, userId, pageNumber, pageSize } = req.body;
+  const result = await findAssetById({ id, userId });
+  if (result) {
+    console.log("result is", result.IP);
+    const query = {
+      UserID: userId,
+      $or: [
+        { "Network_Summary.Device_A": result.IP },
+        { "Network_Summary.Device_B": result.IP },
+      ],
+    };
+    const pipeline = [
+      {
+        $match: {
+          UserID: userId,
+          $or: [
+            { "Network_Summary.Device_A": result.IP },
+            { "Network_Summary.Device_B": result.IP },
+          ],
+        },
+      },
+      {
+        $project: {
+          UserID: 1,
+          Network_Summary: {
+            $filter: {
+              input: "$Network_Summary",
+              as: "summary",
+              cond: {
+                $or: [
+                  { $eq: ["$$summary.Device_A", result.IP] },
+                  { $eq: ["$$summary.Device_B", result.IP] },
+                ],
+              },
+            },
+          },
+        },
+      },
+      {
+        $project: {
+          UserID: 1,
+          Network_Summary: {
+            $slice: ["$Network_Summary", pageSize * pageNumber, pageSize],
+          }, // Slice the first 5 objects
+        },
+      },
+    ];
+
+    const document = await Network.aggregate(pipeline);
+    return res.status(200).json({ status: "success", data: document });
+  } else {
+    return res.status(200).json({ status: "success", data: "no data found" });
+  }
 });
