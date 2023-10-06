@@ -3,7 +3,9 @@ const appError = require("../utils/appError");
 const catchAsync = require("../utils/catchAsync");
 
 exports.getAllEventById = catchAsync(async (req, res, next) => {
-  const document = await Event.find({ UserID: req.body.userId });
+  // console.log("req",req.body)
+  const document = await Event.find({ UserID: req.body.userId }).limit(1);
+  // console.log("doc is",document)
   if (!document) {
     return next(appError("No Document found", 404));
   }

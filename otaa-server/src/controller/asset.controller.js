@@ -154,7 +154,7 @@ const executeScriptTestWithArgument = async (userId, fileNamePath) => {
         arguments: [fileNamePath, userId],
       },
       {
-        scriptPath: "./src/scripts/events.py",
+        scriptPath: "./src/scripts/events2.py",
         arguments: [fileNamePath, userId],
       },
     ];
