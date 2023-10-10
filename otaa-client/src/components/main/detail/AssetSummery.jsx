@@ -36,66 +36,68 @@ const AssetSummery = () => {
   };
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <Grid container rowSpacing={8} columnSpacing={5}>
-        <Grid item xs={4}>
-          <section style={{ height: "6rem" }}>
-            <p style={paragraphStyle}>Vendor ID</p>
-            <h3>{assetDetails["Vendor ID"]}</h3>
-          </section>
-        </Grid>
-        <Grid item xs={4}>
-          <section style={{ height: "6rem" }}>
-            <p style={paragraphStyle}>Device Type</p>
-            <h3>{assetDetails["Device Type"]}</h3>
-          </section>
-        </Grid>
-        <Grid item xs={4}>
-          <section style={{ height: "6rem" }}>
-            <p style={paragraphStyle}>Product Name</p>
-            <h3>{assetDetails["Product Name"]}</h3>
-          </section>
-        </Grid>
+    <>
+      <Box sx={{ flexGrow: 1 }}>
+        <Grid container rowSpacing={8} columnSpacing={5}>
+          <Grid item xs={4}>
+            <section style={{ height: "6rem" }}>
+              <p style={paragraphStyle}>Vendor ID</p>
+              <h3>{assetDetails["Vendor ID"]}</h3>
+            </section>
+          </Grid>
+          <Grid item xs={4}>
+            <section style={{ height: "6rem" }}>
+              <p style={paragraphStyle}>Device Type</p>
+              <h3>{assetDetails["Device Type"]}</h3>
+            </section>
+          </Grid>
+          <Grid item xs={4}>
+            <section style={{ height: "6rem" }}>
+              <p style={paragraphStyle}>Product Name</p>
+              <h3>{assetDetails["Product Name"]}</h3>
+            </section>
+          </Grid>
 
-        <Grid item xs={4}>
-          <section style={{ height: "6rem" }}>
-            <p style={paragraphStyle}>Version</p>
-            <h3>{assetDetails.Version}</h3>
-          </section>
-        </Grid>
-        <Grid item xs={4}>
-          <section style={{ height: "6rem" }}>
-            <p style={paragraphStyle}>IP Address</p>
-            <h3>{assetDetails.IP}</h3>
-          </section>
-        </Grid>
-        <Grid item xs={4}>
-          <section style={{ height: "6rem" }}>
-            <p style={paragraphStyle}>Serial Number</p>
-            <h3>{assetDetails["Serial Number"]}</h3>
-          </section>
-        </Grid>
+          <Grid item xs={4}>
+            <section style={{ height: "6rem" }}>
+              <p style={paragraphStyle}>Version</p>
+              <h3>{assetDetails.Version}</h3>
+            </section>
+          </Grid>
+          <Grid item xs={4}>
+            <section style={{ height: "6rem" }}>
+              <p style={paragraphStyle}>IP Address</p>
+              <h3>{assetDetails.IP}</h3>
+            </section>
+          </Grid>
+          <Grid item xs={4}>
+            <section style={{ height: "6rem" }}>
+              <p style={paragraphStyle}>Serial Number</p>
+              <h3>{assetDetails["Serial Number"]}</h3>
+            </section>
+          </Grid>
 
-        <Grid item xs={4}>
-          <section style={{ height: "6rem" }}>
-            <p style={paragraphStyle}>MAC Address</p>
-            <h3>{assetDetails.Mac}</h3>
-          </section>
+          <Grid item xs={4}>
+            <section style={{ height: "6rem" }}>
+              <p style={paragraphStyle}>MAC Address</p>
+              <h3>{assetDetails.Mac}</h3>
+            </section>
+          </Grid>
+          <Grid item xs={4}>
+            <section style={{ height: "6rem" }}>
+              <p style={paragraphStyle}>System Name</p>
+              <h3>{assetDetails["System Name"]}</h3>
+            </section>
+          </Grid>
+          <Grid item xs={4}>
+            <section style={{ height: "6rem" }}>
+              <p style={paragraphStyle}>System Description</p>
+              <h3>{assetDetails["System Description"]}</h3>
+            </section>
+          </Grid>
         </Grid>
-        <Grid item xs={4}>
-          <section style={{ height: "6rem" }}>
-            <p style={paragraphStyle}>System Name</p>
-            <h3>{assetDetails["System Name"]}</h3>
-          </section>
-        </Grid>
-        <Grid item xs={4}>
-          <section style={{ height: "6rem" }}>
-            <p style={paragraphStyle}>System Description</p>
-            <h3>{assetDetails["System Description"]}</h3>
-          </section>
-        </Grid>
-      </Grid>
-    </Box>
+      </Box>
+    </>
   );
 };
 
