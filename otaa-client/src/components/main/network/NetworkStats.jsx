@@ -142,10 +142,12 @@ const NetworkStats = () => {
   const [pageSize, setPageSize] = React.useState(10);
   const [loading, setLoading] = React.useState(false);
   const [totalNetworks, setTotalNetworks] = React.useState(100);
-  const [paginationModel, setPaginationModel] = React.useState({
-    pageNumber: 0,
-    pageSize: 10,
-  });
+  // const [paginationModel, setPaginationModel] = React.useState({
+  //   pageNumber: 0,
+  //   pageSize: 10,
+  // });
+
+  const paginationModel = { page: pageNumber, pageSize };
 
   //getting user data from cookies
   const cookiesData = new Cookies();
@@ -203,7 +205,7 @@ const NetworkStats = () => {
     setPageSize(newPageModel.pageSize);
   };
 
-  const paginationModel2 = { pageSize, pageNumber };
+  // const paginationModel = { pageSize, pageNumber };
   return (
     <>
       <MUISnackbar
@@ -241,8 +243,8 @@ const NetworkStats = () => {
         <Box sx={{ width: "100%", height: "80vh" }}>
           <DataGridPro
             getRowId={(row) => row.First_Seen_Date}
-            columns={columns}
             rows={networkStatData}
+            columns={columns}
             loading={loading}
             paginationMode="server"
             pagination

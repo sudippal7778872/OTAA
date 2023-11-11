@@ -69,9 +69,68 @@ const findAssetById = async (param) => {
   }
 };
 
+// exports.getNetworkForAssets = catchAsync(async (req, res, next) => {
+//   const { id, userId, pageNumber, pageSize } = req.body;
+//   console.log("body is", req.body);
+//   const result = await findAssetById({ id, userId });
+//   if (result) {
+//     console.log("result is", result.IP);
+//     const query = {
+//       UserID: userId,
+//       $or: [
+//         { "Network_Summary.Device_A": result.IP },
+//         { "Network_Summary.Device_B": result.IP },
+//       ],
+//     };
+//     const pipeline = [
+//       {
+//         $match: {
+//           UserID: userId,
+//           $or: [
+//             { "Network_Summary.Device_A": result.IP },
+//             { "Network_Summary.Device_B": result.IP },
+//           ],
+//         },
+//       },
+//       {
+//         $project: {
+//           UserID: 1,
+//           Network_Summary: {
+//             $filter: {
+//               input: "$Network_Summary",
+//               as: "summary",
+//               cond: {
+//                 $or: [
+//                   { $eq: ["$$summary.Device_A", result.IP] },
+//                   { $eq: ["$$summary.Device_B", result.IP] },
+//                 ],
+//               },
+//             },
+//           },
+//         },
+//       },
+//       {
+//         $project: {
+//           UserID: 1,
+//           Network_Summary: {
+//             $slice: ["$Network_Summary", pageSize * pageNumber, pageSize],
+//           }, // Slice the first 5 objects
+//           Total_Count: { $size: "$Network_Summary" },
+//         },
+//       },
+//     ];
+
+//     const doc = await Network.aggregate(pipeline);
+//     const document = doc[0];
+//     return res.status(200).json({ status: "success", data: document });
+//   } else {
+//     return res.status(200).json({ status: "success", data: "no data found" });
+//   }
+// });
+
 exports.getNetworkForAssets = catchAsync(async (req, res, next) => {
-  console.log("body is", req.body);
   const { id, userId, pageNumber, pageSize } = req.body;
+  console.log("body is", req.body);
   const result = await findAssetById({ id, userId });
   if (result) {
     console.log("result is", result.IP);
@@ -115,12 +174,105 @@ exports.getNetworkForAssets = catchAsync(async (req, res, next) => {
           Network_Summary: {
             $slice: ["$Network_Summary", pageSize * pageNumber, pageSize],
           }, // Slice the first 5 objects
+          Total_Count: { $size: "$Network_Summary" },
         },
       },
     ];
 
-    const document = await Network.aggregate(pipeline);
+    const doc = await Network.aggregate(pipeline);
+    const document = doc[0];
     return res.status(200).json({ status: "success", data: document });
+  } else {
+    return res.status(200).json({ status: "success", data: "no data found" });
+  }
+});
+
+// get network map details for corresponding Assets
+
+exports.getNetworkMapForAssets = catchAsync(async (req, res, next) => {
+  console.log("body is", req.body);
+  const { id, userId, pageNumber, pageSize } = req.body;
+
+  // Find the asset by id and userId
+  const result = await findAssetById({ id, userId });
+
+  if (result) {
+    console.log("result is", result.IP);
+
+    // Construct the MongoDB aggregation pipeline
+    const pipeline = [
+      {
+        $match: {
+          UserID: userId,
+          $or: [
+            {
+              "Network_Graph.nodes.id": result.IP,
+            },
+            {
+              $or: [
+                { "Network_Graph.edges.from": result.IP },
+                { "Network_Graph.edges.to": result.IP },
+              ],
+            },
+          ],
+        },
+      },
+      {
+        $project: {
+          UserID: 1,
+          Network_Graph: {
+            nodes: {
+              $filter: {
+                input: "$Network_Graph.nodes",
+                as: "node",
+                cond: {
+                  $eq: ["$$node.id", result.IP],
+                },
+              },
+            },
+            edges: {
+              $filter: {
+                input: "$Network_Graph.edges",
+                as: "edge",
+                cond: {
+                  $or: [
+                    { $eq: ["$$edge.from", result.IP] },
+                    { $eq: ["$$edge.to", result.IP] },
+                  ],
+                },
+              },
+            },
+          },
+        },
+      },
+      {
+        $project: {
+          UserID: 1,
+          Network_Graph: {
+            nodes: 1,
+            edges: 1,
+          },
+        },
+      },
+      {
+        $project: {
+          UserID: 1,
+          Network_Graph: {
+            nodes: {
+              $slice: ["$Network_Graph.nodes", pageSize * pageNumber, pageSize],
+            },
+            edges: {
+              $slice: ["$Network_Graph.edges", pageSize * pageNumber, pageSize],
+            },
+          },
+        },
+      },
+    ];
+
+    // Execute the aggregation pipeline
+    const documents = await Network.aggregate(pipeline);
+
+    return res.status(200).json({ status: "success", data: documents });
   } else {
     return res.status(200).json({ status: "success", data: "no data found" });
   }

@@ -19,11 +19,16 @@ const getNetworkStatByAssetsId = (param) => {
   return axios.post(`/api/v1/networks/network-semmery-for-assets`, param);
 };
 
+const getNetworkGraphByAssetsId = (param) => {
+  return axios.post(`/api/v1/networks/network-map-summery-for-assets`, param);
+};
+
 const networkServices = {
   getAllNetworkStatByUserId,
   getNetworkGraphByUserId,
   deleteNetworksCollection,
   getNetworkStatByAssetsId,
+  getNetworkGraphByAssetsId,
 };
 
 export default networkServices;

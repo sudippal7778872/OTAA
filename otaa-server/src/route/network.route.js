@@ -10,6 +10,11 @@ Router.post(
   `${path}/network-semmery-for-assets`,
   networkController.getNetworkForAssets
 );
+Router.post(
+  `${path}/network-map-summery-for-assets`,
+  networkController.getNetworkMapForAssets
+);
+
 Router.delete(`${path}`, networkController.deleteNetworkCollection);
 
 module.exports = Router;

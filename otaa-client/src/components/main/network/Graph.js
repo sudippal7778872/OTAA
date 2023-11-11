@@ -2,6 +2,14 @@ import React, { useEffect, useState } from "react";
 import { Cookies } from "react-cookie";
 import networkServices from "../../../services/network/network.service";
 import { DataSet, Network } from "vis-network/standalone/esm/vis-network";
+const data = {
+  nodes: [
+    { id: 1, label: "A" },
+    { id: 2, label: "B" },
+    { id: 3, label: "C" },
+  ],
+  edges: [{ from: 1, to: 2 }],
+};
 
 const Graph = () => {
   const [graphData, setGraphData] = useState({});
@@ -55,9 +63,10 @@ const Graph = () => {
       .getNetworkGraphByUserId(userId)
       .then((res) => {
         console.log("respose", res.data);
-        const data = res.data.data.Network_Graph[0];
-        const nodes = new DataSet(data.nodes);
-        const edges = new DataSet(data.edges);
+        const data = res.data?.data?.Network_Graph[0];
+        console.log("node is", data.nodes);
+        const nodes = new DataSet(data?.nodes);
+        const edges = new DataSet(data?.edges);
 
         // Create the network
         network = new Network(container, { nodes, edges }, options);
@@ -71,7 +80,7 @@ const Graph = () => {
     <div>
       <h2>Network Graph</h2>
       <div
-        id='network-container'
+        id="network-container"
         style={{ width: "100%", height: "60vh", background: "lightgray" }}
       ></div>
     </div>
