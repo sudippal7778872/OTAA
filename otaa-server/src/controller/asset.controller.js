@@ -146,7 +146,7 @@ const executeScriptTestWithArgument = async (userId, fileNamePath) => {
   try {
     const scripts = [
       {
-        scriptPath: "./src/scripts/read_pk.py",
+        scriptPath: "./src/scripts/assets_vuln_combines.py",
         arguments: [fileNamePath, userId],
       },
       {

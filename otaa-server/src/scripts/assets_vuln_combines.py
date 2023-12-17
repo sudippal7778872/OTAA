@@ -155,7 +155,8 @@ def call_for_asset_vulnerability(data_list):
                     title=vuln["Title"]
                     vul_type=vuln["Type"]
                     call_for_vulnerability_asset(adv_no,title,vul_type,asset_mac,asset_ip)
-    
+        else:
+            entry["Vulnerabilitiy"]=result
 
     user_data = {
         "UserID": get_UserID,
