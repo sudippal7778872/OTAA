@@ -114,10 +114,10 @@ def call_vulnerability(vendor,product):
                             
                     if found_matching_arg:
                         break  # Exit the outer loop after finding a matching block
-    # if len(results)==0:
-        # temp_dict={}
-        # temp_dict["Report"]="No Vulnerability"
-        # results.append(temp_dict)
+    # if len(results)==0: #if there is no vuln
+    #     temp_dict={}
+    #     temp_dict["Report"]="No Vulnerability"
+    #     results.append(temp_dict)
     return results
 
 def call_for_vulnerability_asset(adv_no,title,vul_type,asset_mac,asset_ip):
@@ -147,7 +147,7 @@ def call_for_asset_vulnerability(data_list):
         # result=call_vulnerability("ROCKWELL","EN2T")
         if result:
 
-            entry["Vulnerabilitiy"]=result
+            entry["Vulnerability"]=result
 
             for vuln in result:
                 if "Advisory_No" in vuln: 
@@ -156,7 +156,9 @@ def call_for_asset_vulnerability(data_list):
                     vul_type=vuln["Type"]
                     call_for_vulnerability_asset(adv_no,title,vul_type,asset_mac,asset_ip)
         else:
-            entry["Vulnerabilitiy"]=result
+            entry["Vulnerability"]=result
+
+    
 
     user_data = {
         "UserID": get_UserID,
@@ -165,16 +167,16 @@ def call_for_asset_vulnerability(data_list):
         
     }
 
-    filename1="asset&vuln.json"
-    with open(filename1, 'w') as file:
-        json.dump(user_data, file)      
+    # filename1="asset&vuln.json"
+    # with open(filename1, 'w') as file:
+    #     json.dump(user_data, file)      
 
 
     client = pymongo.MongoClient(mongodb_url)
     db = client[database_name]
     collection = db[collection_name]
     result=collection.insert_one(user_data)
-    print(f"Inserted document with ID: {result.inserted_id}")
+    # print(f"Inserted document with ID: {result.inserted_id}")
 
 
 
@@ -182,7 +184,7 @@ def call_for_asset_vulnerability(data_list):
 #********************************mongodb-part**************************************************************************************
 mongodb_url = "mongodb+srv://sudip:11VaqrpNHegrc2xH@cluster0.kwt4qdm.mongodb.net/otaa?retryWrites=true&w=majority"
 database_name = "otaa"
-collection_name = "assets&vuln"
+collection_name = "assets"
 #*******************************assets-part****************************************************************************************
 
 filtered_cap_s7comm = pyshark.FileCapture(get_file, display_filter="s7comm.szl.xy11.0001.ausbg || s7comm.szl.001c.0001.name")
