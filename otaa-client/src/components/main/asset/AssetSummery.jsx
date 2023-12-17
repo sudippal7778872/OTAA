@@ -10,10 +10,10 @@ import { Cookies } from "react-cookie";
 import MUISnackbar from "../../common/snackbar/Snackbar";
 import DashboardService from "../../../services/dashboard/dashboard.service";
 import AssetService from "../../../services/asset/asset.service";
-import "./Dashboard.css";
+import "./AssetSummery.css";
 import SearchBar from "./SearchBar";
 
-const Dashboard = () => {
+const AssetSummery = () => {
   const [open, setOpen] = React.useState(false);
   const [alertMsg, setAlertMsg] = React.useState(null);
   const [severity, setSeverity] = React.useState(null);
@@ -36,16 +36,16 @@ const Dashboard = () => {
       <strong>
         <InfoIcon
           style={{ marginLeft: 15, marginRight: 15 }}
-          type='button'
-          color='primary'
+          type="button"
+          color="primary"
           onClick={() => {
             navigate(`/detail-dashboard/${params.row._id}`);
           }}
         />
         <DeleteIcon
           // style={{ marginLeft: 20, color: "#006975" }}
-          type='button'
-          color='error'
+          type="button"
+          color="error"
           onClick={() => {
             // navigate(`/delete/${params.row.StudentID}`);
             if (window.confirm("are you sure want to delete this record?"))
@@ -67,7 +67,7 @@ const Dashboard = () => {
 
   const columns = [
     {
-      field: "_id",
+      field: "IP",
       headerName: "Action",
       width: 120,
       renderCell: renderActionButton,
@@ -76,7 +76,7 @@ const Dashboard = () => {
       sortable: false,
     },
     {
-      field: "Vendor ID",
+      field: "Vendor_ID",
       headerName: "Manufacturer",
       width: 190,
       disableClickEventBubbling: true,
@@ -84,7 +84,7 @@ const Dashboard = () => {
       sortable: false,
     },
     {
-      field: "Device Type",
+      field: "Device_Type",
       headerName: "Device Type",
       width: 190,
       disableClickEventBubbling: true,
@@ -92,7 +92,7 @@ const Dashboard = () => {
       sortable: false,
     },
     {
-      field: "Product Name",
+      field: "Product_Name",
       headerName: "Product Name",
       width: 190,
       disableClickEventBubbling: true,
@@ -108,7 +108,7 @@ const Dashboard = () => {
       sortable: false,
     },
     {
-      field: "Serial Number",
+      field: "Serial_Number",
       headerName: "Serial Number",
       width: 190,
       disableClickEventBubbling: true,
@@ -132,7 +132,7 @@ const Dashboard = () => {
       sortable: false,
     },
     {
-      field: "System Name",
+      field: "System_Name",
       headerName: "System Name",
       width: 190,
       disableClickEventBubbling: true,
@@ -140,7 +140,7 @@ const Dashboard = () => {
       sortable: false,
     },
     {
-      field: "System Description",
+      field: "System_Description",
       headerName: "System Description",
       width: 190,
       disableClickEventBubbling: true,
@@ -148,7 +148,7 @@ const Dashboard = () => {
       sortable: false,
     },
     {
-      field: "Module Number",
+      field: "Module_Number",
       headerName: "Module Number",
       width: 190,
       disableClickEventBubbling: true,
@@ -156,7 +156,7 @@ const Dashboard = () => {
       sortable: false,
     },
     {
-      field: "CPU Type",
+      field: "CPU_Type",
       headerName: "CPU Type",
       width: 190,
       disableClickEventBubbling: true,
@@ -164,8 +164,16 @@ const Dashboard = () => {
       sortable: false,
     },
     {
-      field: "Additional Component",
+      field: "Additional_Component",
       headerName: "Additional Component",
+      width: 190,
+      disableClickEventBubbling: true,
+      disableColumnMenu: true,
+      sortable: false,
+    },
+    {
+      field: "Vulnerability_Count",
+      headerName: "Vulnerabilitiy Count",
       width: 190,
       disableClickEventBubbling: true,
       disableColumnMenu: true,
@@ -182,8 +190,8 @@ const Dashboard = () => {
         pagenumber
       );
       if (result.data?.data) {
-        // console.log("response is", result);
-        setAssetDetails(result.data?.data);
+        console.log("response is", result.data.data?.assets_summary);
+        setAssetDetails(result.data?.data?.assets_summary);
         setTotalAssets(result.data?.total);
         setLoading(false);
       }
@@ -237,46 +245,46 @@ const Dashboard = () => {
         xposition={xposition}
         yposition={yposition}
       />
-      <SearchBar placeholder='Search...' />
+      <SearchBar placeholder="Search..." />
       <Box
-        className='box-origin'
-        display='grid'
-        gridTemplateColumns='repeat(13, 1fr)'
-        gridAutoRows='80px'
-        gap='15px'
-        margin='8px 0'
-        backgroundColor='#eaeef1'
+        className="box-origin"
+        display="grid"
+        gridTemplateColumns="repeat(13, 1fr)"
+        gridAutoRows="80px"
+        gap="15px"
+        margin="8px 0"
+        backgroundColor="#eaeef1"
       >
-        <Box className='box-1'>
+        <Box className="box-1">
           <h6>186</h6>
           <h6>Vulnerability</h6>
         </Box>
 
-        <Box className='box-2'>
-          <h6>186</h6>
-          <Divider />
-          <h6>Vulnerability</h6>
-        </Box>
-
-        <Box className='box-3'>
+        <Box className="box-2">
           <h6>186</h6>
           <Divider />
           <h6>Vulnerability</h6>
         </Box>
 
-        <Box className='box-4'>
+        <Box className="box-3">
+          <h6>186</h6>
+          <Divider />
+          <h6>Vulnerability</h6>
+        </Box>
+
+        <Box className="box-4">
           <h6>186</h6>
           <Divider />
           <h6>Vulnerability</h6>
         </Box>
       </Box>
 
-      <Card className='center' style={{ padding: 15 }}>
+      <Card className="center" style={{ padding: 15 }}>
         <Box style={{ display: "flex", justifyContent: "right" }}>
           <Stack style={{ marginRight: "1%" }}>
             <Button
-              variant='contained'
-              color='primary'
+              variant="contained"
+              color="primary"
               endIcon={<DeleteIcon />}
               onClick={DeleteAssetsCollection}
             >
@@ -285,8 +293,8 @@ const Dashboard = () => {
           </Stack>
           <Stack>
             <Button
-              variant='contained'
-              color='primary'
+              variant="contained"
+              color="primary"
               endIcon={<ImportExportIcon />}
             >
               Export
@@ -296,18 +304,18 @@ const Dashboard = () => {
 
         <br />
         <Box
-          className='Datagrid-box'
+          className="Datagrid-box"
           sx={{
             height: 500,
             width: "100%",
           }}
         >
           <DataGrid
-            getRowId={(r) => r._id}
+            getRowId={(r) => r.IP}
             rows={assetDetails}
             columns={columns}
             loading={loading}
-            paginationMode='server'
+            paginationMode="server"
             pageSizeOptions={[5, 10, 25]}
             pageSize={pageSize}
             rowCount={totalAssets}
@@ -327,4 +335,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export default AssetSummery;

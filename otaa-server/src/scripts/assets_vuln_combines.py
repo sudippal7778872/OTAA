@@ -37,13 +37,13 @@ def call_vulnerability(vendor,product):
     results = []  # List to store the results
 
     if not os.path.exists(signatures_dir) or not os.path.isdir(signatures_dir):
-        no_vul_found["Report"]="Not Found"
-        results.append(no_vul_found)
+        # no_vul_found["Report"]="Not Found"
+        # results.append(no_vul_found)
         return results
     
     if not os.path.exists(vendor_folder) or not os.path.isdir(vendor_folder):
-        no_vul_found["Report"]="Not Found"
-        results.append(no_vul_found)
+        # no_vul_found["Report"]="Not Found"
+        # results.append(no_vul_found)
         return results
     
     
@@ -114,10 +114,10 @@ def call_vulnerability(vendor,product):
                             
                     if found_matching_arg:
                         break  # Exit the outer loop after finding a matching block
-    if len(results)==0:
-        temp_dict={}
-        temp_dict["Report"]="No Vulnerability"
-        results.append(temp_dict)
+    # if len(results)==0:
+        # temp_dict={}
+        # temp_dict["Report"]="No Vulnerability"
+        # results.append(temp_dict)
     return results
 
 def call_for_vulnerability_asset(adv_no,title,vul_type,asset_mac,asset_ip):

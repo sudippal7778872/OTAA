@@ -9,6 +9,11 @@ Router.post(`${path}/dashboard`, controller.getAssetsForDashboard);
 Router.post(`${path}`, controller.parsePCAPFile);
 Router.delete(`${path}`, controller.deleteAssetsCollection);
 Router.post(`${path}/assetsummary/:id`, controller.getAssetById);
+Router.post(`${path}/asset-summery`, controller.getAssetSummeryByUserId);
+Router.post(
+  `${path}/vulnerability-summery`,
+  controller.getVulnerabilitySummeryByUserId
+);
 // Router.post(`${path}`, controller.createAsset);
 // Router.get(`${path}`, controller.executeScriptTest);
 // Router.get(`${path}`, controller.executeScriptTestWithArgument);

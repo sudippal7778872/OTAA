@@ -53,7 +53,7 @@ const SideNav = () => {
         {cookies.loggedin === "true" || login ? (
           <>
             <Link
-              to={"/dashboard"}
+              to={"/asset-summery"}
               style={{ textDecoration: "none", color: "black" }}
             >
               <ListItem button key="Assets">
@@ -105,6 +105,20 @@ const SideNav = () => {
                   </Tooltip>
                 </ListItemIcon>
                 <ListItemText primary="Events" />
+              </ListItem>
+            </Link>
+
+            <Link
+              to={"/vulnerability-summery"}
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <ListItem button key="Vulnerability">
+                <ListItemIcon>
+                  <Tooltip title="Vulnerability">
+                    <EventAvailableIcon />
+                  </Tooltip>
+                </ListItemIcon>
+                <ListItemText primary="Vulnerability" />
               </ListItem>
             </Link>
 

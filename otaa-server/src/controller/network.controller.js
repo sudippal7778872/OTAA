@@ -9,13 +9,6 @@ exports.getAllNetworkDetails = catchAsync(async (req, res, next) => {
   const pageSize = req.body.pageSize;
   const pageNumber = req.body.pageNumber;
   console.log("body is ", req.body);
-  // const projection = {
-  //   _id: 0,
-  //   Network_Graph: 0,
-  //   Network_Summary: {
-  //     $slice: [pageSize * (pageNumber - 1), pageSize],
-  //   }
-  // };
   const query = { UserID: req.body.userId };
   const pipeline = [
     { $match: query }, // Filter documents with userId: 1

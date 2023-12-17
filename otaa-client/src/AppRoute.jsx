@@ -10,7 +10,7 @@ import { RoleContext, UserContext } from "./App";
 import { useCookies } from "react-cookie";
 import { useNavigate, useLocation } from "react-router-dom";
 
-// const Home = lazy(() => import("./pages/home/Home"));
+const Home = lazy(() => import("./pages/home/Home"));
 
 const Login = lazy(() => import("./components/admin/login/Login"));
 const ForgotPassword = lazy(() => import("./components/admin/ForgotPassword"));
@@ -30,7 +30,7 @@ const EditUser = lazy(() => import("./components/user/EditUser"));
 
 //main
 const Asset = lazy(() => import("./components/main/asset/Asset"));
-const Dashboard = lazy(() => import("./components/main/dashboard/Dashboard"));
+const AssetSummery = lazy(() => import("./components/main/asset/AssetSummery"));
 
 const NetworkStats = lazy(() =>
   import("./components/main/network/NetworkStats")
@@ -41,6 +41,9 @@ const NetworkGraph = lazy(() =>
 );
 
 const Event = lazy(() => import("./components/main/event/Event"));
+const Vulnerability = lazy(() =>
+  import("./components/main/vulnerability/Vulnerability")
+);
 
 const DetailDashboard = lazy(() =>
   import("./components/main/detail/DetailDashboard")
@@ -77,9 +80,9 @@ const AppRoute = () => {
     <div>
       <Suspense fallback={<h6>Loading...</h6>}>
         <Routes>
-          {/* <Route path="/" element={<Home />} /> */}
+          <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
-          {/* <Route path="/home" element={<Home />} /> */}
+          <Route path="/home" element={<Home />} />
           <Route path="/logincheck" element={<Logincheck />} />
           <Route path="/forgotPassword" element={<ForgotPassword />} />
 
@@ -160,10 +163,10 @@ const AppRoute = () => {
             }
           />
           <Route
-            path="/dashboard"
+            path="/asset-summery"
             element={
               <SecuredRoute>
-                <Dashboard />
+                <AssetSummery />
               </SecuredRoute>
             }
           />
@@ -171,7 +174,7 @@ const AppRoute = () => {
             path="/network"
             element={
               <SecuredRoute>
-                <Dashboard />
+                <AssetSummery />
               </SecuredRoute>
             }
           />
@@ -196,6 +199,22 @@ const AppRoute = () => {
             element={
               <SecuredRoute>
                 <Event />
+              </SecuredRoute>
+            }
+          />
+          <Route
+            path="/events"
+            element={
+              <SecuredRoute>
+                <Event />
+              </SecuredRoute>
+            }
+          />
+          <Route
+            path="/vulnerability-summery"
+            element={
+              <SecuredRoute>
+                <Vulnerability />
               </SecuredRoute>
             }
           />

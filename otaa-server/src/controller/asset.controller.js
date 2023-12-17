@@ -213,3 +213,57 @@ exports.getAssetById = catchAsync(async (req, res, next) => {
   }
   res.status(200).json({ status: "success", data: document });
 });
+
+// get all assets summery by user Id
+exports.getAssetSummeryByUserId = catchAsync(async (req, res, next) => {
+  const pageSize = req.body.pageSize || 100;
+  const pageNumber = req.body.pageNumber || 0;
+  const query = { UserID: req.body.userId };
+  const pipeline = [
+    { $match: query },
+    {
+      $project: {
+        assets_summary: {
+          $slice: ["$assets_summary", pageSize * pageNumber, pageSize],
+        },
+        Total_Count: { $size: "$assets_summary" },
+      },
+    },
+  ];
+
+  const doc = await Asset.aggregate(pipeline);
+  const document = doc[0];
+  if (!document) {
+    return next(appError("No Document found", 404));
+  } else {
+    document.assets_summary.forEach((el) => {
+      el.Vulnerability_Count = el.Vulnerabilitiy.length;
+    });
+  }
+  res.status(200).json({ status: "success", data: document });
+});
+
+// get all vulnerability by user Id
+exports.getVulnerabilitySummeryByUserId = catchAsync(async (req, res, next) => {
+  const pageSize = req.body.pageSize || 100;
+  const pageNumber = req.body.pageNumber || 0;
+  const query = { UserID: req.body.userId };
+  const pipeline = [
+    { $match: query },
+    {
+      $project: {
+        vulnerability_summary: {
+          $slice: ["$vulnerability_summary", pageSize * pageNumber, pageSize],
+        },
+        Total_Count: { $size: "$vulnerability_summary" },
+      },
+    },
+  ];
+
+  const doc = await Asset.aggregate(pipeline);
+  const document = doc[0];
+  if (!document) {
+    return next(appError("No Document found", 404));
+  }
+  res.status(200).json({ status: "success", data: document });
+});
