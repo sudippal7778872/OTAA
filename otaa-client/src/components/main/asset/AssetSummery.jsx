@@ -39,7 +39,7 @@ const AssetSummery = () => {
           type="button"
           color="primary"
           onClick={() => {
-            navigate(`/detail-dashboard/${params.row._id}`);
+            navigate(`/detail-dashboard/${params.row.Asset_ID}`);
           }}
         />
         <DeleteIcon
@@ -67,7 +67,7 @@ const AssetSummery = () => {
 
   const columns = [
     {
-      field: "IP",
+      field: "Asset_ID",
       headerName: "Action",
       width: 120,
       renderCell: renderActionButton,
@@ -174,6 +174,11 @@ const AssetSummery = () => {
     {
       field: "Vulnerability_Count",
       headerName: "Vulnerabilitiy Count",
+      renderCell: (params) => (
+        <a href={`/detail-dashboard/${params.row.Asset_ID}`}>
+          {params.row.Vulnerability_Count}
+        </a>
+      ),
       width: 190,
       disableClickEventBubbling: true,
       disableColumnMenu: true,
@@ -311,12 +316,11 @@ const AssetSummery = () => {
           }}
         >
           <DataGrid
-            getRowId={(r) => r.IP}
+            getRowId={(r) => r.Asset_ID}
             rows={assetDetails}
             columns={columns}
             loading={loading}
             paginationMode="server"
-            pageSizeOptions={[5, 10, 25]}
             pageSize={pageSize}
             rowCount={totalAssets}
             onPageChange={handlePageChange}

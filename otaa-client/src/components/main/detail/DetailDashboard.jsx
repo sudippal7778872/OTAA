@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import AssetSummery from "./AssetSummery";
 import NetworkDetails from "./NetworkDetails";
 import NetworkGraphDetails from "./NetworkGraphDetails";
-import Vulnerability from "./Vulnerability";
+import Vulnerability from "./VulnerabilityDetails";
 import { useTheme } from "@mui/material/styles";
 // import SwipeableViews from "react-swipeable-views";
 import AppBar from "@mui/material/AppBar";
@@ -71,8 +71,8 @@ const DetailDashboard = () => {
             variant="fullWidth"
             aria-label="full width tabs example"
           >
-            <Tab label="Assets Summery" {...a11yProps(0)} />
-            <Tab label="Network Stat" {...a11yProps(1)} />
+            <Tab label="Assets Summary" {...a11yProps(0)} />
+            <Tab label="Network Stats" {...a11yProps(1)} />
             <Tab label="Network Map" {...a11yProps(2)} />
             <Tab label="Vulnerability" {...a11yProps(3)} />
           </Tabs>

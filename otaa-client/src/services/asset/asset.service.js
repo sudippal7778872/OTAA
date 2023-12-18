@@ -1,4 +1,5 @@
 import axios from "axios";
+import userInfo from "../userInfo.service";
 // import authHeader from "../Utils/auth-header";
 axios.defaults.baseURL = process.env.REACT_APP_API_BASE_URL;
 
@@ -34,13 +35,18 @@ const deleteAssetsCollection = () => {
 };
 
 const getAssetById = (id) => {
-  return axios.post(`api/v1/assets/assetsummary/${id}`);
+  return axios.post(`api/v1/assets/assetsummary/${id}`, { userInfo });
+};
+
+const getVulnerabilityByUserAndAssetId = (id) => {
+  return axios.post(`api/v1/assets/vulnerability-details/${id}`, { userInfo });
 };
 
 const assetServices = {
   createAnalyzerData,
   deleteAssetsCollection,
   getAssetById,
+  getVulnerabilityByUserAndAssetId,
 };
 
 export default assetServices;

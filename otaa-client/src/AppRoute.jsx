@@ -80,9 +80,9 @@ const AppRoute = () => {
     <div>
       <Suspense fallback={<h6>Loading...</h6>}>
         <Routes>
-          <Route path="/" element={<Home />} />
+          {/*<Route path="/" element={<Home />} />*/}
+          {/*<Route path="/home" element={<Home />} />*/}
           <Route path="/login" element={<Login />} />
-          <Route path="/home" element={<Home />} />
           <Route path="/logincheck" element={<Logincheck />} />
           <Route path="/forgotPassword" element={<ForgotPassword />} />
 

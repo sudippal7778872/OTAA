@@ -14,6 +14,11 @@ Router.post(
   `${path}/vulnerability-summery`,
   controller.getVulnerabilitySummeryByUserId
 );
+Router.post(
+  `${path}/vulnerability-details/:id`,
+  controller.getVulnerabilityByUserAndAssetId
+);
+
 // Router.post(`${path}`, controller.createAsset);
 // Router.get(`${path}`, controller.executeScriptTest);
 // Router.get(`${path}`, controller.executeScriptTestWithArgument);

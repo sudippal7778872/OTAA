@@ -205,9 +205,23 @@ const executeScriptTestWithArgument = async (userId, fileNamePath) => {
 //get assets for assetSummary page
 exports.getAssetById = catchAsync(async (req, res, next) => {
   const { id } = req.params;
-  // console.log("id is", id)
-  const document = await Asset.findById({ _id: id });
-  // console.log("Document is", document)
+  const userId = req.body.userInfo._id;
+
+  const pipeline = [
+    { $match: { UserID: userId } },
+    { $unwind: "$assets_summary" },
+    { $match: { "assets_summary.Asset_ID": +id } },
+    {
+      $group: {
+        _id: "$_id",
+        UserID: { $first: "$UserID" },
+        assets_summary: { $push: "$assets_summary" },
+      },
+    },
+  ];
+
+  const document = await Asset.aggregate(pipeline);
+
   if (!document) {
     return next(appError("No Document found", 404));
   }
@@ -267,3 +281,30 @@ exports.getVulnerabilitySummeryByUserId = catchAsync(async (req, res, next) => {
   }
   res.status(200).json({ status: "success", data: document });
 });
+
+// get vulnerability by user Id for specific assets id
+exports.getVulnerabilityByUserAndAssetId = catchAsync(
+  async (req, res, next) => {
+    const { id } = req.params;
+    const userId = req.body.userInfo._id;
+    const pipeline = [
+      { $match: { UserID: userId } },
+      { $unwind: "$vulnerability_summary" },
+      { $match: { "assets_summary.Asset_ID": +id } },
+      {
+        $group: {
+          _id: "$_id",
+          UserID: { $first: "$UserID" },
+          vulnerability_summary: { $push: "$vulnerability_summary" },
+        },
+      },
+    ];
+
+    const result = await Asset.aggregate(pipeline);
+    const document = result[0];
+    if (!document) {
+      return next(appError("No Document found", 404));
+    }
+    res.status(200).json({ status: "success", data: document });
+  }
+);

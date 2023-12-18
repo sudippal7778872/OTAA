@@ -141,6 +141,10 @@ const vulnerabilitySummerySchema = new mongoose.Schema({
 });
 
 const assetSummerySchema = new mongoose.Schema({
+  Asset_ID: {
+    type: String,
+    required: [true, "Asset_ID is required"],
+  },
   Vendor_ID: {
     type: String,
     default: "-",

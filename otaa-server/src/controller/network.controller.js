@@ -4,11 +4,11 @@ const appError = require("../utils/appError");
 const catchAsync = require("../utils/catchAsync");
 const { exec } = require("child_process");
 const { PythonShell } = require("python-shell");
+const assetsController = require("./asset.controller");
 
 exports.getAllNetworkDetails = catchAsync(async (req, res, next) => {
   const pageSize = req.body.pageSize;
   const pageNumber = req.body.pageNumber;
-  console.log("body is ", req.body);
   const query = { UserID: req.body.userId };
   const pipeline = [
     { $match: query }, // Filter documents with userId: 1
@@ -52,81 +52,34 @@ exports.deleteNetworkCollection = catchAsync(async (req, res, next) => {
 });
 
 //get network for specific Assets by assets id
-const findAssetById = async (param) => {
+const getAssetById = async (param) => {
   try {
     const { id, userId } = param;
-    const result = await Asset.findOne({ _id: id, userId });
-    return result;
-  } catch (err) {
+
+    const pipeline = [
+      { $match: { UserID: userId } },
+      { $unwind: "$assets_summary" },
+      { $match: { "assets_summary.Asset_ID": +id } },
+      {
+        $group: {
+          _id: "$_id",
+          UserID: { $first: "$UserID" },
+          assets_summary: { $push: "$assets_summary" },
+        },
+      },
+    ];
+    const document = await Asset.aggregate(pipeline);
+    return document[0].assets_summary[0];
+  } catch (error) {
     console.log(`Error ocuured in NetworkController findAssetById ${err}`);
   }
 };
 
-// exports.getNetworkForAssets = catchAsync(async (req, res, next) => {
-//   const { id, userId, pageNumber, pageSize } = req.body;
-//   console.log("body is", req.body);
-//   const result = await findAssetById({ id, userId });
-//   if (result) {
-//     console.log("result is", result.IP);
-//     const query = {
-//       UserID: userId,
-//       $or: [
-//         { "Network_Summary.Device_A": result.IP },
-//         { "Network_Summary.Device_B": result.IP },
-//       ],
-//     };
-//     const pipeline = [
-//       {
-//         $match: {
-//           UserID: userId,
-//           $or: [
-//             { "Network_Summary.Device_A": result.IP },
-//             { "Network_Summary.Device_B": result.IP },
-//           ],
-//         },
-//       },
-//       {
-//         $project: {
-//           UserID: 1,
-//           Network_Summary: {
-//             $filter: {
-//               input: "$Network_Summary",
-//               as: "summary",
-//               cond: {
-//                 $or: [
-//                   { $eq: ["$$summary.Device_A", result.IP] },
-//                   { $eq: ["$$summary.Device_B", result.IP] },
-//                 ],
-//               },
-//             },
-//           },
-//         },
-//       },
-//       {
-//         $project: {
-//           UserID: 1,
-//           Network_Summary: {
-//             $slice: ["$Network_Summary", pageSize * pageNumber, pageSize],
-//           }, // Slice the first 5 objects
-//           Total_Count: { $size: "$Network_Summary" },
-//         },
-//       },
-//     ];
-
-//     const doc = await Network.aggregate(pipeline);
-//     const document = doc[0];
-//     return res.status(200).json({ status: "success", data: document });
-//   } else {
-//     return res.status(200).json({ status: "success", data: "no data found" });
-//   }
-// });
-
 exports.getNetworkForAssets = catchAsync(async (req, res, next) => {
-  const { id, userId, pageNumber, pageSize } = req.body;
-  console.log("body is", req.body);
-  const result = await findAssetById({ id, userId });
+  const { userId, pageNumber, pageSize } = req.body;
+  const id = +req.body.id;
+  const result = await getAssetById({ id, userId });
   if (result) {
-    console.log("result is", result.IP);
     const query = {
       UserID: userId,
       $or: [
@@ -183,15 +136,10 @@ exports.getNetworkForAssets = catchAsync(async (req, res, next) => {
 // get network map details for corresponding Assets
 
 exports.getNetworkMapForAssets = catchAsync(async (req, res, next) => {
-  console.log("body is", req.body);
   const { id, userId, pageNumber, pageSize } = req.body;
-
   // Find the asset by id and userId
-  const result = await findAssetById({ id, userId });
-
+  const result = await getAssetById({ id, userId });
   if (result) {
-    console.log("result is", result.IP);
-
     // Construct the MongoDB aggregation pipeline
     const pipeline = [
       {
