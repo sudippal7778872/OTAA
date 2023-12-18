@@ -237,7 +237,7 @@ exports.getAssetSummeryByUserId = catchAsync(async (req, res, next) => {
     return next(appError("No Document found", 404));
   } else {
     document.assets_summary.forEach((el) => {
-      el.Vulnerability_Count = el.Vulnerabilitiy.length;
+      el.Vulnerability_Count = el.Vulnerability.length;
     });
   }
   res.status(200).json({ status: "success", data: document });

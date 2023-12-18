@@ -120,8 +120,9 @@ def call_vulnerability(vendor,product):
     #     results.append(temp_dict)
     return results
 
-def call_for_vulnerability_asset(adv_no,title,vul_type,asset_mac,asset_ip):
+def call_for_vulnerability_asset(adv_no,title,vul_type,asset_mac,asset_ip,vulnerability_id):
     vulnerability={
+                "Vulnerability_ID":vulnerability_id,
                 "Advisory_No": adv_no,
                 "Title": title,
                 "Type": vul_type,
@@ -132,7 +133,10 @@ def call_for_vulnerability_asset(adv_no,title,vul_type,asset_mac,asset_ip):
 
 def call_for_asset_vulnerability(data_list):
     data_list = [{key.replace(' ', '_'): value for key, value in item.items()} for item in data_list]
+    asset_id=1
+    vul_id=1
     for entry in data_list:
+        entry["Asset_ID"]=asset_id
         if 'Product_Name' in entry:
             vendor_id=entry['Vendor_ID']
             product_name=entry['Product_Name']
@@ -142,11 +146,11 @@ def call_for_asset_vulnerability(data_list):
             product_name=entry['System_Name']
         asset_mac=entry["Mac"]
         asset_ip=entry["IP"]
-
+        
         result=call_vulnerability(vendor_id,product_name) #list has been returned
         # result=call_vulnerability("ROCKWELL","EN2T")
         if result:
-
+            
             entry["Vulnerability"]=result
 
             for vuln in result:
@@ -154,10 +158,11 @@ def call_for_asset_vulnerability(data_list):
                     adv_no=vuln["Advisory_No"]
                     title=vuln["Title"]
                     vul_type=vuln["Type"]
-                    call_for_vulnerability_asset(adv_no,title,vul_type,asset_mac,asset_ip)
+                    call_for_vulnerability_asset(adv_no,title,vul_type,asset_mac,asset_ip,vul_id)
+                    vul_id=vul_id+1
         else:
             entry["Vulnerability"]=result
-
+        asset_id=asset_id+1
     
 
     user_data = {
