@@ -40,7 +40,13 @@ const AssetSummery = () => {
             <Grid container rowSpacing={8} columnSpacing={5}>
               <Grid item xs={4}>
                 <section style={{ height: "6rem" }}>
-                  <p style={paragraphStyle}>Vendor ID</p>
+                  <p style={paragraphStyle}>MAC Manufacturer</p>
+                  <h3>{assetDetails.MAC_Manufacturer}</h3>
+                </section>
+              </Grid>
+              <Grid item xs={4}>
+                <section style={{ height: "6rem" }}>
+                  <p style={paragraphStyle}>Manufacturer</p>
                   <h3>{assetDetails.Vendor_ID}</h3>
                 </section>
               </Grid>
@@ -60,7 +66,7 @@ const AssetSummery = () => {
               <Grid item xs={4}>
                 <section style={{ height: "6rem" }}>
                   <p style={paragraphStyle}>Version</p>
-                  <h3>{assetDetails.Version}</h3>
+                  <h3>{assetDetails.Firmware_Version}</h3>
                 </section>
               </Grid>
               <Grid item xs={4}>
@@ -92,6 +98,18 @@ const AssetSummery = () => {
                 <section style={{ height: "6rem" }}>
                   <p style={paragraphStyle}>System Description</p>
                   <h3>{assetDetails["System_Description"]}</h3>
+                </section>
+              </Grid>
+              <Grid item xs={4}>
+                <section style={{ height: "6rem" }}>
+                  <p style={paragraphStyle}>Module Number</p>
+                  <h3>{assetDetails.Module_Number}</h3>
+                </section>
+              </Grid>
+              <Grid item xs={4}>
+                <section style={{ height: "6rem" }}>
+                  <p style={paragraphStyle}>CPU Type</p>
+                  <h3>{assetDetails.CPU_Type}</h3>
                 </section>
               </Grid>
             </Grid>

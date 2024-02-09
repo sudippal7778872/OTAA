@@ -157,7 +157,7 @@ const Navbar = () => {
         sx={{
           //Topbar new background color added
           background:
-          " linear-gradient(138deg, rgba(29,140,187,1) 18%, rgba(77,196,213,1) 50%, rgba(31,179,200,1) 86%)",
+            " linear-gradient(138deg, rgba(29,140,187,1) 18%, rgba(77,196,213,1) 50%, rgba(31,179,200,1) 86%)",
         }}
       >
         <Toolbar justifyContent="right" style={{ display: "flex" }}>
@@ -184,7 +184,7 @@ const Navbar = () => {
               background={colors.primary[400]}
               borderRadius="3px"
             >
-              <h3>OT Asset Analyzer</h3>
+              <h3>ScadaHawk</h3>
               {/* ICONS */}
             </Box>
 

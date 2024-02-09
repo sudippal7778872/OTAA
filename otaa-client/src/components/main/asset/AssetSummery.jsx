@@ -76,6 +76,14 @@ const AssetSummery = () => {
       sortable: false,
     },
     {
+      field: "MAC_Manufacturer",
+      headerName: "Mac Manufacturer",
+      width: 190,
+      disableClickEventBubbling: true,
+      disableColumnMenu: true,
+      sortable: false,
+    },
+    {
       field: "Vendor_ID",
       headerName: "Manufacturer",
       width: 190,
@@ -100,7 +108,7 @@ const AssetSummery = () => {
       sortable: false,
     },
     {
-      field: "Version",
+      field: "Firmware_Version",
       headerName: "Firmware Version",
       width: 190,
       disableClickEventBubbling: true,
