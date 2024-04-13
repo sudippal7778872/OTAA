@@ -1,0 +1,13 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-14-114-02
+Title:Siemens SIMATIC S7-1200 CPU Web Multiple Vulnerabilities (ICSA-14-114-02) (SSA-892012)
+Type: bhpp_vuln
+VulnID: 591071
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "((SIMATIC|SIPLUS)\\sS7\\-1200\\sCPU)\\b", version = "^(2.\\d|3.\\d)"}
+
+#arg1:https://regex101.com/r/zonB3v/1
+
+
+	

@@ -1,0 +1,14 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-172-03
+Title: Phoenix Contact Classic Line Controllers Vulnerability (ICSA-22-172-03)
+Type: bhpp_vuln
+VulnID: 590969
+Vulnflags: vuln
+manufacturer : "Phoenix Contact"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "Controller - ILC 131 ETH:ILC 131 ETH|Controller - ILC 151 ETH:ILC 151 ETH|Controller - ILC 131 ETH\\/XC:ILC 131 ETH\\/XC|Controller - ILC 151 ETH\\/XC:ILC 151 ETH\\/XC|Controller - ILC 171 ETH 2TX:ILC 171 ETH 2TX|Controller - ILC 191 ETH 2TX:ILC 191 ETH 2TX|Controller - ILC 130 ETH:ILC 130 ETH|Controller - ILC 150 ETH:ILC 150 ETH|Controller - ILC 170 ETH 2TX:ILC 170 ETH 2TX|Controller - ILC 151 GSM\\/GPRS:ILC 151 GSM\\/GPRS|Controller - ILC 370 PN 2TX-IB\\/M:ILC 370 PN 2TX|Controller - AXC 1050:AXC 1050|Controller - AXC 1050 XC:AXC 1050 XC|Controller - AXC 3050:AXC 3050|Controller - RFC 480S PN 4TX:RFC 480S PN 4TX|Controller - RFC 470S PN 3TX:RFC 470S PN 3TX|Controller - RFC 470 PN 3TX:RFC 470 PN 3TX|Controller - RFC 460R PN 3TX:RFC 460R PN 3TX|Controller - RFC 460R PN 3TX:RFC 460R PN 3TX-S|Controller - RFC 430 ETH-IB:RFC 430 ETH|Controller - RFC 450 ETH-IB:RFC 450 ETH-IB|Controller - FC 350 PCI ETH:FC 350 PCI ETH"}
+
+#arg1 https://regex101.com/r/ZIoduC/3
+
+##Remarks
+##QID and title are generated
+##Ready to release

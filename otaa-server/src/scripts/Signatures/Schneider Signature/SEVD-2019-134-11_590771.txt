@@ -1,0 +1,20 @@
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Security+and+Safety+Notice&p_File_Name=SEVD-2019-134-11_Modicon_Controllers_Security_Notification_V7.0.pdf&p_Doc_Ref=SEVD-2019-134-11&_ga=2.35992416.1156329980.1669355704-875239440.1662434919
+Title: Schneider Electric Modicon Controllers Multiple Vulnerabilities (SEVD-2019-134-11)
+Type: bhpp_vuln
+VulnID: 590771
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "3.10", model ="Modicon\\sM580"}
+arg#2:{min = "0.0.0", patched = "3.20", model ="Modicon\\sPremium"}
+arg#3:{min = "0.0.0", patched = "3.30", model ="Modicon\\sM340"}
+arg#4:{min = "0.0.0", patched = "1.80", model ="Modicon\\sMC80\\:BMKC80"}
+arg#5:{min = "0.0.0", patched = "99.99.99", model ="Modicon\\sMomentum\\:171CBU"}
+arg#6:{min = "0.0.0", patched = "3.60", model ="Modicon\\sQuantum\:\\w+"}
+
+#regex_link1: https://regex101.com/r/bSsrKw/2 
+#regex_link2: https://regex101.com/r/A4iJAx/1
+#regex_link3: https://regex101.com/r/WyHoAp/1
+#regex_link4: https://regex101.com/r/jjBjmN/1
+#regex_link5: https://regex101.com/r/KCIVft/1
+#regex_link6: https://regex101.com/r/eMD58l/1

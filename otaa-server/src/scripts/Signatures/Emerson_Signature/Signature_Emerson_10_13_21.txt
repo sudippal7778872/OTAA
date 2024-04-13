@@ -1,0 +1,35 @@
+#For Advisory https://us-cert.cisa.gov/ics/advisories/ICSA-15-008-01A
+Title: Emerson HART DTM Vulnerability (Update A) Vulnerability(ICSA-15-008-01A)
+Type: bhpp_vuln
+VulnID:12358
+Func: ics_device_firmware_exprudp
+manufacturer: "Emerson"
+arg#1: {device = "(FIELDVUE\\sDVC6000\\sDigital\\sValve\\sController)", version = "2\\.01"}
+arg#2: {device = "(FIELDVUE\\sDVC2000\\sDigital\\sValve\\sController)", version = "1\\.01"}
+arg#3: {device = "(Micro\\sMotion\\sTransmitter\\:(1700|2500|2700|1500)", version = "5|6"}
+arg#4: {device = "(Micro\\sMotion\\sTransmitter\\:2400S)", version = "2|3|4"}
+arg#5: {device = "(^Micro.*(Controller\\:3\\d+|Transmitter\\:3\\d+)$)", version = "7"}
+arg#6: {device = "(Rosemount\\s1151\\sPressure\\sTransmitter)", version = "5|6"}
+arg#7: {device = "(^(Rosemount\\s2051\\w+).*(Meter|Transmitter)\\b)", version = "3|9|10"}
+arg#8: {device = "(^(Rosemount\\s2090).*(Meter|Transmitter)\\b)", version = "3"}
+#arg#9: {device = "(^(?!.*?3051(S|G)).*)", version = "3|7|9|10"}
+arg#10: {device = "(Rosemount\\s3051S\\sAdvanced\\sDiagnostics)", version = "2|3"}
+arg#11: {device = "(^(Rosemount\\s3051S)\\b.*(Sensor|System)\\b)", version = "1"}
+arg#12: {device = "(^(Rosemount\\s3051S\\w+|Rosemount\\s3051S).*(Meter|Transmitter)\\b)", version = "7"}
+#arg#13: {device = "(Rosemount\\s3095\\s(Multivariable|MultiVariable).*Transmitter\\b)", version = "2"}
+arg#14: {device = "(Rosemount\\s3100\\sUltrasonic\\sLiquid\\sLevel\\sTransmitter)", version = "5"}
+arg#15: {device = "(^(Rosemount\\s3144P)\\b.*Transmitter\\b)", version = "3|4|5|6"}
+arg#16: {device = "(^(Rosemount\\s333\\sHART\\sTri-Loop)\\b.*Converter\\b)", version = "1"}
+arg#17: {device = "(^(Rosemount\\s4500)\\b.*Transmitter\\b)", version = "7"}
+arg#18: {device = "(^(Rosemount\\s4600)\\b.*(Pressure\\sTransmitter)\\b)", version = "1"}
+arg#19: {device = "(^(Rosemount\\s5300)\\b.*Transmitter\\b)", version = "1|2|3"}
+arg#20: {device = "(^(Rosemount\\s5400)\\b.*Transmitter\\b)", version = "1|2"}
+arg#21: {device = "(^(Rosemount\\s644)\\b.*Transmitter\\b)", version = "6|7|8|9"}
+arg#22: {device = "(Rosemount\\s8712\\sMagnetic\\sFlowmeter\\sTransmitter\\:8712D)", version = "1"}
+arg#23: {device = "(Rosemount\\s8712\\sMagnetic\\sFlowmeter\\sTransmitter\\:8712E)", version = "3"}
+arg#24: {device = "(Rosemount\\s8712\\sMagnetic\\sFlowmeter\\sTransmitter\\:8712H)", version = "1"}
+arg#25: {device = "(Rosemount\\s8732\\sMagnetic\\sFlowmeter\\sTransmitter\\:8732C)", version = "7"}
+arg#26: {device = "(Rosemount\\s8732\\sMagnetic\\sFlowmeter\\sTransmitter\\:8732E)", version = "2"}
+arg#27: {device = "(Rosemount\\sSmart\\sVortex\\sFlowmeter\\:8800C)", version = "3"}
+arg#28: {device = "(Rosemount\\sSmart\\sVortex\\sFlowmeter\\:8800D)", version = "1|2"}
+arg#29: {device = "(Metran\\-150\\w+|Metran\\-150|Metran\\-75\\w+|Metran\\-75)", version = "1|2"}

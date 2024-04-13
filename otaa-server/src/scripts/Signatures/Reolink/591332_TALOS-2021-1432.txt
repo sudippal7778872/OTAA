@@ -1,0 +1,11 @@
+#For advisory https://talosintelligence.com/vulnerability_reports/TALOS-2021-1432
+Title: Reolink RLC-410W cgiserver.cgi command parser denial of service (DoS) Vulnerability (TALOS-2021-1432)
+Type: bhpp_vuln
+VulnID: 591332
+Vulnflags: vuln
+manufacturer : "Reolink"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "RLC\\-410W\\b", version = "^3\\.0\\.0\\.136"}
+
+
+#arg#1 regex: https://regex101.com/r/smxtCR/1 , https://regex101.com/r/yrWvHa/2

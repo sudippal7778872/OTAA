@@ -1,0 +1,10 @@
+#For Advisory https://www.ovarro.com/content-media/assigned/112144/TBOX-SA-2021-0006.pdf
+Title: Ovarro LT2 / RM2 / TG2 / CPU32 / CPU32-S2 product families Vulnerability (TBOX-SA-2021-0006)
+Type: bhpp_vuln
+VulnID: 591364
+Vulnflags: vuln
+manufacturer : "Ovarro"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.46", model = "T((B|b)ox)\\s(LT2|RM2|TG2)|TBox\\sMS\\-CPU32|T\\-box\\sMS\\-CPU32\\-S2\\b"}
+
+#arg#1 regex: https://regex101.com/r/RXzqG9/2 - modified link and regex 

@@ -1,0 +1,10 @@
+#For Advisory https://talosintelligence.com/vulnerability_reports/TALOS-2021-1420
+Title: Reolink RLC-410W cgiserver.cgi Login authentication bypass Vulnerability (TALOS-2021-1420)
+Type: bhpp_vuln
+VulnID: 591209
+Vulnflags: vuln
+manufacturer: "Reolink"
+Func: ics_device_firmware_exprudp
+arg#1:{device = "(RLC\\-410W)\\b" , version = "^3\\.0\\.0\\.136\\b"}
+
+regex link - https://regex101.com/r/M5ymYG/1

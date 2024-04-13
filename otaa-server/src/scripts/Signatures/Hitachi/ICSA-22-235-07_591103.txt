@@ -1,0 +1,28 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-235-07 and https://search.abb.com/library/Download.aspx?DocumentID=8DBD000111&LanguageCode=en&DocumentPartId=&Action=Launch
+Title: Hitachi Energy RTU500 Vulnerability (ICSA-22-235-07)
+Type: bhpp_vuln
+VulnID: 591103
+Vulnflags: vuln
+manufacturer :"Hitachi Energy"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "12.0.1.0", patched = "12.0.14.0", model ="RTU\\s500\\sSeries\\b"}
+arg#2:{min = "12.2.1.0", patched = "12.2.12.0", model ="RTU\\s500\\sSeries\\b"}
+arg#3:{min = "12.4.1.0", patched = "12.4.12.0", model ="RTU\\s500\\sSeries\\b"}
+arg#4:{min = "12.6.1.0", patched = "12.6.8.0", model ="RTU\\s500\\sSeries\\b"}
+arg#5:{min = "12.7.1.0", patched = "12.7.4.0", model ="RTU\\s500\\sSeries\\b"}
+arg#6:{min = "13.2.1.0", patched = "13.2.5.0", model ="RTU\\s500\\sSeries\\b"}
+
+#regex_link https://regex101.com/r/HI8EnX/1
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-235-07 and https://search.abb.com/library/Download.aspx?DocumentID=8DBD000111&LanguageCode=en&DocumentPartId=&Action=Launch
+Title: Hitachi Energy RTU500 Vulnerability (ICSA-22-235-07)
+Type: bhpp_vuln
+VulnID: 591103
+Vulnflags: vuln
+manufacturer :"Hitachi Energy"
+Func:ics_device_firmware_exprudp
+arg#1: {device = "RTU\\s500\\sSeries\\b", version = "^(13\\.3\\.1\\.0)\\b"}
+
+#regex_link https://regex101.com/r/HI8EnX/1
+
+

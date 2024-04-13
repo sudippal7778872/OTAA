@@ -1,0 +1,12 @@
+#For advisory https://talosintelligence.com/vulnerability_reports/TALOS-2021-1324
+Title: Lantronix PremierWave 2050 Web Manager FsCopyFile directory traversal Vulnerability (TALOS-2021-1324)
+Type: bhpp_vuln
+VulnID: 591354
+Vulnflags: vuln
+manufacturer : "Lantronix"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "PremierWave\\s2050", version = "^8\\.9\\.0\\.0"}
+
+
+
+#arg#1 regex: https://regex101.com/r/ifzARO/1 , https://regex101.com/r/2icBi2/2

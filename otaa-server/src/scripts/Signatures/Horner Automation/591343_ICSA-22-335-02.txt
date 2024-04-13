@@ -1,0 +1,10 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-335-02
+Title: : Horner Automation Remote Compact Controller Inadequate Encryption Strength, Use of Hard-coded Cryptographic Key, Excessive Reliance on Global Variables Multiple Vulnerabilities (ICSA-22-335-02)
+Type: bhpp_vuln
+VulnID: 591343
+Vulnflags: vuln
+manufacturer: "Horner Automation"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "RCC972\\b", version = "^15\\.40\\b"}
+
+#arg1 regex link: https://regex101.com/r/KptiZE/1 & https://regex101.com/r/HuR2BN/1

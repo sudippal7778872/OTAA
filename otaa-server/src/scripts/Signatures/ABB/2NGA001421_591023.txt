@@ -1,0 +1,13 @@
+#For Advisory https://search.abb.com/library/Download.aspx?DocumentID=2NGA001421
+Title:ABB Relion REX640 Insufficient file access control Vulnerability (2NGA001421)
+Type:bhpp_vuln
+VulnID:591023 
+manufacturer:"ABB"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "1.2.1", model ="REX640\\b"}
+
+#regex_link https://regex101.com/r/lnu00T/1
+
+
+
+

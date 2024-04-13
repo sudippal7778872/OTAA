@@ -1,0 +1,10 @@
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Technical+leaflet&p_File_Name=SEVD-2020-343-09_Modicon_M258_Logic_Controllers_SoMachine_SoMachine_Motion_Security_Notification.pdf&p_Doc_Ref=SEVD-2020-343-09&_ga=2.222886814.449275983.1663306202-875329093.1650947280
+Title:Schneider Electric Modicon M258 Logic Controllers Vulnerability (SEVD-2020-343-09)
+Type:bhpp_vuln
+VulnID:591065
+Vulnflags:vuln
+manufacturer:"Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched="5.0.4.11",model="Modicon\\sM258\\b"}
+
+#arg1:https://regex101.com/r/s9zHlE/1

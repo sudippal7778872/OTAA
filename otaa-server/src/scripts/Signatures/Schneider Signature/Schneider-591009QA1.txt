@@ -1,0 +1,10 @@
+#For Advisory https://www.se.com/ww/en/download/document/SEVD-2019-281-01/
+Title: Schneider Electric Modicon Controllers File and Directory Information Exposure Vulnerability (SEVD-2019-281-01)
+Type:bhpp_vuln
+VulnID:591009
+manufacturer:"Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched ="99.99.99", model ="Modicon\\s(M340|Quantum|Premium)\\b|(Modicon.+)?M580\\b"}
+
+#1-https://regex101.com/r/XE6ZE5/1
+

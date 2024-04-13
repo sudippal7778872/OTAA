@@ -1,0 +1,12 @@
+#For Advisory https://www.moxa.com/en/support/product-support/security-advisory/mgate-5109-5101-protocol-gateways-vulnerability
+Title: Moxa MGate 5109 and MGate 5101-PBM-MN Series Protocol Gateways Vulnerability (MPSA-211208)
+Type: bhpp_vuln
+VulnID: 591390
+Vulnflags: vuln
+manufacturer : "Moxa"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "2.3", model = "MGate\\s5109\\sSeries\\b"}
+arg#2: {min = "0.0.0", patched = "2.2", model = "MGate\\s5101\\-PBM\\-MN\\sSeries\\b"}
+
+#arg#1 regex: https://regex101.com/r/Tdx4ZB/1
+#arg#2 regex: https://regex101.com/r/IrDNwJ/1

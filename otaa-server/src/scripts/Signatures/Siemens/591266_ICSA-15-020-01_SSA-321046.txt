@@ -1,0 +1,11 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-321046.pdf or https://www.cisa.gov/uscert/ics/advisories/ICSA-15-020-01
+Title: Siemens SCALANCE X-300/X408 Switch Family Denial-of-Service (DoS) Multiple Vulnerabilities (ICSA-15-020-01, SSA-321046)
+Type: bhpp_vuln
+VulnID: 591266
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "4.0", model = "SCALANCE\\sX([A-Z]3\\d\\d|3\\d\\d)|SCALANCE\\sX408"}
+
+## arg#1 https://regex101.com/r/XyNGPA/1
+

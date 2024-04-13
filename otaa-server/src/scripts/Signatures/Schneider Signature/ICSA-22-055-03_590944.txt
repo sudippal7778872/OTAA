@@ -1,0 +1,13 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-055-03
+Title:Schneider Electric Easergy P5 and P3 (Update A) Multiple Vulnerabilities (ICSA-22-055-03)
+Type: bhpp_vuln
+VulnID: 590944
+Vulnflags:vuln
+manufacturer : "Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "01.402.101", model ="Easergy\\sP5\\b"}
+arg#2: {min = "0.0.0", patched = "30.205", model ="Easergy\\sP3\\b"}
+
+#regex_link https://regex101.com/r/GWSGBx/1
+#regex_link https://regex101.com/r/DQjSIO/1
+

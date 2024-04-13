@@ -1,0 +1,11 @@
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Technical+leaflet&p_File_Name=SEVD-2018-074-01+MGE+Network+Management+Card+Transverse+installed+in+MGE+UPS+and+MGE+STS+V1.1.pdf&p_Doc_Ref=SEVD-2018-074-01&_ga=2.221021592.1246438361.1662465150-414360940.1654493530
+Title:Schneider Electric MGE Network Management Card Transverse installed in MGE UPS and MGE STS Multiple Vulnerabilities (SEVD-2018-074-01)
+Type: bhpp_vuln
+VulnID: 591080
+manufacturer: "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99",model ="MGE\\s(Galaxy\\s(5000|6000|9000|3000|4000|PW)|EPS\\s(7000|8000|6000)|Comet|Upsilon\\sSTS)\\b"}
+
+#regex_link https://regex101.com/r/jezpTg/1 
+
+

@@ -1,0 +1,10 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-534763.html and https://us-cert.cisa.gov/ics/advisories/icsa-20-252-07
+Title: Siemens Industrial Products (Update F) Vulnerability(ICSA-20-252-07,SSA-534763)
+Type: bhpp_vuln
+VulnID:590202
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "SIMATIC\\s(Field\\sPG\\sM4|IPC((427|477|627|647|677|827|847)D|(347|547)E))\\b"}
+
+#regex_link 1 https://regex101.com/r/2sGopa/1
+

@@ -1,0 +1,9 @@
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Technical+leaflet&p_File_Name=SEVD-2019-190-03-Modicon-M580-Controller.pdf&p_Doc_Ref=SEVD-2019-190-03
+Title: Schneider Electric Modicon M580 Controller Vulnerability (SEVD-2019-190-03)
+Type: bhpp_vuln
+VulnID: 590767
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "2.90", model = "BME(P(58(2040(S)?|4040(S)?|(10|20)20(H)?|6040(C)?|30(20|40)|4020|5040(C)?))|H(58(60|20|40)40(C)?))"}  
+arg#2: {min = "0.0.0", patched = "2.16", model = "BMENOC0301"}   

@@ -1,0 +1,22 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-732250.html
+Title:Siemens Industrial Devices Multiple Vulnerabilities (SSA-732250)
+Type: bhpp_vuln
+VulnID: 590938
+Vulnflags:vuln
+manufacturer : "Siemens"
+Func:ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model ="LOGO\\!\\sCMR"}
+arg#2: {min = "0.0.0", patched = "7.1", model ="(RUGGEDCOM\\sRM1224\\-(EU\\s4G\\sRouter\\:6GK6108\\-4AM00\\-2BA2|NAM\\s4G\\sRouter\\:6GK6108\\-4AM00\\-2DA2)|SCALANCE\\s(M(8((04PB\\:6GK5804\\-0AP00\\-2AA2)|12\\-1\\sADSL\\-Router\\:6GK5812\\-1(A|B)A00\\-2AA2|16\\-1\\sADSL\\-Router\\:6GK5816\\-1(A|B)A00\\-2AA2|26\\-2\\sSHDSL\\-Router\\:6GK5826\\-2AB00\\-2AB2|74\\-(2(.+)?\\:6GK5874\\-2AA00\\-2AA2|3(.+)?\\:6GK5874\\-3AA00\\-2AA2)|76\\-(3.+\\:6GK5876\\-3AA02\\-2(B|E)A2|4.+\\:6GK5876\\-4AA00\\-2(B|D)A2))|UM856\\-1.+\\:6GK5856\\-2EA00\\-3(D|A)A1)|S615.+\\:6GK5615\\-0AA00\\-2AA2))\\b"}
+arg#3: {min = "0.0.0", patched = "3.3.46", model ="(CP\\s12(42\\-7\\sV2\\:6GK7242\\-7KX31\\-0XE0|43\\-(1\\:6GK7243\\-1BX30\\-0XE0|7\\sLTE\\s(EU\\:6GK7243\\-7KX30\\-0XE0|US\\:6GK7243\\-7SX30\\-0XE0)|8\\sIRC\\:6GK7243\\-8RX30\\-0XE0))|SIPLUS\\s(S7\\-1200\\sCP\\s1243\\-1(\\:6AG1243\\-1BX30\\-2AX0|\\sRAIL\\:6AG2243\\-1BX30\\-1XE0)|NET\\sCP\\s1242\\-7\\sV2\\:6AG1242\\-7KX31\\-7XE0))\\b"}
+arg#4: {min = "0.0.0", patched = "3.0.22", model ="(CP\\s1543\\-1\\:6GK7543\\-1AX00\\-0XE0|SIPLUS\\sNET\\sCP\\s1543\\-1\\:6AG1543\\-1AX00\\-2XE0)\\b"}
+arg#5: {min = "0.0.0", patched = "1.1", model ="CP\\s1545\\-1\\:6GK7545\\-1GX00\\-0XE0\\b"}
+arg#6: {min = "0.0.0", patched = "5.0.14", model ="SIMATIC\\sRTU30(10C\\:6NH3112\\-0BA00\\-0XX0|30C\\:6NH3112\\-3BA00\\-0XX0|31C\\:6NH3112\\-3BB00\\-0XX0|41C\\:6NH3112\\-4BB00\\-0XX0)\\b"}
+
+#regex_link 1 https://regex101.com/r/rPjMBQ/2   
+#regex_link 2 https://regex101.com/r/F4BwW8/1   
+#regex_link 3 https://regex101.com/r/36GC8W/1  
+#regex_link 4 https://regex101.com/r/FT57e1/1  
+#regex_link 5 https://regex101.com/r/WnXUFi/1   
+#regex_link 6 https://regex101.com/r/LWzztu/1   
+
+##SINEMA Remote Connect Client--software

@@ -1,0 +1,24 @@
+#For Advisory https://www.se.com/ww/en/download/document/SEVD-2022-039-06/
+Title:Schneider Electric Harmony/Magelis iPC Series HMI Vulnerability (SEVD-2022-039-06)
+Type:bhpp_vuln
+VulnID:590905
+manufacturer:"Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "00.00.00", patched = "99.99.99", model ="Magelis.+iPC"}
+
+#link for arg#1 https://regex101.com/r/tUOhAT/1
+
+#########################################################################
+
+#For Advisory https://www.se.com/ww/en/download/document/SEVD-2018-081-01/
+Title:Schneider Electric Embedded FTP Servers for Modicon PAC Controllers Multiple Vulnerabilities (SEVD-2018-081-01)
+Type:bhpp_vuln
+VulnID:590907
+Vulnflags:vuln
+manufacturer:"schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "00.00.00", patched = "99.99.99", model ="Modicon\\s(M340|M580)\\b|Modicon\\sM340\\sEthernet.+\\:BMXNO(R02|E01|C0401|E(\\s?)01)|Modicon\\sPremium|Modicon\\sQuantum"} 
+
+##https://regex101.com/r/zPqR2C/5
+
+

@@ -1,0 +1,10 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2022-284-02&p_enDocType=Security+and+Safety+Notice&p_File_Name=SEVD-2022-284-02-EcoStruxure_Panel_Server_Box_PAS900_Security_Notification.pdf&_ga=2.83643921.624978513.1669086152-875239440.1662434919
+Title: Schneider Electric EcoStruxure Panel Server Box Multiple Vulnerabilties (SEVD-2022-284-02)
+Type: bhpp_vuln
+VulnID: 591217
+Vulnflags: vuln
+manufacturer : "Schneider Electric"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = " 3.1.18", model = "EcoStruxure\\sPanel\\sServer\\:PAS900\\b"}
+
+#regex_link: https://regex101.com/r/D7BqO2/1

@@ -1,0 +1,11 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-19-155-02 or https://dam-mdc.phoenixcontact.com/asset/156443151564/2df6c6746d5a24acbb83f4180cf24203/Security_Advisory_FL_NAT_SMx_CVE.pdf
+Title: Phoenix Contact FL NAT SMx Improper Access Control Vulnerability (ICSA-19-155-02, VDE-2019-006)
+Type: bhpp_vuln
+VulnID: 591281
+Vulnflags: vuln
+manufacturer : "Phoenix Contact"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "FL\\sNAT\\s(SMN\\s8(TX\\-M\\-DMG|TX\\-M|TX)|SMCS\\s8TX)\\b"}
+
+#regex_link https://regex101.com/r/FP5CSK/2
+

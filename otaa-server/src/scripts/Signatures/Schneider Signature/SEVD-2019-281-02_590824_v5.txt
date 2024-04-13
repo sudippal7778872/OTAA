@@ -1,0 +1,13 @@
+#For Advisory https://www.se.com/ww/en/download/document/SEVD-2019-281-02/
+Title: Schneider Electric Modicon Controllers Multiple Vulnerabilities (V5.0) (SEVD-2019-281-02)
+Type: bhpp_vuln
+VulnID: 590824
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "3.23", model = "Modicon\\sM580\\b"}
+arg#2: {min = "0.0.0", patched = "99.99.99", model = "Modicon(.+)?\\:(140CRA|BM\\wCRA)|(Modicon\\sM580(.+)?\\:(BMEP58|BMEH58)\\w+S|Modicon\\sM340)\\b"}
+
+
+#arg#1 regex: https://regex101.com/r/r42oxo/1
+#arg#2 regex: https://regex101.com/r/2k0YTm/1

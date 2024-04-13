@@ -1,0 +1,10 @@
+#For Advisory https://talosintelligence.com/vulnerability_reports/TALOS-2016-0241/
+Title: Moxa AWK-3131A Web Application onekey Information Disclosure Vulnerability (TALOS-2016-0241)
+Type: bhpp_vuln
+VulnID: 591177
+Vulnflags: vuln
+manufacturer : "Moxa"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "AWK\\-3131A\\b", version = "^1\\.1\\b"}
+
+#arg#1 regex: https://regex101.com/r/9RL06h/1 , https://regex101.com/r/ps9RNs/1

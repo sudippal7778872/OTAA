@@ -1,0 +1,84 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-159-11
+Title: Siemens SIMATIC NET CP 443-1 OPC UA Multiple Vulnerabilities (ICSA-21-159-11)
+Type: bhpp_vuln
+VulnID:590736
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "(CP\\s443\\-1\\sOPC\\sUA)\\b"}
+
+#arg#1 https://regex101.com/r/VxK5yT/1
+
+#########
+
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-159-10
+Title: Siemens SIMATIC TIM libcurl Multiple Vulnerabilities (ICSA-21-159-10)
+Type: bhpp_vuln
+VulnID:590737
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "2.2", model = "(TIM\\s1531\\sIRC)\\b"}
+
+#arg#1 https://regex101.com/r/7mbyV7/1
+
+
+###############
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-194-07
+Title: Siemens Industrial Products LLDP Multiple Vulnerabilities (ICSA-21-194-07)
+Type: bhpp_vuln
+VulnID:590738
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "17", model = "SIMATIC\\sHMI.+Unified\\sComfort\\sPanel"}
+arg#2: {min = "0.0.0", patched = "99.99.99", model = "(SIPLUS.+)?CP\\s(1243\\-1|1543SP\\-1|1542SP\\-1\\sIRC)|CP\\s(1243\\-8\\sIRC|1542SP\\-1|1545\\-1)\\b"}
+arg#3: {min = "0.0.0", patched = "3.0.0", model = "(SIPLUS\\sNET\\s)?CP\\s1543\\-1\\b"}
+arg#4: {min = "0.0.0", patched = "2.0.1", model = "SINUMERIK\\sONE\\sMCP"}
+arg#5: {min = "0.0.0", patched = "2.2", model = "(SIPLUS\\s)?TIM\\s1531\\sIRC"}
+
+#arg#1 https://regex101.com/r/TSqlpT/2 unified comfort panel
+#agr#2 https://regex101.com/r/IzpBf3/1 CP 1243-1
+#arg#3 https://regex101.com/r/YcX0D0/1 CP 1543-1                     
+#arg#4 https://regex101.com/r/SC7MMn/2 SINUMERIK ONE MCP
+#arg#5 https://regex101.com/r/XsTwQQ/1 TIM 1531 IRC                 
+
+################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-222-09
+Title: Siemens SIMATIC S7-1200 Improper Authentication Vulnerability (ICSA-21-222-09)
+Type: bhpp_vuln
+VulnID:590739
+Func: ics_device_firmware_exprudp
+manufacturer: "Siemens"
+arg#1: {device = "(SIMATIC|SIPLUS)\\sS7\\-1200\\sCPU", version = "^4\\.5\\.0"}
+
+#arg#1 https://regex101.com/r/iTfmzE/1 S7-1200 cpu Family
+
+#########################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-257-15
+Title: Siemens SIMATIC NET CP Modules Vulnerability (ICSA-21-257-15)
+Type: bhpp_vuln
+VulnID: 590740
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_range_non_rgp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "CP\\s(343\\-1\\sERPC|443\\-1\\sAdvanced)|(SIPLUS\\sNET\\s)?CP\\s?(343\\-1\\s(Advanced|Lean)|343\\-1|443\\-1\\sADVANCED|443\\-1)\\b",not_match="CP\\s443\\-1\\s(OPC\\sUA|RNA)\\b"}
+
+#arg#1  https://regex101.com/r/RJzhsP/1   Not_Match : https://regex101.com/r/sobu3z/1
+
+#############################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-259-01
+Title: Siemens RUGGEDCOM ROX Multiple Vulnerabilities (ICSA-21-259-01)
+Type: bhpp_vuln
+VulnID: 590741
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "2.14.1", model = "RUGGEDCOM\\s(MX(5000)|RX(1400|5000|15(01|00|10|11|12|24|36)))\\b"}  
+
+#arg#1 #https://regex101.com/r/e1MW2P/1

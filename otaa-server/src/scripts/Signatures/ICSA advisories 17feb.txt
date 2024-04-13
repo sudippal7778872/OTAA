@@ -1,0 +1,70 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-21-350-07
+Title: Siemens POWER METER SICAM Q100 Vulnerability (ICSA-21-350-07) 
+Type: bhpp_vuln
+VulnID: 590714
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "2.41", model = "SICAM\\sQ100\\sPower\\sQuality\\sRecorder\\:7KG9501\\-0AA(01|31)\\-(0|2)AA1"} 
+#regex_link https://regex101.com/r/tyNcti/1
+########################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-21-315-06
+Title: Siemens SCALANCE W1750D Multiple Vulnerabilities (ICSA-21-315-06) 
+Type: bhpp_vuln
+VulnID:590715
+Vulnflags:vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "8.7.1.3", model ="SCALANCE\\sW1750D\\b"} #regex_link https://regex101.com/r/xXVwio/1
+arg#2: {min = "8.7.1.3", patched = "99.99.99", model ="SCALANCE\\sW1750D\\b"} #regex_link https://regex101.com/r/xXVwio/1
+
+########################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-21-257-06
+Title:Siemens SIMATIC CP Vulnerability (ICSA-21-257-06) 
+Type: bhpp_vuln
+VulnID: 590716
+Vulnflags:vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "3.0", model ="(SIPLUS.+)?CP\\s1543\\-1"} #regex_link https://regex101.com/r/OoaW2L/1
+arg#2: {min = "0.0.0", patched = "99.99.99", model ="CP\\s(1545)\\-1"} #regex_link https://regex101.com/r/b62d3i/1
+
+########################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-21-257-10
+Title: Siemens SIPROTEC 5 relays (Update A) Multiple Vulnerabilities (ICSA-21-257-10) 
+Type: bhpp_vuln
+VulnID:590713 
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "8.80", model ="(SIPROTEC)\\s\\d\\w\\w\\d{2}"} #https://regex101.com/r/KW0er6/1
+
+########################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-21-257-11
+Title: Siemens SIMATIC RFID Vulnerability (ICSA-21-257-11) 
+Type: bhpp_vuln
+VulnID:590693
+Vulnflags:vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model ="SIMATIC\\s(RF3|.+RF6)50M"} #regex_link https://regex101.com/r/yilxAs/1
+
+
+########################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-21-257-13
+Title:Siemens LOGO! CMR and SIMATIC RTU 3000 (Update A) Vulnerability (ICSA-21-257-13) 
+Type: bhpp_vuln
+VulnID: 590694
+Vulnflags:vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "2.2", model ="LOGO\\!\\sCMR20(20\\:6GK7142\\-7B|40\\:6GK7142\\-7E)X00\\-0AX0"} #regex_link https://regex101.com/r/EomdEs/1
+arg#2: {min = "0.0.0", patched = "4.0.9", model ="SIMATIC\\sRTU3\\d{3}"} #regex_link https://regex101.com/r/h9ABNk/1
+arg#3: {min = "0.0.0", patched = "4.0.9", model ="SIMATIC\\sRTU30(31C\\:6NH3112\\-3BB|41C\\:6NH3112\\-4BB|10C\\:6NH3112\\-0BA|30C\\:6NH3112\\-3BA)00\\-0XX0"} #regex_link https://regex101.com/r/jKcqJz/1
+
+########################
+
+

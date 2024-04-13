@@ -1,0 +1,10 @@
+#For Advisory https://cert.vde.com/en/advisories/VDE-2020-046/
+Title: Phoenix Contact mGuard Missing Initialization of Resource Vulnerability (VDE-2020-046)
+Type:bhpp_vuln
+VulnID: 591336
+Vulnflags:vuln
+manufacturer:"Phoenix Contact"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "00.00.00", patched = "8.8.3", model ="(TC\\sMGUARD\\sRS4000\\s(4G\\s(VZW\\sVPN|ATT\\sVPN|VPN)|3G\\sVPN)|FL\\sMGUARD\\sRS4004\\s(TX\\/DTX\\sVPN|TX\\/DTX))\\b"}
+
+#regex_link 1 https://regex101.com/r/LrohwL/1 

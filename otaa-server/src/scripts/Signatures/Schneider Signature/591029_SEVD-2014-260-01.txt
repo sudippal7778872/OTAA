@@ -1,0 +1,29 @@
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Software+-+Hotfix+%26+Patch&p_File_Name=SEVD-2014-260-01.pdf&p_Doc_Ref=SEVD-2014-260-01&_ga=2.70596560.1552070961.1658727837-1596944300.1654494435
+Title: Schneider Electric Modicon PLC Ethernet Communication Modules Vulnerability (SEVD-2014-260-01)
+Type: bhpp_vuln
+VulnID: 591029
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "5.5", model = "(140CPU65(150|160|260)|TSXP57(4|5|6)634M)\\b"}
+arg#2: {min = "0.0.0", patched = "1.62", model = "(140NOC78(0|1)00\\b)"}
+arg#3: {min = "0.0.0", patched = "6.2", model = "140NOE77(101|111)\\b"}
+arg#4: {min = "0.0.0", patched = "2.05", model = "BMXNOC0401\\b"}
+arg#5: {min = "0.0.0", patched = "2.9", model = "BMXNOE(\\s)?0100\\b"}
+arg#6: {min = "0.0.0", patched = "6.0", model = "BMXNOE(\\s)?0110(H)?\\b"}
+arg#7: {min = "0.0.0", patched = "2.04", model = "TSXETC101\\b"}
+arg#8: {min = "0.0.0", patched = "5.7", model = "(TSXETY4103(C)?|TSXP57(1|2|3)634M)\\b"}
+arg#9: {min = "0.0.0", patched = "5.9", model = "TSXETY5103(C)?\\b"}
+arg#10: {min = "0.0.0", patched = "99.99.99", model = "(140NOC77100|140NOE77100|140NOE77110|140NOE771(01|11)C|140NWM10000|170ENT1100(1|2C|2)|171CCC960(20|30)(C)?|171CCC980(20|30)|BMXNOC0402|BMXNOR(\\s)?0200H|BMXP3420(20|20H|30|30H)|BMXP3420302(H)?|STBNI(C|P)2212|TSXETC0101|TSXET(C100|Z410|Z510)|TSXETY110WS(C)?|TSXNTP100|TSXP572623M(C)?|TSXP572823M(C)?|TSXP573623(AM|MC|M)|TSXP574823(AM|M|MC)|TSXWMY100(C)?)\\b"}
+
+#arg#1 regex: https://regex101.com/r/bhwj6W/1   
+#arg#2 regex: https://regex101.com/r/lmHZOc/1  
+#arg#3 regex: https://regex101.com/r/MT2MjV/1   
+#arg#4 regex: https://regex101.com/r/9qSGId/1  
+#arg#5 regex: https://regex101.com/r/BpVaha/1  
+#arg#6 regex: https://regex101.com/r/CAhsFS/1   
+#arg#7 regex: https://regex101.com/r/quJ6KJ/1   
+#arg#8 regex: https://regex101.com/r/NxgXAk/1   
+#arg#9 regex: https://regex101.com/r/jHHpfH/1   
+#arg#10 regex: https://regex101.com/r/Eq7v25/1
+
+#BMXPRMxxxx_Product does not exist

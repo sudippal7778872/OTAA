@@ -1,0 +1,11 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2017-052-02
+Title:Schneider Electric homeLYnk Controller Vulnerability (SEVD-2017-052-02)
+Type: bhpp_vuln
+VulnID: 591087
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.5.0", model="homeLYnk\\s(.+)?Controller"}
+
+#args:https://regex101.com/r/mGoAoC/1
+

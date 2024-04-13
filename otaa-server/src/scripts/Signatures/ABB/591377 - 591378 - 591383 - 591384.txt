@@ -1,0 +1,55 @@
+#For Advisory https://search.abb.com/library/Download.aspx?DocumentID=1MRG023264&LanguageCode=en&DocumentPartId=&Action=Launch&_ga=2.66939946.546603383.1631506049-655960548.1631071744
+Title:ABB Relion 670 series TCP Predictability Multiple Vulnerabilities (ABB-VU-PGGA-1MRG019772)
+Type:bhpp_vuln
+VulnID:591377
+Vulnflags:vuln
+manufacturer:"ABB"
+Func:ics_device_multiple_version_range_non_rgp function
+arg#1:{min = "00.00.00", patched = "2.0.0.4", model ="Relion\\s670\\sseries\\s(.+)\\:RES670\\b"}
+arg#2:{min = "00.00.00", patched = "2.0.0.9", model ="Relion\\s670\\sseries\\b" ,not_match="Relion\\s670\\sseries\\s(.+)\\:RES670\\b" }
+
+
+#link for arg#1 https://regex101.com/r/w6ql7P/2
+#link for arg#2 https://regex101.com/r/3T6Ge9/1
+
+###############################################
+
+#For Advisory https://search.abb.com/library/Download.aspx?DocumentID=1KGT090264&LanguageCode=en&DocumentPartId=&Action=Launch&_ga=2.37240868.546603383.1631506049-655960548.1631071744
+Title:ABB RTU500 series SSL 3.0 Protocol and POODLE Attack in the webserver component Vulnerability (ABB-VU-PSAC-1KGT090264)
+Type:bhpp_vuln
+VulnID:591378
+Vulnflags:vuln
+manufacturer:"ABB"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "10.0.0", patched = "10.8.7", model ="RTU\\s500\\sSeries\\b"}
+arg#2:{min = "11.0.0", patched = "11.3.1", model ="RTU\\s500\\sSeries\\b"}
+
+#link for arg#1 - https://regex101.com/r/Qef4NF/1
+
+ 
+###############################################
+
+#For Advisory https://search.abb.com/library/Download.aspx?DocumentID=1KGT090284&LanguageCode=en&DocumentPartId=&Action=Launch&_ga=2.29845307.546603383.1631506049-655960548.1631071744
+Title:ABB RTU500 series TCP Predictability Multiple Vulnerabilities (ABB-VU-PGGA-1KGT090284)
+Type:bhpp_vuln
+VulnID:591383
+Vulnflags:vuln
+manufacturer:"ABB"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "11.0.0", patched = "11.4.1", model ="RTU\\s500\\sSeries\\b"}
+
+#link for arg#1 - https://regex101.com/r/Qef4NF/1
+
+
+###################################################
+
+#For Advisory https://library.e.abb.com/public/676cdbcc5706458d8e2f34b886e67060/1MRG028797_A_en_Software_Vulnerability_Handling_Advisory_Ref__ABB-VU-PGGA-1MRG019772.pdf
+Title:ABB Relion 670 TCP Predictability Multiple Vulnerabilities (ABB-VU-PGGA-1MRG019772)
+Type:bhpp_vuln
+VulnID:591384
+Vulnflags:vuln
+manufacturer:"ABB"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "1.2", patched = "1.2.3.16", model ="RTU\\s500\\sSeries\\b"}
+
+#link for arg 1 -  https://regex101.com/r/Qef4NF/1

@@ -299,10 +299,10 @@ if data_list:
 
     # Parse the JSON data back into a list of dictionaries
     parsed_data = json.loads(json_data)
-
+    print(parsed_data)
     # Insert the JSON documents into the collection
     result = collection.insert_many(parsed_data)
-    # print(f"Inserted {len(result.inserted_ids)} documents")
+    #print(f"Inserted {len(result.inserted_ids)} documents")
 
 else:#
     pass

@@ -1,0 +1,16 @@
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Technical+leaflet&p_File_Name=SEVD-2019-134-10+-+Modicon+Controller.pdf&p_Doc_Ref=SEVD-2019-134-10
+Title: Schneider Electric Modicon Controllers Vulnerability (SEVD-2019-134-10)
+Type: bhpp_vuln
+VulnID: 590769
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "2.80.0", model = "Modicon\\sM580.+\\:BME(P(58(2040(S|H)?|4040(S)?|(10|20)20(H)?|6040(C)?|30(20|40)|4020|5040(C)?))|H(58(60|20|40)40(C)?))\\b"}
+arg#2: {min = "0.0.0", patched = "3.01.0", model = "Modicon\\sM340(.+)?\\:BMXP34(20(20H|302(H|CL)?)|2020|2000|20102(CL)?|1000(H)?)\\b"} 
+arg#3: {min = "0.0.0", patched = "2.40.0", model = "BM\\wCRA312\\d\\d(C)?\\b"} 
+arg#4: {min = "0.0.0", patched = "99.99.99", model = "(140CRA312\\d+|Modicon\\sPremium)\\b"} 
+
+#arg1 https://regex101.com/r/jpA2Gz/2
+#arg2 https://regex101.com/r/HX7zSG/1
+#arg3 https://regex101.com/r/1WnAAu/1
+#arg4 https://regex101.com/r/78R5Wz/2

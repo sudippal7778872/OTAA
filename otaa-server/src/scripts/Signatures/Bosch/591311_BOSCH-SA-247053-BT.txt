@@ -1,0 +1,10 @@
+#For https://psirt.bosch.com/security-advisories/bosch-sa-247053-bt.html
+Title: Bosch Rexroth PRA-ES8P2S Ethernet-Switch Multiple Vulnerabilities (BOSCH-SA-247053-BT)
+Type: bhpp_vuln
+VulnID: 591311
+Vulnflags: vuln
+manufacturer: "Bosch"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.01.08", model = "PRA\\-ES8P2S"}
+
+#arg1 regex link: https://regex101.com/r/D9tnWJ/1

@@ -1,0 +1,11 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-207-04
+Title: MOXA NPort 5110 Multiple Vulnerabilities (ICSA-22-207-04)
+Type: bhpp_vuln
+VulnID: 590979
+Vulnflags:vuln
+manufacturer : "Moxa"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "NPort\\s5110\\b" , version = "^2\\.10$"}
+  
+#regex_link https://regex101.com/r/SBIbaL/1        https://regex101.com/r/sd7XMA/1
+

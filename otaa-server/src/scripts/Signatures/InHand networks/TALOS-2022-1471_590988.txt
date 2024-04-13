@@ -1,0 +1,10 @@
+#For Advisory https://talosintelligence.com/vulnerability_reports/TALOS-2022-1471
+Title: InHand Networks InRouter302 Vulnerability (TALOS-2022-1471)
+Type:bhpp_vuln
+VulnID: 590988
+Vulnflags:vuln
+manufacturer:"InHand Networks"
+Func:ics_device_firmware_exprudp
+arg#1:{device = "(Compact Industrial LTE Router:IR302-LQ28|Compact Industrial LTE Router:IR302-FQ38|Compact Industrial LTE Router:IR302-FQ58|Compact Industrial LTE Router:IR302-FQ78|Compact Industrial LTE Router:IR302-FQ33|Compact Industrial LTE Router:IR302-FQ02|Compact Industrial LTE Router:IR302-EN00|Compact Industrial LTE Router:IR302-LQ00|Compact Industrial LTE Router:IR302-FQ53)\\b", version = "^3\\.5\\.4\\b"}
+
+#arg#1 regex: https://regex101.com/r/0HEKFu/1 , https://regex101.com/r/rShWgK/1

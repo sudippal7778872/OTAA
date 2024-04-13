@@ -1,0 +1,14 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-305120.pdf and https://www.cisa.gov/news-events/ics-advisories/icsa-20-196-03
+Title: Siemens SICAM MMU, SICAM T and SICAM SGU Multiple Vulnerabilities (SSA-305120, ICSA-20-196-03)
+Type: bhpp_vuln
+VulnID: 591400
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0", patched = "2.05", model = "SICAM\\sMMU\\b"}
+arg#2: {min = "0.0.0", patched = "99.99.99", model = "(SICAM\\s)?((I\\/O|SMART\\sGRID)(\\sUnit)?|SGU)\\b"}
+arg#3: {min = "0.0", patched = "2.18", model = "SICAM\\sT\\b"}
+
+#arg#1 regex: https://regex101.com/r/o50EVm/1
+#arg#2 regex: https://regex101.com/r/hCCeUE/1
+#arg#3 regex: https://regex101.com/r/wpku4c/1

@@ -1,0 +1,19 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-17-250-02 or https://cert.vde.com/en/advisories/VDE-2017-001/
+Title: Phoenix Contact mGuard denial of service (DoS) Vulnerability (VDE-2017-001)
+Type: bhpp_vuln
+VulnID: 591298
+Vulnflags: vuln
+manufacturer : "Phoenix Contact"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "8.0.0", patched = "8.5.2", model = "(FL\\sMGUARD\\s(CENTERPORT|DELTA\\s(TX\\/TX\\sVPN|TX\\/TX)|(GT\\/GT\\sVPN|GT\\/GT|(PCI(4000\\sVPN|4000)|PCIE4000\\sVPN|SMART2\\sVPN|SMART2|(RS(2000\\sTX\\/TX\\sVPN|2005\\sTX\\sVPN|400(0\\s(TX\\/TX\\s(VPN\\-M|VPN)|TX\\/TX\\-P|TX\\/TX)|4\\sTX\\/DTX\\sVPN|4\\sTX\\/DTX)|\\sVPN\\sANALOG)|RS))))|TC\\sMGUARD\\sRS(2000\\s(3|4)G\\sVPN|4000\\s(3|4)G\\sVPN))\\b"}
+
+#regex_link https://regex101.com/r/eBIb8Y/1
+
+
+
+
+
+
+
+
+

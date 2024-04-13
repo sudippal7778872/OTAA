@@ -1,0 +1,10 @@
+#For Advisory https://www.se.com/uk/en/download/document/SEVD-2022-193-03/
+Title: Schneider Electric Acti9 PowerTag Link C Improper Privilege Management Vulnerability (SEVD-2022-193-03)
+Type: bhpp_vuln
+VulnID: 591232
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "2.14.0", model = "Acti9\\sPowerTag\\sLink\\sC\\:A9XELC10"}
+
+#regex_link 1 https://regex101.com/r/Akkf36/1

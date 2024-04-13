@@ -1,0 +1,10 @@
+#For Advisory https://cert.vde.com/en/advisories/VDE-2019-015/
+Title: Phoenix Contact Classic Line industrial controllers Remote configuration using unauthenticated communication protocols Vulnerability (VDE-2019-015)
+Type: bhpp_vuln
+VulnID: 591322
+Vulnflags:vuln
+manufacturer : "Phoenix Contact"
+Func: ics_device_multiple_version_rangeudp
+arg#1:{min = "00.00.00", patched = "99.99.99", model ="((ILC\\s1\\d+(0|1)|AXC\\s(1050\\sXC|1050|3050))|RFC\\s4(30\\sETH\\-IB|50\\sETH\\-IB|60R\\sPN\\s(3TX\\-S|3TX)|70(S\\sPN\\s3TX|\\sPN\\s3TX)|80S\\sPN\\s4TX)|FC\\s350\\sPCI\\sETH)\\b"}
+
+#regex_link 1 https://regex101.com/r/KU3qLl/1

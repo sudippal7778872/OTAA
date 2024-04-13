@@ -1,0 +1,15 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-314-08 and https://www.ia.omron.com/product/vulnerability/OMSR-2022-001_en.pdf
+Title: Omron NJ/NX-series Machine Automation Controllers Multiple Vulnerabilities (ICSA-22-314-08, OMSR-2022-001)
+Type: bhpp_vuln
+VulnID: 591251
+Vulnflags: vuln
+manufacturer : "Omron"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.29", model = "NX7(.+)?Machine\\sAutomation\\sController"}
+arg#2: {min = "0.0.0", patched = "1.49", model = "(NX1|NJ)(.+)?Machine\\sAutomation\\sController"}
+arg#4: {min = "0.0.0", patched = "1.16", model = "NA\\-series(.+)?Programmable\\sTerminal\\:NA5\\-(15|12|9|7)W"}
+
+#regex_link 1 https://regex101.com/r/pq922b/1
+#regex_link 2 https://regex101.com/r/PfO4Qu/1 
+#regex_link 4 https://regex101.com/r/4qCLOS/1 
+

@@ -1,0 +1,10 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2022-039-04
+Title:Schneider Electric spaceLYnk Wiser For KNX and fellerLYnk Multiple Vulnerabilities (SEVD-2022-039-04)
+Type: bhpp_vuln
+VulnID:590765
+Vulnflags:vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "2.7.0", model ="(space|feller|home)LYnk|Wiser\\sfor.+KNX"} 
+
+link for arg#1 #https://regex101.com/r/thJCvK/1

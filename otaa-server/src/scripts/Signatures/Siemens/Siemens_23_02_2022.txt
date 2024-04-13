@@ -1,0 +1,169 @@
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-068-02
+Title: Siemens SCALANCE and RUGGEDCOM Devices SSH (Update A) Vulnerability (ICSA-21-068-02)
+Type: bhpp_vuln
+VulnID:590669
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "6.3.0", patched = "6.4.0", model = "(SCALANCE\\sM8\\d\\d)([A-Z]+|\\b)|RUGGEDCOM\\sRM1224\\b|SCALANCE\\sS615\\b"}
+arg#2: {min = "2.1.0", patched = "2.1.3", model = "(SCALANCE\\sSC6\\d\\d)\\b"}
+
+##arg#1  https://regex101.com/r/0JFMRG/3   
+##arg#2  https://regex101.com/r/ANDlcG/3      
+
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-068-03
+Title: Siemens SCALANCE and RUGGEDCOM Devices (Update A) Vulnerability (ICSA-21-068-03)
+Type: bhpp_vuln
+VulnID:590670
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "4.3", patched = "4.6", model = "(SCALANCE\\sM8\\d\\d)([A-Z]+|\\b)|RUGGEDCOM\\sRM1224\\b|SCALANCE\\sS615\\b"}
+arg#2: {min = "0.0.0", patched = "4.1", model = "((SCALANCE\\sX[B-C]2\\d\\d)([A-Z]|\\b)|SCALANCE\\s(XF2\\d\d\\-(.+)?BA|XP2\\d\\d|XR3\\d\\d(\\-.+)?WG))([A-Z]|\\b)"}
+arg#3: {min = "2.0.0", patched = "2.1.3", model = "(SCALANCE\\sSC6\\d\\d)\\b"}
+arg#4: {min = "0.0.0", patched = "6.2", model = "(SCALANCE\\s(XM4|XR5)\\d\\d)\\b"}
+
+##arg#1  https://regex101.com/r/0JFMRG/3       
+##arg#2  https://regex101.com/r/15raVj/4       
+##arg#3  https://regex101.com/r/ANDlcG/3       
+##arg#4  https://regex101.com/r/bJVGnX/3      
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-068-05
+Title: Siemens LOGO! 8 BM Denial-Of_Service (DOS) Vulnerability (ICSA-21-068-05)
+Type: bhpp_vuln
+VulnID:590671
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "(LOGO\\!8\\sBM)\\b"}
+
+##arg#1  https://regex101.com/r/IP47yg/2
+
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-068-07
+Title: Siemens TCP Stack of SIMATIC MV400 Multiple Vulnerabilities (ICSA-21-068-07)
+Type: bhpp_vuln
+VulnID:590672
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "7.0.6", model = "SIMATIC.+?MV4\\d\\d\\b"}
+
+#arg#1 https://regex101.com/r/xEj5OR/1  SIMATIC MV400 family
+
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-103-13
+Title: Siemens SIMOTICS CONNECT 400 Multiple Vulnerabilities (ICSA-21-103-13)
+Type: bhpp_vuln
+VulnID:590720
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "SIMOTICS\\sCONNECT\\s400\\b"}
+
+#arg#1 https://regex101.com/r/JCQef7/1   SIMOTICS CONNECT 400
+
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-068-10
+Title: Siemens SCALANCE and SIMATIC libcurl (Update B) Vulnerability (ICSA-21-068-10)
+Type: bhpp_vuln
+VulnID:590673
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "2.0.0", model = "(SCALANCE\\sSC6\\d\\d)\\b"}
+arg#2: {min = "0.0.0", patched = "3.0.0", model = "CM\\s1542\\-1\\b"}
+
+#arg#1 https://regex101.com/r/ANDlcG/3   SCALANCE SC-600
+#arg#2 https://regex101.com/r/nv1uFL/1   SIMATIC NET CM 1542-1
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-068-10
+Title: Siemens SCALANCE and SIMATIC libcurl (Update B) Vulnerability (ICSA-21-068-10)
+Type: bhpp_vuln
+VulnID:590673
+Vulnflags: vuln
+Func: ics_device_firmware_expr_not_match
+manufacturer: "Siemens"
+arg#1: {device = "CP\\s343\\-1\\sAdvanced\\b", version = "^3\\.0\\.(33|44|53)\\b"}
+
+#arg#1 https://regex101.com/r/Uzz5dg/1   SIMATIC NET CP 343-1 Advanced
+# Version Regx      https://regex101.com/r/7VZ2qO/1
+
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-103-11
+Title: Siemens TIM 4R-IE Devices Multiple Vulnerabilities (ICSA-21-103-11)
+Type: bhpp_vuln
+VulnID:590721
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "TIM\\s4R\\-IE(\\sDNP3)?\\b"}
+
+#arg#1 https://regex101.com/r/ktHX49/1       https://regex101.com/r/ktHX49/2 
+
+#For advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-103-07
+Title: Siemens Web Server of SCALANCE X200 (Update A) Multiple Vulnerabilities (ICSA-21-103-07)
+Type: bhpp_vuln
+VulnID: 590674
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_range_non_rgp
+arg#1: {min = "0.0.0", patched = "5.5.1", model = "SCALANCE\\s(X202\\-2PIRT\\sPRO|X200\\-4PIRT|X201-3PIRT\\sPRO|X201\\-3PIRT|X202\\-2IRT|X202\\-2PIRT|X204IRT\\sPRO|X204IRT|XF201\\-3P\\sIRT|XF202\\-2P\\sIRT|XF204IRT|XF204\\-2BA\\sIRT)\\b"}
+arg#2: {min = "0.0.0", patched = "5.2.5", model = "SCALANCE\\s(X204\\-(2LD\\sTS|2LD|2TS|2FM|2)|X206\\-(1LD|1)|X(208PRO|208)|X212\\-(2LD|2)|(X216|X224)|XF(206\\-1|208))\\b"}
+arg#3: {min = "0.0.0", patched = "5.2.5", model = "SCALANCE\\sXF(204\\-2|204)\\b", not_match="SCALANCE\\sXF204(\\-2BA\\s(DNA|IRT)|\\sDNA|\\-2BA|IRT)\\b"}
+
+#arg#1 https://regex101.com/r/vXsSci/2
+#arg#2 https://regex101.com/r/2v9B1I/1                              
+#arg#3 https://regex101.com/r/uVF5nZ/2  XF204, XF204-2
+#arg#3 not_match https://regex101.com/r/qfhhWj/1
+
+
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-131-15
+Title: Siemens SIMATIC S7-1500 Multiple Vulnerabilities (ICSA-21-131-15)
+Type: bhpp_vuln
+VulnID:590675
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "(CPU\\s1518\\-4\\sPN\\/DP\\sMFP\\:(6ES7518\\-4AX00\\-1AC0|6AG1518\\-4AX00\-4AC0)|CPU\\s1518F\\-4\\sPN\\/DP\\sMFP:6ES7518\\-4FX00\\-1AC0)"}
+
+#arg#1  https://regex101.com/r/hDvOg8/1
+
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-131-14
+Title: Siemens SCALANCE W1750D (Update B) Multiple Vulnerabilities (ICSA-21-131-14)
+Type: bhpp_vuln
+VulnID:590676
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "8.7.1.3", model = "SCALANCE\\sW1750D\\-2IA\\b"}
+
+#arg#1 https://regex101.com/r/Fx6Tzy/2
+
+
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-131-10
+Title: Siemens SCALANCE XM-400 and XR-500 Devices Vulnerability (ICSA-21-131-10)
+Type: bhpp_vuln
+VulnID:	590677
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "6.4.0", model = "(SCALANCE\\s(XM4|XR5)\\d\\d)\\b"}
+##arg#1  https://regex101.com/r/bJVGnX/3
+
+
+#For advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-131-07
+Title: Siemens SIMATIC NET CP343-1 Denial-of-Service (DOS) Vulnerability (ICSA-21-131-07)
+Type: bhpp_vuln
+VulnID: 590678
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_range_non_rgp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "((CP\\s343|CP343)\\-1\\s(Lean|LEAN)|CP343\\-1|CP\\s343\\-1|CP\\s343\\-1\\sAdvanced)\\b",not_match="CP\\s343\\-1\\s(ERPC|PN)\\b"}
+
+##arg#1  https://regex101.com/r/72ae9q/1  
+##not_match  https://regex101.com/r/5tsS0U/2  
+

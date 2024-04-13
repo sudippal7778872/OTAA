@@ -1,0 +1,10 @@
+#For Advisory https://talosintelligence.com/vulnerability_reports/TALOS-2022-1450
+Title: Reolink RLC-410W netserver recv_command denial of service vulnerability (TALOS-2022-1450)
+Type: bhpp_vuln
+VulnID: 591159
+Vulnflags: vuln
+manufacturer : "Reolink"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "RLC\\-410W\\b", version = "^3\\.0\\.0\\.136\\b"}
+
+#arg#1 regex: https://regex101.com/r/B3QPXf/1, https://regex101.com/r/0ptnvS/1

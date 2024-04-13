@@ -1,0 +1,13 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-436469.html#affected-products-section or https://www.cisa.gov/uscert/ics/advisories/icsa-22-349-10
+Title: Siemens APOGEE/TALON Field Panels Predictable Exact Value from Previous Values Vulnerability (ICSA-22-349-10, SSA-436469)
+Type: bhpp_vuln
+VulnID:591292
+Vulnflags:vuln
+manufacturer :"Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "3.5.5",model ="(APOGEE\\sPXC|TALON\\sTC)\\s(Compact|Modular)\\s\\(BACnet\\)"}
+arg#2:{min = "0.0.0", patched = "2.8.20",model ="APOGEE\\sPXC\\s(Compact|Modular)\\s\\(P2\\sEthernet\\)"}
+
+#regex_link1: https://regex101.com/r/mUn2Mg/1
+#regex_link2: https://regex101.com/r/zEZ8ZQ/1
+

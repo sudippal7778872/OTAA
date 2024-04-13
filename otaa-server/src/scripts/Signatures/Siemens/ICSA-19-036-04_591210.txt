@@ -1,0 +1,11 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-19-036-04 & https://cert-portal.siemens.com/productcert/pdf/ssa-180635.pdf
+Title: Siemens SIMATIC S7-1500 CPU Improper Input Validation Multiple Vulnerabilities (ICSA-19-036-04, SSA-180635)
+Type: bhpp_vuln
+VulnID: 591210
+Vulnflags: vuln
+manufacturer: "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1 : {min = "2.0.0",patched = "2.5.0" ,model = "(SIMATIC|SIPLUS)\\s(S7\\-1500(.+)?\\sCPU|ET\\s200.+CPU(\\s)?15\\d\\d)"}
+arg#2 : {min = "0.0.0",patched = "1.8.6" ,model = "(SIMATIC|SIPLUS)\\s(S7\\-1500(.+)?\\sCPU|ET\\s200.+CPU(\\s)?15\\d\\d)"}
+
+#regex link : https://regex101.com/r/64HKmR/1

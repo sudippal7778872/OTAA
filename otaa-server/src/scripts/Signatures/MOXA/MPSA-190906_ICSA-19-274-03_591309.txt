@@ -1,0 +1,10 @@
+#For Advisory https://www.moxa.com/en/support/product-support/security-advisory/edr-810-series-secure-router-vulnerabilities-(1) and https://www.cisa.gov/uscert/ics/advisories/icsa-19-274-03
+Title: Moxa EDR-810 Series Secure Routers Improper Input Validation Multiple Vulnerabilities (ICSA-19-274-03, MPSA-190906)
+Type: bhpp_vuln
+VulnID: 591309
+Vulnflags: vuln
+manufacturer : "Moxa"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "5.2.0", model = "EDR\\-810\\sSeries\\b"}
+
+#arg#1 regex: https://regex101.com/r/zwebIG/1

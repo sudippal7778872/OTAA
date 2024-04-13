@@ -1,0 +1,11 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-459643.html & https://www.cisa.gov/uscert/ics/advisories/icsa-22-258-03
+Title:  Siemens RUGGEDCOM ROS (Update A) Vulnerability (ICSA-22-258-03, SSA-459643)
+Type: bhpp_vuln
+VulnID: 591189
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0",patched = "5.6.0",model = "RUGGEDCOM\\s(RMC8388|RS(416P|416|900|900G)|RSG(907R|908C|909R|910C|920P|2100|2288|2300|2300P|2488)|RSL910|RST(916C|916P|2228|2228P))\\b"}
+
+
+#regex link = https://regex101.com/r/B6QxJu/1

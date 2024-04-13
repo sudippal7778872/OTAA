@@ -1,0 +1,79 @@
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Technical+leaflet&p_File_Name=SEVD-2019-281-02_Modicon_Controllers_V2.1.pdf&p_Doc_Ref=SEVD-2019-281-02
+Title: Schneider Electric Modicon Controllers Multiple Vulnerabilities (SEVD-2019-281-02)
+Type: bhpp_vuln
+VulnID: 590824
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "3.10.0", model = "Modicon\\sM580.+\\:BME(P(58(2040(S|H)?|4040(S)?|(10|20)20(H)?|6040(C)?|30(20|40)|4020|5040(C)?))|H58((4040(C|S)?|6040(C|S)?|2040(C)?)))\\b"}
+arg#2: {min = "0.0.0", patched = "99.99.99", model = "Modicon(\\sM340\b|.+\\:(BM\\w|140)CRA)"}
+
+#arg1 https://regex101.com/r/vdjdCU/1
+#arg2 https://regex101.com/r/ziCnuY/1
+
+########################
+
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Technical+leaflet&p_File_Name=SEVD-2020-133-03_U.motion_Servers_and_Touch_Panels_Notification_V1.2.pdf&p_Doc_Ref=SEVD-2020-133-03
+Title: Schneider Electric U motion Servers and Touch Panels Multiple Vulnerabilities (SEVD-2020-133-03)
+Type: bhpp_vuln
+VulnID: 590848
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.4.2", model = "U\\.motion\\sKNX\\s(Server(\\:MTN6501\\-0001|\\sPlus(\\:MTN6501\\-0002|\\sTouch\\s(10\\:MTN6260\\-0410|15\\:MTN6260\\-0415)))|Client\\sTouch\\s(10\\:MTN6260\\-0310|15\\:MTN6260\\-0315))\\b"}
+
+# arg#1 https://regex101.com/r/aMObNw/1
+
+#######################
+
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Technical+leaflet&p_File_Name=SEVD-2020-224-06_eXLhoist_Security_Notification.pdf&p_Doc_Ref=SEVD-2020-224-06
+Title: Schneider Electric Harmony eXLhoist Vulnerability (SEVD-2020-224-06)
+Type: bhpp_vuln
+VulnID: 590827
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "04.00.03", model = "Harmony\\seXLhoist\\:ZARB(12(W|H)|18(WM|HM|W|H))\\b"}
+
+
+#arg1 https://regex101.com/r/dQ4aXU/1
+
+#############
+
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Technical+leaflet&p_File_Name=SEVD-2020-224-03_Modicon_M218_Security_Notification.pdf&p_Doc_Ref=SEVD-2020-224-03
+Title: Schneider Electric Modicon M218 Logic Controller Vulnerability (SEVD-2020-224-03)
+Type: bhpp_vuln
+VulnID: 590826
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "5.0.0.8", model = "Modicon\\sM218\\sLogic\\sController"}
+
+#arg1 https://regex101.com/r/Lv3D1z/1
+
+#####################
+
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Technical+leaflet&p_File_Name=SEVD-2019-134-06+-+Modicon+RTU+Module.pdf&p_Doc_Ref=SEVD-2019-134-06
+Title: Schneider Electric Modicon RTU Module Vulnerability (SEVD-2019-134-06)
+Type: bhpp_vuln
+VulnID: 590825
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.7", model = "BMXNOR0200H\\b"}
+
+#arg1 https://regex101.com/r/SQV03u/1
+
+##############
+
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Technical+leaflet&p_File_Name=SEVD+2013-143-01.pdf&p_Doc_Ref=SEVD+2013-143-01
+Title: Schneider Electric Trio J-Series Radio Encryption Key Vulnerability (SEVD-2013-143-01)
+Type: bhpp_vuln
+VulnID: 590828
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "3.6.0", patched = "3.6.4", model = "TBURJR900\\-0(0|1|5|6)002(D|E)H0\\b"}
+
+
+#arg1 https://regex101.com/r/IFOiIx/1

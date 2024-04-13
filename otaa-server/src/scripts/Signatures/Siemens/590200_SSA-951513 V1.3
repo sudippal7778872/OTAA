@@ -1,0 +1,19 @@
+#For advisory https://cert-portal.siemens.com/productcert/html/ssa-951513.html  or https://www.cisa.gov/uscert/ics/advisories/icsa-20-042-07
+Title: Siemens SCALANCE X Switches Vulnerability(ICSA-20-042-07,  SSA-951513)
+Type: bhpp_vuln
+VulnID: 590200
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_range_non_rgp
+arg#1: {min = "0.0.0", patched = "4.1", model = "SCALANCE\\sS6(02|12|23|27\\-2M)\\b"}
+arg#2: {min = "0.0.0", patched = "5.2.4", model = "SCALANCE\\sX[A-Z]?2\\d\\d",not_match="IRT|RNA"}
+arg#3: {min = "0.0.0", patched = "5.5.0", model = "SCALANCE\\sX[A-Z]?2\\d\\d(.+)?IRT\\b"}
+arg#4: {min = "0.0.0", patched = "3.2.7", model = "SCALANCE\\sX[A-Z]?2\\d\\d(.+)?RNA\\b"}
+arg#5: {min = "0.0.0", patched = "4.1.3", model = "SCALANCE\\s(X[A-Z]?3\\d\\d|X408)\\b"}
+
+
+#regex_link: https://regex101.com/r/qmBbP2/1
+#regex_link: https://regex101.com/r/yjr4BW/2 for X200 family, & NOT MATCH https://regex101.com/r/pw8LA1/1
+#regex_link: https://regex101.com/r/DV2bCQ/2
+#regex_link: https://regex101.com/r/kkZ1jv/2
+#regex_link: https://regex101.com/r/YLhjX1/2

@@ -1,0 +1,72 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2020-175-01
+Title: Schneider Electric Treck TCP/IP Multiple Vulnerabilities (SEVD-2020-175-01)
+Type: bhpp_vuln
+VulnID:590819
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "3.2", model = "Altivar\\sMachine\\sATV340\\:ATV340E\\b"}
+arg#2: {min = "0.0.0", patched = "3.3", model = "Altivar\\sProcess\\sATV(600\\:ATV(630|650|660|680|6A0|6B0)|900\\:ATV(930|950|960|980|9A0|9B0))"}
+arg#3: {min = "0.0.0", patched = "2.25", model = "SCADAPack\\s32\\sRTU"}
+arg#4: {min = "0.0.0", patched = "2.2.1.1", model = "TM3\\sBus\\sCoupler\\sModule\\:TM3BCEIP\\b"}
+arg#5: {min = "0.0.0", patched = "2.1.1.1", model = "TM3\\sBus\\sCoupler\\sModule\\:TM3BC(SL|CO)\\b"}
+arg#6: {min = "0.0.0", patched = "2.2", model = "Altivar\\s61\\/71\\sModbus\\sTCP\\/IP\\sEthernet\\sCard\\:VW3A3310\\b"}
+arg#7: {min = "0.0.0", patched = "3.1", model = "Altivar\\s61\\/71\\sEthernet\\sDaisy\\sChain\\sOption\\:VW3A3310D\\b"}
+arg#8: {min = "0.0.0", patched = "1.3", model = "Altivar\\s61\\/71\\sEthernet\\sIP\\sOption\\:VW3A3316\\b"}
+arg#9: {min = "0.0.0", patched = "1.2", model = "Altivar\\s61\\/71\\sEthernet\\sIP\\sRSTP\\sOption\\:VW3A3320\\b"}
+arg#10: {min = "0.0.0", patched = "99.99.99", model = "(Telemecanique\\sPhotoelectric\\ssensors\\sXU)?\\:XUPH001\\b"}
+arg#11: {min = "0.0.0", patched = "99.99.99", model = "(Telemecanique\\sRadio\\sfrequency\\sidentification\\sXG)?\\:XGCS850C201\\b"}
+arg#12: {min = "0.0.0", patched = "1.15", model = "Altivar\\sProcess\\s(ATV600|.+)?\\sCommunication\\sModule\\:VW3A372(0|1)\\b"}
+arg#13: {min = "0.0.0", patched = "03", model = "(Harmony\\sXB5R|.+)?\\:ZBRCETH\\b"}
+arg#14: {min = "0.0.0", patched = "99.99.99", model = "Sepam.+communication\\sInterface\\:ACE850\\b"}
+arg#15: {min = "0.0.0", patched = "99.99.99", model = "Acti9\\sSmartlink\\s(EL\\:A9XELC08|IP)\\b"}
+arg#16: {min = "0.0.0", patched = "1.7.5", model = "Acti9\\sPowerTag\\sLink\\sC"}
+arg#17: {min = "0.0.0", patched = "1.7.5", model = "Wiser\\sEnergy\\sIP\\sModule\\:(EER31800|EER72600)\\b"}
+arg#18: {min = "0.0.0", patched = "1.7.5", model = "Gateway\\sConnector\\:EKO01827\\b"}
+arg#19: {min = "0.0.0", patched = "002.004.002", model = "Acti\\s?9\\sSmartlink\\sSI\\s(D|B)\\b"}
+arg#20: {min = "0.0.0", patched = "5.1.18", model = "EGX150\\/Link150\\sEthernet\\sGateway"}
+arg#21: {min = "0.0.0", patched = "4.001.000", model = "EIFE.+Ethernet\\sInterface"}
+arg#22: {min = "0.0.0", patched = "3.02.02", model = "(MP|RP)(\-C)?\\sSmartX\\sIP\\sController"}
+arg#23: {min = "0.0.0", patched = "4.001.000", model = "IFE.+Ethernet\\sInterface"}
+arg#24: {min = "0.0.0", patched = "3.011.003", model = "IFE\\sGateway"}
+arg#25: {min = "3.0", patched = "99.99.99", model = "PowerLogic\\sEGX100\\sEthernet\\sGateway"}
+arg#26: {min = "0.0.0", patched = "99.99.99", model = "PowerLogic\\sEGX300\\b"}
+arg#27: {min = "0.0.0", patched = "2.8.3", model = "(PowerLogic\\sPM5000\\sSeries\\s)?(PM5560|PM5563|PM5580)\\b"}
+arg#28: {min = "0.0.0", patched = "10.7.3", model = "(PowerLogic\\sPM5000\\sSeries\\s)?PM5561\\b"}
+arg#29: {min = "0.0.0", patched = "2.11.2", model = "PM5650\\b"}
+arg#30: {min = "0.0.0", patched = "3.1.3", model = "(PM5570|PM5660|PM5760)\\b"}
+arg#31: {min = "0.0.0", patched = "2.1.5", model = "(PowerLogic\\sPM5000\\sSeries\\s)?(PM5320|PM5340)\\b"}
+arg#32: {min = "0.0.0", patched = "2.4.4", model = "(PowerLogic\\sPM5000\\sSeries\\s)?PM5341\\b"}
+arg#33: {min = "0.0.0", patched = "2.9", model = "TeSys\\sT\\sMotorController\\:LTMR\\d\\dE\\w\\w\\b"}
+arg#34: {min = "0.0.0", patched = "1.2", model = "Altivar\\sProcess\\sATV600\\b"}
+arg#35: {min = "0.0.0", patched = "99.99.99", model = "Andover\\sContinuum(\\sNetwork\\sController\\:CX(9900|9680|9200|9400|9924|9702)|\\:ACX\\s(5720|5740)|\\:BCX(4040|9640))\\b"}
+
+
+#Regex:-           																																				
+
+#ATV340E Altivar Machine Drives                              										    https://regex101.com/r/RFe4om/1
+#ATV630/650/660/680/6A0/6B0| ATV930/950/960/980/9A0/9B0Altivar Process Drives       					https://regex101.com/r/C66ilZ/1      													         
+#SCADAPack 32 RTU                                          												https://regex101.com/r/KL8iDe/1            
+#TM3BC bus coupler module – (EIP|SL|CANOpen)                 										    https://regex101.com/r/RxeIKc/1
+#VW3A3310 Altivar 61/71 Modbus TCP option                    											https://regex101.com/r/lxBkt3/2
+#VW3A3310D Altivar 61/71 Ethernet daisy chain option        											https://regex101.com/r/3SttdO/2 
+#VW3A3316 Altivar 61/71 Ethernet IP option                  											https://regex101.com/r/bvGosM/2 
+#VW3A3320 Altivar 61/71 Ethernet IP RSTP option             											https://regex101.com/r/Gk2UHw/2 
+#XUPH001 OsSense communication module                       											https://regex101.com/r/d2o8TF/1
+#XGCS850C201 OsiSense RFID compact smart antenna             											https://regex101.com/r/mCNUSP/3
+#VW3A3720, VW3A3721 Altivar Process Communication Modules     											https://regex101.com/r/cgldWJ/2				
+#ZBRCETH Modbus TCP communicationmodule for ZBRN1 Harmony Hub 										    https://regex101.com/r/Jkgzw0/2
+#ACE850 Sepam communicationinterface                            									    https://regex101.com/r/uqcsWj/2
+#Acti9 Smartlink EL BA9XELC08,Acti9 Smartlink IP,                                                       https://regex101.com/r/eeQeRe/2  
+#Gateway Connector by Elko(EKO01827)                                                                    https://regex101.com/r/rrIDiT/1 
+#Acti9 Smartlink SI D (Acti9 PowerTag Link / HD), Acti9 Smartlink SI                                    https://regex101.com/r/6Qn0Q3/1
+#EGX150/Link150 Ethernet Gateway                                                                        https://regex101.com/r/YaEefY/1
+#eIFE Ethernet Interface for MasterPact MTZ drawout circuit breakers                                    https://regex101.com/r/ZyAvTw/1
+#EcoStruxure Building SmartX IP MP|RP Controllers                                                       https://regex101.com/r/4Ox9LC/1
+#IFE Ethernet Interface for ComPact, PowerPact, and MasterPact circuit breakers                         https://regex101.com/r/UYf1MF/1 
+#IFE Gateway                                                                                            https://regex101.com/r/ROYAI7/1
+#PowerLogic EGX100 Ethernet Gateway                                                                     https://regex101.com/r/wEbIKF/1 
+#PowerLogic EGX300 Ethernet Gateway                                                                     https://regex101.com/r/SyLOix/1 
+#PowerLogic PM5000 series power meters                                                                  https://regex101.com/r/q6y3CG/1
+#TeSys T LTMRxxEyy Motor Controllers                                                                    https://regex101.com/r/nxJ0Q1/1 
+#ATV6000 Medium Voltage Altivar Process Drives                                                          https://regex101.com/r/CHj0aB/1    
+#Andover Continuum controller models:                                                                   https://regex101.com/r/lP2Sqp/1

@@ -1,0 +1,12 @@
+#For Advisory https://www.moxa.com/en/support/product-support/security-advisory/nport-w2150a-w2250a-serial-device-servers-vulnerability
+Title: Moxa NPort W2150A/W2250A Series Serial Device Servers Vulnerability (MPSA-211204)
+Type: bhpp_vuln
+VulnID: 591391
+Vulnflags: vuln
+manufacturer : "Moxa"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.12", model = "NPort\\s(W2150A\\/W2250A\\sSeries|W2(2|1)50A)\\b"}
+
+
+#arg#1 regex: https://regex101.com/r/hdA9E6/1
+

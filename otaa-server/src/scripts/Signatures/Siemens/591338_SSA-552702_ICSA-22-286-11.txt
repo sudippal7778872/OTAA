@@ -1,0 +1,16 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-286-11 & https://cert-portal.siemens.com/productcert/html/ssa-552702.html
+Title: Siemens SCALANCE and RUGGEDCOM Products Privilege Escalation Vulnerability (ICSA-22-286-11, SSA-552702)
+Type: bhpp_vuln
+VulnID: 591338
+Vulnflags: vuln
+manufacturer: "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1 : {min = "0.0.0",patched = "7.1.2",model = "RUGGEDCOM\\sRM1224\\-(EU|NAM)\\s4G\\sRouter\\:6GK6108\\-4AM00\\-2(B|D)A2|SCALANCE\\s(M804PB\\:6GK5804\\-0AP00\\-2AA2|M812\\-1\\sADSL\\-Router\\:6GK5812\\-1(A|B)A00\\-2AA2|M816\\-1\\sADSL\\-Router\\:6GK5816\\-1(A|B)A00\\-2AA2|M826\\-2\\sSHDSL\\-Router\\:6GK5826\\-2AB00\\-2AB2|M874\\-(2|3)(.+)\\sRouter\\:6GK5874-(2|3)AA00-2AA2|M876\\-(3|4)(.+)\\:6GK5876\\-(3|4)AA0(0|2)\\-2(B|E|D)A2|MUM85(3|6)\\-1(.+)\\:6GK585(3|6)\\-2EA00\\-(2|3)(D|A)A1|S615(.+)\\:6GK5615\\-0AA00\\-2AA2)\\b"}
+arg#2 : {min = "0.0.0",patched = "99.99.99",model = "SCALANCE\\s(W(721\\-1\\sRJ45\\:6GK5721\\-1FC00\\-0A(A|B)0|722\\-1\sRJ45\\:6GK5722\\-1FC00\\-0A(A|B|C)0|734\\-1\\sRJ45\\:6GK5734\\-1FX00\\-0A(A|B)(0|6)|738\\-1\\sM12\\:6GK5738\\-1GY00\\-0A(A|B)0|748\\-1\\s(RJ45|M12)\\:6GK5748\\-1(FC|GD)00\\-0A(A|B)0|761\\-1\\sRJ45\\:6GK5761\\-1FC00\\-0A(A|B)0|774\\-1\\s(RJ45|M12\\sEEC)\\:6GK5774-1F(X|Y)00-0(A|T)(A|B|C)(0|6)|778\\-1\\s(M12|M12\\sEEC)\\:6GK5778\\-1GY00\\-0(T|A)(A|B)0|786\\-(1|2|2IA)\\s(RJ45|SFP)\\:6GK5786\\-(1|2)(F|H)(C|E)00\\-0A(A|B|C)0|788\\-(1|2)\\s(RJ45|M12|M12\\sEEC)\\:6GK5788\\-(1|2)(GD|FC)00\\-0(T(A|B|C)|A(A|B|C))0|17(48|88)\\-(1|2|2IA)\\s(M12|M12\\sEEC)\\:6GK57(4|8)8-(1|2)(G|H)Y01-0(T|A)A0)|XB2(05\\-(3|3LD)\\:6GK5205\\-3B(B|D|F)00\\-2(A|T)B2|08\\:6GK5208\\-0BA00\\-2(A|T)B2|13\\-(3|3LD)\\:6GK5213-3B(B|D|F)00\\-2(A|T)B2|16\\:6GK5216\\-0BA00\\-2(T|A)B2)|XC2(06\\-(2|2SFP|2SFP\\sEEC|2SFP\\sG|2SFP\\sG\\sE\\/IP|2SFP\\sG\\sEEC|2G\\sPoE|2G\\sPoE\\sEEC)\\:6GK5206\\-2(B|G|R)(B|D|S)00\\-(2|5)(A|F|T)C2|((08|08EEC|08G|08G\\sEEC|08G\\sPoE)\\:6GK5208\\-0(B|G|R)A00\\-(2|5)(A|F|T)C2)|(16|16\\-4C|16\\-4C\\sG|16\\-4C\\sG\\sEEC|16EEC|16\\-3G\\sPoE)\\:6GK5216\\-(0|4|3)(B|G|R)(A|S)00\\-(2|5)(A|F|T)C2|(24|24\\-4C\\sG|24\\-4C\\sG\\sE\\/IP|24\\-4C\\sG\\sEEC)\\:6GK5224\\-(0|4)(B|G)(A|S)00\\-2(A|T|F)C2)|XF(204|204\\sDNA|204\\-2BA|204\\-2BA\\sDNA)\\:6GK5204\\-(0|2)(B|A)A00\\-2(G|Y)F2|XM4(08|16)\\-(4C|8C)\\:6GK54(08|16)\\-(4|8)G(Q|P|R|S)00\\-2AM2|XP2(08|16|08EEC|08PoE\\sEEC|16EEC|16PoE\\sEEC)\\:6GK52(08|16)\\-0(H|U)A00\\-(2|5)(A|E|T)S6|XR3(24WG\\:6GK5324\\-0BA00\\-(2|3)AR3|26\\-2C\\sPoE\\sWG\\:6GK5326\\-2QS00\\-3(A|R)R3|28\\-4C\\sWG\\:6GK5328\\-4(F|S)S00\\-(3|2)(A|R)R3)|XR5(24\\-8C\\:6GK5524\\-8G(S|R)00\\-(2|3|4)AR2|26\\-8C\\:6GK5526\\-8G(R|S)00\\-(2|3|4)AR2|28\\-6M\\:6GK5528\\-0A(A|R)00\\-2(A|H)R2|52\\-12M\\:6GK5552-0A(A|R)00-2(H|A)R2))|SIPLUS\\sNET\\sSCALANCE\\s(XC2(06\\-2|06\\-2SFP|08|16\\-4C)\\:6AG12(06|08|16)\\-2B(A|B|S)00\\-7AC2)\\b"}
+arg#3 : {min = "0.0.0",patched = "3.0.0",model = "SCALANCE\\sSC6(2|3|4)(2|6)\\-2C\\:6GK56(2|3|4)(2|6)\\-2GS00\\-2AC2\\b"}
+arg#4 : {min = "0.0.0",patched = "2.0.0",model = "SCALANCE\\sW(AM76(3|6)\\-(1|1\\sEEC)\\:6GK576(3|6)\\-1(AL|GE)00\\-7(D|T)(A|B)0|UM76(3|6)\\-1\\:6GK576(3|6)\\-1(AL|GE)00\\-3(A|D)(A|B)0)\\b"}
+
+#arg1 regex link : https://regex101.com/r/3B5k0B/1 
+#arg2 regex link : https://regex101.com/r/4MKc9y/1 
+#arg3 regex link : https://regex101.com/r/lZKuUx/1 
+#arg4 regex link : https://regex101.com/r/I9WpE6/1 

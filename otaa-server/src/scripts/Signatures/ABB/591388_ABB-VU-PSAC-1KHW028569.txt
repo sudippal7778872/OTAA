@@ -1,0 +1,12 @@
+#For Advisory https://library.e.abb.com/public/c237adf276224995a4f43ad68aba6fbf/1KHW028569_C_en_Cyber_Security_Advisory__SSL_3.0_Protocol_Vulnerability_and_POODLE_Attack_in_AFx_series.pdf
+Title: ABB AFx series SSL 3.0 Protocol and POODLE Attack Vulnerability (ABB-VU-PSAC- 1KHW028569)
+Type: bhpp_vuln
+VulnID: 591388
+Vulnflags: vuln
+manufacturer: "ABB"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "AFS650|AFS655|AFS670|AFS675|AFS677|AFR677", version = "^08\\.0\\.05\\b"}
+arg#2: {device = "AFS660|AFS665", version = "^03\\.0\\.02\\b"}
+
+#arg1 regex link: https://regex101.com/r/I2WbKa/1 & https://regex101.com/r/hHyVHh/1
+#arg2 regex link: https://regex101.com/r/rpl1JK/1 & https://regex101.com/r/ywspDn/1

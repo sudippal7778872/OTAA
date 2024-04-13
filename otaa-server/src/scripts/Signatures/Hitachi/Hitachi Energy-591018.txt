@@ -1,0 +1,17 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-336-08
+Title:Hitachi Energy RTU500 series Multiple Vulnerabilities (ICSA-21-336-08)
+Type:bhpp_vuln
+VulnID:591018
+Vulnflags:vuln
+manufacturer:"Hitachi Energy"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "11.0.0", patched ="11.99.99", model ="RTU\\s500\\sSeries\\b"}
+arg#2:{min = "12.0.1", patched = "12.0.14", model ="RTU\\s500\\sSeries\\b"}
+arg#3:{min = "12.2.1", patched = "12.2.11", model ="RTU\\s500\\sSeries\\b"}
+arg#4:{min = "12.4.1", patched = "12.4.11", model ="RTU\\s500\\sSeries\\b"}
+arg#6:{min = "12.6.1", patched = "12.6.7", model ="RTU\\s500\\sSeries\\b"}
+arg#7:{min = "12.7.1", patched = "12.7.2", model ="RTU\\s500\\sSeries\\b"}
+arg#8:{min = "13.0.1", patched = "13.2.3", model ="RTU\\s500\\sSeries\\b"}
+
+#1 - https://regex101.com/r/FmiLtu/4 
+

@@ -1,0 +1,9 @@
+#For Advisory https://download.beckhoff.com/download/Document/product-security/Advisories/advisory-2020-001.pdf
+Title:Beckhoff BK9000 couplers - Denial of service inhibits function Vulnerability (Beckhoff Security Advisory 2020-01)
+Type:bhpp_vuln
+VulnID:591040
+manufacturer:"Beckhoff"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "99.99.99", model = "Bus\\sCouple(.+)?\\:BK9000\\b"}
+
+#regex_link https://regex101.com/r/qXIN0X/1

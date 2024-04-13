@@ -1,0 +1,10 @@
+#For Advisory https://talosintelligence.com/vulnerability_reports/TALOS-2016-0232
+Title: Moxa AWK-3131A Web Application Cross-Site Request Forgery Vulnerability (TALOS-2016-0232)
+Type: bhpp_vuln
+VulnID:  591191 
+Vulnflags: vuln
+manufacturer: "Moxa"
+Func: ics_device_firmware_exprudp
+arg#1:{device = "(AWK\\-3131A\\sSeries)\\b" , version = "^1\\.1\\b"}
+
+#regex link = https://regex101.com/r/UcMtWk/1

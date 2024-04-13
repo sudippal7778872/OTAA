@@ -1,0 +1,12 @@
+#For https://www.moxa.com/en/support/product-support/security-advisory/vport-06ec-2v-vport-461a-ip-cameras-video-servers-vulnerabilities
+Title: Moxa VPort 06EC-2V Series and VPort 461A Series IP Cameras and Video Servers Vulnerabilities (MPSA-220103)
+Type: bhpp_vuln
+VulnID: 591359
+Vulnflags: vuln
+manufacturer: "Moxa"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.2", model = "VPort\\s06EC\\-2V\\sSeries\\b"}
+arg#2: {min = "0.0.0", patched = "1.5", model = "VPort\\s461A\\sSeries"}
+
+#arg1 regex link: https://regex101.com/r/uO09Ci/1  
+#arg2 regex link: https://regex101.com/r/Abgd2T/1 

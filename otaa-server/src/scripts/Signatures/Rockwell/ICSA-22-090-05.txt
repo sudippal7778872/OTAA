@@ -1,0 +1,9 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-090-05
+Title: Rockwell Automation Logix Controllers Vulnerability (ICSA-22-090-05)
+Type: bhpp_vuln
+VulnID: 590811
+Func: ics_device_multiple_version_range_non_rgp
+manufacturer : "Rockwell Automation"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "(CompactLogix.+Controller\\:1768|CompactLogix.+Controller\\:1769|CompactLogix\\s(53(70|80)|5480)|Compact\\sGuardLogix\\s53(70|80)|5570\\sArmour\\sGuardLogix|ControlLogix\\s55(50|60|70|80)|GuardLogix\\s55(70|80)|FlexLogix\\sController\\:1794\\-L34|Drive\\sLogix\\s5730|SoftLogix\\s5800|GuardLogix\\sController\\:1756\\-L(6\\dS|SP))\\b"}
+
+#arg#1 https://regex101.com/r/EZuqjK/3

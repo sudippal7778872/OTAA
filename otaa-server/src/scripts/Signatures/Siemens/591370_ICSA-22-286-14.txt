@@ -1,0 +1,10 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-286-14 & https://cert-portal.siemens.com/productcert/html/ssa-384224.html
+Title: Siemens SIMATIC HMI Panels Improper Input Validation Vulnerability (ICSA-22-286-14, SSA-384224)
+Type: bhpp_vuln
+VulnID: 591370
+Vulnflags: vuln
+manufacturer: "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1 : {min = "0.0.0",patched = "17.0.2",model = "((SIMATIC|SIPLUS)\\sHMI(.+)?(Comfort|Mobile)|SIMATIC\\sHMI\\sKTP(400\\sBasic(.+)\\:6AV2123\\-2DB03\\-0AX0|700\\sBasic(.+)?\\:6AV2123\\-2GB03\\-0AX0|900\\sBasic(.+)?\\:6AV2123\\-2JB03\\-0AX0|1200\\sBasic(.+)?\\:6AV2123\\-2MB03\\-0AX0)|SIPLUS\\sHMI\\sKTP(400\\sBasic(.+)?\\:6AG1123\\-2DB03\\-2AX0|700\\sBasic(.+)?\\:6AG1123\\-2GB03\\-2AX0|900\\sBasic(.+)?\\:6AG1123\\-2JB03\\-2AX0|1200\\sBasic(.+)?\\:6AG1123\\-2MB03\\-2AX0))\\b"}
+
+#regex link : https://regex101.com/r/nNSLEv/1

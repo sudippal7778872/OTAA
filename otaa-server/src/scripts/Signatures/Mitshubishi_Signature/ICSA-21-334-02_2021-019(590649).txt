@@ -1,0 +1,43 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-334-02 and https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2021-019_en.pdf         
+Title: Mitsubishi Electric MELSEC and MELIPC Series (Update D) multiple Vulnerabilities(ICSA-21-334-02)(2021-019)
+Type: bhpp_vuln
+VulnID: 590649
+Vulnflags:vuln
+manufacturer : "Mitsubishi Electric"
+Func:ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "25", model ="MELSEC iQ-R Series CPU Module:R00CPU|MELSEC iQ-R Series CPU Module:R01CPU|MELSEC iQ-R Series CPU Module:R02CPU"} 
+arg#2: {min = "0.0.0", patched = "58", model ="MELSEC iQ-R Series CPU Module:R04ENCPU|MELSEC iQ-R Series CPU Module:R08ENCPU|MELSEC iQ-R Series CPU Module:R16ENCPU|MELSEC iQ-R Series CPU Module:R16ENCPU|MELSEC iQ-R Series CPU Module:R32ENCPU|MELSEC iQ-R Series CPU Module:R120ENCPU"}
+arg#3: {min = "0.0.0", patched = "30", model ="MELSEC iQ-R Series CPU Module:R08PCPU|MELSEC iQ-R Series CPU Module:R16PCPU|MELSEC iQ-R Series CPU Module:R32PCPU|MELSEC iQ-R Series CPU Module:R120PCPU\\b"} 
+arg#4: {min = "0.0.0", patched = "09", model ="MELSEC iQ-R Series CPU Module:R08PSFCPU|MELSEC iQ-R Series CPU Module:R16PSFCPU|MELSEC iQ-R Series CPU Module:R32PSFCPU|MELSEC iQ-R Series CPU Module:R120PSFCPU\\b"}
+arg#5: {min = "0.0.0", patched = "24", model ="MELSEC iQ-R Series Motion Controller:R64MTCPU|MELSEC iQ-R Series Motion Controller:R32MTCPU|MELSEC iQ-R Series Motion Controller:R16MTCPU\\b"} 
+arg#6: {min = "0.0.0", patched = "17", model ="MELSEC iQ-R series C Controller Module:R12CCPU-V\\b"}
+arg#7: {min = "0.0.0", patched = "99.99.99", model ="MELSEC iQ-R Series CPU Module:R08SFCPU|MELSEC iQ-R Series CPU Module:R16SFCPU|MELSEC iQ-R Series CPU Module:R32SFCPU|MELSEC iQ-R Series CPU Module:R120SFCPU|MELSEC-Q Series Motion Controller:Q172DSCPU|MELSEC-Q Series Motion Controller:Q173DSCPU|MELSEC-Q Series Stand-Alone Motion Controller:Q170MSCPU-S1\\b"} 
+arg#8: {min = "0.0.0", patched = "06", model ="MELIPC MI5000 Series:MI5122-VW\\b"}  
+
+#regex_link https://regex101.com/r/leYuKR/1
+#regex_link https://regex101.com/r/sfgTej/1
+#regex_link https://regex101.com/r/Q5K4b0/1
+#regex_link https://regex101.com/r/xAMZ85/1
+#regex_link https://regex101.com/r/L3CT6l/1
+#regex_link https://regex101.com/r/PxXo7Z/1
+#regex_link https://regex101.com/r/zd9xPE/1
+#regex_link https://regex101.com/r/Sx75ft/1
+
+
+#For Advisory  https://www.cisa.gov/uscert/ics/advisories/icsa-21-334-02 and https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2021-019_en.pdf
+Title: Mitsubishi Electric MELSEC and MELIPC Series (Update D) multiple Vulnerabilities(ICSA-21-334-02)(2021-019)
+Type: bhpp_vuln
+VulnID:590649
+Func:ics_device_firmware_exprudp
+manufacturer: "Mitsubishi Electric"
+arg#1: {device = "MELSEC-Q Series Universal Model QCPU:Q03UDECPU|MELSEC-Q Series Universal Model QCPU:Q04UDEHCPU|MELSEC-Q Series Universal Model QCPU:Q06UDEHCPU|MELSEC-Q Series Universal Model QCPU:Q10UDEHCPU|MELSEC-Q Series Universal Model QCPU:Q13UDEHCPU|MELSEC-Q Series Universal Model QCPU:Q20UDEHCPU|MELSEC-Q Series Universal Model QCPU:Q26UDEHCPU|MELSEC-Q Series Universal Model QCPU:Q50UDEHCPU|MELSEC-Q Series Universal Model QCPU:Q100UDEHCPU|MELSEC-L Series CPU Module:L26CPU-PBT|MELSEC-L Series CPU Module:L26CPU-P|MELSEC-L Series CPU Module:L06CPU-P|MELSEC-L Series CPU Module:L02CPU-P\\b", version = "\\d"}  
+arg#2: {device = "MELSEC-Q Series Universal Model QCPU:Q03UDVCPU|MELSEC-Q Series Universal Model QCPU:Q04UDVCPU|MELSEC-Q Series Universal Model QCPU:Q06UDVCPU|MELSEC-Q Series Universal Model QCPU:Q13UDVCPU|MELSEC-Q Series Universal Model QCPU:Q26UDVCPU|MELSEC-Q Sequencer Universal Process Model CPU:Q04UDPVCPU|MELSEC-Q Sequencer Universal Process Model CPU:Q06UDPVCPU|MELSEC-Q Sequencer Universal Process Model CPU:Q13UDPVCPU|MELSEC-Q Sequencer Universal Process Model CPU:Q26UDPVCPU\\b", version = "\\d"} 
+arg#3: {device = "MELSEC-Q Series Universal Model QCPU:Q12DCCPU-V|MELSEC-Q Series Universal Model QCPU:Q24DHCCPU-VG|MELSEC-Q Series Universal Model QCPU:Q24DHCCPU-LS|MELSEC-Q Series Universal Model QCPU:Q26DHCCPU-LS\\b", version = "\\d"}
+arg#4: {device = "MR-MQ100 Motion Controller:MR-MQ100\\b", version = "\\d"}
+arg#5: {device = "MELSEC-Q Series Motion Controller:Q172DCPU-S1|MELSEC-Q Series Motion Controller:Q173DCPU-S1|MELSEC Q series Motion Controller:Q170MCPU\\b", version = "\\d"}
+
+#regex_link https://regex101.com/r/2Fy4Hc/1
+#regex_link https://regex101.com/r/MymxBs/1
+#regex_link https://regex101.com/r/JBsdau/1
+#regex_link https://regex101.com/r/7z9MN6/1
+#regex_link https://regex101.com/r/SYVl21/1

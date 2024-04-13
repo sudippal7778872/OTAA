@@ -1,0 +1,10 @@
+#For Advisory https://library.e.abb.com/public/fd7aea6ffbcd4a7ca07492a5a2d358cc/2PAA120777_B_en_SECURITY%20WindRiver%20VxWorks%20IPNet%20Vulnerabilities%20impact%20on%20CI845.pdf
+Title: ABB CI845 WindRiver VxWorks IPNet Multiple Vulnerabilities (ABBVU-IACT- 800xAIOE-OL-1000-10017)
+Type: bhpp_vuln
+VulnID: 591369
+Vulnflags: vuln
+manufacturer : "ABB"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "CI845\\b", version = "^(1\\.0\\.1\\.0)\\b"} 
+
+#arg1:https://regex101.com/r/j8qBur/1

@@ -1,0 +1,12 @@
+#########################making it as practice########################################
+
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-693555.pdf
+Title: Siemens EN100 Ethernet Module Vulnerability (ICSA-22-167-05) (SSA-693555)
+Type: bhpp_vuln
+VulnID:590960
+Func: ics_device_multiple_version_range_non_rgp
+manufacturer : "Siemens"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "EN100\\b"}
+
+##arg#1 https://regex101.com/r/KTgOyX/1
+

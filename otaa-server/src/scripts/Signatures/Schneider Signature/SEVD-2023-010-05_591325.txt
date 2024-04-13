@@ -1,0 +1,9 @@
+#For Advisory https://www.se.com/ww/en/download/document/SEVD-2023-010-05/
+Title: Schneider Electric Modicon PLCs Improper Check for Unusual or Exceptional Conditions Vulnerability (SEVD-2023-010-05)
+Type:bhpp_vuln
+VulnID: 591325
+manufacturer:"Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "00.00.00", patched = "99.99.99", model ="(Modicon\\s(M(340(.+)?\\:BMXP34\\w+|580(.+)?\\:BME(P|H)\\w+|C80\\:BMKC80\\w+)|(.+)?\\sMomentum\\sM1E\\sCPU\\:171CBU\\w+|Quantum\\:140CPU65\\w+|Premium(.+)?\\:TSXP57\\w+))\\b"}
+
+#regex_link 1 https://regex101.com/r/8DF7ge/1  

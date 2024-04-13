@@ -1,0 +1,19 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-838121.html and https://www.cisa.gov/uscert/ics/advisories/icsa-22-041-01
+Title:Siemens SIMATIC Industrial Products denial-of-service (DoS) Multiple Vulnerabilities (ICSA-22-041-01, SSA-838121)
+Type: bhpp_vuln
+VulnID:591207
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func:  ics_device_multiple_version_range_non_rgp
+arg#1: {min = "0.0.0", patched = "2.9.4", model = "SIMATIC\\sS7\\-1500\\sDrive\\sController|(S7\\-1500\\sCPU|ET\\s200.+CPU(\\s)?15\\d\\d)",not_match="CPU(\\s)?1515SP\\s(PC2|PC)\\b"}
+arg#2: {min = "0.0.0", patched = "21.9.4", model = "(SIMATIC|SIPLUS)\\sET\\s200SP\\sCPU(\\s)?1515SP\\sPC2\\b"}
+arg#3: {min = "0.0.0", patched = "99.99.99", model = "(SIMATIC|SIPLUS)\\sET\\s200SP\\sCPU\\s1515SP\\sPC\\b"}
+arg#4: {min = "0.0.0", patched = "4.5.2", model = "(SIMATIC|SIPLUS)\\sS7\\-1200\\sCPU\\b"}
+arg#5: {min = "2.2", patched = "99.99.99", model = "TIM\\s1531\\sIRC\\b"}
+
+#regex_link 1 https://regex101.com/r/OKy0tx/1           not match regex : https://regex101.com/r/nuIPCb/1 
+#regex_link 2 https://regex101.com/r/PYx6tz/3
+#regex_link 3 https://regex101.com/r/DkDGV4/1 
+#regex_link 4 https://regex101.com/r/CLtsmS/1 
+#regex_link 5 https://regex101.com/r/lzCP48/1 
+

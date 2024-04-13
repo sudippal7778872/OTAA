@@ -1,0 +1,22 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-21-222-05
+Title:Siemens Industrial Products Intel CPUs (Update B) Multiple Vulnerabilities (ICSA-21-222-05)
+Type: bhpp_vuln
+VulnID:590761
+manufacturer:"Siemens"
+ics_device_multiple_version_range_non_rgp
+arg#1:{min = "0.0.0", patched = "99.99.99", model ="SIMATIC\\sField\\sPG(\\:M5|\\sM5)\\b|SIMATIC\\sIPC(527G|547G)\\b|(SIMATIC|SIPLUS)\\sS7\\-1500\\sCPU\\s1518(\\-4\\sPN\\/DP\\sMFP\\:6(ES7518\\-4AX00\\-1|AG1518\\-4AX00\\-4)AC0|F\\-4\\sPN\\/DP\\sMFP\\:6ES7518\\-4FX00\\-1AC0)\\b|SINUMERIK\\s828D\\b|SINUMERIK\\s840D\\ssl\\b|SINUMERIK\\s(MC\\sMCU\\s1720|ONE\\sPPU\\s1740)\\b|SINUMERIK\\sONE\\b|SIMATIC\\sS7\\-1500\\s(Drive\\sController\\sCPU\\s150(4|7)D|CPU)\\b|SIMATIC\\sS7\\-1500\\s(Drive\\sController\\sCPU\\s150(4|7)D|CPU)\\b",not_match="SINUMERIK\\sONE\\sNCU\\s1740\\b"}
+arg#2:{min = "0.0.0", patched = "25.02.10", model ="SIMATIC\\sIPC(627|647|677|847)E\\b"}
+arg#3:{min = "0.0.0", patched = "0209", model ="(SIMATIC|SIPLUS)\\sET\\s200SP\\sCPU\\s?1515SP\\sPC2\\b"}
+arg#4:{min = "0.0.0", patched = "21.01.07", model ="SIMATIC\\sIPC127E\\b|SIMATIC\\sField\\sPG\\sM6\\b"}
+arg#5:{min = "0.0.0", patched = "21.01.16", model ="SIMATIC\\sIPC(477E\\sPRO|477E|427E)\\b"}
+arg#6:{min = "0.0.0", patched = "23.01.10", model ="SIMATIC\\sITP1000\\b"}
+arg#7:{min = "0.0.0", patched = "05.00.00.00 ", model ="SINUMERIK\\sONE\\sNCU\\s1740\\b"}
+
+#link for arg#1 https://regex101.com/r/6ZCiB9/7 
+#link for arg#2 https://regex101.com/r/MNgBJS/2
+#link for arg#3 https://regex101.com/r/6ZCiB9/2 
+#link for arg#4 https://regex101.com/r/J9zZZY/3
+#link for arg#5 https://regex101.com/r/zqJ0UI/4
+#link for arg#6 https://regex101.com/r/5ouh7c/2
+#link for arg#7 #https://regex101.com/r/ULpVTa/2 
+

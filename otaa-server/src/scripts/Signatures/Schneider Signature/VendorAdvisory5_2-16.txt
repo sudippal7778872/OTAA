@@ -1,0 +1,128 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2021-130-04
+Title: Schneider Electric homeLYnk and spaceLYnk Multiple Vulnerabilities (SEVD-2021-130-04)
+Type: bhpp_vuln
+VulnID:590770
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "2.61", model = "((space|home)LYnk|Wiser\\sfor.+KNX)"}
+
+regex:-  https://regex101.com/r/9VazDW/1
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2019-134-11
+Title: Schneider Electric Modicon Controllers Multiple Vulnerabilities (SEVD-2019-134-11) 
+Type: bhpp_vuln
+VulnID:590771
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "3.10", model = "(Modicon\\sM580)"}
+arg#2: {min = "0.0.0", patched = "3.30", model = "(Modicon\\sM340)"}
+arg#3: {min = "0.0.0", patched = "3.20", model = "(Modicon\\sPremium)"}
+arg#4: {min = "0.0.0", patched = "3.60", model = "(Modicon\\sQuantum)"}
+
+
+regex:- https://regex101.com/r/33JO0Z/1 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2020-161-04
+Title: Schneider Electric Easergy T300 Multiple Vulnerabilities (SEVD-2020-161-04)
+Type: bhpp_vuln
+VulnID:	590772
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "2.7", model = "(Easergy\\sT300)"}
+
+regex:-   https://regex101.com/r/pDEU15/1  
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2020-343-06
+Title:Schneider Electric Web Server on Modicon M340, Legacy Offers Modicon Quantum and Modicon Premium and associated Communication Modules Vulnerability (SEVD-2020-343-06)
+Type: bhpp_vuln
+VulnID:590773
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "3.30", model = "(Modicon\\sM340\\:BMXP34\\d+)"}
+arg#2: {min = "0.0.0", patched = "3.4", model = "(Modicon\\sM340\\sEthernet\\sCommunication\\sModule\\:BMXNOE\\s?0100\\b)"}
+arg#3: {min = "0.0.0", patched = "6.6", model = "(Modicon\\sM340\\sEthernet\\sCommunication\\sModule\\:BMXNOE\\s?0110\\b)"}
+arg#4: {min = "0.0.0", patched = "99.99.99", model = "(Modicon\\sM340\\sEthernet\\sCommunication\\sModule\\:BMXNOC0401\\b)"}
+arg#5: {min = "0.0.0", patched = "7.3", model = "(Modicon\\sQuantum\\s.+Module\\:140NOE771\\d1\\b)"}
+arg#6: {min = "0.0.0", patched = "99.99.99", model = "(Modicon\\sQuantum\\s.+(Module\\:140NOC78\\d00|Comunication\\sModule\\:140NOC77101)\\b)"}
+arg#7: {min = "0.0.0", patched = "99.99.99", model = "(Modicon\\sQuantum.*?\\:140CPU65\\d\\d0\\b)"}
+arg#8: {min = "0.0.0", patched = "99.99.99", model = "(Modicon\\sPremium.*?(Module\\:TSXETY(4|5)103|\\:TSXP57(4|5|6)634)\\b)"}
+
+regex:- 
+Modicon M340 CPUs                                       https://regex101.com/r/hIicnv/1
+Modicon M340 Ethernet Communication modules:-
+BMXNOE0100 (H)                                          https://regex101.com/r/xBLouW/1 
+BMXNOE0110 (H)                                          https://regex101.com/r/PhXXqd/1 
+BMXNOC0401 (H)                                          https://regex101.com/r/kTgZN2/1  
+Modicon Quantum communication modules :-
+140NOE771x1                                             https://regex101.com/r/x7HOZZ/1 
+140NOC78x00 | 140NOC77101                               https://regex101.com/r/psbgq6/1 
+Modicon Quantum processors                              https://regex101.com/r/djkYRk/1 
+Modicon Premium communication modules| processors       https://regex101.com/r/eFpfwU/1 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2020-343-08
+Title: Schneider Electric Modicon M580 Modicon M340 Legacy Controllers Modicon Quantum and Modicon Premium Multiple Vulnerabilities (SEVD-2020-343-08)
+Type: bhpp_vuln
+VulnID:590774
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "3.20", model = "(Modicon\\sM580.+\\:BME\\w58\\w+)"}
+arg#2: {min = "0.0.0", patched = "3.30", model = "(Modicon\\sM340\\:BMXP34\\d+)"}
+arg#3: {min = "0.0.0", patched = "99.99.99", model = "(Modicon\\s(Premium\\:TSXP57(4|5|6)634\\b|Quantum\\:140CPU65\\d+))"}
+
+regex:-
+Modicon M580 CPUs – BMEx58xxxxx                      https://regex101.com/r/TtWJAL/1
+Modicon M340 CPUs – BMX P34x                         https://regex101.com/r/TbN8au/1
+Modicon Premium CPUs TSXP57(4|5|6)634|Quantum CPUs   https://regex101.com/r/GUuLoW/1
+                    
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2020-070-04
+Title: Andover Continuum System (V2.1) Multiple Vulnerabilities(SEVD-2020-070-04)
+Type: bhpp_vuln
+VulnID:590776
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "(Continuum)"}
+
+regex:-     https://regex101.com/r/2WCDcK/1
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2020-287-01
+Title: Schneider Electric Web Server on Modicon M340 Modicon Quantum and Modicon Premium Legacy offers and their Communication Modules Vulnerability (SEVD-2020-287-01)
+Type: bhpp_vuln
+VulnID:590775
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "3.20", model = "(M340.*?\\:BMXP34\\d+)"}
+arg#2: {min = "0.0.0", patched = "3.3", model = "(M340\\sEthernet\\sCommunication\\sModule\\:BMXNOE\\s?0100\\b)"}
+arg#3: {min = "0.0.0", patched = "6.5", model = "(M340\\sEthernet\\sCommunication\\sModule\\:BMXNOE\\s?0110\\b)"}
+arg#4: {min = "0.0.0", patched = "2.10", model = "(M340\\sEthernet\\sCommunication\\sModule\\:BMXNOC0401\\b)"}
+arg#5: {min = "0.0.0", patched = "6.1", model = "(Premium\\:TSXP57(4|5|6)634\\b)"}
+arg#6: {min = "0.0.0", patched = "6.2", model = "(Premium.*?Module\\:TSXETY4103\\b)"}
+arg#7: {min = "0.0.0", patched = "6.4", model = "(Premium.*?Module\\:TSXETY5103\\b)"}
+arg#8: {min = "0.0.0", patched = "6.1", model = "(Quantum.*?\\:140CPU65\\d+)"}
+arg#9: {min = "0.0.0", patched = "7.1", model = "(Quantum\\s.+Module\\:140NOE771\\d1\\b)"}
+arg#10: {min = "0.0.0", patched = "1.74", model = "(Quantum\\s.+Module\\:140NOC78\\d00\\b)"}
+arg#11: {min = "0.0.0", patched = "1.08", model = "(Quantum\\s.+Comunication\\sModule\\:140NOC77101\\b)"}
+
+regex:-
+
+M340 CPUs -BMX P34x                                                                https://regex101.com/r/x8Uenb/1
+M340 Communication Ethernet modules - BMXNOE0100(H)|BMXNOE0110(H)|BMXNOC0401       https://regex101.com/r/ifDDob/1 (arg 2,3,4)
+Premium processors  TSXP574634, TSXP575634, TSXP576634                             https://regex101.com/r/30kdt3/1
+Premium communication modules TSXETY4103 |TSXETY5103                               https://regex101.com/r/vNyb7u/1  (arg 6,7)
+Quantum processors 140CPU65xxxxx                                                   https://regex101.com/r/qi4rJj/1
+• Quantum communication modules
+140NOE771x1                                                                        https://regex101.com/r/S6Fa2S/1
+140NOC78x00                                                                        https://regex101.com/r/S5KRmB/1
+140NOC77101                                                                        https://regex101.com/r/eMppai/1
+------------------------------------------------------------------------------------------------------------------------------------------------------------

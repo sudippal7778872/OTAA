@@ -1,0 +1,16 @@
+#For advisory https://cert-portal.siemens.com/productcert/pdf/ssa-120908.pdf
+Title:  Siemens Scalance W-7xx (a/b/g) Product Family Improper Authentication Multiple Vulnerabilities (SSA-120908, icsa-13-213-01)
+Type: bhpp_vuln
+VulnID: 591397
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "4.5.4", model = "(SCALANCE\\sW7(44\\-(1PRO|1)|46\\-(1PRO|1)|47\\-(1RR|1)|84\\-(1RR|1)|86\\-(1PRO|2(RR|PRO)|3PRO)|88\\-(1(PRO|RR)|2(PRO|RR))))\\b"}
+
+
+#regex_link:https://regex101.com/r/rtJk3r/1
+
+
+
+#looks fine 
+#ready to relese 

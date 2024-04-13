@@ -1,0 +1,10 @@
+#For Advisory https://talosintelligence.com/vulnerability_reports/TALOS-2016-0231
+Title: Moxa AWK-3131A Hard-coded Administrator Credentials Vulnerability (TALOS-2016-0231)
+Type: bhpp_vuln
+VulnID: 591152
+Vulnflags: vuln
+manufacturer : "Moxa"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "AWK\\-3131A\\b", version = "^1\\.1\\b"}
+
+#arg#1 regex: https://regex101.com/r/6atHis/1 , https://regex101.com/r/8nuTnY/1

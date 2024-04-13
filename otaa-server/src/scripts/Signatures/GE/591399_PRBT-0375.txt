@@ -1,0 +1,10 @@
+#For Advisory https://www.gegridsolutions.com/app/DownloadFile.aspx?prod=d20mx&type=21&file=199
+Title: General Electric D20MX TCP Initial Sequence Number Vulnerability (PRBT-0375)
+Type: bhpp_vuln
+VulnID: 591399
+Vulnflags: vuln
+manufacturer: "General Electric"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.60", model = "D20MX\\b"}
+
+#arg1 regex link: https://regex101.com/r/sXOhk1/1

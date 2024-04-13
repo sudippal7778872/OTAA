@@ -1,0 +1,13 @@
+#For Advisory  https://www.se.com/ww/en/download/document/SEVD-2021-222-04/
+Title: Schneider Electric Modicon PAC Controllers Multiple Vulnerabilities (SEVD-2021-222-04_V4.0)
+Type: bhpp_vuln
+VulnID: 590778
+Vulnflags: vuln
+manufacturer: "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "Modicon\\s(M580(.+\\:(BMEP|BMEH)(58.+S)?)|MC80\\:BMKC80.*|(.+)?Momentum(.+)?\\:171CBU)"}
+arg#2: {min = "0.0", patched = "3.50", model = "Modicon\\sM340(.+)?\\:BMXP34\\w+"}
+
+
+#Regex Link 1 https://regex101.com/r/YVCIO0/2
+#Regex Link 2 https://regex101.com/r/EUaMa3/1

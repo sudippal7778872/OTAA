@@ -1,0 +1,18 @@
+#For https://www.cisa.gov/uscert/ics/advisories/ICSA-18-226-02 and https://cert-portal.siemens.com/productcert/html/ssa-179516.html
+Title: Siemens MindConnect, S7-1200/1500 CPU family, ET 200SP Open Controller Open Secure Sockets Layer (OpenSSL) Multiple Vulnerabilities (ICSA-18-226-02, SSA-179516)
+Type: bhpp_vuln
+VulnID: 591261
+Vulnflags: vuln 
+Func: ics_device_multiple_version_rangeudp
+manufacturer : "Siemens"
+arg#1: {min = "2.0.0", patched = "03.01", model = "MindConnect\\s(Nano|IoT2040)\\b"}
+arg#2: {min = "2.0.0", patched = "2.1.6", model = "CPU(\\s)?1515SP\\sPC\\b"}
+arg#3: {min = "0.0.0", patched = "2.5.2", model = "(S7\\-1500\\sCPU|ET\\s200.+CPU(\\s)?15\\d\\d)",not_match="CPU(\\s)?1515SP\\s(PC2|PC)"}
+arg#4: {min = "0.0.0", patched = "4.2.3", model = "(SIMATIC|SIPLUS)\\sS7\\-1200\\sCPU"}
+
+#regex_link 1 https://regex101.com/r/vCBYbW/1
+#regex_link 2 https://regex101.com/r/Booisc/1
+#regex_link 3 https://regex101.com/r/gEPICm/1  not match regex: https://regex101.com/r/Booisc/3 
+#regex_link 4 https://regex101.com/r/1OF7MP/1 
+
+

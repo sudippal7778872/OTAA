@@ -1,0 +1,11 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-236-01
+Title:Hitachi ABB Power Grids TropOS Multiple Vulnerabilities (ICSA-21-236-01,9AKK107992A4463)
+Type: bhpp_vuln
+VulnID: 591150
+Vulnflags: vuln
+manufacturer : "ABB"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "8.9.4.9", model = "TropOS"}
+
+#regex_link https://regex101.com/r/CLLPKF/1
+

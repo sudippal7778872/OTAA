@@ -1,0 +1,10 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-617264.pdf and and https://www.cisa.gov/uscert/ics/advisories/ICSA-12-212-02
+Title: Siemens SIMATIC S7-400 PN CPU Denial-of-Service (DoS) Vulnerability (SSA-617264) (ICSA-12-212-02)
+Type: bhpp_vuln
+VulnID: 591022
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "(SIMATIC\\sS7\\-400\\sCPU\\s41(4\\-3\\sPN\\/DP\\:6ES7414\\-3EM05\\-0AB0|6\\-3\\sPN\\/DP\\:6ES7416\\-3ER05\\-0AB0|6F\\-3\\sPN\\/DP\\:6ES7416\\-3FR05\\-0AB0)|SIPLUS\\sS7\\-400\\sCPU\\s416\\-3\\sPN\\/DP)\\b"}
+
+#arg1 regex: https://regex101.com/r/TMNXub/1

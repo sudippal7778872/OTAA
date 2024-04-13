@@ -1,0 +1,10 @@
+#For Advisory https://library.e.abb.com/public/ee46f3ff5823400f991ebd9bd43a297e/2CMT2020-005913%20Security%20Advisory%20CS141.pdf
+Title: ABB UPS Adapter CS141 Vulnerability (ABBVU-ELSP-4178-2150)
+Type: bhpp_vuln
+VulnID: 590998
+Vulnflags: vuln
+manufacturer : "ABB"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "1.66", patched="1.90",model="CS141\\s(Advanced|ModBus|Basic)(.+)?(Box|Slot)\\b"}
+
+#arg1 - https://regex101.com/r/0hklzu/1

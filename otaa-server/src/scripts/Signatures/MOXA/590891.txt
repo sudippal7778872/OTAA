@@ -1,0 +1,10 @@
+
+#For advisory https://www.moxa.com/en/support/product-support/security-advisory/tn-5900-secure-routers-vulnerability
+Title: MOXA TN-5900 Series Secure Routers Vulnerability
+Type: bhpp_vuln
+VulnID: 590891
+Vulnflags:vuln
+manufacturer : "Moxa"
+Func:ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "3.2", model ="TN\\-5900\\sSeries\\b"}
+#regex_link https://regex101.com/r/LHW4EE/2

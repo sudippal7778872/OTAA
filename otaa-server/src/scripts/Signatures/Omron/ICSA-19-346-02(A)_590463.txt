@@ -1,0 +1,10 @@
+#For Advisory https://us-cert.cisa.gov/ics/advisories/icsa-19-346-02
+Title: Omron PLC CJ and CS Series (Update A) Multiple Vulnerabilities(ICSA-19-346-02(A))
+Type: bhpp_vuln
+VulnID: 590463 
+Vulnflags: vuln
+Func: ics_device_firmware_exprudp
+manufacturer : "Omron"
+arg#1: {device = "C(J|S)[^a-zA-Z]|(NX1P\\s(.+)?\\:NX1P2\\b)", version = "\\d+"}
+
+#regex link : https://regex101.com/r/KZcaft/1

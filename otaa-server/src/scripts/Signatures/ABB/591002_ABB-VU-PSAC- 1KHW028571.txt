@@ -1,0 +1,12 @@
+#For Advisory https://search.abb.com/library/Download.aspx?DocumentID=1KHW028571&DocumentPartId=
+Title:ABB ETL600 series POODLE Attack and Secure Sockets Layer (SSL) 3.0 Protocol Vulnerability (ABB-VU-PSAC- 1KHW028571)
+Type: bhpp_vuln
+VulnID: 591002
+Vulnflags: vuln
+manufacturer : "ABB"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched="4.1.4",model="ETL600\\b"}
+
+#arg1 : https://regex101.com/r/uzLpjH/1
+
+

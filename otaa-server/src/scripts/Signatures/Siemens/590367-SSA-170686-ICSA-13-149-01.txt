@@ -1,0 +1,15 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-170686.pdf & https://www.cisa.gov/uscert/ics/advisories/ICSA-13-149-01
+Title:Siemens SCALANCE Privilege Escalation (Update A) Multiple Vulnerabilities(ICSA-13-149-01)
+Type:bhpp_vuln
+VulnID:590367
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func:ics_device_multiple_version_range_non_rgp
+arg#1: {min = "0.0.0", patched="5.0.0",model="(SCALANCE|SIPLUS\\sNET.+?)\\sX([A-Z]2\\d\\d|2\\d\\d|-2\\d\\d)",not_match="(SIPLUS\\sNET\\s)?SCALANCE\\sX([A-Z]2\\d\\d|2\\d\\d)(.+?IRT|IRT)\\b"}
+arg#2: {min = "0.0.0", patched="5.1.0",model="(SIPLUS\\sNET\\s)?SCALANCE\\sX([A-Z]2\\d\\d|2\\d\\d)(.+?IRT|IRT)\\b"}
+
+#arg1:https://regex101.com/r/8xoKRl/1
+#arg2:https://regex101.com/r/7cwvb4/1
+ 
+ 
+

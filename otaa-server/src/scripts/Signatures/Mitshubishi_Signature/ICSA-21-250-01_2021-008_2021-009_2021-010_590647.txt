@@ -1,0 +1,14 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-250-01 and https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2021-008_en.pdf and https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2021-009_en.pdf and https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2021-010_en.pdf
+Title: Mitsubishi Electric MELSEC iQ-R Series Multiple Vulnerabilities (Update A) (ICSA-21-250-01) (2021-008) (2021-009) (2021-010)
+Type: bhpp_vuln
+VulnID: 590647
+Vulnflags: vuln
+manufacturer : "Mitsubishi Electric"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "27", model = "(MELSEC\\siQ\\-R\\sSeries.+\\:R(08|16|32|120)SFCPU)\\b"}
+arg#2: {min = "27", patched = "99.99.99", model = "(MELSEC\\siQ\\-R\\sSeries.+\\:R(08|16|32|120)SFCPU)\\b"}
+arg#3: {min = "0.0.0", patched = "99.99.99", model = "(MELSEC\\siQ\\-R\\sSeries.+\\:R(08|16|32|120)PSFCPU)\\b"}
+
+#arg#1 regex: https://regex101.com/r/l70TxP/1
+#arg#2 regex: https://regex101.com/r/l70TxP/1
+#arg#3 regex: https://regex101.com/r/4YkaLN/1

@@ -1,0 +1,11 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-280-05
+Title:InHand Networks IR615 Router (Update A) Multiple Vulnerabilities (ICSA-21-280-05)
+Type:bhpp_vuln
+VulnID:590971
+manufacturer:"InHand Networks"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "2.3.0", model ="Router:IR\\-615\\b"}
+
+#1-https://regex101.com/r/82x2WL/1
+
+

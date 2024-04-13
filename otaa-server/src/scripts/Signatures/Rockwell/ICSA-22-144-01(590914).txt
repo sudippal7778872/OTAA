@@ -1,0 +1,14 @@
+
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-144-01 and 
+Title: Rockwell Automation Logix Controllers Vulnerability (ICSA-22-144-01) (PN1596)
+Type: bhpp_vuln
+VulnID: 590914
+Vulnflags:vuln
+manufacturer : "Rockwell Automation"
+Func:ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "33.011", model ="(CompactLogix\\s(53|54)80|Compact GuardLogix\\s5380|(ControlLogix|GuardLogix)\\s5580)\\sController"}
+arg#2: {min = "0.0.0", patched = "34.011", model ="Allen\\-Bradley\\s(CompactLogix\\s5370(\\sL\\d)?|Compact\\sGuardLogix\\s5370|(ControlLogix|GuardLogix)\\s5570)\\sController"} 
+
+#regex_link https://regex101.com/r/4OfLR4/1 
+#regex_link https://regex101.com/r/2ZNcNh/1 

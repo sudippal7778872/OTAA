@@ -1,0 +1,12 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2023-010-06&p_enDocType=Security+and+Safety+Notice&p_File_Name=SEVD-2023-010-06_Modicon_Controllers_Security_Notification.pdf&_ga=2.102747975.79862351.1673406522-364830623.1643890284
+Title: Schneider Electric Modicon M340, M580 CPU and M580 CPU Safety Authentication Bypass Vulnerability (SEVD-2023-010-06)
+Type:bhpp_vuln
+VulnID: 591331
+manufacturer:"Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "00.00.00", patched = "99.99.99", model = "(Modicon\\sM(340(.+)?\\:BMXP34\\w+|580(.+)\\:BME(P|H)\\w+))\\b"}
+
+#regex_link 1 https://regex101.com/r/DGjTCL/2
+
+
+

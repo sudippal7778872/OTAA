@@ -1,0 +1,16 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-354-04
+Title:Rockwell Automation MicroLogix 1100 and 1400 denial-of-service (DoS) Multiple Vulnerabilities (ICSA-22-354-04)
+Type: bhpp_vuln
+VulnID:591270
+manufacturer : "Rockwell Automation"
+Func: ics_device_multiple_version_range_non_rgp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "MicroLogix\\s1100\\sController\\b"}
+arg#2: {min = "0.0.0", patched = "7.001", model = "MicroLogix\\s1400(.+)A\\b",not_match="MicroLogix\\s1400\\s(.+)?(A\\/A|A\\/B|B\\/A)\\b"}
+arg#3: {min = "0.0.0", patched = "21.008", model = "MicroLogix\\s1400(.+)B\\/C\\b"}
+
+
+
+#regex_link 1 https://regex101.com/r/lYg3v2/1
+#regex_link 2 https://regex101.com/r/bEjS7N/1    not match regex :https://regex101.com/r/NYKvxB/1
+#regex_link 3 https://regex101.com/r/mp2xp1/1
+

@@ -1,0 +1,36 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-17-094-04
+Title: Rockwell Automation Stratix 5900 Multiple Vulnerabilities(ICSA-17-094-04)
+Type: bhpp_vuln
+VulnID: 590349
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Rockwell Automation"
+arg#1: {min = "0.0.0", patched = "15.6.3", model = "Allen\\-Bradley\\sStratix\\s5900\\b"}
+
+#arg#1 https://regex101.com/r/hhd0tQ/1
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-18-107-03
+Title: Rockwell Automation Stratix Services Router Multiple Vulnerabilities(ICSA-18-107-03)
+Type: bhpp_vuln
+VulnID: 590343
+Func: ics_device_firmware_exprudp
+manufacturer : "Rockwell Automation"
+arg#1: {device = "Allen\\-Bradley\\sStratix\\s5900\\sServices\\sRouter", version = "\\d"}
+
+#arg#1 https://regex101.com/r/hhd0tQ/2
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-17-208-04
+Title: Rockwell Automation Allen-Bradley Stratix and ArmorStratix Multiple Vulnerabilities(ICSA-17-208-04)
+Type: bhpp_vuln
+VulnID: 590342
+Func: ics_device_firmware_exprudp
+manufacturer : "Rockwell Automation"
+arg#1: {device = "Allen\\-Bradley\\s(Stratix\\s(5410|5400|5700|8000)|ArmorStratix\\s5700)\\b", version = "\\d"}
+arg#2: {device = "Allen\\-Bradley\\sStratix\\s5900\\b", version = "\\d"}
+arg#3: {device = "Allen\\-Bradley\\sStratix\\s8300\\b", version = "\\d"}
+
+#arg#1 https://regex101.com/r/LfN9Ju/2
+#arg#2 https://regex101.com/r/hhd0tQ/1
+#arg#3 https://regex101.com/r/FMkWCG/1
+
+##All in One https://regex101.com/r/e51MjE/1

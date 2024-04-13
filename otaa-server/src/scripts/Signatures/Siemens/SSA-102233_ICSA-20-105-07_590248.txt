@@ -1,0 +1,18 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-102233.pdf and https://www.cisa.gov/uscert/ics/advisories/icsa-20-105-07
+Title: Siemens SCALANCE and SIMATIC  Vulnerability (Update H) (SSA-102233) (ICSA-20-105-07)
+Type: bhpp_vuln
+VulnID: 590248
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "5.5.0", model = "SCALANCE\\sX(20(0\\-4PIRT\\:6GK5200\\-4AH00\\-2BA3|1\\-3PIRT(\\:6GK5201\\-3BH00\\-2BA3|\\sPRO\\:6GK5201\\-3JR00\\-2BA6)|2(\\-2IRT\\:6GK5202\\-2BB00\\-2BA3|\\-2PIRT\\:6GK5202\\-2BH00\\-2BA3|\\-2PIRT\\sPRO\\:6GK5202\\-2JR00\\-2BA6)|4IRT(\\:6GK5204\\-0BA00\\-2BA3|\\sPRO\\:6GK5204\\-0JA00\\-2BA6))|F20(1\\-3P\\sIRT\\:6GK5201\\-3BH00\\-2BD2|2\\-2P\\sIRT\\:6GK5202\\-2BH00\\-2BD2|4(\\-2BA\\sIRT\\:6GK5204\\-2AA00\\-2BD2|IRT\\:6GK5204\\-0BA00\\-2BF2)))\\b"}
+arg#2: {min = "0.0.0", patched = "5.2.5", model = "SCALANCE\\sX(2(04\\-2(\\:6GK5204\\-2BB10\\-2AA3|FM\\:6GK5204\\-2BB11\\-2AA3|LD(\\:6GK5204\\-2BC10\\-2AA3|\\sTS(\\s)?\\:6GK5204\\-2BC10\\-2CA2)|TS\\:6GK5204\\-2BB10\\-2CA2)|06\\-1(\\:6GK5206\\-1BB10\\-2AA3|LD\\:6GK5206\\-1BC10\\-2AA3)|08(\\:6GK5208\\-0BA10\\-2AA3|PRO\\:6GK5208\\-0HA10\\-2AA6)|12\\-2(\\:6GK5212\\-2BB00\\-2AA3|LD\\:6GK5212\\-2BC00\\-2AA3)|16\\:6GK5216\\-0BA00\\-2AA3|24\\:6GK5224\\-0BA00\\-2AA3)|F20(4(\\:6GK5204\\-0BA00\\-2AF2|\\-2\\:6GK5204\\-2BC00\\-2AF2)|6\\-1\\:6GK5206\\-1BC00\\-2AF2|8\\:6GK5208\\-0BA00\\-2AF2))\\b"}
+arg#3: {min = "0.0.0", patched = "4.1.4", model = "(SCALANCE\\sX(3(02\\-7(\\s)?EEC(\\s)?\\:6GK5302\\-7GD00\\-(1|2|3|4)(E|G)A3|04\\-2FE\\:6GK5304\\-2BD00\\-2AA3|06\\-1LD\\sFE\\:6GK5306\\-1BF00\\-2AA3|07\\-(2EEC\\:6GK5307\\-2FD00\\-(1|2|3|4)(E|G)A3|3(\\:6GK5307\\-3BL(0|1)0\\-2AA3|LD(\\s)?\\:6GK5307\\-3BM(0|1)0\\-2AA3))|08\\-2(\\:6GK5308\\-2FL(0|1)0\\-2AA3|L(D\\:6GK5308\\-2FM(0|1)0\\-2AA3|H((\\s)?\\:6GK5308\\-2FN(0|1)0\\-2AA3|\\+(\\s)?\\:6GK5308\\-2FP(0|1)0\\-2AA3))|M(\\:6GK5308\\-2GG(0|1)0\\-2AA2|(\\s)?PoE\\:6GK5308\\-2QG(0|1)0\\-2AA2|\\sTS\\:6GK5308\\-2GG(0|1)0\\-2CA2))|10(\\:6GK5310\\-0FA(0|1)0\\-2AA3|FE\\:6GK5310\\-0BA(0|1)0\\-2AA3)|20\\-(1\\sFE(\\s)?\\:6GK5320\\-1BD00\\-2AA3|3LDFE\\:6GK5320\\-3BF00\\-2AA3))|408\\-2\\:6GK5408\\-2FD00\\-2AA2|R324\\-(4M\\s(EEC\\:6GK5324\\-4GG(0|1)0\\-(1|2|3|4)(E|J)R2|PoE(\\:6GK5324\\-4QG00\\-(1|3)(A|H)R2|\\sTS\\:6GK5324\\-4QG00\\-1CR2))|12M(\\s)?(\\:6GK5324\\-0GG(0|1)0\\-(1|3)(A|H)R2|TS\\:6GK5324\\-0GG(0|1)0\\-1CR2)))|SIPLUS\\sNET\\sSCALANCE\\sX308\\-2\\:6AG1308\\-2FL10\\-4AA3)\\b"}
+arg#4: {min = "0.0.0", patched = "99.99.99", model = "(CP\\s(343\\-1\\sAdvanced\\:(6GK7343\\-1GX31\\-0XE0|6AG1343\\-1GX31\\-4XE0)|443\\-1(\\:6GK7443\\-1EX30\\-0XE0|\\:6AG1443\\-1EX30\\-4XE0|\\sAdvanced\\:6GK7443\\-1GX30\\-0XE0|\\sADVANCED\\:6AG1443\\-1GX30\\-4XE0))|RF18(0C\\:6GT2002\\-0JD00|2C\\:6GT2002\\-0JD10))\\b"}
+arg#5: {min = "0.0.0", patched = "1.5.18", model = "CP\\s44(2\\-1\\sRNA\\:6GK7442\\-1RX00\\-0XE0|3\\-1\\sRNA\\:6GK7443\\-1RX00\\-0XE0)\\b"}
+
+#arg#1 regex: https://regex101.com/r/mtvNBD/1
+#arg#2 regex: https://regex101.com/r/ecdKVv/1
+#arg#3 regex: https://regex101.com/r/rEkg0T/1
+#arg#4 regex: https://regex101.com/r/uwzBE2/1 
+#arg#5 regex: https://regex101.com/r/mfCfff/1

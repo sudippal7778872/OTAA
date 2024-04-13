@@ -1,0 +1,14 @@
+
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-845392.pdf
+Title: Siemens Energy PLUSCONTROL 1st Gen Devices Multiple Vulnerabilities (SSA-845392)
+Type: bhpp_vuln
+VulnID:590792
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "(PLUSCONTROL)"}
+
+
+regex:-
+
+https://regex101.com/r/tnzZwz/2

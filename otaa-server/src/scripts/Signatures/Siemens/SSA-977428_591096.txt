@@ -1,0 +1,10 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-977428.pdf
+Title: Siemens SCALANCE M875 Multiple Vulnerabilities (SSA-977428)
+Type: bhpp_vuln
+VulnID: 591096
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "SCALANCE\\sM875\\b"}
+
+#arg#1 regex: https://regex101.com/r/qnpzDY/1

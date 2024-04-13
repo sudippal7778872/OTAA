@@ -1,0 +1,10 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2016-035-01
+Title:Schneider Electric ConneXium Lite Managed Switch Vulnerability (SEVD-2016-035-01)
+Type:bhpp_vuln
+VulnID:591012
+Vulnflags:vuln
+manufacturer:"Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched="01.02",model="ConneXium\\sLite\\sManaged\\sSwitch\\:TCSESL043F23F0\\b"}
+
+#arg1:https://regex101.com/r/D3ouPg/1

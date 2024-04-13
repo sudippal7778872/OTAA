@@ -1,0 +1,11 @@
+#For advisory https://talosintelligence.com/vulnerability_reports/TALOS-2022-1448
+Title: Reolink RLC-410W hardcoded TLS key information disclosure Vulnerability (TALOS-2022-1448)
+Type: bhpp_vuln
+VulnID: 591346
+Vulnflags: vuln
+manufacturer : "Reolink"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "RLC\\-410W\\b", version = "^3\\.0\\.0\\.136\\b"}
+
+
+#arg#1 regex: https://regex101.com/r/TJVrXU/1 , https://regex101.com/r/eWs6NZ/1

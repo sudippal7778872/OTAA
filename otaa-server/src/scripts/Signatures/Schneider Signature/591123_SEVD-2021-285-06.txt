@@ -1,0 +1,12 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2021-285-06
+Title: Schneider Electric Modicon TM5 modules Multiple Vulnerabilities (SEVD-2021-285-06)
+Type: bhpp_vuln
+VulnID: 591123
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched="2.57",model="Modicon\\sTM5.+\\:TM5CSLC(1|2)00FS\\b"}
+arg#2: {min = "0.0.0", patched="2.79",model="Modicon\\sTM5\\sSercos\\s3\\sCommunication\\sModule\\:TM5NS31\\b"}
+arg#3: {min = "0.0.0", patched="3.12",model="Modicon\\sTM5.+\\:(TM5NEIP1|TM5NEIP1K)\\b"}
+
+

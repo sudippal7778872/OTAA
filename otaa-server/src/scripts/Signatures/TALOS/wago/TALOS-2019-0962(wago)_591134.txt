@@ -1,0 +1,11 @@
+#For Advisory https://talosintelligence.com/vulnerability_reports/TALOS-2019-0962
+Title: WAGO PFC200 iocheckd service "I/O-Check" cache Multiple Command Injection Multiple Vulnerabilities (TALOS-2019-0962)
+Type: bhpp_vuln
+VulnID: 591134
+Vulnflags: vuln
+manufacturer : "WAGO"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "WAGO\\sController\\sPFC200\\b", version = "(03\\.02\\.02\\(14\\))$"}
+
+#arg1 https://regex101.com/r/8BuUOS/2
+## version https://regex101.com/r/NWPW77/3

@@ -1,0 +1,10 @@
+#For Advisory https://jvn.jp/en/vu/JVNVU97575890/index.html
+Title: Omron CP1L-EL20DR-D Active debug code Vulnerability (JVNVU97575890)
+Type: bhpp_vuln
+VulnID: 591349
+Vulnflags: vuln
+manufacturer: "Omron"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.1", model = "CP1L\\s(.+)\\:CP1L\\-EL20DR\\-D\\b"}
+
+#arg1 regex link: https://regex101.com/r/PirknT/1

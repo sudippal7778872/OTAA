@@ -1,0 +1,10 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-279823.pdf
+Title:Siemens S7-1200 Web Application Cross Site Scripting Vulnerability (ICSA-12-283-01) (SSA-279823)
+Type:bhpp_vuln
+VulnID:590992
+Vulnflags:vuln
+manufacturer:"Siemens"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "2.0", patched = "3.0.2", model ="(SIMATIC|SIPLUS)\\sS7\\-1200\\sCPU\\b"}
+
+#1 - https://regex101.com/r/E2EQkH/1

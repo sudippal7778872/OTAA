@@ -1,0 +1,10 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2016-060-01
+Title:Schneider Electric MiCOM Px30/Px40 Vulnerability (SEVD-2016-060-01)
+Type: bhpp_vuln
+VulnID: 591026
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched="99.99.99",model="Micom\\sPx(30|40)\\sSeries\\b"}
+
+#arg1:https://regex101.com/r/70tHHI/1
+

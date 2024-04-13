@@ -1,0 +1,13 @@
+#For advisory https://library.e.abb.com/public/6b454c20b3a2445ea148a07c46a2f85c/ABB-Advisory_3ADR010376.pdf
+Title: Hardcoded Credentials Multiple Vulnerabilities (3ADR010376)
+Type: bhpp_vuln
+VulnID: 591299
+Vulnflags: vuln
+manufacturer : "ABB"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.77", model = "CP600(.+)?\\:(CP6(20|30)(\\-WEB)?|CP635(\\-B|\\-WEB)?)\\b"}
+
+
+
+
+#regex_link: https://regex101.com/r/t5jMB4/3

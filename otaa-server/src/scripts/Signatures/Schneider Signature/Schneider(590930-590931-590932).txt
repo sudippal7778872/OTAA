@@ -1,0 +1,56 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2022-039-02
+Title:Schneider Electric EcoStruxure EV Charging Expert Multiple Vulnerabilities (SEVD-2022-039-02)
+Type:bhpp_vuln
+VulnID:590930
+Vulnflags:vuln
+manufacturer:"Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "00.00.00", patched = "4.0.0.13", model ="EV\\sCharge.+\\:HMIBSCEA53D1E(DB|DS|DM|DL|SS|SM|ML)\\b"}
+
+#link for arg#1 https://regex101.com/r/sWwYe0/4
+
+##############################################
+
+#For Advisory https://www.se.com/ww/en/download/document/SEVD-2019-225-02
+Title:Schneider Electric Modicon M340 Controller Vulnerability (SEVD-2019-225-02)
+Type:bhpp_vuln
+VulnID:590931
+Vulnflags:vuln
+manufacturer:"Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "00.00.00", patched = "99.99.99", model ="Modicon\\sM340\\b"}
+
+#link for arg#1 https://regex101.com/r/xz8f70/3
+
+##############################################
+
+#For Advisory https://www.se.com/us/en/download/document/SEVD-2019-253-02/
+Title:Schneider Electric Modicon Quantum 140 NOE771x1 Vulnerability (SEVD-2019-253-02)
+Type:bhpp_vuln
+VulnID:590932
+Vulnflags:vuln
+manufacturer:"Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "00.00.00", patched = "7.0", model ="(Quantum\\s.+)?\\:140NOE771\\d1\\b"}
+
+#link for arg#1 https://regex101.com/r/b6H4OY/1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+

@@ -1,0 +1,9 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-221-02
+Title: Emerson ControlWave Vulnerability (ICSA-22-221-02)
+Type: bhpp_vuln
+VulnID: 591130
+manufacturer : "Emerson"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "ControlWave\\b"}
+
+#arg#1 regex: https://regex101.com/r/PCHwWX/1

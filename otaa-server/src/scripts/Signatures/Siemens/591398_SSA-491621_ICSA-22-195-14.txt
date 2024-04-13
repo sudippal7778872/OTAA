@@ -1,0 +1,11 @@
+#For advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-195-14 and https://cert-portal.siemens.com/productcert/html/ssa-491621.html
+Title: Siemens CPC80 Firmware of SICAM A8000 Devices Denial of Service Vulnerability (SSA-491621, ICSA-22-195-14)
+Type: bhpp_vuln
+VulnID: 591398
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "16.30", model = "(CP\\-(8000\\sMASTER\\sMODULE\\sWITH\\sI\\/O\\:6MF2101\\-0AB10\\-0AA0|8000\\:6MF2101\\-1AB10\\-0AA0|80(21\\sMASTER\\sMODULE\\:6MF2802\\-1AA00|22\\sMASTER\\sMODULE\\sWITH\\sGPRS\\:6MF2802\\-2AA00)))\\b"}
+
+
+#regex_link: https://regex101.com/r/8uLaYe/1

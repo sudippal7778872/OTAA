@@ -1,0 +1,20 @@
+#For https://www.cisa.gov/uscert/ics/advisories/icsa-22-286-04 and https://cert-portal.siemens.com/productcert/pdf/ssa-568427.pdf
+Title: Siemens SIMATIC S7-1200 and S7-1500 CPU Families Weak Key Protection Vulnerability (SSA-568427,icsa-22-286-04)
+Type: bhpp_vuln
+VulnID: 591127
+Vulnflags:vuln
+manufacturer : "Siemens"
+Func:ics_device_multiple_version_range_non_rgp
+arg#1: {min = "0.0.0", patched = "2.9.2", model ="SIMATIC\\sS7\\-1500\\sDrive\\sController|(S7\\-1500\\sCPU|ET\\s200.+CPU(\\s)?15\\d\\d)",not_match="CPU(\\s)?1515SP\\s(PC2|PC)\\b"}
+arg#2: {min = "0.0.0", patched = "21.9", model ="CPU(\\s)?1515SP\\sPC2\\b"}
+arg#3: {min = "0.0.0", patched = "99.99.99", model ="CPU(\\s)?1515SP\\sPC\\b"}
+arg#4: {min = "0.0.0", patched = "4.5.0", model ="(SIMATIC|SIPLUS)\\sS7\\-1200\\sCPU"}
+
+
+
+#regex_link arg1 https://regex101.com/r/doOy5x/1    not match regex : https://regex101.com/r/F7Eq81/1
+#regex_link arg2 https://regex101.com/r/mJ9Ess/1
+#regex_link arg3 https://regex101.com/r/PIgsFy/1 
+#regex_link arg4 https://regex101.com/r/pKopZZ/1 
+
+

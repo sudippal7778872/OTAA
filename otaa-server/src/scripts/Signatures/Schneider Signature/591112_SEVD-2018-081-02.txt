@@ -1,0 +1,9 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2018-081-02
+Title: Schneider Electric Modicon M340, Premium, Quantum PLCs and BMXNOR0200 Multiple Vulnerabilities (SEVD-2018-081-02)
+Type: bhpp_vuln
+VulnID: 591112
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model="BMXNOR0200\\b|Modicon\\s(M340\\b|Premium|(.+)?Quantum)"}
+
+

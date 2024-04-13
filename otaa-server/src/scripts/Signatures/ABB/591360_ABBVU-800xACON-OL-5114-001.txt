@@ -1,0 +1,11 @@
+#For Advisory https://library.e.abb.com/public/35b7293721c1497b915c1761f504b48c/2PAA120481_B_en_SECURITY%20WindRiver%20VxWorks%20IPNet%20Vulnerabilities,%20impact%20on%20AC%20800M.pdf
+Title: ABB AC 800M WindRiver VxWorks IPNet Multiple Vulnerabilities (ABBVU- 800xACON-OL-5114-001)
+Type: bhpp_vuln
+VulnID: 591360
+manufacturer: "ABB"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "5.1.1.0", patched = "5.1.1.5", model = "(AC\\s800M\\sHI|AC\\s800M)\\b"}
+arg#2: {min = "6.0.0", patched = "6.0.0.3", model = "(AC\\s800M\\sHI|AC\\s800M)\\b"}
+arg#3: {min = "6.1.0.0", patched = "6.1.0.2", model = "(AC\\s800M\\sHI|AC\\s800M)\\b"}
+
+#regex link : https://regex101.com/r/11Xu5Z/1

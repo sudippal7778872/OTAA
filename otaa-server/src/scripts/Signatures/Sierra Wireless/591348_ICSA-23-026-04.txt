@@ -1,0 +1,13 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-23-026-04
+Title: Sierra Wireless AirLink Router with ALEOS Software remote code execution Multiple Vulnerabilities (ICSA-23-026-04)
+Type: bhpp_vuln
+VulnID: 591348
+Vulnflags: vuln
+manufacturer: "Sierra Wireless"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "4.9.8", model = "Airlink\\sRouter(.+)\\:(ES|GX)450\\b"}
+arg#2: {min = "0.0.0", patched = "4.16.0", model = "Airlink\\sRouter(.+)\\:(MP70|RV(50X|50|55)|LX(40|60))"}
+
+
+#arg1 regex link : https://regex101.com/r/XW3Ufg/2
+#arg2 regex link : https://regex101.com/r/0Y9u8m/2

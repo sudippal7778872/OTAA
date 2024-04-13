@@ -1,0 +1,10 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-594438.html
+Title: Siemens RUGGEDCOM ROX products Remote Code Execution and Denial-of-Service (DoS) Vulnerability (SSA-594438)
+Type:bhpp_vuln
+VulnID:591224
+Vulnflags:vuln
+manufacturer:"Siemens"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "2.10.0", patched = "2.15.0", model = "RUGGEDCOM\\s(MX5000|RX(1400|15(00|01|10|11|12|24|36)|5000))\\b"}
+
+#regex_link: https://regex101.com/r/7gQduO/1

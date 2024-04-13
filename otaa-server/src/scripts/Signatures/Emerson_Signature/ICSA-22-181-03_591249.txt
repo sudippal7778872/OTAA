@@ -1,0 +1,12 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-181-03
+Title:Emerson DeltaV Distributed Control System Multiple Vulnerabilities (ICSA-22-181-03)
+Type: bhpp_vuln
+VulnID:591249
+Vulnflags: vuln
+manufacturer : "Emerson"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "(DeltaV\\s(M\\-series|S[A-z]|P[A-Z]|(Wireless|CHARM|Ethernet)\\sI\\/O\\sCard)|Smart\\sLogic\\sSolver)\\b"}
+
+#regex_link 1 https://regex101.com/r/wyL7SF/1
+
+

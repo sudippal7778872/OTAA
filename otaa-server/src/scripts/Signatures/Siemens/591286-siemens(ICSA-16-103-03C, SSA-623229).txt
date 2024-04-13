@@ -1,0 +1,19 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-16-103-03
+Title:: Siemens SCALANCE DROWN (Decrypting RSA with Obsolete and Weakened eNcryption) Vulnerability (ICSA-16-103-03C, SSA-623229)
+Type: bhpp_vuln
+VulnID:591286
+Vulnflags:vuln
+manufacturer : "Siemens"
+Func:ics_device_multiple_version_range_non_rgp
+arg#1:{min = "0.0.0", patched = "4.1.0", model ="(SIPLUS\\sNET\\s)?SCALANCE\\sX(\\w)?3\\d\\d"}
+arg#2:{min = "0.0.0", patched = "3.10.2", model ="SCALANCE\\sX414"}
+arg#3:{min = "0.0.0", patched = "5.3.0", model ="(SIPLUS\\sNET\\s)?SCALANCE\\sX(\\w)?2\\d\\d(.+)?IRT\\b"}
+arg#4:{min = "0.0.0", patched = "3.2.5", model ="SCALANCE\\sX204RNA"}
+arg#5:{min = "0.0.0", patched = "5.2.2", model ="(SIPLUS\\sNET\\s)?SCALANCE\\sX(\\w)?2\\d\\d",not_match="SCALANCE\\sX204RNA|(SIPLUS\\sNET\\s)?SCALANCE\\sX(\\w)?2\\d\\d(.+)?IRT\\b"}
+
+#regex_link1: https://regex101.com/r/rflNHJ/1
+#regex_link2: https://regex101.com/r/acaNue/1
+#regex_link3: https://regex101.com/r/WB6cFm/1 
+#regex_link4: https://regex101.com/r/SuLCAK/1
+#regex_link5: https://regex101.com/r/WB6cFm/2
+

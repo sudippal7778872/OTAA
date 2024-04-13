@@ -1,0 +1,25 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-257-20
+Title: Siemens LOGO! CMR and SIMATIC RTU 3000 Multiple Vulnerabilities (ICSA-21-257-20)
+Type: bhpp_vuln
+VulnID: 590717
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "2.2.0", model = "LOGO\\!\\sCMR20(2|4)0\\b"}  
+arg#2: {min = "0.0.0", patched = "99.99.99", model = "SIMATIC\\sRTU3\\d{3}"}  
+
+
+#arg1 https://regex101.com/r/uQRxJt/1
+#arg2 https://regex101.com/r/ByJmIV/1
+
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-194-12
+Title: Siemens VxWorks-based Industrial Products Vulnerability (ICSA-21-194-12) 
+Type: bhpp_vuln
+VulnID: 590758
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "RUGGEDCOM\\sWIN|SIPLUS\\sNET\\sSCALANCE\\sX(204\\-2(LD)?|3\\d{2})|SCALANCE\\sX(200\\-4PIRT|201\\-3(PIRT\\sPRO|PIRT)|202\\-2(PIRT\\sPRO|PIRT|IRT)|204(\\-2(FM|LD\\sTS|LD|TS)?|IRT\\sPRO|IRT)|206\\-1(LD)?|208(PRO)?|212\\-2(LD)?|216|224|3\\d{2}|4\\d{2}|F(201\\-3P\\sIRT|202\\-2P\\sIRT|204(\\-2BA\\sIRT|\\-2|IRT)?|206\\-1|208))|RF182C|RFID181EIP\\b"} 
+
+#arg1 https://regex101.com/r/rp6p2q/1

@@ -1,0 +1,17 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-16-161-01
+Title:Siemens SIMATIC S7-300 Denial-of-Service Vulnerability (ICSA-16-161-01, SSA-818183)
+Type:bhpp_vuln
+VulnID:591197
+Vulnflags:vuln
+manufacturer:"Siemens"
+Func:ics_device_multiple_version_range_non_rgp
+arg#1:{min = "0.0.0", patched = "3.2.12", model ="(SIPLUS|SIMATIC)\\sS7\\-300\\sCPU.+PN\\/DP\\b|(SIMATIC|SIPLUS)\\sET\\s200S\\s.+PN\\/DP\\sCPU\\b"}
+arg#2:{min = "0.0.0", patched = "3.3.12", model ="(SIPLUS|SIMATIC)\\sS7\\-300\\sCPU\\b|(SIMATIC|SIPLUS)\\sET\\s200S\\s.+CPU\\b",not_match="(SIPLUS|nSIMATIC)\\sS7\\-300\\sCPU.+PN\\/DP\\b|(SIMATIC|SIPLUS)\\sET\\s200S\\s.+PN\\/DP\\sCPU\\b"}
+
+#1-https://regex101.com/r/87VuqX/5
+#2-https://regex101.com/r/d3k1r0/3
+
+
+
+
+

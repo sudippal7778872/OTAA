@@ -1,0 +1,14 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-341-01
+Title: Hitachi Energy RTU500 OpenLDAP Multiple Vulnerabilities (ICSA-21-341-01)
+Type:bhpp_vuln
+VulnID:590970
+Vulnflags:vuln
+manufacturer:"Hitachi Energy"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "12.4.0", patched = "12.4.11", model ="RTU\\s500\\sSeries"}
+arg#2:{min = "12.6.0", patched = "12.6.7", model ="RTU\\s500\\sSeries"}
+arg#3:{min = "12.7.0", patched = "12.7.2", model ="RTU\\s500\\sSeries"}
+arg#4:{min = "13.0.0", patched = "13.2.3", model ="RTU\\s500\\sSeries"}
+
+
+#arg(1-4) - https://regex101.com/r/GV5edr/1

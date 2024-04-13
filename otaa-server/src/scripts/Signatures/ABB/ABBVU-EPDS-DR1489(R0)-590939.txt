@@ -1,0 +1,12 @@
+#For Advisory https://search.abb.com/library/Download.aspx?DocumentID=1MRS758878&DocumentPartId=
+Title:ABB Relion 630 series Vulnerability (ABBVU-EPDS-DR1489)
+Type:bhpp_vuln
+VulnID:590939
+manufacturer:"ABB"
+Func:ics_device_firmware_exprudp
+arg#1:{device = "Relion\\s630\\b",version = "^1\\.[1-3]\\.0$"}
+
+# 1 - https://regex101.com/r/pWhqM5/1
+#version https://regex101.com/r/8x5GqQ/1
+
+

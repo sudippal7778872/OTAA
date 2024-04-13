@@ -1,0 +1,16 @@
+#For Advisory https://www.eaton.com/content/dam/eaton/company/news-insights/cybersecurity/security-bulletins/glibc-(GHOST)-vulnerability.pdf
+Title: Eaton Power Xpert Gateway models buffer overflow Vulnerability (ETN-SB-2015-1002)
+Type: bhpp_vuln
+VulnID: 591368
+Vulnflags: vuln
+manufacturer : "Eaton"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "3.0.8", model = "Power\\sXpert\\sGateway(.+)?\\:PXG\\s(2|4|6|8)00E\\b"}
+arg#2: {min = "0.0.0", patched = "2.1.4", model = "PXM\\s2000\\b"}
+arg#3: {min = "2.0", patched = "2.3", model = "PXMP(.+)?Energy\\sPortal\\sModule\\:PXMP\\-EPM\\b"}
+arg#4: {min = "0.0.0.0", patched = "13.3.5.6", model = "PXM\\s(4|6|8)000\\b"}
+
+#arg#1 regex: https://regex101.com/r/apUoUw/1
+#arg#2 regex: https://regex101.com/r/Ql00Lg/1
+#arg#3 regex: https://regex101.com/r/cOviEU/1
+#arg#4 regex: https://regex101.com/r/7XdMHO/1

@@ -1,0 +1,9 @@
+#For Advisory https://talosintelligence.com/vulnerability_reports/TALOS-2017-0507
+Title: Moxa AWK-3131A Multiple Features Login Username Parameter OS Command Injection Vulnerability (TALOS-2017-0507)
+Type: bhpp_vuln
+VulnID: 591173
+Vulnflags: vuln
+manufacturer : "Moxa"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "1.4", patched = "1.91", model = "AWK\\-3131A\\b"}
+#regex_link: https://regex101.com/r/qVr95C/1

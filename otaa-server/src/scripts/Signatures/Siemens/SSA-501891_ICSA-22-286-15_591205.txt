@@ -1,0 +1,12 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-501891.html and https://www.cisa.gov/uscert/ics/advisories/icsa-22-286-15
+Title: Siemens SCALANCE X-200 and X-200IRT Families Cross-site Scripting Vulnerability (ICSA-22-286-15, ssa-501891)
+Type: bhpp_vuln
+VulnID: 591205
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "5.5.0", model = "(SCALANCE\\s(X200\\-4PIRT\\:6GK5200\\-4AH00\\-2BA3|X201\\-3PIRT(\\:6GK5201\\-3BH00\\-2BA3|\\sPRO\\:6GK5201\\-3JR00\\-2BA6)|X202\\-2(IRT\\:6GK5202\\-2BB10\\-2BA3|PIRT\\:6GK5202\\-2BH00\\-2BA3|PIRT\\sPRO\\:6GK5202\\-2JR00\\-2BA6)|X204IRT(\\:6GK5204\\-0BA00\\-2BA3|\\sPRO\\:6GK5204\\-0JA00\\-2BA6)|XF201\\-3P\\sIRT\\:6GK5201\\-3BH00\\-2BD2|XF202\\-2P\\sIRT\\:6GK5202\\-2BH00\\-2BD2|XF204(\\-2BA\\sIRT\\:6GK5204\\-2AA00\\-2BD2|IRT\\:6GK5204\\-0BA00\\-2BF2))|SIPLUS\\sNET\\sSCALANCE\\sX202\\-2P\\sIRT\\:6AG1202\\-2BH00\\-2BA3)\\b"}
+arg#2: {min = "0.0.0", patched = "5.2.5", model = "SCALANCE\\sX(204\\-2(\\:6GK5204\\-2BB10\\-2AA3|FM\\:6GK5204\\-2BB11\\-2AA3|LD\\:6GK5204\\-2BC10\\-2AA3|TS\\:6GK5204\\-2BB10\\-2CA2|LD\\sTS(\\s)?\\:6GK5204\\-2BC10\\-2CA2)|206\\-1(\\:6GK5206\\-1BB10\\-2AA3|LD\\:6GK5206\\-1BC10\\-2AA3)|208(\\:6GK5208\\-0BA10\\-2AA3|PRO\\:6GK5208\\-0HA10\\-2AA6)|212\\-2(\\:6GK5212\\-2BB00\\-2AA3|LD\\:6GK5212\\-2BC00\\-2AA3)|216\\:6GK5216\\-0BA00\\-2AA3|224\\:6GK5224\\-0BA00\\-2AA3)\\b"}
+
+#arg#1 regex: https://regex101.com/r/C8CJVe/2
+#arg#2 regex: https://regex101.com/r/WwsuzV/3 

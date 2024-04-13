@@ -1,0 +1,15 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-257-07
+Title:Siemens APOGEE and TALON Vulnerability (ICSA-21-257-07) 
+Type: bhpp_vuln
+VulnID:590691
+Vulnflags:vuln 
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "2.6.3", patched = "99.99.99", model ="APOGEE\\s(MBC|MEC)\\s\\(PPC\\)\\s\\(P2\\sEthernet\\)"} 
+arg#2: {min = "0.0.0", patched = "3.5.3", model ="(APOGEE\\sPXC|TALON\\sTC)\\s(Compact|Modular)\\s\\(BACnet\\)"} 
+arg#3: {min = "2.8", patched = "99.99.99", model ="APOGEE\\sPXC\\s(Compact|Modular)\\s\\(P2\\sEthernet\\)"} 
+
+
+link for arg#1 #https://regex101.com/r/zycOzI/1
+link for arg#2 https://regex101.com/r/UJyViO/1
+link for arg#3 #https://regex101.com/r/doQQbw/1

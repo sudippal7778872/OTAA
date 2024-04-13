@@ -1,0 +1,24 @@
+
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2022-011-03
+Title: Schneider Electric Easergy P5 Multiple Vulnerabilities (SEVD-2022-011-03)
+Type: bhpp_vuln
+VulnID:590806
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider Electric"
+arg#1: {min = "0.0.0", patched = "01.401.101", model = "(Easergy\\sP5\\b)"}
+
+regex:- https://regex101.com/r/oUl5gn/1
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2022-011-04
+Title: Schneider Electric Easergy P3 Vulnerability (SEVD-2022-011-04)
+Type: bhpp_vuln
+VulnID:590804
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider Electric"
+arg#1: {min = "0.0.0", patched = "30.205", model = "(Easergy\\sP3\\b)"}
+
+regex:- https://regex101.com/r/Pv0U4Q/1

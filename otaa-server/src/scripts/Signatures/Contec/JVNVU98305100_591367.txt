@@ -1,0 +1,12 @@
+#For Advisory https://jvn.jp/en/vu/JVNVU98305100/
+Title: Contec FLEXLAN FX3000 and FX2000 series Hidden Functionality and Use of Hard-coded Credentials multiple vulnerabilities (JVNVU98305100)
+Type: bhpp_vuln
+VulnID: 591367
+Vulnflags: vuln
+manufacturer : "Contec"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.16.00", model = "FX3000\\sseries\\b"}
+arg#2: {min = "0.0.0", patched = "1.39.00", model = "FX2000\\sseries\\b"}
+
+#arg#1 regex: https://regex101.com/r/uCEJJc/2
+#arg#2 regex: https://regex101.com/r/e8Ntz9/3

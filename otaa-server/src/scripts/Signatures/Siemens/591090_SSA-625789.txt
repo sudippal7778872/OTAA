@@ -1,0 +1,12 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-625789.pdf
+Title:Siemens SIMATIC S7-1200 CPU Multiple Vulnerabilities (SSA-625789)
+Type: bhpp_vuln
+VulnID: 591090
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#2: {min = "0.0.0", patched="2.0.3",model="(SIMATIC|SIPLUS)\\sS7\\-1200\\sCPU\\b"}
+
+#arg1:https://regex101.com/r/WSnits/1
+
+

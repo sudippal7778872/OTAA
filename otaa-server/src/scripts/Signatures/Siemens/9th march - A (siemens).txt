@@ -1,0 +1,96 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-159-13
+Title:Siemens SIMATIC RFID Vulnerability (ICSA-21-159-13)
+Type:bhpp_vuln
+VulnID:590700
+Vulnflags:vuln
+manufacturer:"Siemens"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "3.1", patched = "4.0 ", model ="SIMATIC\\sRF600\\sReader\\sRF(610R\\sCMIIT\\:6GT2811\\-6BC10\\-2|615R\\sCMIIT\\:6GT2811\\-6CC10\\-2|650R\\sCMIIT\\:6GT2811\\-6AB20\\-2|680R\\sCMIIT\\:6GT2811\\-6AA10\\-2|685R\\sCMIIT\\:6GT2811\\-6CA10\\-2|610R\\sETSI\\:6GT2811\\-6BC10\\-0|615R\\sETSI\\:6GT2811\\-6CC10\\-0|650R\\sETSI\\:6GT2811\\-6AB20\\-0|680R\\sETSI\\:6GT2811\\-6AA10\\-0|685R\\sETSI\\:6GT2811\\-6CA10\\-0|610R\\sFCC\\:6GT2811\\-6BC10\\-1|615R\\sFCC\\:6GT2811\\-6CC10\\-1|650R\\sFCC\\:6GT2811\\-6AB20\\-1|680R\\sFCC\\:6GT2811\\-6AA10\\-1|685R\\sFCC\\:6GT2811\\-6CA10\\-1|650R\\sARIB\\:6GT2811\\-6AB20\\-4|680R\\sARIB\\:6GT2811\\-6AA10\\-4|685R\\sARIB\\:6GT2811\\-6CA10\\-4)AA0"}
+arg#2:{min = "1.2", patched = "1.3.2", model ="(SIMATIC.+)?RF(166C|185C|186(CI|C)|188(CI|C))\\b"} 
+arg#3:{min = "0.0.0", patched = "2.0", model ="SIMATIC\\sRF360R"}
+
+#link for arg#1 #https://regex101.com/r/QHNxzX/1
+#link for arg#2 #https://regex101.com/r/ezPD6y/1
+#link for arg#3 #https://regex101.com/r/j7ZaBQ/4
+
+##########################################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-21-194-13 #mark it as potential
+Title: Siemens SINAMICS PERFECT HARMONY GH180 (Update A) Vulnerability (ICSA-21-194-13)
+Type: bhpp_vuln
+VulnID:590697
+manufacturer : "Siemens"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "99.99.99", model ="SINAMICS\\sPERFECT\\sHARMONY\\s(GH180\\sDRIVE\\:GH180\\sAir\\sCooled\\s6SR(5|4)|GH180\\b)"}
+link for arg#1 https://regex101.com/r/n5VxsK/1
+ 
+
+#############################################
+ 
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-21-222-06
+Title:Siemens Energy AGT and SGT Solutions Vulnerability (ICSA-21-222-06)
+Type: bhpp_vuln
+VulnID:590759
+Vulnflags:vuln
+manufacturer :"Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model ="(Industrial\\sGas\\sTurbines.+control\\:SGT\\-(100|200|300|400)|Aeroderivative\\sGas\\sTurbines.+\\:SGT\\-(A20|A35|A64))\\b"}
+
+#link for arg#1 https://regex101.com/r/VwPTHm/1
+
+##############################################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-21-194-14
+Title:Siemens RWG Universal Controllers Vulnerability (ICSA-21-194-14)
+Type: bhpp_vuln
+VulnID:590698
+Vulnflags:vuln
+manufacturer :"Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.16.16", model ="RWG.+Controller\\:RWG1\\.(M8|M12D|M12)\\b"}
+
+#link for arg#1 #https://regex101.com/r/IvcIlD/1
+
+##############################################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-21-068-06
+Title:Siemens TCP/IP Stack AMNESIA:33 in SENTRON PAC / 3VA Devices (Update C) Multiple Vulnerabilities (ICSA-21-068-06)
+Type: bhpp_vuln
+VulnID:590706
+Vulnflags:vuln
+manufacturer :"Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "4.4.1", model ="SENTRON\\s3VA\\sCOM100\\/800"}
+arg#2:{min = "0.0.0", patched = "4.0", model ="SENTRON\\s3VA\\sDSP800"}
+arg#3:{min = "0.0.0", patched = "3.2.2", model ="PAC(2200|3200T)\\b"}
+arg#4:{min = "0.0.0", patched = "2.4.7", model ="PAC3200\\b"}
+arg#5:{min = "0.0.0", patched = "3.2.0", model ="SENTRON\\sPAC3220\\b"}
+arg#6:{min = "0.0.0", patched = "2.3.0", model ="PAC4200\\b"}
+
+#link for arg#1 #https://regex101.com/r/IUxizF/1
+#link for arg#2 #https://regex101.com/r/WZRHzI/1
+#link for arg#3 https://regex101.com/r/ImcTUh/1
+#link for arg#4 #https://regex101.com/r/j0SNKj/1
+#link for arg#5 https://regex101.com/r/T2VZIK/1
+#link for arg#6 https://regex101.com/r/VKTv6o/1
+
+################################################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-21-222-07
+Title:Siemens SIMATIC NET CP Multiple Vulnerabilities (ICSA-21-222-07)
+Type: bhpp_vuln
+VulnID:590760
+Vulnflags:vuln
+manufacturer:"Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "3.0", model ="(SIPLUS\\sNET\\s)?CP\\s1543\\-1\\b"}
+arg#2: {min = "0.0.0", patched = "1.1", model ="CP\\s(1545)\\-1\\:6GK7545\\-1GX00\\-0XE0\\b"}
+
+#regex_link - 1 https://regex101.com/r/dWQuPa/2
+#regex_link - 2 https://regex101.com/r/b62d3i/3
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+#For Advisory https://www.se.com/ww/en/download/document/SEVD-2021-194-01/ and https://us-cert.cisa.gov/ics/advisories/icsa-21-194-02
+Title: Schneider Electric Modicon Controllers Multiple Vulnerabilities(SEVD-2021-194-01,ICSA-21-194-02)
+Type: bhpp_vuln
+VulnID:590476
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_range_non_rgp
+arg#1: {min = "0.0.0", patched = "3.50", model = "Modicon\\sM340(.+)?\\:BMXP34\\w+"}
+arg#2: {min = "0.0.0", patched = "4.02", model = "Modicon\\sM580(.+)?\\:(BMEP|BMEH)\\w+",not_match="(Modicon\\sM580(.+)?\\:BME(P|H)58\\w+S)\\b"}
+arg#3: {min = "0.0.0", patched = "99.99.99", model = "(Modicon\\sM580(.+)?\\:BME(P|H)58\\w+S)\\b"}
+
+#regex_link 1 https://regex101.com/r/zG2mIC/1
+#regex_link 2 https://regex101.com/r/YHWglX/1
+#regex_link 3 https://regex101.com/r/8bGGgc/1

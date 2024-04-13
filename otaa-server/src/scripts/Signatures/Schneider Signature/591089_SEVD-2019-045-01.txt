@@ -1,0 +1,11 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2019-045-01
+Title:Schneider Electric Modicon M221 Multiple Vulnerabilities (SEVD-2019-045-01)
+Type: bhpp_vuln
+VulnID: 591089
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.10.0.0", model="Modicon\\sM221\\b"}
+
+#https://regex101.com/r/3EpIna/1
+

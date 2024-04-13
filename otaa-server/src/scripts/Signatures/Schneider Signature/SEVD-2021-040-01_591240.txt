@@ -1,0 +1,14 @@
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Technical+leaflet&p_File_Name=SEVD-2021-040-01_PowerLogic_Power_Metering_Security_Notification.pdf&p_Doc_Ref=SEVD-2021-040-01&_ga=2.265668943.1160010475.1664794730-414360940.1654493530
+Title: Schneider Electric PowerLogic Power Metering Products Multiple Vulnerabilities (SEVD-2021-040-01)
+Type: bhpp_vuln
+VulnID: 591240
+manufacturer : "Schneider Electric"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "3.0.0", model = "(ION(7400|9000(T)?)|PM8000)\\b"}
+arg#2: {min = "0.0.0", patched = "4.40.1", model = "ION8650\\b"}
+arg#3: {min = "0.0.0", patched = "99.99.99", model = "ION(7650|(77|88|86)00|(83|84|85|73)\\d{2})\\b"}
+
+#regex_link https://regex101.com/r/DvxPhk/2
+#regex_link https://regex101.com/r/ZnkGQf/2
+#regex_link https://regex101.com/r/zpmMLe/3
+

@@ -1,0 +1,17 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-113131.pdf & https://www.cisa.gov/uscert/ics/advisories/icsa-18-317-02
+Title: Siemens S7-400 CPUs (Update B) Multiple Vulnerabilities(SSA-113131)(ICSA-18-317-02)
+Type: bhpp_vuln
+VulnID: 590250
+manufacturer: "Siemens"
+Func: ics_device_multiple_version_range_non_rgp
+arg#1 : {min = "0.0.0",patched = "4.6.0",model = "(SIMATIC|SIPLUS)\\sS7-400\\sCPU\\s4\\d\\d(.+)?H\\b"}
+arg#2 : {min = "6.0.0",patched = "6.0.9",model = "(SIMATIC|SIPLUS)\\sS7-400\\sCPU\\s4\\d\\d(.+)?H\\b"}
+arg#3 : {min = "0.0.0",patched = "7.0.0",model = "(SIMATIC|SIPLUS)\\sS7\\-400\\sCPU\\s.+PN\\/DP\\b",not_match="CPU\\s4\\d\\d(.+)?H\\b"}
+arg#4 : {min = "7.0.0", patched = "8.0.0",model = "(SIMATIC|SIPLUS)\\sS7\\-400\\sCPU\\s.+PN\\/DP\\b",not_match="CPU\\s4\\d\\d(.+)?H\\b"}
+arg#5 : {min = "0.0.0",patched = "8.2.1",model = "(SIMATIC|SIPLUS)(.+)?CPU\\s410\\b"}
+
+#arg1 regex link : https://regex101.com/r/PgbhHx/1 
+#arg2 regex link : https://regex101.com/r/PgbhHx/1 
+#arg3 regex link : https://regex101.com/r/dSZKtF/1 & https://regex101.com/r/c5KP91/1
+#arg4 regex link : https://regex101.com/r/dSZKtF/1 & https://regex101.com/r/c5KP91/1
+#arg5 regex link : https://regex101.com/r/MaIxzG/1

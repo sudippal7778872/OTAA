@@ -1,0 +1,32 @@
+#For Advisory https://www.se.com/ww/en/download/document/SEVD-2022-067-02/
+Title:Schneider Electric APC Smart-UPS SMT, SMC, SMX, SCL, SMTL and SRT Series Multiple Vulnerabilities (SEVD-2022-067-02)
+Type:bhpp_vuln
+VulnID:590751
+manufacturer:"Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "09.9", model ="Smart\\-UPS\\:SMT\\d+"}
+arg#2:{min = "0.0.0", patched = "14.2", model ="Smart\\-UPS\\:SMC\\d+"}
+arg#3:{min = "0.0.0", patched = "02.6", model ="Smart\\-UPS\\:SCL\\d+"}
+arg#4:{min = "0.0.0", patched = "10.3", model ="Smart\\-UPS\\:SMX\\d+"}
+arg#5:{min = "0.0.0", patched = "12.3", model ="Smart\\-UPS\\:SRT\\d+"}
+arg#6:{min = "0.0.0", patched = "01.1", model ="Smart\\-UPS.+\\:SRTL(3000RMXLI|2200RMXLI|1500RMXLI|1000RMXLI)(\\-NC)?\\b"}
+arg#7:{min = "0.0.0", patched = "04.6", model ="SmartConnect.+\\:SMT\\d+"}
+arg#8:{min = "0.0.0", patched = "04.3", model ="SmartConnect.+\\:SMC\\d+"}
+arg#9:{min = "0.0.0", patched = "03.0", model ="SmartConnect.+\\:SMTL\\d+"}
+arg#10:{min = "0.0.0", patched = "03.2", model ="SmartConnect.+\\:SCL\\d+"}
+
+
+#link for arg#1 # https://regex101.com/r/pEbwvS/1
+#link for arg#2 # https://regex101.com/r/4Ujoap/1
+#link for arg#3 # https://regex101.com/r/vDiOx0/1
+#link for arg#4 # https://regex101.com/r/qQsjr2/1
+#link for arg#5 # https://regex101.com/r/5lboBK/1
+#link for arg#6 # https://regex101.com/r/Fi7vfa/1
+#link for arg#7 # https://regex101.com/r/x1SL6c/1
+#link for arg#8 # https://regex101.com/r/7mq0up/1
+#link for arg#9 # https://regex101.com/r/dhFPjx/1
+#link for arg#10 #https://regex101.com/r/mZiuzH/1
+
+#combine regex  https://regex101.com/r/8F049v/1
+
+#note - smartconnect-SMX Series is not available

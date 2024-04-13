@@ -1,0 +1,13 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-195-18 and https://cert-portal.siemens.com/productcert/pdf/ssa-840800.pdf
+Title:Siemens RUGGEDCOM ROS (Update A) Vulnerability (ICSA-22-195-18, SSA-840800)
+Type: bhpp_vuln
+VulnID:591187
+Vulnflags:vuln
+manufacturer:"Siemens"
+Func: ics_device_multiple_version_rangeudp 
+arg#1: {min = "0.0.0", patched = "99.99.99", model ="RUGGEDCOM\\s(i80(0|1|2|3)|M(969|2100|2200)|RMC30|RP110|RSG(2100P|2100|2200)|RS(400|401|416|900GP|900G|900L|900W|910(l|w)|910(L|W)|910|920(L|W)|930(L|W)|940G|969|900|1600(F|T)|1600|8000(A|H|T)|8000))\\b"}
+arg#2: {min = "0.0.0", patched = "5.6.0", model ="RUGGEDCOM\\s(RST(2228P|2228|916(P|C))|RSL910|RSG(2488|2300P|2300|2288|920P|910C|909R|908C|907R)|RMC8388)\\b"}
+
+#regex_link 1 https://regex101.com/r/UW8HJG/2 
+#regex_link 2 https://regex101.com/r/CgAurc/1
+

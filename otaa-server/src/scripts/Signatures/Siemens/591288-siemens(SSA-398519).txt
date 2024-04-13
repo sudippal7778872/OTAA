@@ -1,0 +1,11 @@
+#For Advisory  https://cert-portal.siemens.com/productcert/pdf/ssa-398519.pdf
+Title:Siemens SIMATIC IPC, SIMATIC ET 200SP Open Controller, SIMOTION P320 Multiple Vulnerabilities (SSA-398519)
+Type: bhpp_vuln
+VulnID:591288
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "SIMOTION\\sP320\\-4\\s(E|S)\\b|SIMATIC\\s((.+)?\\:IPC427(C|D)|IPC427(C|D)|IPC477D|(.+)?\\:IPC477(C|D)|IPC627D|(.+)?\\:IPC627(C|D)|IPC847D|(.+)?\\:IPC847(C|D)|IPC847C|IPC827(C|D)|IPC677D|(.+)?\\:IPC677(C|D)|(.+)?\\:IPC647(C|D))\\b"}
+
+
+#Regex Link 1 https://regex101.com/r/m4y4Yi/3

@@ -1,0 +1,15 @@
+#For Advisory https://cert.vde.com/en/advisories/VDE-2021-050/
+Title: WAGO NUCLEUS TCP Stack Multiple Vulnerabilities (VDE-2021-050) 
+Type: bhpp_vuln
+VulnID: 590821
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "WAGO"
+arg#1: {min = "0.0.0", patched = "17", model = "750\\-(882|885\\/0\\d\\d\\-\\d\\d\\d)"}
+arg#2: {min = "0.0.0", patched = "99.99.99", model = "750\\-(331|829|852|881|889|(352\\/\\d|880\\/0)\\d\\d\\-\\d\\d\\d|831\\/000\\-00\\d)"}
+arg#3: {min = "0.0.0", patched = "10", model = "750\\-(332|823|862|891|893|(362|363|364|365|890)\\/\\d\\d\\d\\-\\d\\d\\d|832\\/000\\-00\\d)"}
+
+regex:-
+750-882|750-885/0xx-xxx                                                                                                                    https://regex101.com/r/q4QR3l/1  (arg 1)
+750-331|750-352/xxx-xxx|750-829|750-852|750-880/0xx-xxx|750-881|750-889	                                                                   https://regex101.com/r/BdW4Ts/1  (arg 2)
+750-332|750-362/xxx-xxx|750-363/xxx-xxx|750-364/xxx-xxx|750-365/xxx-xxx|750-823|750-832/000-00x|750-862|750-890/0xx-xxx|750-891|750-893	   https://regex101.com/r/jkwg14/1  (arg 3) 

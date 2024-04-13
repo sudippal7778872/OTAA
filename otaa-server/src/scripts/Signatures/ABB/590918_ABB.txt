@@ -1,0 +1,10 @@
+#For Advisory https://library.e.abb.com/public/a39bb7fdc9e34de7a7576523214fb548/ABBVREP0075-3ADR010997%20AC500%20V3%20-%20Multiple%20vulnerabilities.pdf
+Title: ABB AC500 Multiple Vulnerability (ABBVREP0075)
+Type: bhpp_vuln
+VulnID: 590918
+Vulnflags: vuln
+manufacturer : "ABB"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = " 3.6.0", model="AC500\\b"}
+
+#https://regex101.com/r/3EKdlI/1

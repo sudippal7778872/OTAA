@@ -1,0 +1,10 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-13-091-01
+Title: General Electric D20MX (Update A) Multiple Vulnerabilities (ICSA-13-091-01)
+Type: bhpp_vuln
+VulnID: 590943
+Vulnflags: vuln
+manufacturer : "General Electric"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "1.0.0", patched = "1.7", model = "D20MX\\b"}
+
+#arg1 https://regex101.com/r/jKcHib/1

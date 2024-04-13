@@ -1,0 +1,12 @@
+#For Advisory https://www.se.com/in/en/download/document/SEVD-2016-025-01/ & https://www.cisa.gov/uscert/ics/advisories/ICSA-16-061-01
+Title: : Schneider Electric Building Operation Automation Server OS COMMAND INJECTION Vulnerability(ICSA-16-061-01,SEVD-2016-025-01) 
+Type: bhpp_vuln
+VulnID: 591226
+Vulnflags: vuln
+manufacturer: "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1 : {min = "0.0.0",patched = "1.7.1" ,model = "(AS|AS\\-P)\\sAutomation\\sServer\\b"} 
+
+#regex link : https://regex101.com/r/sgmE5H/1
+
+

@@ -1,0 +1,10 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-145224.html and https://www.cisa.gov/uscert/ics/advisories/icsa-22-167-10
+Title: Siemens SCALANCE XM-400 and XR-500 Vulnerability (SSA-145224) (ICSA-22-167-10)
+Type: bhpp_vuln
+VulnID: 591031
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "6.5", model = "SCALANCE\\sX(M(408\\-(4C\\:6GK5408\\-4G(Q|P)00\\-2AM2|8C\\:6GK5408\\-8G(S|R)00\\-2AM2)|416\-4C\\:6GK5416\\-4G(S|R)00\\-2AM2)|R((524\\-8C\\:6GK5524\\-8G(S|R)00\\-(2|3|4)AR2)|526\\-8C\\:6GK5526\\-8G(R|S)00\\-(2|3|4)AR2|528\\-6M\\:6GK5528\\-0(AA|AR)00\\-2(HR|AR)2|552\\-12M\\:6GK5552\\-0(AA|AR)00\\-2(HR|AR)2))\\b"}
+
+#arg#1 regex: https://regex101.com/r/kxlTGe/2

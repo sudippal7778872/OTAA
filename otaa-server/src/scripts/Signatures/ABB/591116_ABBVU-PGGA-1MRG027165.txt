@@ -1,0 +1,13 @@
+#For Advisory search.abb.com/library/Download.aspx?DocumentID=9AKK107492A9256&LanguageCode=en&DocumentPartId=&Action=Launch
+Title: ABB Relion 650 series and Relion 670 series Terminal Reboot Vulnerability (ABBVU-PGGA-1MRG027165)
+Type: bhpp_vuln
+VulnID: 591116
+Vulnflags: vuln
+manufacturer : "ABB"
+Func:ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.3.0.6", model="Relion\\s650\\b"}
+arg#2: {min = "0.0.0", patched = "1.2.3.19", model="Relion\\s670\\b"}
+arg#3: {min = "1.2.3.20", patched = "2.0.0.12", model="Relion\\s670\\b"}
+arg#4: {min = "2.0.0.13", patched = "2.1.0.2", model="Relion\\s670\\b"}
+
+

@@ -1,0 +1,13 @@
+#For https://www.gegridsolutions.com/app/DownloadFile.aspx?prod=l30&type=21&file=222
+Title: General Electric Universal Relay (UR) family of products Distributed Network Protocol (DNP3) Implementation Vulnerability (GET-20046A)
+Type: bhpp_vuln
+VulnID: 591395
+Vulnflags: vuln
+manufacturer: "General Electric"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0", patched = "6.06", model = "Multilin\\s(B30|B90|C30|C60|C70|D30|D60|F35|F60|G30|G60|L30|L60|L90|M60|N60|T35|T60)\\b"}
+arg#2: {min = "7.0", patched = "7.21", model = "Multilin\\s(B30|B90|C30|C60|C70|D30|D60|F35|F60|G30|G60|L30|L60|L90|M60|N60|T35|T60)\\b"}
+
+
+
+#arg#1&2 regex: https://regex101.com/r/cNSMBn/2

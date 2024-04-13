@@ -1,0 +1,10 @@
+#For Advisory https://talosintelligence.com/vulnerability_reports/TALOS-2019-0928
+Title: Moxa AWK-3131A multiple iw_* utilities Use of Hard-coded Credentials Vulnerability (TALOS-2019-0928)
+Type: bhpp_vuln
+VulnID: 591162
+Vulnflags: vuln
+manufacturer : "Moxa"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "AWK\\-3131A\\b", version = "^1\\.13\\b"}
+
+#regex_link: https://regex101.com/r/qVr95C/1 , https://regex101.com/r/OBdmex/1

@@ -1,0 +1,12 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-406691.html
+Title: Siemens RUGGEDCOM ROX products DHCP function Buffer Vulnerability (SSA-406691)
+Type: bhpp_vuln
+VulnID: 591236
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "2.3.0", patched = "2.15.0", model = "RUGGEDCOM\\s(MX5000|RX(15(00|01|10|11|12)|5000))\\b"}
+arg#2: {min = "0.0.0", patched = "2.15.0", model = "RUGGEDCOM\\sRX1(400|524|536)\\b"}
+
+#arg#1 regex: https://regex101.com/r/3Qhl2o/1
+#arg#2 regex: https://regex101.com/r/LX7afK/1

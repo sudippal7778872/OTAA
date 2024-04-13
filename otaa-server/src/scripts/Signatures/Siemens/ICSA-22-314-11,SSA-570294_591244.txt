@@ -1,0 +1,12 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-314-11 and https://cert-portal.siemens.com/productcert/html/ssa-570294.html
+Title:Siemens SICAM Q100 Session Fixation, Improper Input Validation Multiple Vulnerabilities (ICSA-22-314-11, SSA-570294)
+Type: bhpp_vuln
+VulnID: 591244
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "2.50", model = "SICAM\\sQ100(.+)\\:7KG9501\\-0AA(0|3)1\\-2AA1\\b"}
+
+#regex_link 1 https://regex101.com/r/dK1gLk/2
+
+

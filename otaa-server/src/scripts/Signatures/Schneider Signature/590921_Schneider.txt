@@ -1,0 +1,9 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2019-253-01
+Title:Schneider Electric U.motion din rail and touch panel servers Multiple Vulnerability (SEVD-2019-253-01)
+Type: bhpp_vuln
+VulnID: 590921
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.3.7", model="U\\.motion\\sKNX\\sServer(\\:MEG6501\\-0001|\\sPlus(\\:MEG6501\\-0002|\\sTouch\\s(10\\:MEG6260\\-0410|15\\:MEG6260\\-0415)))\\b"}
+# https://regex101.com/r/FqAVK5/1

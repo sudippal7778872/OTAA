@@ -1,0 +1,24 @@
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Technical+leaflet&p_File_Name=SEVD-2019-134-09+-+Modicon+Quantum.pdf&p_Doc_Ref=SEVD-2019-134-09
+Title: Schneider Electric Modicon Quantum Multiple Vulnerabilities (SEVD-2019-134-09)
+Type: bhpp_vuln
+VulnID: 590833
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "Modicon\\sQuantum"}
+
+#arg1 https://regex101.com/r/Q664wr/1
+
+############------------
+
+
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Technical+leaflet&p_File_Name=SEVD-2019-134-08+-+Modicon+Quantum.pdf&p_Doc_Ref=SEVD-2019-134-08
+Title: Schneider Electric Modicon Quantum Vulnerability (SEVD-2019-134-08)
+Type: bhpp_vuln
+VulnID: 590831
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "2.40.0", model = "Modicon\\sQuantum"}
+
+#arg1 https://regex101.com/r/Q664wr/1

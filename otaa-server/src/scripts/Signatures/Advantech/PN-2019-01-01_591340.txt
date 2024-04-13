@@ -1,0 +1,14 @@
+#For Advisory https://icr.advantech.cz/support/router-models/download/511/pn-2019-01-01-advantech-critical-fix-for-telit-cellular-module-en.pdf
+Title:ADVANTECH SmartStart SL302 Vulnerability (PN-2019-01-01)
+Type: bhpp_vuln
+VulnID:591340
+manufacturer:"Advantech"
+Func:ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "20.00.525", model = "SmartStart\\sSL302\\:SL302\\b"}
+
+#regex_link 1 https://regex101.com/r/iIqqbr/1       
+
+
+#as per Rajdeep discussion considering the hightest version
+#make it as practice
+ 

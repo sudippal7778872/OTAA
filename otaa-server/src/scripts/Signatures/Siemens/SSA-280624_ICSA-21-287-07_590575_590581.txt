@@ -1,0 +1,20 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-280624.html and https://us-cert.cisa.gov/ics/advisories/icsa-21-287-07
+Title: Siemens SCALANCE W1750D Multiple Vulnerabilities (Update A)(ssa-280624)(ICSA-21-287-07)
+Type: bhpp_vuln
+VulnID:590575
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "8.7.1.3", model = "SCALANCE\\sW1750D\\b"}
+
+#arg#1 regex: https://regex101.com/r/FAagi6/1
+
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-280624.html and https://us-cert.cisa.gov/ics/advisories/icsa-21-287-07
+Title: Siemens SCALANCE W1750D Multiple Vulnerabilities (Update A)(ssa-280624)(ICSA-21-287-07)  
+Type: bhpp_vuln
+VulnID:590581
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "8.7.1.3", patched = "99.99.99", model = "SCALANCE\\sW1750D\\b"}
+
+#arg#1 regex: https://regex101.com/r/FAagi6/1

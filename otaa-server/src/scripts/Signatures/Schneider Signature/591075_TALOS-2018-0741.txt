@@ -1,0 +1,10 @@
+#For Advisory https://talosintelligence.com/vulnerability_reports/TALOS-2018-0741
+Title:Schneider Electric Modicon M580 UMAS Improper Authentication Vulnerability (TALOS-2018-0741)
+Type: bhpp_vuln
+VulnID: 591075
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "Modicon\\sM580.+\\:BMEP582040\\b", version = "^2\\.70\\b"}
+
+#arg1 : https://regex101.com/r/K5kCOp/1

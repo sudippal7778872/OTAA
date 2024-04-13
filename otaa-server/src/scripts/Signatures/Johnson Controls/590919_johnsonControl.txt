@@ -1,0 +1,11 @@
+#For Advisory https://www.johnsoncontrols.com/-/media/jci/cyber-solutions/product-security-advisories/2019/jci-psa-2019_10-v1-fx-supervisory-controller.pdf?la=en&hash=8A26E2FA4D1ACEB42E4FD59EE3419BE3A1B3E021
+Title: Johnson Controls Facility Explorer Multiple Vulnerability (JCI-PSA-2019-10 v1)
+Type: bhpp_vuln
+VulnID: 590919
+Vulnflags: vuln
+manufacturer : "Johnson Controls"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "Facility\\sExplorer\\b", version = "^(14\\.7\\.2|14\\.4|6\\.5)\\b"}
+
+#arg1 : https://regex101.com/r/J9ExvQ/1
+#version: https://regex101.com/r/mbAbdw/1

@@ -1,0 +1,9 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2019-134-07
+Title:Schneider Electric ConneXium Gateway TSXETG100 and PowerLogic Ethernet Gateway EGX100 (V2) Vulnerability (SEVD-2019-134-07)
+Type: bhpp_vuln
+VulnID: 590864
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model="(EGX100)\\b|EGX100(MG|SD)\\b|ECI850\\b|TSXETG100\\b"}
+
+# https://regex101.com/r/qWuvfq/1

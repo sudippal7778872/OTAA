@@ -1,0 +1,36 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-599968.html and https://www.cisa.gov/uscert/ics/advisories/icsa-21-194-03
+Title: Siemens PROFINET Devices (Update D) Vulnerability (SSA-599968)(ICSA-21-194-03)
+Type: bhpp_vuln
+VulnID: 590796
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "((EK\\-)?ERTEC\\s200|SCALANCE\\sW(-)?7\\d\\d|CP(\\s)?1626|SIMATIC\\s((.+)?\\:6ES7655\\-5PX11\\-0XX0|Power\\sLine\\sBooster\\sPLB\\:6ES7972\\-5AA10\\-0AB0))\\b"}
+arg#2: {min = "3.0.0", patched = "3.99.99", model = "IE\\/PB(\\s|\\-)(link|LINK)\\b"}
+arg#3: {min = "0.0.0", patched = "1.1.3", model = "SIMOCODE\\spro(\\s)?V\\s(E|Ethernet)(\\/)?IP\\b"}
+arg#4: {min = "0.0.0", patched = "2.1.3", model = "SIMOCODE\\spro(\\s)?V\\s(PN|PROFINET)\\b"}
+arg#5: {min = "2.7.0", patched = "99.99.99", model = "CP(\\s)?(1604|1616)\\b"}
+arg#6: {min = "0.0.0", patched = "3.0.0", model = "(SCALANCE\\sW17(48\\-1\\sM12(\\:6GK5748\\-1GY01\\-0AA0|\\sEEC\\:6GK5748\\-1GY01\\-0TA0)|88\\-(1\\sM12\\:6GK5788\\-1GY01\\-0AA0|2(\\sM12\\sEEC\\:6GK5788\\-2GY01\\-0TA0|\\sM12\\:6GK5788\\-2GY01\\-0AA0|IA\\sM12\\:6GK5788\\-2HY01\\-0AA0))|)|CM\\s1542\\-1|SIMATIC\\sMV5(40\\s(S\\:6GF3540\\-0CD10|H\\:6GF3540\\-0GE10)|50\\s(H\\:6GF3550\\-0GE10|S\\:6GF3550\\-0CD10)|60\\s(X\\:6GF3560\\-0HE10|U\\:6GF3560\\-0LE10)))\\b"}
+arg#7: {min = "0.0.0", patched = "4.1.4", model = "(SCALANCE\\s(X(3(02\\-7\\sEEC\\:6GK5302\\-7GD00\\-(2(E|G)A3|4(E|G)A3|1(E|G)A3|3(E|G)A3)|04\\-2FE\\:6GK5304\\-2BD00\\-2AA3|06\\-1LD\\sFE\\:6GK5306\\-1BF00\\-2AA3|07\\-2EEC\\:6GK5307\\-2FD00\\-(2(E|G)A3|4(E|G)A3|1(E|G)A3|3(E|G)A3)|07\\-3(\\:6GK5307\\-3BL(0|1)0\\-2AA3|LD(\\s)?\\:6GK5307\\-3BM(0|1)0\\-2AA3)|08\\-2(\\:6GK5308\\-2FL(0|1)0\\-2AA3|LD\\:6GK5308\\-2FM(0|1)0\\-2AA3|LH(\\:6GK5308\\-2FN(0|1)0\\-2AA3|\\+\\:6GK5308\\-2FP(0|1)0\\-2AA3)|M(\\:6GK5308\\-2GG(0|1)0\\-2AA2|\\s(PoE\\:6GK5308\\-2QG(1|0)0\\-2AA2|TS\\:6GK5308\\-2GG(0|1)0\\-2CA2)))|10(\\:6GK5310\\-0FA(0|1)0\\-2AA3|FE\\:6GK5310\\-0BA(0|1)0\\-2AA3)|20\\-(1\\sFE\\:6GK5320\\-1BD00\\-2AA3|3LDFE\\:6GK5320\\-3BF00\\-2AA3))|408\\-2\\:6GK5408\\-2FD00\\-2AA2|R324\\-(4M\\sEEC\\:6GK5324\\-(4GG00\\-(2(E|J)R2|4(E|J)R2|3(E|J)R2|1(E|J)R2)|4GG10\\-(2(E|J)R2|4(E|J)R2|1(E|J)R2|3(E|J)R2|3(E|J)R2))|4M\\sPoE(\\:6GK5324\\-4QG00\\-(1(A|H)R2|3(A|H)R2)|\\sTS\\:6GK5324\\-4QG00\\-1CR2)|12M(\\s)?(\\:6GK5324\\-(0GG00\\-(1(A|H)R2|3(A|H)R2)|0GG10\\-(1(A|H)R2|3(A|H)R2))|TS\\:6GK5324\\-(0GG00\\-1CR2|0GG10\\-1CR2)))))|SIPLUS\\sNET\\sSCALANCE\\sX308\\-2\\:6AG1308\\-2FL10\\-4AA3)\\b"}
+arg#8: {min = "0.0.0", patched = "4.3.0", model = "SCALANCE\\sX(B|C|P)(\\-)?2\\d\\d|(SCALANCE\\sXF(\\-)?2\\d\\d(\-\\d)?BA)\\b"}
+arg#9: {min = "0.0.0", patched = "4.5.0", model = "(SIMATIC|SIPLUS)\\sS7\\-1200\\sCPU\\b"}
+arg#10: {min = "0.0.0", patched = "4.7.0", model = "(EK\\-)?ERTEC\\s200P\\b"}
+arg#11: {min = "0.0.0", patched = "5.2.5", model = "(SCALANCE\\sX(204\\-2(\\:6GK5204\\-2BB10\\-2AA3|FM\\:6GK5204\\-2BB11\\-2AA3|LD\\:6GK5204\\-2BC10\\-2AA3|LD\\sTS(\\s)?\\:6GK5204\\-2BC10\\-2CA2|TS\\:6GK5204\\-2BB10\\-2CA2)|206\\-1\\:6GK5206\\-1BB10\\-2AA3|208PRO\\:6GK5208\\-0HA10\\-2AA6|212\\-2(\\:6GK5212\\-2BB00\\-2AA3|LD\\:6GK5212\\-2BC00\\-2AA3)|216\\:6GK5216\\-0BA00\\-2AA3|224\\:6GK5224\\-0BA00\\-2AA3)|SCALANCE\\sXF20(4\\:6GK5204\\-0BA00\\-2AF2|6\\-1\\:6GK5206\\-1BC00\\-2AF2|8\\:6GK5208\\-0BA00\\-2AF2)|SCALANCE\\sX(206\\-1LD|F204\\-2(\\w+)?)|(SIPLUS\\sNET\\s)?SCALANCE\\sX(20(6\\-1LD|8)|F204\\-2))\\b"}
+arg#12: {min = "0.0.0", patched = "5.5.0", model = "(SCALANCE\\sX(200\\-4PIRT\\:6GK5200\\-4AH00\\-2BA3|201\\-3P(\\s)?IRT(\\:6GK5201\\-3BH00\\-2BA3|\\sPRO\\:6GK5201\\-3JR00\\-2BA6)|202\\-2(IRT\\:6GK5202\\-2BB00\\-2BA3|P(\\s)?IRT(\\:6GK5202\\-2BH00\\-2BA3|\\sPRO\\:6GK5202\\-2JR00\\-2BA6))|204IRT(\\:6GK5204\\-0BA00\\-2BA3|\\sPRO\\:6GK5204\\-0JA00\\-2BA6)|F(201\\-3P(\\s)?IRT\\:6GK5201\\-3BH00\\-2BD2|202\\-2P\\sIRT\\:6GK5202\\-2BH00\\-2BD2|204(\\-2BA\\sIRT\\:6GK5204\\-2AA00\\-2BD2|IRT\\:6GK5204\\-0BA00\\-2BF2))))\\b"}
+arg#13: {min = "0.0.0", patched = "6.3.1", model = "SCALANCE\\sX(M4|R5)\\d\\d\\b"}
+arg#14: {min = "0.0.0", patched = "6.4.0", model = "(RUGGEDCOM\\sRM1224(.+)?\\:6GK6108\\-4AM00\\-\\w+|SCALANCE\\s(M(804PB\\:6GK5804\\-0AP00\\-2AA2|812\\-1\\sADSL\\-Router|816\\-1\\sADSL\\-Router|826\\-2\\sSHDSL\\-Router\\:6GK5826\\-2AB00\\-2AB2|874\\-(2(.+)?\\:6GK5874\\-2AA00\\-2AA2|3(.+)?\\:6GK5874\\-3AA00\\-2AA2)|876\\-(3(.+)?\\:6GK5876\\-3AA02\\-2(B|E)A2|4(.+)?\\:6GK5876\\-4AA00\\-2(B|D)A2))|S615(.+)?\\:6GK5615\\-0AA00\\-2AA2))\\b"}
+
+#arg#1 regex: https://regex101.com/r/aptlPR/1
+#arg#2 regex: https://regex101.com/r/z94CN3/1
+#arg#3 regex: https://regex101.com/r/wp7NDG/1
+#arg#4 regex: https://regex101.com/r/hoBvbs/1
+#arg#5 regex: https://regex101.com/r/5NYmpg/1
+#arg#6 regex: https://regex101.com/r/gDYSy9/1 
+#arg#7 regex: https://regex101.com/r/cmzGDR/1
+#arg#8 regex: https://regex101.com/r/4pIAZx/1
+#arg#9 regex: https://regex101.com/r/lDeEAV/1 
+#arg#10 regex: https://regex101.com/r/YYLrHn/1
+#arg#11 regex: https://regex101.com/r/QZjyaw/1
+#arg#12 regex: https://regex101.com/r/VOJt5k/1
+#arg#13 regex: https://regex101.com/r/pFcn5r/1
+#arg#14 regex: https://regex101.com/r/IxQkpL/1

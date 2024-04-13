@@ -1,0 +1,13 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-15-202-01
+Title: Siemens SIPROTEC Denial-of-Service (DoS) Vulnerability (ICSA-15-202-01) (SSA-732541)
+Type:bhpp_vuln
+VulnID:590991
+manufacturer:"Siemens"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "4.25", model ="SIPROTEC\\b"}
+
+#1-https://regex101.com/r/j1TP7E/1
+
+
+
+

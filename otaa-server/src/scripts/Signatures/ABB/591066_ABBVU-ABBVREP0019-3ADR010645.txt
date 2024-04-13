@@ -1,0 +1,10 @@
+#For Advisory https://search.abb.com/library/Download.aspx?DocumentID=3ADR010645&DocumentPartId=
+Title:ABB AC500V2 Webserver denial of service (DoS) Vulnerability (ABBVU-ABBVREP0019-3ADR010645)
+Type: bhpp_vuln
+VulnID: 591066
+Vulnflags: vuln
+manufacturer : "ABB"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "AC500.+\\:(PM554|PM564|PM566|PM572|PM573|PM556)\\b", version = "^2\\b"}
+
+#arg1:https://regex101.com/r/LPaweI/1

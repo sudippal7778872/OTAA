@@ -1,0 +1,15 @@
+#For Advisory https://www.se.com/us/en/download/document/SEVD-2019-225-05/
+Title:Schneider Electric TelevisGo Multiple Vulnerabilities (SEVD-2019-225-05)
+Type:bhpp_vuln
+VulnID:590854
+manufacturer:"schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "00.00.00", patched = "99.99.99", model ="TelevisGo\\b"}
+
+#link for arg#1 https://regex101.com/r/6i9DeH/3
+
+################################################
+
+
+
+

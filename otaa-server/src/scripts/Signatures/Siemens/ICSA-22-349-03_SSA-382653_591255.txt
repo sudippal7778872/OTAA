@@ -1,0 +1,20 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-382653.html and https://www.cisa.gov/uscert/ics/advisories/icsa-22-349-03
+Title: Siemens SIMATIC Controllers and TIM Denial of Service Vulnerabilities (DoS) Multiple Vulnerabilities (ICSA-22-349-03, SSA-382653)
+Type: bhpp_vuln
+VulnID:591255
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "4.6.0", model = "(SIMATIC|SIPLUS)\\sS7\\-1200\\sCPU"}
+arg#2: {min = "0.0.0", patched = "3.0.1", model = "(SIMATIC\\sS7\\-1500\\sDrive\\sController|CPU\\s15(16TF\\-3\\sPN\\/DP\\:6ES7516\\-3UN00\\-0AB0|16T\\-3\\sPN\\/DP\\:6ES7516\\-3TN00\\-0AB0|17(\\-3\\sPN\\/DP\\:6ES7517\\-3AP00\\-0AB0|TF\\-3\\sPN\\/DP\\:6ES7517\\-3UP00\\-0AB0|F\\-3\\sPN\\/DP\\:6ES7517\\-3FP00\\-0AB0|H\\-3\\sPN\\:6ES7517\\-3HP00\\-0AB0|T\\-3\\sPN\\/DP\\:6ES7517\\-3TP00\\-0AB0)|18TF\\-4\\sPN\\/DP\\:6ES7518\\-4UP00\\-0AB0|18F\\-4\\sPN\\/DP(\\:6ES7518\\-4FP00\\-0AB0|\\sMFP\\:6ES7518\\-4FX00\\-1AB0)|18T\\-4\\sPN\\/DP\\:6ES7518\\-4TP00\\-0AB0|18\\-4\\sPN\\/DP(\\:6ES7518\\-4AP00\\-0AB0|\\sMFP\\:6ES7518\\-4AX00\\-1AB0)|18HF\\-4PN\\:6ES7518\\-4JP00\\-0AB0|17H\\-3\\sPN\\:6AG1517\\-3HP00\\-4AB0|18\\-4\\sPN\\/DP(\\:6AG1518\\-4AP00\\-4AB0|\\sMFP\\:6AG1518\\-4AX00\\-4AC0)|18F\\-4\\sPN\\/DP\\:6AG1518\\-4FP00\\-4AB0|18HF\\-4\\sPN\\:6AG1518\\-4JP00\\-4AB0))\\b"}
+arg#3: {min = "0.0.0", patched = "99.99.99", model = "((CPU\\s15(11(\\-1PN\\:6ES7511\\-1AK0(1|2)\\-0AB0|C\\-1\\sPN\\:6ES7511\\-1CK0(0|1)\\-0AB0|TF\\-1PN\\:6ES7511\\-1UK01\\-0AB0|T\\-1PN\\:6ES7511\\-1TK01\\-0AB0|F\\-1PN\\:6ES7511\\-1FK0(1|2)\\-0AB0)|12(C\\-1\\sPN\\:6ES7512\\-1CK0(0|1)\\-0AB0|SP(\\sF\\-1\\sPN\\:6ES7(\\s)?512\\-1SK01\\-0AB0|\\-1\\sPN\\:6ES7(\\s)?512\\-1DK01\\-0AB0))|13(\\-1\\sPN\\:6ES7513\\-1AL0(1|2)\\-0AB0|F\\-1\\sPN\\:6ES7513\\-1FL0(1|2)\\-0AB0|R\\-1\\sPN\\:6ES7513\\-1RL00\\-0AB0)|15(\\-2\\sPN\\:6ES7515\\-2AM0(1|2)\\-0AB0|F\\-2\\sPN\\:6ES7515\\-2FM0(1|2)\\-0AB0|TF\\-2\\sPN\\:6ES7515\\-2UM01\\-0AB0|T\\-2\\sPN\\:6ES7515\\-2TM01\\-0AB0|R\\-2\\sPN\\:6ES7515\\-2RM00\\-0AB0)|16(F\\-3\\sPN\\/DP\\:6ES7516\\-3FN0(1|2)\\-0AB0|\\-3\\sPN\\/DP\\:6ES7516\\-3AN0(1|2)\\-0AB0|pro(\\sF\\-2\\sPN\\:6ES7516\\-2GN00\\-0AB0|\\-2\\sPN\\:6ES7516\\-2PN00\\-0AB0))|18(\\-4\\sPN\\/DP\\sODK\\:6ES7518\\-4AP00\\-3AB0|F\\-4\\sPN\\/DP\\sODK\\:6ES7518\\-4FP00\\-3AB0)|13pro(\\sF\\-2\\sPN\\:6ES7513\\-2GL00\\-0AB0|\\-2\\sPN\\:6ES7513\\-2PL00\\-0AB0)|10SP\\sF\\-1\\sPN\\:6ES7510\\-1SJ01\\-0AB0)|CPU\\s15(15SP\\sPC2|10SP\\-1\\sPN\\:6ES7510\\-1DJ01\\-0AB0))|(CPU1515SP\\sPC2))\\b"}
+arg#4: {min = "0.0.0", patched = "99.99.99", model = "((CPU\\s15(10SP\\-1\\sPN\\:6AG1510\\-1DJ01\\-(2|7)AB0|10SP\\-1\\sPN\\:6AG2510\\-1DJ01\\-(1|4)AB0|10SP\\sF\\-1(\\s)?PN\\:(6AG1510\\-1SJ01\\-2AB0|6AG2510\\-1SJ01\\-1AB0)|12SP(\\sF\\-1(\\s)PN\\:(6AG1512\\-1SK01\\-7AB0)|\\sF\\-1(\\s)?PN\\:(6AG1512\\-1SK01\\-2AB0|6AG2512\\-1SK01\\-(1|4)AB0)|\\-1\\sPN\\:(6AG1512\\-1DK01\\-(2|7)AB0|6AG2512\\-1DK01\\-(1|4)AB0)))|S7\\-1500\\sCPU\\s15(11(\\-1\\sPN\\:(6AG1511\\-(1AK01\\-(2|7)AB0|1AK02\\-(2|7)AB0)|6AG2511\\-(1AK01\\-(1|4)AB0|1AK02\\-(1|4)AB0))|F\\-1\\sPN\\:6AG1511\\-1FK0(1|2)\\-2AB0)|13(\\-1\\sPN\\:6AG1513\\-(1AL01\\-(2|7)AB0|1AL02\\-(2|7)AB0)|F\\-1(\\:6AG1513\\-1FL01\\-2AB0|\\sPN\\:6AG1513\\-1FL02\\-2AB0))|15(F\\-2\\sPN(\\:6AG1515\\-2FM0(1|2)\\-2AB0|\\:6AG2515\\-2FM02\\-4AB0|\\sT2\\:6AG2515\\-2FM01\\-2AB0)|R\\-2\\sPN(\\:6AG1515\\-2RM00\\-7AB0|\\sTX\\:6AG2515\\-2RM00\\-4AB0))|16\\-3\\sPN\\/DP(\\:(6AG1516\\-(3AN01\\-(2|7)AB0|3AN02\\-(2|7)AB0)|6AG2516\\-3AN02\\-4AB0)|\\sTX\\:6AG2516\\-3AN01\\-4AB0)|16F\\-3\\sPN\\/DP\\:(6AG1516\\-3FN02\\-2AB0|6AG2516\\-3FN02\\-(2|4)AB0))|S7\\-1500\\sCPU\\-1516F\\-3\\sPN\\/DP\\:6AG1516\\-3FN01\\-2AB0|TIM\\s1531\\sIRC(\\s)?\\:6AG1543\\-1MX00\\-7XE0)|TIM\\s1531\\sIRC(\\s)?\\:6GK7543\\-1MX00\\-0XE0)\\b"}
+
+
+#regex_link 1 https://regex101.com/r/FS2Alj/1
+#regex_link 2 https://regex101.com/r/CrUcwD/2  
+#regex_link 3 https://regex101.com/r/8qMcEe/1
+#regex_link 4 https://regex101.com/r/VxJjmT/1
+
+
+

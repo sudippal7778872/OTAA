@@ -1,0 +1,11 @@
+#For Advisory https://deltacontrols.com/wp-content/uploads/SecB0005_Security_Bulletin.pdf
+Title:Delta Controls CopperCube Polkit's pkexec utility Vulnerability (SecB0005)
+Type: bhpp_vuln
+VulnID: 591095
+Func: ics_device_firmware_exprudp
+manufacturer : "deltacontrols"
+arg#1: {device = "CopperCube", version = "\\d"}
+
+#arg1:https://regex101.com/r/pQ7Z0A/1
+
+

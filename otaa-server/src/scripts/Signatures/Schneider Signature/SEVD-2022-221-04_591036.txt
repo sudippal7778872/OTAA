@@ -1,0 +1,20 @@
+#For Advisory https://www.se.com/in/en/download/document/SEVD-2022-221-04/
+Title:Schneider Electric Modicon PAC Controllers Vulnerability (SEVD-2022-221-04)
+Type:bhpp_vuln
+VulnID:591036
+Vulnflags:vuln
+manufacturer:"Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "3.40", model ="Modicon\\sM340(.+)?\\:BMXP34\\w+"}
+arg#2:{min = "0.0.0", patched = "4.01", model ="Modicon\\sM580(.+)?\\:(BMEP|BMEH)\\w+"}
+arg#3:{min = "0.0.0", patched = "1.70", model ="Modicon.+MC80\\:BMKC80\\w+"}
+arg#4:{min = "0.0.0", patched = "2.4", model ="Modicon(.+)?Momentum(.+)?\\:171CBU\\w+"}
+arg#5:{min = "0.0.0", patched = "99.99.99", model ="Modicon(.+)?Quantum(.+)?"}
+
+#regex_link https://regex101.com/r/NOLWZj/1
+#regex_link https://regex101.com/r/Yqubwc/1
+#regex_link https://regex101.com/r/JMZsaD/1
+#regex_link https://regex101.com/r/Avovru/1
+#regex_link https://regex101.com/r/PkF2Tn/1
+
+

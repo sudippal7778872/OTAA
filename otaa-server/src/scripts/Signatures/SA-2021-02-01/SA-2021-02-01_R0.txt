@@ -1,0 +1,15 @@
+#For advisory https://icr.advantech.cz/support/router-models/download/511/sa-2021-02-dnspooq-vulnerabilities-en.pdf
+Title: DNSpooq DNS Cache Poisoning Vulnerabilities(SA-2021-02-01)
+Type: bhpp_vuln
+VulnID: 123456
+Vulnflags: vuln
+manufacturer : "Advantech"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "6.2.8", model = "Spectre\\sRT\\sIndustrial\\sRouter\\b"}
+
+
+
+
+#regex_link1: https://regex101.com/r/kfziPS/1
+
+

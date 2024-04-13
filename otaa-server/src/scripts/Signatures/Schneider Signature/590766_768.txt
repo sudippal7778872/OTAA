@@ -1,0 +1,29 @@
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Technical+leaflet&p_File_Name=SEVD-2019-225-07-spaceLYnk-homeLYnk.pdf&p_Doc_Ref=SEVD-2019-225-07
+Title: Schneider Electric spaceLYnk and homeLYnk Vulnerability (SEVD-2019-225-07)
+Type: bhpp_vuln
+VulnID: 590768
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "2.4.0", model = "(((space|home)LYnk)|Wiser\\s.+KNX)\\s(L|l)ogic\\s(C|c)ontroller"}
+
+# arg#1 #https://regex101.com/r/nqCAEj/1
+
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Technical+leaflet&p_File_Name=SEVD-2017-065-01-Modicon-SCADAPack-V3.0.pdf&p_Doc_Ref=SEVD-2017-065-01
+Title: Schneider Electric Modicon Controllers and SCADAPack RTU Vulnerability (SEVD-2017-065-01)
+Type: bhpp_vuln
+VulnID: 590766
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "Modicon\\sUnity\\sMomentum\\sM1E\\sCPU:171CBU9809(0|1)|Modicon\\sMomentum:171CBU98091|Modicon\\sM221|SCADAPack\\s(32\\sRTU|(RTU:(312|313|314|330|333|337|350|530|535)E|RTU:(3(14|30|34|50)|570|575)))\\b"} 
+arg#2: {min = "0.0.0", patched = "2.70", model = "Modicon\\sM340\\b"}
+arg#3: {min = "0.0.0", patched = "2.01", model = "Modicon\\sM580\\b"}
+arg#4: {min = "0.0.0", patched = "3.10", model = "Modicon\\sPremium"}
+arg#5: {min = "0.0.0", patched = "3.12", model = "Modicon\\sQuantum"}
+  
+#arg1 https://regex101.com/r/dceawe/1
+#arg2 https://regex101.com/r/VloU3D/1
+#arg3 https://regex101.com/r/vKJ5Xi/1
+#arg4 https://regex101.com/r/BGjKJC/1
+#arg5 https://regex101.com/r/Q664wr/1

@@ -1,0 +1,10 @@
+#For Advisory https://talosintelligence.com/vulnerability_reports/TALOS-2017-0482
+Title: Moxa EDR-810 Web Server OpenVPN Config Multiple Command Injection Multiple Vulnerabilities (TALOS-2017-0482)
+Type: bhpp_vuln
+VulnID: 591030
+Vulnflags: vuln
+manufacturer : "Moxa"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "(EDR\\-810)\\b", version = "^4\\.1\\b"}
+
+#arg1 regex: https://regex101.com/r/LsozJ2/1 , https://regex101.com/r/j4iMMk/1

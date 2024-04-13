@@ -1,0 +1,12 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-935500.html and https://www.cisa.gov/uscert/ics/advisories/icsa-22-286-12
+Title: Siemens APOGEE, TALON and Desigo PXC/PXM Products Uncontrolled Resource Consumption Vulnerability (SSA-935500, ICSA-22-286-12)
+Type: bhpp_vuln
+VulnID: 591222
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "APOGEE\\s(MBC|MEC)\\s\\(PPC\\)\\s(\\(P2\\sEthernet\\)|\\(BACnet\\))|(APOGEE\\sPXC|TALON\\sTC)\\s(Compact|Modular)\\s\\(BACnet\\)|APOGEE\\sPXC\\s(Compact|Modular)\\s\\(P2\\sEthernet\\)"}
+arg#2: {min = "2.3.0", patched = "99.99.99", model = "Desigo\\s(PXC(00|64|128)\\-U|PXC(001|00|12|22\\.1|22|36\\.1|50|100|200)\\-E\\.D|PXM20\\-E)\\b"}
+
+#arg#1 regex: https://regex101.com/r/jzmtZ0/1
+#arg#2 regex: https://regex101.com/r/FmVqI8/1

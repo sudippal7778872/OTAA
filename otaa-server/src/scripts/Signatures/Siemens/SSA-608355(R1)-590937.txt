@@ -1,0 +1,10 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-608355.pdf
+Title:Siemens SIMATIC WinAC RTX (F) 2010 Multiple Vulnerabilities (ssa-608355)
+Type:bhpp_vuln
+VulnID:590937
+manufacturer:"Siemens"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "99.99.99", model ="SIMATIC\\sWinAC\\sRTX\\sF\\b"}
+
+# 1 - https://regex101.com/r/N8IGEj/1
+

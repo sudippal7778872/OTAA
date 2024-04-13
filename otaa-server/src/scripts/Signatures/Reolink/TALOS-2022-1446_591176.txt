@@ -1,0 +1,10 @@
+#For Advisory https://talosintelligence.com/vulnerability_reports/TALOS-2022-1446
+Title: Reolink RLC-410W web server misconfiguration information disclosure Vulnerability (TALOS-2022-1446)
+Type: bhpp_vuln
+VulnID: 591176
+Vulnflags: vuln
+manufacturer : "Reolink"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "RLC\\-410W\\b", version = "^3\\.0\\.0\\.136\\b"}
+
+#arg#1 regex: https://regex101.com/r/GoO3mS/1 , https://regex101.com/r/sVnbfD/1

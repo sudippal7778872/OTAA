@@ -1,0 +1,29 @@
+https://regex101.com/r/Fz5vki/1 -----> Sinumeric 808D
+https://regex101.com/r/NUYxoT/1 -----> Sinumeric 828D
+https://regex101.com/r/d7LEvW/1 -----> RUGGEDCOM
+https://regex101.com/r/e5emhG/1 -----> spaceLYnk|Wiser for KNX|fellerLYnk
+
+For Advisory https://us-cert.cisa.gov/ics/advisories/icsa-21-287-04
+Title: Siemens SINUMERIK Vulnerability(ICSA-21-287-04)
+Type: bhpp_vuln
+VulnID:12377
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "((SINUMERIK)\\b.*(808D)\\b)"}
+arg#2: {min = "0.0.0", patched = "4.95", model = "((SINUMERIK)\\b.*(828D)\\b)"}
+
+For Advisory https://us-cert.cisa.gov/ics/advisories/icsa-21-287-08
+Title: Siemens RUGGEDCOM ROX Devices Vulnerability(ICSA-21-287-08)
+Type: bhpp_vuln
+VulnID:12378
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "2.14.1", model = "((RUGGEDCOM)\\b.*(MX5000|RX1400|RX1500|RX1501|RX1510|RX1511|RX1512|RX1524|RX1536|RX5000)\\b.*)"}
+
+For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2021-285-01
+Title: Schneider Electric spaceLYnk, Wiser For KNX, fellerLYnk Vulnerability(SEVD-2021-285-01)
+Type: bhpp_vuln
+VulnID:12379
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "2.6.2", model = "(spaceLYnk\\slogic\\scontroller|Wiser for SpaceLogic\\sKNX\\sLogic\\sController|fellerLYnk\\slogic\\scontroller)"}

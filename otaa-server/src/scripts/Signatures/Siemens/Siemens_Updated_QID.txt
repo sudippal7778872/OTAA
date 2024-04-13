@@ -1,0 +1,33 @@
+#For Advisory https://us-cert.cisa.gov/ics/advisories/icsa-21-287-08
+Title: Siemens RUGGEDCOM ROX Devices Denial of Service (DoS) Vulnerability (ICSA-21-287-08)
+Type: bhpp_vuln
+VulnID:590579
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "2.14.1", model = "(RUGGEDCOM\\s(MX5000|RX1400|RX1500|RX5000|RX1501|RX1524|RX1536|RX1510|RX1511|RX1512))"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/icsa-21-287-07
+Title: Siemens SCALANCE Multiple Vulnerabilities (ICSA-21-287-07)
+Type: bhpp_vuln
+VulnID:590575
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "8.7.1.3", model = "(SCALANCE\\sW1750D\\-2IA\\sRJ45)"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/icsa-21-287-07
+Title: Siemens SCALANCE W1750D (all versions) Multiple Vulnerabilities (ICSA-21-287-07)  
+Type: bhpp_vuln
+VulnID:590581
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "(SCALANCE\\sW1750D\\-2IA\\sRJ45)"}
+#Only affected by CVE-2019-5318, CVE-2020-37719, CVE-2021-37717, CVE-2021-37718, CVE-2021-37720, CVE-2021-37721, CVE-2021-37722, CVE-2021-37728
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/icsa-21-287-04
+Title: 590580	Siemens SINUMERIK Heap-based Buffer Overflow Vulnerability (ICSA-21-287-04)
+Type: bhpp_vuln
+VulnID:590580
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "(SINUMERIK\\s808D)"}
+arg#2: {min = "0.0.0", patched = "4.95", model = "(SINUMERIK\\s828D)"}

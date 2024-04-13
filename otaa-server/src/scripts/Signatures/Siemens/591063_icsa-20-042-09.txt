@@ -1,0 +1,12 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-20-042-09
+Title:Siemens OZW Web Server Vulnerability (ICSA-20-042-09) (SSA-986695)
+Type:bhpp_vuln
+VulnID:591063
+Vulnflags:vuln
+manufacturer : "Siemens"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "10.0", model="Web\\sServer.+\\:(OZW772|OZW672)\\b"}
+
+#arg1:https://regex101.com/r/KVCbwD/1
+
+	

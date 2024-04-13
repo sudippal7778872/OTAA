@@ -1,0 +1,11 @@
+#For advisory https://www.gegridsolutions.com/app/viewfiles.aspx?prod=d20mx&type=21
+Title: General Electric D20MX 1.70 SSH DoS Vulnerability (PRSN-2019-001)
+Type: bhpp_vuln
+VulnID: 591393
+Vulnflags: vuln
+manufacturer : "General electric"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.8", model = "D20MX\\b"}
+
+
+#regex_link1: https://regex101.com/r/1bLxQI/1

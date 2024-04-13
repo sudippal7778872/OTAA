@@ -1,0 +1,28 @@
+#For Advisory https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2022-007_en.pdf and https://www.cisa.gov/uscert/ics/advisories/icsa-22-172-01
+Title:Mitsubishi Electric MELSEC Q and L Series Ethernet Port Dos Vulnerability (2022-007) (ICSA-22-172-01)
+Type:bhpp_vuln
+VulnID:590913
+Vulnflags:vuln
+manufacturer :"Mitsubishi Electric"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "17", model ="MELSEC iQ-R.+:R12CCPU-V\\b"}
+arg#2:{min = "0.0.0", patched = "99.99.99", model ="MELSEC-Q.+:(Q12DCCPU-V|Q24DHCCPU-VG|Q24DHCCPU-LS|Q26DHCCPU-LS)\\b"}
+arg#3:{min = "0.0.0", patched = "06", model ="MELIPC MI5000 Series:MI5122-VW\\b"}
+
+
+#regex_link https://regex101.com/r/0eHfs5/2
+#regex_link https://regex101.com/r/1O2KIU/2
+#regex_link https://regex101.com/r/tiBJK5/1
+
+#For Advisory https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2022-007_en.pdf and https://www.cisa.gov/uscert/ics/advisories/icsa-22-172-01
+Title: Mitsubishi Electric MELSEC Q and L Series Ethernet Port Dos Vulnerability (2022-007) (ICSA-22-172-01)
+Type: bhpp_vuln
+VulnID: 590913
+Func: ics_device_firmware_exprudp
+manufacturer: "Mitsubishi Electric"
+arg#1: {device = "(MELSEC-Q.+:Q(03UDE|(04|06|10|13|20|26|50|100)UDEH)CPU)", version = "\\d"}
+arg#2: {device = "MELSEC-Q.+:(Q(03|04|06|13|26)UDVCPU|Q(04|06|13|26)UDPVCPU)|MELSEC-L.+:(L26CPU-PBT|L(02|06|26)CPU-P)\b", version = "\\d"}
+
+#regex_link https://regex101.com/r/EorJ4T/2
+#regex_link https://regex101.com/r/kkwCl9/2
+

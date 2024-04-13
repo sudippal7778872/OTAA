@@ -1,0 +1,28 @@
+#For Advisory https://www.apc.com/us/en/faqs/FA410359/
+Title: APC by Schneider Electric Network Management Cards (NMC) and NMC Embedded Devices Multiple Vulnerabilities (FA410359) (SEVD-2020-174-01) 
+Type: bhpp_vuln
+VulnID:590841
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "6.9.6", model = "Network\\sManagement\\sCard\\s2\\:(AP963(0|1)(CH|J)?|AP9635(CH)?)\\b"}
+arg#2: {min = "0.0.0", patched = "3.9.4", model = "(Network\\sManagement\\sCard(\\s1)?\\:AP9617|Network\\sManagement\\sCard\\s1\\:AP961(9|8)|Smart\\-UPS)\\b"}
+arg#3: {min = "0.0.0", patched = "1.4", model = "Network\\sManagement\\sCard\\s3\\:AP964(0|1)(J)?\\b"}
+arg#4: {min = "0.0.0", patched = "6.9.6", model = "(InfraStruxure\\sPDU\\:(PDPB150G6F|PD40(G|F|L)6FK1\\-M|PDRPPNX10(M)?|PD60(G|F|L)6FK1|PD40(E|H)5EK20\\-M)|Modular\\sPower\\sDistribution.+\\:PDPM(150(G|L)6F|175G6H)|Power\\sManagement.+\\:PMM(4|5)00\\-(ALAX|ALA|CUB)|Modular\\sRack.+\\:PDPM(138H\\-(5U|R)|288G6H|72F\\-5U|144F|277H)|Rack\\sPDU\\:AP(84|86|88|89).+)\\b"}
+arg#5: {min = "0.0.0", patched = "3.9.4", model = "(Rack\\sPDU\\:AP(78|79)|Rack\\sAutomatic\\sTransfer\\sSwitch\\:AP77).+"}
+arg#6: {min = "0.0.0", patched = "6.9.6", model = "Rack\\sAutomatic\\sTransfer\\sSwitch\\:AP44.+|NetBotz\\sRack\\sMonitor\\s250\\:NBRK0250\\b"}
+arg#7: {min = "0.0.0", patched = "6.9.5", model = "Aquaflair\\sChiller\\:(TSA|TRA)|Uniflair\\sLE\\:(TDAV|TUAV|TDWV|TUWV|TDEV|TUEV|TDCV|TUCV|HDCV)|Air\\sConditioner\\:AC(RP(5|1)|RD(5|6|3|1|2)|RC(10|5|6|3)|SC1)|((Uniflair\\sAM\\:(SDCC|SDCV|SDAC|ADAV|SDWC|SDWV|SUAC|SUAV|SUWC|SUWV))|Uniflair\\s.+:(LDCV|LUCV)|Air\\sConditioner\\:(IDEV|IDWV|IUAV|IUEV|IUWV|IXAV|IXEV|IXWV|LDAV|LDEV|LDWV)|Air\\-cooled\\sUnit\\:IDAV|Ecoflair\\sAir\\sEconomizer\\:IAEC(25|50)|Ceiling\\sMount\\sEvaporator\\:UCF0(48|34)1I|Battery\\sManager.+\\:AP9922)\\b"}
+arg#8: {min = "0.0.0", patched = "3.9.4", model = "Rack\\sAir\\sRemoval\\sUnit\\sSX\\b"}
+
+#Note :- Normalize Data is not available for Uniflair DSA Trim Chiller Display (TRMCHLR) || Considered FA410359, because it is latest update. 
+
+#arg#1 https://regex101.com/r/MVZx9A/3 
+#arg#2 https://regex101.com/r/zJ04Wz/2 
+#arg#3 https://regex101.com/r/lWnIXR/1 
+#arg#4 https://regex101.com/r/E3xMve/2 
+#arg#5 https://regex101.com/r/u8yVhV/1 
+#arg#6 https://regex101.com/r/RtGBF7/2 
+#arg#7 https://regex101.com/r/Hu0qvA/2 
+#arg#8 https://regex101.com/r/F4PH6o/2 
+
+#combined regex link : https://regex101.com/r/8JKsyY/1

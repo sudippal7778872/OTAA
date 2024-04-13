@@ -1,0 +1,14 @@
+#For advisory https://www.cisa.gov/uscert/ics/advisories/icsa-23-019-01 or https://search.abb.com/library/Download.aspx?DocumentID=8DBD000137&LanguageCode=en&DocumentPartId=&Action=Launch
+Title: Hitachi Energy PCU400 Reliance on Uncontrolled Component Multiple Vulnerabilities (ICSA-23-019-01, 8DBD 000137)
+Type: bhpp_vuln
+VulnID: 591335
+Vulnflags: vuln
+manufacturer : "Hitachi energy"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "9.3.0", patched = "9.3.8", model = "PCU400\\b"}
+arg#2: {min = "9.3.9", patched = "9.4.0", model = "PCU400\\b"}
+
+
+
+#regex_link1: https://regex101.com/r/Tjk1yW/2
+#regex_link2: https://regex101.com/r/Tjk1yW/2

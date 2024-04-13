@@ -1,0 +1,12 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-20-317-01 and https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2020-015_en.pdf
+Title: Mitsubishi Electric MELSEC iQ-R Series denial-of-service (DoS) Vulnerability (ICSA-20-317-01, 2020-015)
+Type: bhpp_vuln
+VulnID: 591268
+Vulnflags: vuln
+manufacturer : "Mitsubishi Electric"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "05", patched = "20", model = "MELSEC\\siQ\\-R\\sSeries(.+)?\\:R0(0|1|2)CPU\\b"}
+arg#2: {min = "35", patched = "52", model = "MELSEC\\siQ\\-R\\sSeries(.+)?\\:R(04|08|16|32|120)ENCPU\\b"}
+
+#regex_link 1 https://regex101.com/r/PZPR3S/1
+#regex_link 2 https://regex101.com/r/B29a70/1

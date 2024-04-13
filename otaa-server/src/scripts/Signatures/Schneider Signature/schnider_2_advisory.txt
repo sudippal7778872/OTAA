@@ -1,0 +1,22 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2019-134-02
+Title: Schneider Electric Modicon and PacDrive Controllers Vulnerability (SEVD-2019-134-02)
+Type: bhpp_vuln
+VulnID: 590861
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model="((Modicon.+?M(100|200)|Modicon\\sM(221|241|258|251)|PacDrive.+(Eco|Pro|Pro2)|Modicon\\sLMC0(58|78))|ATV\\sIMC\\sDrive\\sController)\\b"}
+
+# https://regex101.com/r/2jD1dF/1
+
+############################################
+
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2021-194-05
+Title: Schneider Electric Easergy T200 Vulnerability (SEVD-2021-194-05)
+Type: bhpp_vuln
+VulnID: 590862
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "MV\\sSubstation\\sControl\\sUnit\\:T200"}
+
+# https://regex101.com/r/fGO2xg/1

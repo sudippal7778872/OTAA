@@ -1,0 +1,10 @@
+#For Advisory https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2019-003_en.pdf
+Title:Mitsubishi Electric MELSEC C Controller Module and MELIPC Series MI5000 TCP/IP function Multiple Vulnerabilities (2019-003)
+Type:bhpp_vuln
+VulnID:591385
+manufacturer:"Mitsubishi Electric"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "99.99.99", model ="MELSEC\\-Q\\sSeries\\s(.+)?\\:Q24DHCCPU\\-(VG|V)\\b|MELSEC\\siQ\\-R\\sseries\\sC\\sController\\sModule\\:R12CCPU\\-V\\b|MELSEC\\siQ\\-R\\sSeries\\sC(.+)Module\\:RD55UP06\\-V\\b|MELIPC\\sMI5000\\sSeries\\:MI5122\\-VW\\b"}
+
+
+#link for arg#1 - https://regex101.com/r/xSZL1Q/2

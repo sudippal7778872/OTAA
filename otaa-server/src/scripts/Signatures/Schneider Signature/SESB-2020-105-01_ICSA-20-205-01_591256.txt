@@ -1,0 +1,10 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-20-205-01 and https://www.se.com/ww/en/download/document/SESB-2020-105-01/
+Title: Schneider Electric Tricon Communication Module Multiple Vulnerabilities (ICSA-20-205-01, SESB-2020-105-01)
+Type: bhpp_vuln
+VulnID: 591256
+Vulnflags: vuln
+manufacturer : "Schneider Electric"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "10.0.0", patched = "10.5.3", model = "Tricon\\sCommunication\\sModule\\:435(1|2)(A|B)?\\b"}
+
+#arg#1 regex: https://regex101.com/r/wCTjC4/1

@@ -1,0 +1,12 @@
+#For Advisory https://talosintelligence.com/vulnerability_reports/TALOS-2019-0960
+Title: Moxa AWK-3131A iw_webs hostname Authentication Bypass Vulnerability (TALOS-2019-0960)
+Type: bhpp_vuln
+VulnID: 591154
+Vulnflags: vuln
+manufacturer : "Moxa"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "AWK\\-3131A\\b", version = "^1\\.13\\b"}
+
+#arg#1 regex: https://regex101.com/r/c6ArTR/1 , https://regex101.com/r/N595PR/1
+
+#looks fine 

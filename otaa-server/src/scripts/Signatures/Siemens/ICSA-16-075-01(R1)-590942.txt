@@ -1,0 +1,10 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-16-075-01
+Title:Siemens SIMATIC S7-1200 CPU Protection Mechanism Failure Vulnerability (SSA-833048) (ICSA-16-075-01)
+Type:bhpp_vuln
+VulnID:590942
+Vulnflags:vuln
+manufacturer:"Siemens"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "4.1", model ="(SIMATIC|SIPLUS)\\sS7\\-1200\\sCPU"}
+
+#1-https://regex101.com/r/4INZXz/2

@@ -1,0 +1,10 @@
+
+For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2021-285-01
+Title: Schneider Electric spaceLYnk,Wiser For KNX, and fellerLYnk Incorrect Resource Transfer Between Spheres vulnerability (SEVD-2021-285-01)
+Type: bhpp_vuln
+VulnID:590596
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "2.6.2", model = "(spaceLYnk|Wiser\\sfor.+KNX|fellerLYnk)"}
+
+https://regex101.com/r/ohr8KY/1 -----> spaceLYnk|Wiser for KNX|fellerLYnk

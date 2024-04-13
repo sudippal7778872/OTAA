@@ -1,0 +1,27 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-145-02
+Title:Rockwell Automation Micro800 and MicroLogix 1400 Vulnerability (ICSA-21-145-02)
+Type:bhpp_vuln
+VulnID:590757
+manufacturer:"Rockwell Automation"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "21", patched = "99.99.99", model ="MicroLogix\\s1400\\b"} 
+arg#2:{min = "0.0.0", patched = "99.99.99", model ="Micro800\\b"}
+
+link for arg#1 https://regex101.com/r/Fdj3kz/1
+link for arg#2 https://regex101.com/r/nvSQ0y/1
+
+###############################################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-063-01
+Title:Rockwell Automation 1734-AENTR Series B and Series C Multiple Vulnerabilities (ICSA-21-063-01)
+Type:bhpp_vuln
+VulnID:590323
+Vulnflags:vuln
+manufacturer:"Rockwell Automation" 
+Func:ics_device_firmware_exprudp
+arg#1:{device = "1734\\-AENTR\\/B" version = "^(4\\.00[1-5]|5\\.01[1-7])"} 
+arg#2:{device = "1734\\-AENTR\\/C" version = "^6\\.01(1|2)"} 
+
+link for arg#1 https://regex101.com/r/J4p9Ld/1 & https://regex101.com/r/rlGQZL/1
+link for arg#2 https://regex101.com/r/uFdaJK/1 & https://regex101.com/r/etQiSY/1
+

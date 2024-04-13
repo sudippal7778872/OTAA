@@ -1,0 +1,11 @@
+#For Advisory https://www.moxa.com/en/support/product-support/security-advisory/sds-3008-series-multiple-web-vulnerabilities
+Title: Moxa SDS-3008 Series Multiple Vulnerabilities (MPSA-230101)
+Type: bhpp_vuln
+VulnID:591353
+Vulnflags: vuln
+manufacturer : "Moxa"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "2.2", model = "SDS\\-3008\\sSeries\\b"}
+
+#regex_link 1 https://regex101.com/r/ixgYmq/1
+#looks fine 

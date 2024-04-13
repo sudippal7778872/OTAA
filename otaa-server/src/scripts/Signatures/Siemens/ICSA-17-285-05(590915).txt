@@ -1,0 +1,12 @@
+
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-148078.pdf and https://www.cisa.gov/uscert/ics/advisories/ICSA-17-285-05
+Title: Siemens BACnet Field Panels (Update A) Multiple Vulnerabilities (ICSA-17-285-05) (ssa-148078)
+Type: bhpp_vuln
+VulnID: 590915
+Vulnflags:vuln
+manufacturer : "Siemens"
+Func:ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "3.5", model ="(APOGEE\\sPXC|TALON\\sTC)\\s(Compact|Modular)\\s\\(BACnet\\)"}
+arg#2: {min = "0.0.0", patched = "99.99.99", model ="APOGEE\\sPXC\\s(Compact|Modular)\\s\\(P2\\sEthernet\\)"}
+#regex_link  https://regex101.com/r/KcB99C/1
+#regex_link  https://regex101.com/r/bcGhwZ/1

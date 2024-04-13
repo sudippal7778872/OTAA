@@ -1,0 +1,12 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-348662.html and https://www.cisa.gov/uscert/ics/advisories/icsa-22-195-03
+Title:Siemens SIMATIC MV500 Devices Multiple Vulnerabilities (ICSA-22-195-03) (SSA-348662)
+Type: bhpp_vuln
+VulnID: 590962
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "3.3", model ="SIMATIC(.+)?MV(540\\s(H\\:6GF3540\\-0GE10|S\\:6GF3540\\-0CD10)|550\\s(H\\:6GF3550\\-0GE10|S\\:6GF3550\\-0CD10)|560\\s(U\\:6GF3560\\-0LE10|X\\:6GF3560\\-0HE10))\\b"}
+
+#regex_link https://regex101.com/r/KA2kTf/1
+
+

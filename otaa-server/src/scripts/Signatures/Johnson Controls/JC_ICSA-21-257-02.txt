@@ -1,0 +1,10 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-257-02
+Title: Johnson Controls Sensormatic Electronics KT-1 Vulnerability (ICSA-21-257-02)
+Type: bhpp_vuln
+VulnID:590750
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Johnson Controls"
+arg#1: {min = "0.0.0", patched = "3.02", model = "KT\\-1\\sOne\\sDoor\\sController\\:KT\\-1\\b"}
+
+#arg#1 https://regex101.com/r/tbR3QI/1

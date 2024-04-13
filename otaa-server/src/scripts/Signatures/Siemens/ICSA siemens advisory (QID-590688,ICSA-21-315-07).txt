@@ -1,0 +1,17 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-315-07
+Title: Siemens Nucleus RTOS-based APOGEE and TALON Products (Update A) Multiple Vulnerabilities (ICSA-21-315-07)
+Type: bhpp_vuln
+VulnID: 590688
+Vulnflags:vuln
+manufacturer :"Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "99.99.99",model ="APOGEE\\s(MBC|MEC)\\s\\(PPC\\)\\s(\\(P2\\sEthernet\\)|\\(BACnet\\))"}
+arg#2:{min = "2.3", patched = "6.30.016",model ="Desigo\\s(PXC(00|64|128)\\-U|PXC(001|00|12|22\\.1|22|36\\.1|50|100|200)\\-E\\.D|PXM20\\-E)\\b"}
+arg#3:{min = "0.0.0", patched = "3.5.4",model ="(APOGEE\\sPXC|TALON\\sTC)\\s(Compact|Modular)\\s\\(BACnet\\)"}
+arg#4:{min = "0.0.0", patched = "2.8.19",model ="APOGEE\\sPXC\\s(Compact|Modular)\\s\\(P2\\sEthernet\\)"}
+
+#link for arg#1 #https://regex101.com/r/eFBgFC/3
+#link for arg#2 #https://regex101.com/r/j8fubc/2
+#link for arg#3 #https://regex101.com/r/eApwAm/2
+#link for arg#4 #https://regex101.com/r/L9Jxox/2
+ 

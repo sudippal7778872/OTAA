@@ -1,0 +1,10 @@
+For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-16-040-02
+Title:Siemens SIMATIC S7-1500 CPU Multiple Vulnerabilities (ICSA-16-040-02) (SSA-253230)
+Type: bhpp_vuln
+VulnID: 591085
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched="1.8.3",model="(SIPLUS|SIMATIC)\\sS7\\-1500(.+)?\\sCPU\\b"}
+
+#arg1:https://regex101.com/r/IotCLM/1

@@ -1,0 +1,11 @@
+#For advisory https://dam-mdc.phoenixcontact.com/asset/156443151564/cf2d9a089f16af45a68d7fb8db7968c8/Security_Advisory-CVE-2021-34570.pdf?_gl=1*hs2c0q*_ga*MTYwNDQyMzQ3My4xNjMyMTk5MTY3*_ga_6B4SS2SVV4*MTYzNTQxNjY1My4xLjAuMTYzNTQxNjY1My4w
+Title: PHOENIX CONTACT PLCnext Control devices Vulnerability (VDE-2021-029)
+Type: bhpp_vuln
+VulnID: 590940
+Vulnflags:vuln
+manufacturer : "Phoenix Contact"
+Func:ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "2021.0.5", model ="(AXC\\sF\\s(1152|2152\\sStarter\\sKit|2152|3152)|RFC\\s4072S|PLCnext\\sTechnology\\sStarterkit)\\b"}
+#regex_link https://regex101.com/r/bnlk8M/2
+
+

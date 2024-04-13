@@ -1,0 +1,12 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-182-01
+Title:Johnson Controls Facility Explorer Vulnerability (ICSA-21-182-01)
+Type:bhpp_vuln
+VulnID:591005
+Vulnflags:vuln
+manufacturer:"Johnson Controls"
+Func:ics_device_firmware_exprudp
+arg#1:{device = "Facility Explorer SNC Series:F4-SNC\\b",version = "^11\\b"}
+
+#1-https://regex101.com/r/BBDGnh/1 & version -https://regex101.com/r/sZdYxY/3   
+
+

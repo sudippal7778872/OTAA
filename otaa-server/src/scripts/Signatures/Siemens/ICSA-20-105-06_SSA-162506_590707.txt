@@ -1,0 +1,18 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-162506.pdf
+Title:DHCP Client Vulnerability in SIMOTICS CONNECT400, DesigoPXC/PXM,APOGEEMEC/MBC/PXC,APOGEEPXCSeries, and TALONTCSeries(SSA-162506)(ICSA-20-105-06)
+Type:bhpp_vuln
+VulnID:590707
+Vulnflags:vuln
+manufacturer:"Siemens"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "2.8.2", model ="APOGEE\\s(MBC|MEC|PXC).+P2\\b"}
+arg#2:{min = "0.0.0", patched = "3.5.3", model ="(APOGEE\\sPXC.+\\(BACnet\\)?|TALON\\sTC)\\b"}
+arg#3:{min = "2.8.2", patched = "2.8.19", model ="APOGEE\\sPXC\\s.+P2\\b"}
+arg#4:{min = "2.30", patched = "6.00.327", model ="(Desigo\\sPX(C(((001|00|12|22\\.1|22|36\\.1|50|100|200)\\-E\\.D)|(00|64|128)\\-U)|M20\\-E))\\b"}
+arg#5:{min = "0.0.0", patched = "0.3.0.330", model ="SIMOTICS\\sCONNECT\\s400"}
+
+#regex_link 1 https://regex101.com/r/XyulSR/2 
+#regex_link 2 https://regex101.com/r/b9iI7I/1 
+#regex_link 3 https://regex101.com/r/ES9Bh6/2 
+#regex_link 4 https://regex101.com/r/uvSfvN/2 
+#regex_link 5 https://regex101.com/r/wWZypx/1

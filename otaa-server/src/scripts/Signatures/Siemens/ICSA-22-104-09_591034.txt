@@ -1,0 +1,11 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-104-09
+Title: Siemens SCALANCE X-300 Switches Multiple Vulnerabilities (SSA-836527) (ICSA-22-104-09)
+Type: bhpp_vuln
+VulnID: 591034
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "4.1.4", model = "SCALANCE\\s(X302\\-7(\\s)?EEC|X304\\-2FE|X306\\-1LD\\sFE|X307\\-2EEC|X307\\-(3LD|3)|X308\\-(2M\\sPoE|2M\\sTS|2LD|2LH|2M|2)|X310|X310FE|X320\\-1\\sFE|X408\\-2|XR324\\-4M\\s(EEC|PoE\\sTS|PoE)|XR324\\-12(M\\sTS|M)|X320\\-3LDFE)\\b"}
+
+#arg#1 https://regex101.com/r/j44oyM/2
+

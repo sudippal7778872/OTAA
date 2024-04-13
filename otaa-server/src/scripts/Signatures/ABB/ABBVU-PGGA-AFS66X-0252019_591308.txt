@@ -1,0 +1,11 @@
+#For Advisory https://search.abb.com/library/Download.aspx?DocumentID=1MRG000001&DocumentPartId=
+Title: ABB AFS66x WindRiver VxWorks IPNet Multiple Vulnerabilities (ABBVU-PGGA-AFS66X-0252019)
+Type: bhpp_vuln
+VulnID: 591308
+Vulnflags: vuln
+manufacturer : "ABB"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "07.0.08", model = "AFS660(.+)?\\:AFS66X\\-(S|B|C)\\b"}
+
+#regex_link 1 https://regex101.com/r/WlofmL/1
+

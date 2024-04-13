@@ -1,0 +1,14 @@
+
+#For Advisory https://www.se.com/ww/en/download/document/SEVD-2020-287-02/
+Title:Schneider Electric Wibu-Systems CodeMeter Multiple Vulnerabilities (SEVD-2020-287-02)
+Type: bhpp_vuln
+VulnID: 590878
+Vulnflags:vuln
+manufacturer : "Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model ="E\\+PLC(400|100)\\b"} 
+#regex_link https://regex101.com/r/Y5OGNu/1
+
+
+
+

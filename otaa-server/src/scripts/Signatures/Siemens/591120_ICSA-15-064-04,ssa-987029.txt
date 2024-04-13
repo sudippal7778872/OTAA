@@ -1,0 +1,10 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-15-064-04
+Title: Siemens SIMATIC S7-300 CPU (DoS) Denial-of-Service Vulnerability (ICSA-15-064-04,ssa-987029)
+Type: bhpp_vuln
+VulnID: 591120
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model="((SIMATIC|SIPLUS)\\sS7\\-300\\sCPU)\\b"}
+
+

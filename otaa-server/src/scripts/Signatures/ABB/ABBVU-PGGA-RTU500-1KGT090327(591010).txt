@@ -1,0 +1,15 @@
+#For Advisory https://search.abb.com/library/Download.aspx?DocumentID=1KGT090327&=en&DocumentPartId=&Action=Launch&_ga=2.69762448.1839262439.1631071744-655960548.1631071744
+Title:ABB RTU500 series Multiple Vulnerabilities (ABBVU-PGGA-RTU500-1KGT090327)
+Type:bhpp_vuln
+VulnID:591010
+Vulnflags:vuln
+manufacturer:"ABB"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "11.0.0", patched = "11.5.99", model="RTU(\\s500\\sSeries|5\\d{2})\\b"}
+arg#2:{min = "12.0.0", patched = "12.0.13", model="RTU(\\s500\\sSeries|5\\d{2})\\b"}
+arg#3:{min = "12.1.0", patched = "12.2.9", model="RTU(\\s500\\sSeries|5\\d{2})\\b"}
+arg#4:{min = "12.3.0", patched = "12.4.9", model="RTU(\\s500\\sSeries|5\\d{2})\\b"}
+arg#5:{min = "12.5.0", patched = "12.6.1", model="RTU(\\s500\\sSeries|5\\d{2})\\b"}
+
+#regex_link https://regex101.com/r/vejCcs/3 
+

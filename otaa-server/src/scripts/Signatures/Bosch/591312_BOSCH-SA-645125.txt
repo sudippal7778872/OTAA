@@ -1,0 +1,10 @@
+#For https://psirt.bosch.com/security-advisories/bosch-sa-645125.html
+Title: Bosch Rexroth S20-PN-BK+/S20-ETH-BK Fieldbus Coupler Denial of Service (DoS) Vulnerability (BOSCH-SA-645125)
+Type: bhpp_vuln
+VulnID: 591312
+Vulnflags: vuln
+manufacturer: "Bosch Rexroth"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "S20\\-ETH\\-BK|S20\\-PN\\-BK\\+"}
+
+#arg1 regex link: https://regex101.com/r/SVjl1h/1

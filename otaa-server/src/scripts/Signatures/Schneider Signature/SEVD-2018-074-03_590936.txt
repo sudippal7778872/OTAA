@@ -1,0 +1,24 @@
+############making it as practice #########################
+
+#For Advisory https://www.se.com/ww/en/download/document/SEVD-2018-074-03/
+Title:Schneider Electric MiCOM Px4x with Legacy Ethernet board Vulnerability (SEVD-2018-074-03)
+Type: bhpp_vuln
+VulnID: 590936
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model ="Micom.+\\:(P64\\w|P849)\\b"} 
+#regex_link https://regex101.com/r/y4f8Xk/1
+
+
+
+#For Advisory https://www.se.com/ww/en/download/document/SEVD-2018-074-03/
+Title:Schneider Electric MiCOM Px4x with Legacy Ethernet board Vulnerability (SEVD-2018-074-03)
+Type: bhpp_vuln
+VulnID: 590936
+manufacturer :"Schneider"
+Func:ics_device_firmware_exprudp
+arg#1:{device = "Micom.+\\:P14\\w\\b" ,version = "^46\\b"}
+arg#2:{device = "Micom.+\\:P44\\w\\b" ,version = "^D6\\b"}
+
+#regex_link https://regex101.com/r/DZOBqN/1
+#regex_link https://regex101.com/r/L2V6oP/1

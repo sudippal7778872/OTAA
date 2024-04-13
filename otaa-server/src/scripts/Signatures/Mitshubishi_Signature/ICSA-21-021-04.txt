@@ -1,0 +1,14 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-021-04
+Title: Mitsubishi Electric MELFA (Update A) Uncontrolled Resource Consumption Vulnerability (ICSA-21-021-04)
+Type: bhpp_vuln
+VulnID:590599
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Mitsubishi Electric"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "MELFA\\sFR.+\\:(RV\\-((20|13|7|4|2)FR|(13|7|4|2)FRL|7FRLL)|RH\\-((20|12|6|3)FRH|3FRHR))\\b"}
+arg#2: {min = "0.0.0", patched = "99.99.99", model = "MELFA\\sCR.+\\:RV\\-8CRL\\b"}
+arg#3: {min = "0.0.0", patched = "99.99.99", model = "MELFA\\sASSISTA\\:RV\\-5AS\\-D\\b"}
+
+https://regex101.com/r/ozaEhb/3  MELFA FR Series
+https://regex101.com/r/81iMtf/2  MELFA CR Series
+https://regex101.com/r/sYIFc7/2  MELFA ASSISTA

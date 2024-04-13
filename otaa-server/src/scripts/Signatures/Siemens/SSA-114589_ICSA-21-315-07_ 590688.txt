@@ -1,0 +1,16 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-114589.pdf
+Title: Multiple Vulnerabilitiesin Nucleus RTOSbased APOGEE,TALONandDesigoPXC/PXMProducts (SSA-114589/ICSA-21-315-07)
+Type: bhpp_vuln
+VulnID: 590688
+Vulnflags:vuln
+manufacturer:"Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "99.99.99",model ="APOGEE\\s(MBC|MEC)\\s\\(PPC\\)\\s(\\(P2\\sEthernet\\)|\\(BACnet\\))"}
+arg#2:{min = "2.3", patched = "6.30.016",model ="(Desigo\\s(PXC(((001|00|12|22\\.1|22|36\\.1|50|100|200)\\-E\\.D)|(00|64|128)\\-U)|PXM20\\-E))\\b"}
+arg#3:{min = "0.0.0", patched = "3.5.4",model ="(APOGEE\\sPXC\\s(Compact|Modular)|TALON\\sTC\\s(Compact|Modular))\\s\\(BACnet\\)"}
+arg#4:{min = "0.0.0", patched = "2.8.19",model ="APOGEE\\sPXC\\s(Compact|Modular)\\s\\(P2\\sEthernet\\)"}
+
+#regex_link 1 https://regex101.com/r/u7mRV9/1 
+#regex_link 2 https://regex101.com/r/uvSfvN/1 
+#regex_link 3 https://regex101.com/r/hKxKN0/2 
+#regex_link 4 https://regex101.com/r/RCcsmG/1

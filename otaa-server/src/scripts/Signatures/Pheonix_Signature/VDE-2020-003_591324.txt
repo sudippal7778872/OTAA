@@ -1,0 +1,14 @@
+#For Advisory https://cert.vde.com/en/advisories/VDE-2020-003/
+Title: Phoenix Contact TC Router and TC Cloud Client Multiple Vulnerabilities (VDE-2020-003)
+Type: bhpp_vuln
+VulnID: 591324
+Vulnflags: vuln
+manufacturer : "Phoenix Contact"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "2.05.4", model = "TC\\sROUTER\\s((3002T\\-4G\\s(VZW|ATT)?)|2002T\\-3G)\\b"}
+arg#2: {min = "0.0.0", patched = "2.03.18", model = "TC\\sCLOUD\\sCLIENT\\s1002\\-4G(\\s(VZW|ATT))?\\b"}
+arg#3: {min = "0.0.0", patched = "1.03.18", model = "TC\\sCLOUD\\sCLIENT\\s1002\\-TXTX\\b"}
+
+#arg1 https://regex101.com/r/po9eto/1
+#arg2 https://regex101.com/r/DDOEuD/1
+#arg3 https://regex101.com/r/nEQwhT/1

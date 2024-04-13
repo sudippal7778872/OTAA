@@ -1,0 +1,49 @@
+#For Advisory https://us-cert.cisa.gov/ics/advisories/icsa-20-135-02
+Title: Emerson WirelessHART Gateway Vulnerability(ICSA-20-135-02)
+Type: bhpp_vuln
+VulnID:12352
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Emerson"
+arg#1: {min = "4.6.43", patched = "4.7.85", model = "Wireless\\s(14(10|20)|1552WU)\\sGateway"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/ICSA-19-148-01
+Title: Emerson Ovation OCR400 Controller Multiple Vulnerabilities(ICSA-19-148-01)
+Type: bhpp_vuln
+VulnID:12353
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Emerson"
+arg#1: {min = "0.0.0", patched = "3.3.2", model = "Ovation\\sController\\:OCR400"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/ICSA-13-259-01B
+Title: Emerson ROC800 Multiple Vulnerabilities (Update B) Multiple Vulnerabilities(ICSA-13-259-01B)
+Type: bhpp_vuln
+VulnID:12354
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Emerson"
+arg#1: {min = "0.0.0", patched = "3.51", model = "ROC800\\-Series\\sRemote\\sOperations\\sController\\:ROC800"}
+arg#2: {min = "0.0.0", patched = "1.21", model = "ROC800\\-Series\\sRemote\\sOperations\\sController\\:ROC800L"}
+arg#3: {min = "0.0.0", patched = "2.31", model = "DL8000\\sPreset\\sController\\:DL8000"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/ICSA-13-053-01
+Title: Emerson DeltaV Uncontroller Resource Consumption Vulnerability Vulnerability(ICSA-13-053-01)
+Type: bhpp_vuln
+VulnID:12355
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Emerson"
+arg#1: {min = "0.0.0", patched = "11.3.2", model = "DeltaV\\s(SD\\sPlus|M\\-series\\sMD\\sPlus)\\sController\\:(SE|VE)300(6|5)"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/ICSA-18-058-03
+Title: Emerson ControlWave Micro Process Automation Controller Vulnerability(ICSA-18-058-03)
+Type: bhpp_vuln
+VulnID:12356
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Emerson"
+arg#1: {min = "0.0.0", patched = "05.79.00", model = "ControlWave\\sMicro"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/ICSA-16-334-03
+Title: Emerson DeltaV Wireless I/O Card Open SSH Port Vulnerability Vulnerability(ICSA-16-334-03)
+Type: bhpp_vuln
+VulnID:12357
+Func: ics_device_firmware_exprudp
+manufacturer: "Emerson"
+arg#1: {device = "(DeltaV\\sWireless\\sI\\/O\\sCard\\:SE4801T(0\\d|1[0-6]))", version = "13\\.3"}

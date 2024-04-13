@@ -1,0 +1,10 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-083-01
+Title:Yokogawa CENTUM Multiple Vulnerabilities (ICSA-22-083-01) (YSAR-22-0001)
+Type:bhpp_vuln
+VulnID:590868
+manufacturer:"Yokogawa"
+Func:ics_device_firmware_exprudp
+arg#1:{device = "CENTUM\\s(CS\\s3000|VP)\\b",version = "\\d"}
+
+#link for arg 1 - https://regex101.com/r/12Gn3R/1
+

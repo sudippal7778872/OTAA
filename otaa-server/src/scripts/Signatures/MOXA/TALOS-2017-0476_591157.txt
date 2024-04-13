@@ -1,0 +1,10 @@
+#For Advisory https://talosintelligence.com/vulnerability_reports/TALOS-2017-0476
+Title: Moxa EDR-810 Web Server URI Denial of Service Vulnerability (TALOS-2017-0476)
+Type: bhpp_vuln
+VulnID: 591157
+Vulnflags: vuln
+manufacturer : "Moxa"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "(EDR\\-810)\\b", version = "^4\\.1\\b"}
+
+#arg#1 regex: https://regex101.com/r/LsozJ2/1 , https://regex101.com/r/wYx1Rv/1

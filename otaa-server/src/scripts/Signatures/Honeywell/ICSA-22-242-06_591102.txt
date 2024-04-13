@@ -1,0 +1,12 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-242-06
+Title: Honeywell ControlEdge Vulnerability (ICSA-22-242-06)
+Type: bhpp_vuln
+VulnID: 591102
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer : "Honeywell"
+arg#1: {min = "0.0.0", patched = "151.2", model = "ControlEdge\\sRTU\\b"}
+
+#regex_link https://regex101.com/r/mRHo4w/1
+
+ 

@@ -1,0 +1,9 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-350-12
+Title: Siemens SIMATIC ITC Multiple Vulnerabilities (ICSA-21-350-12) 
+Type: bhpp_vuln
+VulnID: 590668
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "3.2.1", model = "(SIMATIC\\sITC(15|19|22)00\\s(V3\\sPRO|V3))\\b"}
+# https://regex101.com/r/T1T9TP/3

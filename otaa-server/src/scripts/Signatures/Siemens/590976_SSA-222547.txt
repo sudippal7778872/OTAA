@@ -1,0 +1,11 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-167-09 and https://cert-portal.siemens.com/productcert/html/ssa-222547.html
+Title: Siemens SCALANCE LPE9403 Third-Party Multiple Vulnerabilities (ICSA-22-167-09) (SSA-222547)
+Type: bhpp_vuln
+VulnID: 590976
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched="2.0",model="SCALANCE\\sLPE9403\\:6GK5998\\-3GS00\\-2AC2\\b"}
+
+#arg1: https://regex101.com/r/CgDNxC/1
+

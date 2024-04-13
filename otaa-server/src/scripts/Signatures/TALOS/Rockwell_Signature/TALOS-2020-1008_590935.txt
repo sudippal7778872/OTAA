@@ -1,0 +1,11 @@
+#For Advisory https://talosintelligence.com/vulnerability_reports/TALOS-2020-1008
+Title: Allen-Bradley Flex IO 1794-AENT/B ENIP Request Path Network Segment Denial of Service (DoS) Vulnerability (TALOS-2020-1008)
+Type: bhpp_vuln
+VulnID: 590935
+Vulnflags:vuln
+Func: ics_device_firmware_exprudp
+manufacturer : "Rockwell Automation"
+arg#1: {device = "Allen\\-Bradley\\sFLEX\\sI\\/O\\s.+\\:1794\\-AENT\\/B\\b", version = "^4\\.003\\b"}
+
+#regex_link https://regex101.com/r/nq0HKW/1
+

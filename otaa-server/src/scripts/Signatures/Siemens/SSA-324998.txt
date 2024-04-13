@@ -1,0 +1,10 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-324998.pdf
+Title: : Siemens SICAM A8000 Multiple Vulnerabilities (SSA-324998)
+Type: bhpp_vuln
+VulnID:590803
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "16.20", model = "(CP\\-80(00(\\sMASTER\\sMODULE.+)?\\:6MF2101\\-(1|0)AB10\\-0AA0|21\\sMASTER\\sMODULE\\:6MF2802\\-1AA00|22\\sMASTER\\sMODULE.*?:6MF2802\\-2AA00)\\b)"}
+
+regex:- https://regex101.com/r/HX6RlR/1

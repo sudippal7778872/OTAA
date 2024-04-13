@@ -1,0 +1,11 @@
+#For Advisory https://dam-mdc.phoenixcontact.com/asset/156443151564/f429bb3447816e409f3c783ec0e7473f/Security_Advisory_CVE-2021-21002.pdf?_gl=1*bmw191*_ga*MTYwNDQyMzQ3My4xNjMyMTk5MTY3*_ga_6B4SS2SVV4*MTYzNTQxNjY1My4xLjEuMTYzNTQxODI3MS4w
+Title: PHOENIX CONTACT FL COMSERVER UNI Vulnerability (VDE-2021-022)
+Type: bhpp_vuln
+VulnID: 591079
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer : "Phoenix Contact"
+arg#1: {min = "0.0.0", patched = "2.41",model ="FL\\sCOMSERVER\\sUNI\\s232\\/422\\/(485\\-T|485)\\b"}
+
+#regex_link https://regex101.com/r/MFfHSs/1
+

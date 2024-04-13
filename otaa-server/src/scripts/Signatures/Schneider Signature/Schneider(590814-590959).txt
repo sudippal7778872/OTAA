@@ -1,0 +1,23 @@
+#For Advisory https://www.se.com/ww/en/download/document/SEVD-2021-222-01/
+Title: Schneider Electric Harmony/Magelis HMI Products configured by Vijeo Designer, Vijeo Designer Basic and EcoStruxure Machine Expert Vulnerability (SEVD-2020-222-01)
+Type:bhpp_vuln
+VulnID:590814
+manufacturer:"Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "99.99.99", model ="(Magelis|Harmony)\\s(STO|STU|GTO|GTUX|GTU|GK|GXU|SCU)\\b"}
+
+#1-https://regex101.com/r/MQyM6l/1
+
+###################################
+
+#For Advisory https://www.se.com/ww/en/download/document/SEVD-2022-011-02/
+Title:Schneider Electric Easergy T300 Vulnerability (SEVD-2022-011-02)
+Type:bhpp_vuln
+VulnID:590959
+manufacturer:"Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "2.8", model ="Easergy\\sT300\\b"}
+
+#1-https://regex101.com/r/MP1Nxg/1
+
+

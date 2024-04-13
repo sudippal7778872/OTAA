@@ -1,0 +1,12 @@
+#For https://www.br-automation.com/downloads_br_productcatalogue/assets/1622986485635-en-original-1.0.pdf
+Title: "B and R" PROFINET IO Devices Denial of Service (DoS) Vulnerability (1622986485635)
+Type: bhpp_vuln
+VulnID: 591303
+Vulnflags: vuln
+manufacturer: "B&R"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.8", model = "(X20IF10E3\\-1|X20cIF10E3\\-1)\\b"}
+arg#2: {min = "0.0.0", patched = "1.5.2", model = "5ACPCI\\.XPNS\\-00\\b"}
+
+#arg1 regex link: https://regex101.com/r/EAqo4V/1
+#arg2 regex link: https://regex101.com/r/yUz49w/1

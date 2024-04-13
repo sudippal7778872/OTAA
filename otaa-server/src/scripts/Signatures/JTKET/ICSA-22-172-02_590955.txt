@@ -1,0 +1,9 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-172-02
+Title:JTEKT TOYOPUC Multiple Vulnerabilities (ICSA-22-172-02)
+Type: bhpp_vuln
+VulnID: 590955
+Vulnflags:vuln
+manufacturer : "JTEKT"
+Func:ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model ="TOYOPUC\\-PC10.+(PC10GE|PC10G\\-CPU|PC10P\\-DP\\-IO|PC10P\\-DP|PC10PE\\-1616P|PC10PE|PC10P|PC10EL|PC10E|PC10B\\-P|PC10B)|TOYOPUC\\-PC3JX.+CPU\\:PC3JX(\\-D)?|TOYOPUC\\-Nano.+(10GX|CPU)|TOYOPUC\\-Plus.+CPU\\:Plus|TOYOPUC\\sPCDL\\sseries\\sPCDL\\:PCDL\\b"} 
+#regex_link https://regex101.com/r/nDoG3v/3

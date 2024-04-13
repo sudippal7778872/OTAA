@@ -1,0 +1,12 @@
+#For advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2022-347-02&p_enDocType=Security+and+Safety+Notice&p_File_Name=SEVD-2022-347-02_SAITEL_DR_RTU_Security_Notification.pdf&_ga=2.108573826.1017159426.1670827910-652731025.1670223486
+Title: neider Electric Saitel DR RTU denial of service (DoS) Vulnerability (SEVD-2022-347-02)
+Type: bhpp_vuln
+VulnID: 591290
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "11.06.01", patched = "11.06.15", model = "Saitel\\sDR\\b"}
+
+
+#regex_link: https://regex101.com/r/ZrXfNw/1
+

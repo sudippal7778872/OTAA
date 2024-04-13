@@ -1,0 +1,10 @@
+#For Advisory https://www.eaton.com/content/dam/eaton/company/news-insights/cybersecurity/security-bulletins/ethernet-gateway-eg2.pdf & https://www.cisa.gov/uscert/ics/advisories/ICSA-16-061-03
+Title: Eaton Lighting Systems EG2 Web Control Authentication Bypass Multiple Vulnerabilities (ICSA-16-061-03, ETN-VA-2016-1000)
+Type: bhpp_vuln
+VulnID: 591351
+Vulnflags: vuln
+manufacturer: "Eaton"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "4.05", model = "iLumin\\slighting\\s(.+)\\:(EG2\\-NA|EG2)\\b"}
+
+#arg1 regex link: https://regex101.com/r/3EftiS/1

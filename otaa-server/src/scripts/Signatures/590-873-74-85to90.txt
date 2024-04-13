@@ -1,0 +1,115 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-278-04
+Title: Honeywell Experion PKS and ACE Controllers Multiple Vulnerabilities (ICSA-21-278-04) (SN 2021-02-22 01)
+Type: bhpp_vuln
+VulnID: 590873
+Vulnflags: vuln
+manufacturer : "Honeywell"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "Experion\\sPKS\\sC(200(E)?|300)\\sController\\b"}
+
+#arg1 https://regex101.com/r/XQMwGP/1
+
+--------------------------------------
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-097-02
+Title: ABB SPIET800 and PNI800 Multiple Vulnerabilities (ICSA-22-097-02)
+Type: bhpp_vuln
+VulnID: 590874
+manufacturer : "ABB"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "(SPIET|PNI)800\\b", version = "\\w"}
+
+#arg1 https://regex101.com/r/OYe2aP/1
+
+--------------------------------------
+
+#For Advisory https://www.se.com/in/en/download/document/SEVD-2015-008-01/
+Title: Schneider Electric ETG3000 FactoryCast HMI Gateway Vulnerability (SEVD-2015-008-01)
+Type: bhpp_vuln
+VulnID: 590885
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.60", model = "HMI\\sGateway\\:TSXETG30(00|10|21|22)\\b"}
+
+#arg1 https://regex101.com/r/SUmXa6/1
+
+--------------------------------------
+
+#For Advisory https://www.phoenixcontact.com/assets/downloads_ed/local_pc/web_dwl_technical_info/innominate_security_advisory_20141217_002_en.pdf
+Title: Phoenix contact Innominate mGuard devices Vulnerability (20141217_002)
+Type: bhpp_vuln
+VulnID: 590886
+Vulnflags: vuln
+manufacturer : "Phoenix Contact"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "6.1.0", patched = "7.6.6", model = "MGUARD"}
+arg#2: {min = "7.6.7", patched = "8.1.4", model = "MGUARD"}
+
+#arg1 https://regex101.com/r/9JrE3z/1
+#arg2 https://regex101.com/r/9JrE3z/1
+
+#CVE-2014-8104
+
+--------------------------------------
+
+#For Advisory https://www.phoenixcontact.com/assets/downloads_ed/local_pc/web_dwl_technical_info/innominate_security_advisory_20140606_001_en.pdf
+Title: Phoenix contact Innominate mGuard devices OpenSSL SSL/TLS MITM Vulnerability (20140606_001)
+Type: bhpp_vuln
+VulnID: 590887
+Vulnflags: vuln
+manufacturer : "Phoenix Contact"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "MGUARD", version = "^(8\\.0\\.0)\\b|^(8\\.0\\.1)\\b|^(8\\.0\\.2)\\b|^(8\\.1\\.0)\\b"}
+
+#arg1 https://regex101.com/r/9JrE3z/1
+
+#CVE-2014-3566 aka "POODLE"
+
+--------------------------------------
+
+#For Advisory https://www.phoenixcontact.com/assets/downloads_ed/local_pc/web_dwl_technical_info/innominate_security_advisory_20141022_001_en.pdf
+Title: Phoenix contact Innominate mGuard SSL protocol 3.0 security Vulnerability (20141022_001)
+Type: bhpp_vuln
+VulnID: 590888
+Vulnflags: vuln
+manufacturer : "Phoenix Contact"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "7.6.5", model = "MGUARD"}
+
+#arg1 https://regex101.com/r/9JrE3z/1
+
+#CVE-2014-0224
+
+--------------------------------------
+
+#For Advisory https://dam-mdc.phoenixcontact.com/asset/156443151564/8194c48a3148b84193c8550d54908e4a/Security_Advisory_CVE-2019-18352_Update_2020-05-18.pdf
+Title: Phoenix contact FL NAT 2xxx Vulnerability (300462358/pbsa56)
+Type: bhpp_vuln
+VulnID: 590889
+Vulnflags: vuln
+manufacturer : "Phoenix Contact"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "2.90", model = "FL\\sNAT\\s2(304\\-2GC\\-2SFP|208)\\b"}
+
+#arg1 https://regex101.com/r/jqgn6b/1
+
+--------------------------------------
+
+#For Advisory https://www.se.com/il/en/download/document/SEVD-2015-196-01/
+Title: Schneider Electric ConneXium Managed Switch Vulnerability (SEVD-2015-196-01)
+Type: bhpp_vuln
+VulnID: 590890
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "8.05", model = "ConneXium.+Switch\\:TCSESM(083((F1|F2)C(U|S)0|F23F((1(C)?|0)))|103F2(3|L)G0|163F2(3F0|C(U|S)0)|243F2CU0|063F2C(U|S)1(C)?|043F(1C(U|S)0|2(3F0|C(U|S)0)))\\b"}
+arg#2: {min = "0.0.0", patched = "5.36", model = "ConneXium.+Switch\\:TCSESB0((83|93)F2CU0|83F23F0)\\b"}
+
+#arg1 https://regex101.com/r/nPK1ll/3
+#arg2 https://regex101.com/r/XoRRJX/2
+# All in one Regex https://regex101.com/r/K2p2pI/1
+
+--------------------------------------
+
+

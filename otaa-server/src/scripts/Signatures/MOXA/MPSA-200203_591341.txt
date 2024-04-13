@@ -1,0 +1,11 @@
+#For advisory https://www.moxa.com/en/support/product-support/security-advisory/awk-3131a-series-industrial-ap-bridge-client-vulnerabilities
+Title: Moxa AWK-3131A Series Multiple Vulnerabilities (MPSA-200203)
+Type: bhpp_vuln
+VulnID: 591341
+Vulnflags: vuln
+manufacturer : "MOXA"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.14", model = "AWK\\-3131A\\b"}
+
+
+#arg#1 regex: https://regex101.com/r/3iORcs/1

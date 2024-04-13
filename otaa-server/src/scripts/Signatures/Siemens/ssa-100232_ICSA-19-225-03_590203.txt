@@ -1,0 +1,14 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-100232.html and https://us-cert.cisa.gov/ics/advisories/icsa-19-225-03
+Title:Denial-of-Service vulnerability in SCALANCE X Switches Vulnerability(ssa-100232)(ICSA-19-225-03)
+Type: bhpp_vuln
+VulnID:590203
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_range_non_rgp
+arg#1: {min = "0.0.0", patched="99.99.99",model="SCALANCE\\sX204RNA(\\:6GK5204\\-0BA00-2(M|K)B2|\\sEEC\\:6GK5204\\-0BS00\\-(2N|3L|3P)A3)\\b"}
+arg#2: {min = "0.0.0", patched="5.2.5",model="(SIPLUS\\sNET\\s)?SCALANCE\\sX(\\w)?2\\d\\d",not_match="(SIPLUS\\sNET\\s)?SCALANCE\\sX(\\w)?2\\d\\d(.+)?IRT\\b"}
+arg#3: {min = "0.0.0", patched="5.5.0",model="(SIPLUS\\sNET\\s)?SCALANCE\\sX(\\w)?2\\d\\d(.+)?IRT\\b"}
+
+#arg1:https://regex101.com/r/PkQlzc/1
+#arg2:https://regex101.com/r/RL43am/4
+#arg3:https://regex101.com/r/86Iy9c/1
+

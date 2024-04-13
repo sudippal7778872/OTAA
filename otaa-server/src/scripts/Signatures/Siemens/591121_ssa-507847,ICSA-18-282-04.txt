@@ -1,0 +1,10 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-507847.pdf
+Title: Siemens SIMATIC S7-1200 CPU Family Version 4 Vulnerability (ssa-507847,ICSA-18-282-04)
+Type: bhpp_vuln
+VulnID: 591121
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "4.0.0", patched = "4.2.3", model="((SIMATIC|SIPLUS)\\sS7\\-1200\\sCPU)\\b"}
+
+

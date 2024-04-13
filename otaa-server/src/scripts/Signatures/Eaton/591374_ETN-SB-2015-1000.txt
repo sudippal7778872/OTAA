@@ -1,0 +1,10 @@
+#For Advisory https://www.eaton.com/content/dam/eaton/company/news-insights/cybersecurity/security-bulletins/network-time-protocol-(NTP)-2.4.7-vulnerability.pdf
+Title: Eaton Power XpertT Gateway models remote code execution Vulnerability (ETN-SB-2015-1000)
+Type: bhpp_vuln
+VulnID: 591374
+Vulnflags: vuln
+manufacturer: "Eaton"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "3.0.8", model = "Power\\sXpert\\sGateway(.+)?\\:PXG\\s(2|4|6|8)00E\\b"}
+
+#arg1 regex link: https://regex101.com/r/tUTgxD/1 

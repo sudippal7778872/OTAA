@@ -1,0 +1,54 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-21-257-16
+Title:Siemens SIPROTEC 5 (Update A)  Vulnerability (ICSA-21-257-16) 
+Type: bhpp_vuln
+VulnID:590695
+manufacturer:"Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "8.80", model ="(SIPROTEC)\\s\\d\\w\\w\\d{2}"} 
+
+#regex_link https://regex101.com/r/KW0er6/1
+
+##########################################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-21-068-08
+Title: Siemens Energy PLUSCONTROL 1st Gen Vulnerability (ICSA-21-068-08) 
+Type: bhpp_vuln
+VulnID: 590705
+manufacturer:"Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model ="PLUSCONTROL"} 
+
+#regex_link  https://regex101.com/r/eJoxmi/1
+
+##########################################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-21-159-08
+Title:Siemens TIM 1531 IRC Vulnerability (ICSA-21-159-08) 
+Type: bhpp_vuln
+VulnID: 590699
+Vulnflags: vuln
+manufacturer:"Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "2.2", model ="(SIPLUS\\s)?TIM\\s1531\\sIRC"}
+
+#regex_link https://regex101.com/r/TB11di/1
+
+##########################################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-21-112-02
+Title: Mitsubishi Electric GOT (Update A) Vulnerability (ICSA-21-112-02) 
+Type: bhpp_vuln
+VulnID: 590710
+Vulnflags: vuln
+manufacturer:"Mitsubishi Electric"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "01.40.000", model ="GOT2000\\sSeries\\sGT(27|25)\\sModel"} 
+arg#2: {min = "0.0.0", patched = "01.41.000", model ="GOT(2000\\sSeries\\sGT21\\sModel\\:GT2107\\-WT(B|S)D|\\sSIMPLE\\sSeries\\sGS21\\-N\\sModel\\:GS21(10|07)\\-WTBD\\-N)"}
+
+#regex_link - 1 https://regex101.com/r/lzz3sF/1 
+#regex_link - 2 https://regex101.com/r/hH5Vzo/1
+
+
+
+
+

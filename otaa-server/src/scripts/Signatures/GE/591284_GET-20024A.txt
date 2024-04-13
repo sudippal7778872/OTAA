@@ -1,0 +1,13 @@
+#For advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-15-013-04A
+Title: General Electric Multilink Switch RSA Private Key and DoS Multiple Vulnerabilities (ICSA-15-013-04A)
+Type: bhpp_vuln
+VulnID: 591284
+Vulnflags: vuln
+manufacturer : "General Electric"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "MultiLink\\sML(8|12|16|24)00\\b", version = "^([0-3]\\.|4\\.[0-1]\\.|4\\.2\\.[0-1])\\b"}
+arg#2: {device = "MultiLink\\sML(810|3000|3100)\\b", version = "^([0-4]\\.|5\\.[0-1]\\.|5\\.2\\.0)\\b"}
+
+#arg#1 regex: https://regex101.com/r/Szm4bj/2 , https://regex101.com/r/l0C1kc/1
+#arg#2 regex: https://regex101.com/r/pPkcDU/1 , https://regex101.com/r/YuFOZZ/1
+

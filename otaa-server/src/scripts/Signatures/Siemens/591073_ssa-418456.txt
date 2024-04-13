@@ -1,0 +1,9 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-418456.pdf
+Title:Siemens SIMATIC RF350M and SIMATIC RF650M KRACK Attacks Multiple Vulnerabilities (SSA-418456)
+Type: bhpp_vuln
+VulnID: 591073
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched="22.3.5.16",model="SIMATIC\\s(.+)?(RF350M|RF650M)\\b"}
+
+#arg1:https://regex101.com/r/DZ1ckF/1

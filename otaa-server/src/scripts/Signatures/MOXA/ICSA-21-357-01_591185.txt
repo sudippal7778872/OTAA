@@ -1,0 +1,14 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-357-01
+Title: Moxa MGate Protocol Gateways Vulnerability (ICSA-21-357-01)
+Type: bhpp_vuln
+VulnID:591185 
+Vulnflags: vuln
+manufacturer : "Moxa"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "2.3", model = "MGate\\sMB3180\\b"}
+arg#2: {min = "0.0.0", patched = "4.2", model = "MGate\\sMB3280\\b"}
+arg#3: {min = "0.0.0", patched = "3.3", model = "MGate\\sMB3480\\b"}
+
+#regex_link 1 https://regex101.com/r/fLKRm0/1
+#regex_link 2 https://regex101.com/r/IZ1QnX/1
+#regex_link 3 https://regex101.com/r/bEzVm1/1

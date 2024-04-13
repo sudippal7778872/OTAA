@@ -1,0 +1,10 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-104-03
+Title:Red Lion DA50N Multiple Vulnerabilities (ICSA-22-104-03)
+Type:bhpp_vuln
+VulnID:590972
+manufacturer:"Red Lion"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "99.99.99", model ="DA50N\\b"}
+
+#1-https://regex101.com/r/fHhdhF/1
+

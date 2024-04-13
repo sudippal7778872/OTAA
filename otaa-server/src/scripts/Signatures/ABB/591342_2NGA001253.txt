@@ -1,0 +1,10 @@
+#For Advisory https://library.e.abb.com/public/f125fbed58594e6d9e1830e30ee3010d/2NGA001253%20Cyber%20Security%20Advisory%20-%20Arctic%20wireless%20GW%20%20Firewall%20rev%20B%20JUN-20-2022.pdf
+Title: ABB Arctic Wireless Gateway Firewall Vulnerability (2NGA001253)
+Type: bhpp_vuln
+VulnID: 591342
+Vulnflags: vuln
+manufacturer: "ABB"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "2.4.0", patched = "3.4.10", model = "AR(G600\\sSeries\\sWireless\\sGateway(\\s)?\\:ARG600A(1220|1230|1240|1260|2622|2625)|P600\\sSeries\\sWireless\\sGateway(\\s)?\\:ARP600A(2200|2220|2250|2260|2651|2560)|R600\\sSeries\\sWireless\\sGateway(\\s)?\\:ARR600A(3261|3262|3222|3251|3252|3201|3202|3221)|C600\\sSeries\\sWireless\\sGateway(\\s)?\\:ARC600A(2324|2325|2323))NA|(IEC\\s104\\sGateWay\\sModule\\:Arctic\\sIEC\\s104\\sGateway)\\b"}
+
+#arg1 regex link: https://regex101.com/r/2YtSw8/1

@@ -1,0 +1,12 @@
+
+
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-672373.pdf
+Title: Siemens SIMATIC CP 1543-1 Multiple Vulnerabilities (SSA-672373)
+Type: bhpp_vuln
+VulnID: 590755
+Vulnflags: vuln
+Func: ics_device_multiple_version_range_non_rgp
+manufacturer : "Siemens"
+arg#1: {min = "0.0.0", patched = "2.0.28", model = "CP\\s1543\\-1\\b"}
+
+#arg#1 https://regex101.com/r/6Jcsw5/1

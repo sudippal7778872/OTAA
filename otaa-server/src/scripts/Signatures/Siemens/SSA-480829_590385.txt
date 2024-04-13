@@ -1,0 +1,17 @@
+#For advisory https://cert-portal.siemens.com/productcert/pdf/ssa-480829.pdf and https://www.cisa.gov/news-events/ics-advisories/icsa-18-163-02
+Title: Siemens SCALANCE X Switches (Update A) Multiple Vulnerabilities(ICSA-18-163-02)(SSA-480829)
+Type: bhpp_vuln
+VulnID: 590385
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_range_non_rgp
+arg#1: {min = "0.0.0", patched = "5.2.3", model = "(SIPLUS\\sNET\\s)?SCALANCE\\sX[A-Z]?2\\d\\d",not_match="IRT"}
+arg#2: {min = "0.0.0", patched = "5.4.1", model = "(SIPLUS\\sNET\s)?(SCALANCE\\s+X([A-Z]2\d\\d|2\\d\\d)(.+?IRT|IRT))"}
+arg#3: {min = "0.0.0", patched = "3.2.7", model = "SCALANCE\\sX20(4(.+C)|4RNA)\\b"}
+arg#4: {min = "0.0.0", patched = "4.1.3", model = "(SIPLUS\\sNET\\s)|(SCALANCE\\s(XR|X)\\d\\d\\d\\-7\\sEEC)|(SCALANCE\\sX30\\d\\-\\d(LD\\sFE|FE))|(SCALANCE\\sX307\\-2EEC)|(SCALANCE\\sX30(\\d\\-(\\d[A-Z][A-Z])|8\\-2M\\sPoE|8\\-2M\\sTS|8\\-2M|\\d\\-\\d))|(SCALANCE\\sX3\\d(0FE|0\\-1\\sFE|\\-1|0|))|(SCALANCE\\sXR324(\\-4M\\sEEC|\\-4M\\sPoE\\sTS|\\-4M\\sPoE|\\-12M|WG))|(SCALANCE\\sXR328\\-4C\\sWG)|(SCALANCE\\sX408\\-2)\\b"}
+
+
+#regex_link: https://regex101.com/r/5xCpdN/1
+#regex_link: https://regex101.com/r/LE3xgr/1
+#regex_link: https://regex101.com/r/UBfd7n/1
+#regex_link: https://regex101.com/r/CYcyub/1

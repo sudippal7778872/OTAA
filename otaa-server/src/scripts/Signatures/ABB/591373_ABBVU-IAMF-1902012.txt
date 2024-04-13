@@ -1,0 +1,15 @@
+#For advisory https://library.e.abb.com/public/b2edb894b46242fda29eb7644a068161/ABB-Advisory_3ADR010402.pdf
+Title: ABB CP651 HMI Hardcoded Credentials Multiple Vulnerabilities (3ADR010402)
+Type: bhpp_vuln
+VulnID: 591373
+Vulnflags: vuln
+manufacturer : "ABB"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.77", model = "CP600(.+)?\\:(CP6(51|61|65|76)(\\-WEB)?)\\b"}
+
+
+
+
+
+
+#regex_link1: https://regex101.com/r/t0ostg/1

@@ -1,0 +1,9 @@
+
+#For advisory https://cert-portal.siemens.com/productcert/pdf/ssa-240718.pdf
+Title: Siemens SIMATIC S7-1200 V2.x Insecure storage of HTTPS CA certificate Vulnerability (SSA-240718)
+Type: bhpp_vuln
+VulnID:590884
+manufacturer : "Siemens"
+Func: ics_device_firmware_exprudp
+arg#1:{device = "(SIMATIC|SIPLUS)sS7\\-1200\\sCPU",version = "^2\\.\\d"}
+#regex_link 1 https://regex101.com/r/BzlEr4/1

@@ -1,0 +1,263 @@
+######################(Mitsubishi)#####################
+
+########################################################################################
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-20-245-01
+Title: Mitsubishi Electric Multiple Products (Update C) Predictable Exact Value from Previous Values Vulnerability (ICSA-20-245-01)
+Type: bhpp_vuln
+VulnID:590601
+Func: ics_device_firmware_expr_not_match
+manufacturer: "Mitsubishi Electric"
+arg#1: {device = "(MELSEC\\-Q.+\\:Q(03UDE|(04|06|10|13|20|26|50|100)UDEH)CPU\\b)", version = "^.*"}
+arg#2: {device = "(MELSEC\\-Q.+(QCPU\\:Q(03|04|06|13|26)UDVCPU|CPU\\:Q(04|06|13|26)UDPVCPU)\\b)", version = "^.*"}
+arg#3: {device = "(MELSEC\\-L.+\\:L((02|06|26)CPU\\-P|26CPU\\-PBT)\\b)", version = "^.*"}
+arg#4: {device = "(MELSEC\\siQ\\-F.+\\:(FX5UC\\sCPU|FX5UC)\\b)", version = "^.*"}
+arg#5: {device = "(MELSEC\\-F.+\\:FX3GE\\b)", version = "^.*"}
+arg#6: {device = "(FREQROL\\sSeries.+\\:FR\\-(A|F)800\\-E\\b)", version = "^.*"}
+arg#7: {device = "(FREQROL\\sSeries.+\\:FR\\-A8NCG\\b)", version = "^.*"}
+arg#8: {device = "(FREQROL\\sFR\\-E800.+\\:FR\\-E800\\-EPA\\b)", version = "^.*"}
+arg#9: {device = "(FREQROL\\sFR\\-E800.+\\:FR\\-E800\\-EPB\\b)", version = "^.*"}
+arg#10: {device = "(MELSEC\\-Q.+\\:QJ71E71\\-100\\b)", version = "^.*"}
+arg#11: {device = "(MELSEC\\-L.+\\:LJ71E71\\-100\\b)", version = "^.*"}
+arg#12: {device = "(MELSEC\\-Q.+\\:QJ71MT91\\b)", version = "^.*"}
+arg#13: {device = "(Communication\\sLSI\\sCP620\\:NZ2GACP620\\-(300|60)\\b)", version = "^.*"}
+
+
+arg#1  https://regex101.com/r/3dnbL4/2      ------------------------->> Q03UDECPU, Q04/06/10/13/20/26/50/100UDEHCPU
+arg#2  https://regex101.com/r/dXrVDg/5      ------------------------->> Q03/04/06/13/26UDVCPU || Q04/06/13/26UDPVCPU
+arg#3  https://regex101.com/r/gz0j5O/3      ------------------------->> LnCPU(-P)(n=02/06/26)  ||  L26CPU-(P)BT
+arg#4  https://regex101.com/r/AAnWUA/2      ------------------------->> FX5UC
+arg#5  https://regex101.com/r/BiwPyA/2      ------------------------->> FX3GE
+arg#6  https://regex101.com/r/haLKLX/4      ------------------------->> FR-A800-E
+arg#7  https://regex101.com/r/ZTcMrx/2      ------------------------->> FR-A8NCG
+arg#8 https://regex101.com/r/AauoTI/2      ------------------------->> FR-E800-EPA
+arg#9 https://regex101.com/r/gVyBMr/2      ------------------------->> FR-E800-EPB
+arg#10 https://regex101.com/r/tnNKeW/2      ------------------------->> QJ71E71-100
+arg#11 https://regex101.com/r/lxDw4Z/2      ------------------------->> LJ71E71-100
+arg#12 https://regex101.com/r/FgXKgx/2      ------------------------->> QJ71MT91
+arg#13 https://regex101.com/r/eJ2Pc7/3      ------------------------->> NZ2GACP620-60 || NZ2GACP620-300
+
+########################################################################################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-20-245-01
+Title: Mitsubishi Electric Multiple Products (Update C) Predictable Exact Value from Previous Values Vulnerability (ICSA-20-245-01)
+Type: bhpp_vuln
+VulnID:590601
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Mitsubishi Electric"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "MELSEC\\-Q.+(Module\\:QJ71(MES96N|WS96)|QCPU\\:Q(06CCPU\\-V|24DHCCPU\\-(VG|V)))\\b"}
+arg#2: {min = "0.0.0", patched = "14.00.00", model = "MELSEC\\siQ\\-R.+\\:R12CCPU\\-V\\b"}
+arg#3: {min = "0.0.0", patched = "10.00.00", model = "MELSEC\\siQ\\-R.+\\:RD55UP06\\-V\\b"}
+arg#4: {min = "0.0.0", patched = "12.00.00", model = "MELSEC\\siQ\\-R.+\\:RJ71GN11\\-T2\\b"}
+arg#5: {min = "0.0.0", patched = "16.00.00", model = "MELSEC\\siQ\\-R.+\\:RD78G(HV|HW|4|8|16|32|64)\\b"}
+arg#6: {min = "0.0.0", patched = "99.99.99", model = "NZ2FT\\sSeries.+\\:NZ2FT\\-(EIP|MT)\\b"}
+arg#7: {min = "0.0.0", patched = "19.00.00", model = "MELSEC\\siQ\\-R.+\\:R0(0|1|2)CPU\\b"}
+arg#8: {min = "0.0.0", patched = "51.00.00", model = "MELSEC\\siQ\\-R.+\\:R(04|08|16|32|120)(CPU|ENCPU)\\b"}
+arg#9: {min = "0.0.0", patched = "23.00.00", model = "MELSEC\\siQ\\-R.+\\:R(08|16|32|120)SFCPU\\b"}
+arg#10: {min = "0.0.0", patched = "25.00.00", model = "MELSEC\\siQ\\-R.+\\:R(08|16|32|120)PCPU\\b"}
+arg#11: {min = "0.0.0", patched = "06.00.00", model = "MELSEC\\siQ\\-R.+\\:R(08|16|32|120)PSFCPU\\b"}
+arg#12: {min = "0.0.0", patched = "01.003.00", model = "MELSEC\\siQ-F.+\\:FX5\\-(ENET\\/IP|ENET)\\b"}
+arg#13: {min = "0.0.0", patched = "01.24.00", model = "MELSEC\\-F.+\\:FX3U\\-ENET\\-ADP\\b"}
+arg#14: {min = "0.0.0", patched = "01.16.00", model = "MELSEC\\-F.+\\:FX3U\\-(ENET-P502|ENET-L|ENET)\\b"}
+arg#15: {min = "0.0.0", patched = "99.99.99", model = "MELQIC\\sIU1.+\\:IU1\\-1M20\\-D\\b"}
+arg#16: {min = "0.0.0", patched = "99.99.99", model = "\\:LE7\\-40GU\\-L\\b"}
+arg#17: {min = "0.0.0", patched = "99.99.99", model = "GOT2000\\sSeries\\sGT21"}
+arg#18: {min = "0.0.0", patched = "99.99.99", model = "GOT\\sSIMPLE\\sSeries\\sGS21"}
+arg#19: {min = "0.0.0", patched = "99.99.99", model = "GOT1000\\sSeries\\sGT14\\sModel"}
+arg#20: {min = "0.0.0", patched = "99.99.99", model = "MELSERVO\\-JE\\sServo.+\\:MR\\-JE\\-(\\d+)?C\\b"}
+arg#21: {min = "0.0.0", patched = "99.99.99", model = "MELSERVO\\-J4\sMulti\\-Network\\sServo.+\\:MR\\-J4\\-TM\\b"}
+arg#22: {min = "0.0.0", patched = "49.00.00", model = "MELSEC\\siQ\\-R.+\\:RJ71EN71\\b"}
+arg#23: {min = "0.0.0", patched = "04.00.00", model = "GOT2000\\sSeries\\sCC\\-Link\\sIE\\sTSN.+\\:GT25\\-J71GN13\\-T2\\b"}
+arg#24: {min = "0.0.0", patched = "99.99.99", model = "MELFA\\sSeries.+\\:APR\\-(1|2)TR(20|12|6|3)FH\\b"}
+arg#25: {min = "1.0.0", patched = "01.001.00", model = "MELSEC\\siQ\\-F.+\\:FX5\\-CCLGN\\-MS\\b"}
+arg#26: {min = "1.0.0", patched = "01.001.00", model = "MELSEC\\siQ\\-F.+\\:FX5UJ\\b"}
+arg#27: {min = "1.0.0", patched = "01.001.00", model = "MELSEC\\siQ\\-R.+\\:RD55UP12\\-V\\b"}
+
+
+
+arg#1  https://regex101.com/r/Rvlzjw/3      ------------------------->> QJ71MES96 || QJ71WS96 || Q06CCPU-V || Q24DHCCPU-V || Q24DHCCPU-VG 
+arg#2  https://regex101.com/r/l2Yf7M/2      ------------------------->> R12CCPU-V
+arg#3  https://regex101.com/r/3kBxJS/2      ------------------------->> RD55UP06-V
+arg#4  https://regex101.com/r/DcYPJD/2      ------------------------->> RJ71GN11-T2
+arg#5  https://regex101.com/r/PWFElv/3      ------------------------->> RD78Gn(n=4,8,16,32,64) || RD78GHV || RD78GHW
+arg#6  https://regex101.com/r/rWdXwZ/2      ------------------------->> NZ2FT-MT || NZ2FT-EIP 
+arg#7  https://regex101.com/r/nDyVzR/2      ------------------------->> R 00/01/02 CPU
+arg#8  https://regex101.com/r/cvTlTQ/3      ------------------------->> R 04/08/16/32/120 CPU | ENCPU
+arg#9  https://regex101.com/r/DteNjG/2      ------------------------->> R 08/16/32/120 SFCPU
+arg#10 https://regex101.com/r/ZGhXGT/2      ------------------------->> R 08/16/32/120 PCPU
+arg#11 https://regex101.com/r/cNOyDj/2      ------------------------->> R 08/16/32/120 PSFCPU
+arg#12 https://regex101.com/r/OdVrzc/2      ------------------------->> FX5-ENET  || FX5-ENET/IP 
+arg#13 https://regex101.com/r/QQ3tMy/2      ------------------------->> FX3U-ENET-ADP
+arg#14 https://regex101.com/r/VXIdf8/2      ------------------------->> FX3U-ENET || FX3U-ENET-L || FX3U-ENET-P502
+arg#15 https://regex101.com/r/4WBE8N/3      ------------------------->> IU1-1M20-D
+arg#16 https://regex101.com/r/7fEN8K/2      ------------------------->> LE7-40GU-L
+arg#17 https://regex101.com/r/CwfMQ4/3      ------------------------->> GOT2000 Series GT21 Model 
+arg#18 https://regex101.com/r/x5YoDY/3      ------------------------->> GS Series
+arg#19 https://regex101.com/r/AjfxY9/2      ------------------------->> GOT1000 Series GT14 Model
+arg#20 https://regex101.com/r/tU0wFS/3      ------------------------->> MR-JE-C	  
+arg#21 https://regex101.com/r/QZpYYC/3      ------------------------->> MR-J4-TM
+arg#22 https://regex101.com/r/nOjTBX/3      ------------------------->> RJ71EN71
+arg#23 https://regex101.com/r/hop49k/2      ------------------------->> GT25-J71GN13-T2
+arg#24 https://regex101.com/r/B69PEu/3      ------------------------->> APR-nTR3FH, APR-nTR6FH, APR-nTR12FH, APR-nTR20FH(n=1,2)
+arg#25  https://regex101.com/r/xxoeNV/2      ------------------------->> FX5-CCLGN-MS
+arg#26  https://regex101.com/r/JK1uAS/3      ------------------------->> FX5UJ
+arg#27  https://regex101.com/r/qnugUo/2      ------------------------->> RD55UP12-V
+
+########################################################################################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-20-310-02
+Title: Mitsubishi Electric GT14 Model of GOT1000 Series Multiple Vulnerabilities (ICSA-20-310-02)
+Type: bhpp_vuln
+VulnID:590648
+Func: ics_device_firmware_expr_not_match
+manufacturer: "Mitsubishi Electric"
+arg#1: {device = "(GOT1000\\sSeries\\sGT14\\sModel\\:GT14((55\\-QT)|(50\\-(QM|QL))|(55HS\\-QT)|(50HS\\-QM))BDE\\b)", version = "^.*"}
+
+
+arg#1   https://regex101.com/r/ppaF8F/2
+
+########################################################################################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-20-303-01
+Title: Mitsubishi Electric MELSEC iQ-R, Q and L Series (Update A) Denial of Service (DoS) Vulnerability (ICSA-20-303-01)
+Type: bhpp_vuln
+VulnID:590633
+Func: ics_device_firmware_expr_not_match
+manufacturer: "Mitsubishi Electric"
+arg#1: {device = "(MELSEC\\-Q.+\\:Q(03UDE|(04|06|10|13|20|26|50|100)UDEH)CPU\\b)", version = "^.*"}
+arg#2: {device = "(MELSEC\\-Q.+\\:Q((03|04|06|13|26)UDV|(04|06|13|26)UDPV)CPU\\b)", version = "^.*"}
+
+arg#1   https://regex101.com/r/3dnbL4/3      ------------------------->> Q03UDECPU, Q04/06/10/13/20/26/50/100UDEHCPU
+arg#2   https://regex101.com/r/dXrVDg/7      ------------------------->> Q03/04/06/13/26UDVCPU || Q04/06/13/26UDPVCPU 
+
+########################################################################################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-250-01
+Title: Mitsubishi Electric MELSEC iQ-R Series Multiple Vulnerabilities (ICSA-21-250-01)
+Type: bhpp_vuln
+VulnID:590647
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Mitsubishi Electric"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "MELSEC\\siQ\\-R.+\\:R(08|16|32|120)(PSF|SF)CPU\\b"}
+
+
+arg#1  https://regex101.com/r/hJdvgj/2  -------------->> (PSF|SF)CPU 
+
+########################################################################################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-334-02
+Title: Mitsubishi Electric MELSEC and MELIPC Series Multiple Vulnerabilities (ICSA-21-334-02)
+Type: bhpp_vuln
+VulnID:590649
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Mitsubishi Electric"
+arg#1: {min = "0.0.0", patched = "25.00.00", model = "MELSEC\\siQ\\-R.+\\:R0(0|1|2)CPU\\b"}
+arg#2: {min = "0.0.0", patched = "58.00.00", model = "MELSEC\\siQ\\-R.+\\:R(04|08|16|32|120)ENCPU\\b"}
+arg#3: {min = "0.0.0", patched = "99.99.99", model = "MELSEC\\siQ\\-R.+\\:R(08|16|32|120)SFCPU\\b"}
+arg#4: {min = "0.0.0", patched = "30.00.00", model = "MELSEC\\siQ\\-R.+\\:R(08|16|32|120)PCPU\\b"}
+arg#5: {min = "0.0.0", patched = "99.99.99", model = "MELSEC\\siQ\\-R.+\\:R(08|16|32|120)PSFCPU\\b"}
+arg#6: {min = "0.0.0", patched = "99.99.99", model = "MELSEC\\siQ\\-R.+\\:R(64|32|16)MTCPU\\b"}
+arg#7: {min = "0.0.0", patched = "99.99.99", model = "MELSEC\\siQ\\-R.+\\:R12CCPU\\-V$"}
+arg#8: {min = "0.0.0", patched = "99.99.99", model = "MELSEC\\-Q.+\\:Q(03UDE|(04|06|10|13|20|26|50|100)UDEH)CPU\\b"}
+arg#9: {min = "0.0.0", patched = "99.99.99", model = "MELSEC\\-Q.+\\:Q((24DHCCPU\\-(LS|VG|V))|12DCCPU\\-V|26DHCCPU\\-LS)$"}
+arg#10: {min = "0.0.0", patched = "99.99.99", model = "MR\\-MQ100.+\\:MR\\-MQ100$"}
+arg#11: {min = "0.0.0", patched = "99.99.99", model = "MELSEC\\-Q.+\\:Q17(2|3)(DCPU\\-S1|DSCPU)$"}
+arg#12: {min = "0.0.0", patched = "99.99.99", model = "MELSEC\\sQ.+\\:Q170MCPU$"}
+arg#13: {min = "0.0.0", patched = "99.99.99", model = "MELSEC\\-Q.+\\:Q170MSCPU\\-S1\\b"}
+arg#14: {min = "0.0.0", patched = "99.99.99", model = "MELSEC\\-L.+\\:L((02|06|26)CPU\\-P|26CPU\\-PBT)\\b"}
+arg#15: {min = "0.0.0", patched = "99.99.99", model = "MELIPC\\sMI5000.+\\:MI5122\\-VW\\b"}
+
+
+arg#1   https://regex101.com/r/nDyVzR/3      ------------------------->> R 00/01/02 CPU
+arg#2   https://regex101.com/r/cvTlTQ/4      ------------------------->> R 04/08/16/32/120 (EN) CPU
+arg#3   https://regex101.com/r/DteNjG/2      ------------------------->> R 08/16/32/120 SFCPU
+arg#4   https://regex101.com/r/ZGhXGT/2      ------------------------->> R 08/16/32/120 PCPU
+arg#5   https://regex101.com/r/cNOyDj/2      ------------------------->> R 08/16/32/120 PSFCPU
+arg#6   https://regex101.com/r/V8yjRH/2      ------------------------->> R 16/32/64 MTCPU 
+arg#7   https://regex101.com/r/l2Yf7M/2      ------------------------->> R12CCPU-V
+arg#8   https://regex101.com/r/3dnbL4/2      ------------------------->> Q03UDECPU, Q04/06/10/13/20/26/50/100UDEHCPU
+arg#9   https://regex101.com/r/ahVEAt/2      ------------------------->> Q12DCCPU-V, Q24DHCCPU-V(G), Q24/26DHCCPU-LS  
+arg#10  https://regex101.com/r/hkOOVK/1      ------------------------->> MR-MQ100
+arg#11  https://regex101.com/r/A55k10/3      ------------------------->> Q 172/173 DCPU-S1  ||  Q 172/173 DSCPU
+arg#12  https://regex101.com/r/OdeYCG/1      ------------------------->> Q 170 MCPU
+arg#13	https://regex101.com/r/dXrVDg/8      ------------------------->> Q 170 MSCPU (-S1)
+arg#14  https://regex101.com/r/Z4Z9eA/3      ------------------------->> L02/06/26CPU-P, L26CPU-PBT
+arg#15  https://regex101.com/r/xFUYbm/2      ------------------------->> MI5122-VW
+
+########################################################################################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-334-02
+Title: Mitsubishi Electric MELSEC and MELIPC Series Multiple Vulnerabilities (ICSA-21-334-02)
+Type: bhpp_vuln
+VulnID:123457
+Func: ics_device_firmware_expr_not_match
+manufacturer: "Mitsubishi Electric"
+arg#1: {device = "(MELSEC\\-Q.+(QCPU\\:Q(03|04|06|13|26)UDVCPU|CPU\\:Q(04|06|13|26)UDPVCPU)\\b)", version = "^.*"}
+
+arg#1   https://regex101.com/r/dXrVDg/5      ------------------------->> Q03/04/06/13/26UDVCPU || Q04/06/13/26UDPVCPU
+
+########################################################################################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-280-04
+Title: Mitsubishi Electric MELSEC iQ-R Series C Controller Module (Update A) Denial of Service (DoS) Vulnerability (ICSA-21-280-04)
+Type: bhpp_vuln
+VulnID:590651
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Mitsubishi Electric"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "MELSEC\\siQ\\-R.+\\:R12CCPU\\-V\\b"}
+
+
+arg#1  https://regex101.com/r/l2Yf7M/3      ------------------------->> R12CCPU-V
+
+
+########################################################################################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-287-03
+Title: Mitsubishi Electric MELSEC iQ-R Series Authorization Bypass Through User-controlled Key Vulnerability (ICSA-21-287-03)
+Type: bhpp_vuln
+VulnID:590650
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Mitsubishi Electric"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "MELSEC\\siQ\\-R.+\\:R(08|16|32|120)(PSF|SF)CPU\\b"}
+
+arg#1  https://regex101.com/r/hJdvgj/2  -------------->> (PSF|SF)CPU
+
+########################################################################################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-147-05
+Title: Mitsubishi Electric MELSEC iQ-R Series Denial of Service (DoS) Vulnerability (ICSA-21-147-05)
+Type: bhpp_vuln
+VulnID:590652
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Mitsubishi Electric"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "MELSEC\\siQ\\-R.+\\:R0(0|1|2)CPU\\b"}
+arg#2: {min = "0.0.0", patched = "99.99.99", model = "MELSEC\\siQ\\-R.+\\:R(04|08|16|32|120)ENCPU\\b"}
+arg#3: {min = "0.0.0", patched = "99.99.99", model = "MELSEC\\siQ\\-R.+\\:R(08|16|32|120)SFCPU\\b"}
+arg#4: {min = "0.0.0", patched = "99.99.99", model = "MELSEC\\siQ\\-R.+\\:R(08|16|32|120)PCPU\\b"}
+arg#5: {min = "0.0.0", patched = "99.99.99", model = "MELSEC\\siQ\\-R.+\\:R(08|16|32|120)PSFCPU\\b"}
+
+
+arg#1   https://regex101.com/r/nDyVzR/3      ------------------------->> R 00/01/02 CPU
+arg#2   https://regex101.com/r/cvTlTQ/4      ------------------------->> R 04/08/16/32/120 (EN) CPU
+arg#3   https://regex101.com/r/DteNjG/2      ------------------------->> R 08/16/32/120 SFCPU
+arg#4   https://regex101.com/r/ZGhXGT/2      ------------------------->> R 08/16/32/120 PCPU
+arg#5   https://regex101.com/r/cNOyDj/2      ------------------------->> R 08/16/32/120 PSFCPU
+
+########################################################################################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-201-01
+Title: Mitsubishi Electric MELSEC-F Series Denial of Service (DoS) Vulnerability (ICSA-21-201-01) 
+Type: bhpp_vuln
+VulnID:590654
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Mitsubishi Electric"
+arg#1: {min = "0.0.0", patched = "01.16.00", model = "MELSEC\\-F.+\\:FX3U\\-(ENET\\-P502|ENET\\-L|ENET)\\b"}
+
+
+arg#1 https://regex101.com/r/VXIdf8/3      ------------------------->> FX3U-ENET || FX3U-ENET-L || FX3U-ENET-P502

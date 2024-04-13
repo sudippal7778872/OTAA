@@ -1,0 +1,50 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-182-05
+Title:Mitsubishi Electric Air Conditioning Systems Vulnerability (ICSA-21-182-05)
+Type:bhpp_vuln
+VulnID:590709
+Vulnflags:vuln
+manufacturer:"Mitsubishi Electric"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "00.00.00", patched = "3.37", model ="Air\\sConditioner.+Centralized\\sController\\:(G|GB)\\-50A\\b"}
+arg#2:{min = "00.00.00", patched = "9.12", model ="Air\\sConditioner.+Centralized\\sController\\:GB\\-24A\\b"}
+arg#3:{min = "00.00.00", patched = "3.21", model ="Air\\sConditioner.+Centralized\\sController\\:(AG\\-150A\\-(A|J)|GB\\-50ADA\\-(A|J))\\b"}
+arg#4:{min = "00.00.00", patched = "7.10", model ="Air\\sConditioner.+Centralized\\sController\\:EB\\-50GU\\-(A|J)\\b"}
+arg#5:{min = "00.00.00", patched = "7.95", model ="Air\\sConditioner.+Centralized\\sController\\:(AE\\-(200A|200E|50A|50E)|EW\\-50(A|E)|TE\\-(200|50)A|TW\\-50A)\\b"}
+arg#6:{min = "00.00.00", patched = "1.40", model ="Air\\sConditioner.+Centralized\\sController\\:CMS\\-RMD\\-J\\b"}
+arg#7:{min = "00.00.00", patched = "2.21", model ="Air\\sConditioner\\sSystem\\sExpansion\\sController\\:PAC\\-YG50ECA\\b"}
+arg#8:{min = "00.00.00", patched = "2.22", model ="BM\\sAdaptor\\:BAC\\-HD150\\b"}
+
+#Link for arg#1 https://regex101.com/r/xh5RcG/3
+#Link for arg#2 https://regex101.com/r/XbBjJg/1
+#Link for arg#3 https://regex101.com/r/UWMndi/2
+#Link for arg#4 https://regex101.com/r/vzk6xD/1
+#Link for arg#5 https://regex101.com/r/LatDJZ/2
+#Link for arg#6 https://regex101.com/r/iQWsVv/2
+#Link for arg#7 https://regex101.com/r/xxB43w/2
+#Link for arg#8 https://regex101.com/r/ZJVs3O/2
+#combined regex - https://regex101.com/r/OcI0AY/1
+
+##############################################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-182-04
+Title:Mitsubishi Electric Air Conditioning System Vulnerability (ICSA-21-182-04)
+Type:bhpp_vuln
+VulnID:590708
+Vulnflags:vuln
+manufacturer:"Mitsubishi Electric"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "2.50", patched = "3.37", model ="Air\\sConditioner.+Centralized\\sController\\:(G|GB)\\-50A\\b"}
+arg#2:{min = "00.00.00", patched = "3.21", model ="Air\\sConditioner.+Centralized\\sController\\:(AG\\-150A\\-(A|J)|GB\\-50ADA\\-(A|J))\\b"}
+arg#3:{min = "00.00.00", patched = "7.10", model ="Air\\sConditioner.+Centralized\\sController\\:EB\\-50GU\\-(A|J)\\b"}
+arg#4:{min = "00.00.00", patched = "7.95", model ="Air\\sConditioner.+Centralized\\sController\\:(AE\\-(200A|200E|50(A|E))|EW\\-50(A|E)|TE\\-(200A|50A)|TW\\-50A)\\b"}
+arg#5:{min = "00.00.00", patched = "1.40", model ="Air\\sConditioner.+Centralized\\sController\\:CMS\\-RMD\\-J\\b"}
+arg#6:{min = "00.00.00", patched = "2.21", model ="Air\\sConditioner\\sSystem\\sExpansion\\sController\\:PAC\\-YG50ECA\\b"}
+
+#Link for arg#1 https://regex101.com/r/WElBuZ/2
+#Link for arg#2 https://regex101.com/r/AuHI39/2
+#Link for arg#3 https://regex101.com/r/afsAof/2
+#Link for arg#4 https://regex101.com/r/UlVQYw/2
+#Link for arg#5 https://regex101.com/r/O3wkPJ/2
+#Link for arg#6 https://regex101.com/r/A2sdYV/2
+
+##############################################

@@ -1,0 +1,11 @@
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Technical+leaflet&p_File_Name=SEVD-2020-105-01_Modicon+M100_M200_M221_and_EcoStruxure%E2%84%A2_Machine+Expert_Basic_Security_Notification.pdf&p_Doc_Ref=SEVD-2020-105-01&_ga=2.185837408.856331686.1658312895-875329093.1650947280
+Title: Schneider Electric Modicon M100/M200/M221 controllers Vulnerability (SEVD-2020-105-01)
+Type: bhpp_vuln
+VulnID: 591019
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "00.00.00", patched="99.99.99",model="Modicon\\s(.+)?M(100|200|221)\\b"}
+
+#arg1 : https://regex101.com/r/Ll8ASe/1
+
+

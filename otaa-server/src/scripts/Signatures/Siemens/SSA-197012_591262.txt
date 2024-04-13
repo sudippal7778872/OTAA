@@ -1,0 +1,10 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-197012.pdf
+Title: Siemens SICLOCK Denial-of-Service conditions (DoS) Multiple Vulnerabilities (SSA-197012)
+Type: bhpp_vuln
+VulnID: 591262
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "SICLOCK\\sTC(1|4)00\\b"}
+
+#arg#1 regex: https://regex101.com/r/vxloEF/1

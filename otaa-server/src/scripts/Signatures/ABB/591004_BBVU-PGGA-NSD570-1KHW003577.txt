@@ -1,0 +1,12 @@
+#For Advisory https://search.abb.com/library/Download.aspx?DocumentID=1KHW003577&DocumentPartId=
+Title: ABB NSD570 Multiple Vulnerabilities (ABBVU-PGGA-NSD570-1KHW003577)
+Type: bhpp_vuln
+VulnID: 591004
+Vulnflags: vuln
+manufacturer : "ABB"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "3.25", patched="3.42",model="NSD570\\b"}
+arg#2: {min = "1.03", patched="1.18",model="NSD570\\b"}
+
+#arg1 : https://regex101.com/r/7uQD0j/1
+#arg2 : https://regex101.com/r/7uQD0j/1

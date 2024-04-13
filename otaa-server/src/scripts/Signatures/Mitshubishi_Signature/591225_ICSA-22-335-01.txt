@@ -1,0 +1,10 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-335-01
+Title: Mitsubishi Electric MELSEC iQ-R Series Improper Input Validation Vulnerability(icsa-22-335-01)
+Type: bhpp_vuln
+VulnID: 591225
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Mitsubishi Electric"
+arg#1: {min = "0.0.0", patched = "66.00.00", model = "MELSEC\\siQ\-R\\sSeries(.+)?\\:(RJ71EN71|R(04|08|16|32|120)ENCPU)\\b"}
+
+#regex link : https://regex101.com/r/Uwdzz4/1

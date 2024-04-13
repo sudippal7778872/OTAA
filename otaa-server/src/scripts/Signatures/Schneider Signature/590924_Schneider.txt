@@ -1,0 +1,12 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2017-075-01
+Title:Schneider Electric Modicon M241, M221, M251 Vulnerability (SEVD-2017-075-01)
+Type: bhpp_vuln
+VulnID: 590924
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "4.0.5.11", model="Modicon\\s(M241|M251)\\b"}
+arg#2: {min = "0.0.0", patched = "1.5.0.0", model="Modicon\\sM221\\b"}
+
+arg1 : https://regex101.com/r/bDkylt/1
+arg2 : https://regex101.com/r/DR2hK6/1

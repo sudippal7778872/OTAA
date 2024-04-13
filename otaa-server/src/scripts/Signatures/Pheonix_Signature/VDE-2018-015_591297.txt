@@ -1,0 +1,15 @@
+#For Advisory https://cert.vde.com/en/advisories/VDE-2018-015/
+Title: Phoenix Contact AXL F BK series Denial of Service (DoS) Vulnerability (VDE-2018-015)
+Type: bhpp_vuln
+VulnID: 591297
+Vulnflags: vuln
+manufacturer : "Phoenix Contact"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.0.5", model = "AXL\\sF\\sBK\\sPN$"}
+arg#2: {min = "0.0.0", patched = "1.12", model = "AXL\\sF\\sBK\\sETH\\sXC\\b"}
+arg#3: {min = "0.0.0", patched = "1.13", model = "AXL\\sF\\sBK\\sETH$"}
+
+#regex_link https://regex101.com/r/VnGysc/2
+#regex_link https://regex101.com/r/ZelkkH/1
+#regex_link https://regex101.com/r/a7Bs5R/1
+

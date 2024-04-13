@@ -1,0 +1,9 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-23-012-05
+Title: SAUTER Controls Nova 200 -220 Series Multiple Vulnerabilities (ICSA-23-012-05)
+Type: bhpp_vuln
+VulnID:591320
+manufacturer : "Sauter Control"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "(EYK(2(2|3)0F001|300F001)|ModuNet300\\:EY\\-AM300F00(1|2))\\b", version = "^3\\.3\\-00[0-6]\\b"}
+
+#regex_link 1 https://regex101.com/r/QL8kUM/1      #version_link 1 https://regex101.com/r/j2zBGI/1

@@ -1,0 +1,13 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-268149.pdf
+Title: Siemens Scalance S Multiple Vulnerabilities (SSA-268149)
+Type: bhpp_vuln
+VulnID: 591265
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "2.0.0", patched = "2.3.0.3", model = "SCALANCE\\sS6(02|12|13)\\b"}
+
+#regex_link 1 https://regex101.com/r/Wf0Ydu/1
+
+
+#version referce taken from this website: https://support.industry.siemens.com/cs/document/59869684/firmware-update-v2-3-0-3-for-scalance-s?dti=0&lc=en-WW

@@ -1,0 +1,11 @@
+#For Advisory https://www.inhandnetworks.com/upload/attachment/202205/10/InHand-PSA-2022-01.pdf
+Title: InHand Networks Industrial Router IR302 Multiple Vulnerabilities (InHand-PSA-2022-01)
+Type: bhpp_vuln
+VulnID: 591033
+Vulnflags: vuln
+manufacturer : "InHand Networks"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "3.5.45", model = "IR302"}
+
+
+#add regex link 

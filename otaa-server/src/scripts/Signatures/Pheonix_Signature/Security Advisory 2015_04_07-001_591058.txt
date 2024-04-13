@@ -1,0 +1,10 @@
+#For Advisory https://www.phoenixcontact.com/assets/downloads_ed/local_pc/web_dwl_technical_info/innominate_security_advisory_20150407_001_en.pdf
+Title: Phoenix Contact mGuard devices Vulnerability (Security Advisory 2015/04/07-001)
+Type: bhpp_vuln
+VulnID: 591058
+Vulnflags: vuln
+manufacturer : "Phoenix contact"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "8.1.5", model = "MGUARD\\b"}
+
+#arg#1 regex: https://regex101.com/r/YcC9gP/1

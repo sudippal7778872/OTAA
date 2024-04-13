@@ -1,0 +1,11 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-102-04
+Title: Mitsubishi Electric GT25-WLAN (Update A) Multiple Vulnerabilities (ICSA-22-102-04)
+Type: bhpp_vuln
+VulnID: 591104
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer : "Mitsubishi Electric"
+arg#1: {min = "0.0.0", patched = "01.45.000", model = "GOT2000(.+)?\\:GT25\\-WLAN"}
+
+#regex_link https://regex101.com/r/sZOMbs/1
+

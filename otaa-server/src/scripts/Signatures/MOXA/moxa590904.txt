@@ -1,0 +1,10 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-187-01
+Title: Moxa NPort IAW5000A-I/O Series Serial Device Server Multiple Vulnerabilities (ICSA-21-187-01)
+Type:bhpp_vuln
+VulnID:590904
+Vulnflags:vuln
+manufacturer:"Moxa"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "00.00.00", patched = "2.3", model ="NPort\\sIAW5000A\\-I\\/O\\sSeries"}
+
+#link for arg#1 https://regex101.com/r/21bY1f/1

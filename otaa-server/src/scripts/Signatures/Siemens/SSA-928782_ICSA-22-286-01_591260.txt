@@ -1,0 +1,10 @@
+#For advisory https://cert-portal.siemens.com/productcert/html/ssa-928782.html
+Title: Siemens LOGO! Firmware Authenticity Vulnerability (ICSA-22-286-01, SSA-928782)
+Type: bhpp_vuln
+VulnID: 591260
+Vulnflags:vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "8.3", model = "(SIPLUS\\s)?LOGO\\!8\\sBM\\b"}
+
+#regex_link: https://regex101.com/r/iU6myL/2

@@ -1,0 +1,21 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-104-08
+Title: Siemens SCALANCE W1700 Multiple Vulnerabilities (ICSA-22-104-08) (SSA-392912)
+Type: bhpp_vuln
+VulnID: 590871
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "3.0.0", model = "SCALANCE\\sW1788\\-(1\\sM12\\:6GK5788\\-1GY01\\-0AA0|2\\sM12\\sEEC\\:6GK5788\\-2GY01\\-0TA0|2\\sM12\\:6GK5788\\-2GY01\\-0AA0|2IA\\sM12\\:6GK5788\\-2HY01\\-0AA0)\\b"}
+
+#arg#1 https://regex101.com/r/dP2kqU/1
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-104-10
+Title: Siemens SICAM A8000 Vulnerability (ICSA-22-104-10) (SSA-316850)
+Type: bhpp_vuln
+VulnID: 590872
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "4.80", model = "(CP\\-8031\\:6MF2803\\-1AA00|CP\\-8050.+\\:6MF2805\\-0AA00)\\b"}
+
+#arg#1 https://regex101.com/r/GhcsIR/2

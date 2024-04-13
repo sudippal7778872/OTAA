@@ -1,0 +1,51 @@
+For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2021-194-06
+Title:Schneider Electric EVlink City / Parking / Smart Wallbox Charging Stations Multiple Vulnerabilities (SEVD-2021-194-06)  
+Type: bhpp_vuln
+VulnID:590779
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "3.4.0.1", model = "(EVlink\\s(City\\:EVC1S(22|7)P4|Smart\\sWallbox\\:EVB1A|Parking\\:EV(W|F|\\.)2))"}
+
+Regex:-
+
+https://regex101.com/r/ahjYNO/1  
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2021-222-04
+Title: Schneider Electric Modicon PAC Controllers Multiple Vulnerabilities (SEVD-2021-222-04)
+Type: bhpp_vuln
+VulnID:590778
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "(Modicon\\s(M580.+\\:(BMEP|BMEH)|M340\\:BMXP34|MC80\\:BMKC80|.*?Momentum.*?\\:171CBU|Quantum\\:140CPU|Premium\\:TSXP5).+)"}
+
+regex:-
+
+https://regex101.com/r/MPDPof/1
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2020-080-01
+Title: Schneider Electric Modicon M340 Modicon M580 Vulnerability (SEVD-2020-080-01) 
+Type: bhpp_vuln
+VulnID:590780
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "3.20", model = "(Modicon\\sM340)"}
+arg#2: {min = "0.0.0", patched = "3.10", model = "(Modicon\\sM580)"}
+
+
+regex:-   https://regex101.com/r/hoCaE4/1  
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2020-224-02
+Title: Schneider ElectricspaceLYnk and Wiser for KNX Vulnerability (SEVD-2020-224-02)
+Type: bhpp_vuln
+VulnID:590782
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "2.5.1", model = "((space|home)LYnk|Wiser\\sfor.+KNX)"}
+
+regex:-  https://regex101.com/r/bOuEmQ/1
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

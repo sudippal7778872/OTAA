@@ -1,0 +1,14 @@
+#For Advisory https://www.se.com/ww/en/download/document/SEVD-2022-011-01/
+Title: Schneider Electric Ethernet and Web server on Modicon M340 controller and Communication Modules Multiple Vulnerabilities (SEVD-2022-011-01)
+Type: bhpp_vuln
+VulnID:590823
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "Modicon\\s(M340\\:BMXP34|Quantum\\:140CPU65|Premium\\:TSXP57).+"}
+arg#2: {min = "0.0.0", patched = "99.99.99", model = "(Modicon\\sM340\\sEthernet\\sCommunication.+\\:(BMXNOC0401\\b|BMXNOE( )?01\\d+))|(Modicon\\sRTU.+\\:BMXNOR0200H\\b)"}
+arg#3: {min = "0.0.0", patched = "99.99.99", model = "Modicon\\s(Premium\\sEthernet\\sModule\\:TSXETY(4|5)103|Quantum\\sEthernet\\sModule\\:(140NOC78\\d00|140NOE77111))\\b"}
+
+#arg#1 https://regex101.com/r/r5Wua5/1
+#arg#2 https://regex101.com/r/7Amzo7/2
+#arg#3 https://regex101.com/r/ZfW2Ap/3

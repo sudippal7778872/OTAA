@@ -1,0 +1,10 @@
+#For Advisory https://www.eaton.com/content/dam/eaton/company/news-insights/cybersecurity/security-bulletins/xComfort-ethernet-communication-interface-(ECI)%20.pdf
+Title: Eaton xComfort ECI authentication bypass Vulnerability (ETN-VA-2017-1001)
+Type: bhpp_vuln
+VulnID: 591362
+Vulnflags: vuln
+manufacturer : "Eaton"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "01.08", model = "Ethernet\\sCommunication\\sInterface(.+)?\\:CCIA\\-0(2|3)\\/01\\b"}
+
+#arg#1 regex: https://regex101.com/r/RgwXzQ/1

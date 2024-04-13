@@ -1,0 +1,11 @@
+#For Advisory https://talosintelligence.com/vulnerability_reports/TALOS-2019-0965
+Title: : WAGO PFC200 iocheckd service "I/O-Check" cache gateway Memory Corruption Vulnerability (TALOS-2019-0965)
+Type: bhpp_vuln
+VulnID: 591136
+Vulnflags: vuln
+manufacturer : "WAGO"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "WAGO\\sController\\sPFC200\\b", version = "^(03\\.02\\.02\\(14\\))$"}
+
+#arg1 https://regex101.com/r/8BuUOS/6
+#version https://regex101.com/r/NWPW77/3

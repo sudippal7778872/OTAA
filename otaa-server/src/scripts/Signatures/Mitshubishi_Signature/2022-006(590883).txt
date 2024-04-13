@@ -1,0 +1,11 @@
+
+#For Advisory https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2022-006_en.pdf
+Title: Mitsubishielectric MELSEC-Q/L Series Ethernet Interface Module and MELSEC iQ-R Series MES Interface Module Vulnerability (2022-006)
+Type: bhpp_vuln
+VulnID:590883
+manufacturer : "Mitsubishi Electric"
+Func:ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model ="MELSEC\\-(Q\\sSeries\\s.+\\:QJ71E71\\-100|L\\sSeries.+\\:LJ71E71\\-100)\\b"}
+arg#2: {min = "0.0.0", patched = "09", model ="MELSEC\\siQ\\-R\\sSeries\\s.+\\:RD81MES96N\\b"}
+#regex_link https://regex101.com/r/v2oA90/1
+#regex_link https://regex101.com/r/KIT9CK/1

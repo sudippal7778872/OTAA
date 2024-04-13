@@ -1,0 +1,12 @@
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Technical+leaflet&p_File_Name=SEVD-2021-130-03_Triconex_Models_3009_MP_and_TCM+4351B_Security_Notification_V1.1.pdf&p_Doc_Ref=SEVD-2021-130-03&_ga=2.16342708.381793938.1666158342-1596944300.1654494435
+Title: Schneider Electric Triconex Models 3009/3009X MP, 4351B/4352B/4355X TCM, and 4610X UCM Multiple Vulnerabilities (SEVD-2021-130-03)
+Type: bhpp_vuln
+VulnID: 591230
+Vulnflags: vuln
+manufacturer : "Schneider Electric"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "TRICONEX\\s(.+)?MP3009(X)?\\b", version = "^11\\.(3|4|5|7)\\.(.+)?\\b"}
+arg#2: {device = "(Tricon\\sCommunication\\sModule\\:435((1|2)B|5X)|(Unified\\sCommunication\\sModule|UCM)\\:4610X)\\b", version = "^11\\.((3|4)\\.(.+)|(5|7).0)\\b"}
+
+#arg#1 regex: https://regex101.com/r/v4IDcf/2 , https://regex101.com/r/UKON49/1
+#arg#2 regex: https://regex101.com/r/kxXOso/1 , https://regex101.com/r/FwwXg4/1

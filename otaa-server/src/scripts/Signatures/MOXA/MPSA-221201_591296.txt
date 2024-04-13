@@ -1,0 +1,10 @@
+#For Advisory https://www.moxa.com/en/support/product-support/security-advisory/tn-4900-series-use-of-hard-coded-credentials-vulnerability
+Title: Moxa TN-4900 Series Use of Hard-coded Credentials Vulnerability (MPSA-221201)
+Type: bhpp_vuln
+VulnID: 591296
+Vulnflags: vuln
+manufacturer : "Moxa"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0", patched = "1.2", model = "TN\\-4900\\sSeries\\b"}
+
+#arg#1 regex: https://regex101.com/r/pXh18h/1

@@ -1,0 +1,50 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2020-343-07
+Title:Schneider Electric SNMP Service on Modicon M340 and associated Communication Modules Vulnerability (SEVD-2020-343-07)
+Type: bhpp_vuln
+VulnID:590788
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "3.30", model = "(Modicon\\sM340.*\\:BMXP34.+)"}
+arg#2: {min = "0.0.0", patched = "3.4", model = "(Modicon\\sM340\\sEthernet\\sCommunication\\sModule\\:BMXNOE\\s?0100\\b)"}
+arg#3: {min = "0.0.0", patched = "6.6", model = "(Modicon\\sM340\\sEthernet\\sCommunication\\sModule\\:BMXNOE\\s?0110\\b)"}
+arg#4: {min = "0.0.0", patched = "1.7", model = "(Modicon\\s.+Module\\:BMXNOR\\s?0200H\\b)"}
+arg#5: {min = "0.0.0", patched = "99.99.99", model = "(Modicon\\sM340\\sEthernet\\sCommunication\\sModule\\:BMXNOC0401\\b)"}
+
+Regex:-
+Modicon M340 CPUs BMXP34*                       https://regex101.com/r/ikSbNR/2
+Modicon M340 Communication Ethernet modules:-
+BMXNOE0100 (H) versions prior to V3.4           https://regex101.com/r/4oMaZg/1
+BMXNOE0110 (H) versions prior to V6.6           https://regex101.com/r/JONvgY/1
+BMXNOR0200H versions prior to V1.7 IR22         https://regex101.com/r/crowUf/1
+BMXNOC0401 all versions                         https://regex101.com/r/kTgZN2/1
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2021-257-04
+Title: Schneider Electric Conext ComBox Vulnerability (SEVD-2021-257-04)
+Type: bhpp_vuln
+VulnID:590783
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "(Conext\\sComBox)"}
+
+Regex:- https://regex101.com/r/TyTkxt/1 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2021-222-05
+Title:Schneider Electric AccuSine PCSn/PCS+/PFV+ Vulnerability (SEVD-2021-222-05)
+Type: bhpp_vuln
+VulnID:590784
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "1.6.7", model = "(AccuSine\\s(PCS|PFV)\\+)"}
+arg#2: {min = "0.0.0", patched = "2.2.4", model = "(AccuSine\\sPCSn)"}
+
+Regex:-
+
+AccuSine PCS+ / PFV+      https://regex101.com/r/PQIBMQ/1 
+AccuSine PCSn             https://regex101.com/r/2uiyLo/1 
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -1,0 +1,11 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-176087.pdf
+Title: Siemens SCALANCE X-200 Authentication Bypass Vulnerability (ICSA-13-274-01,ssa-176087)
+Type: bhpp_vuln
+VulnID: 591122
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_range_non_rgp
+arg#1: {min = "0.0.0", patched="4.5.0 ",model="(SIPLUS\\sNET\\s)?SCALANCE\\sX(\\w)?2\\d\\d",not_match="(SIPLUS\\sNET\\s)?SCALANCE\\sX(\\w)?2\\d\\d(.+)?IRT\\b"}
+arg#2: {min = "0.0.0",patched="5.1.0",  model="(SIPLUS\\sNET\\s)?SCALANCE\\sX(\\w)?2\\d\\d(.+)?IRT\\b"}
+
+

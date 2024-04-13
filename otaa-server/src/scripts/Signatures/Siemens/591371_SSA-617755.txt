@@ -1,0 +1,10 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-617755.html
+Title: Siemens SCALANCE X200 IRT Improper Input Validation Vulnerability (ICSA-23-047-02, SSA-617755)
+Type: bhpp_vuln
+VulnID: 591371
+Vulnflags: vuln
+manufacturer: "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "5.5.0", model = "(SCALANCE\\s(X(20(0\\-4PIRT\\:6GK5200\\-4AH00\\-2BA3|1\\-3PIRT(\\:6GK5201\\-3BH00\\-2BA3|\\sPRO\\:6GK5201\\-3JR00\\-2BA6)|2\\-(2IRT\\:6GK5202\\-2BB00\\-2BA3|2PIRT(\\:6GK5202\\-2BH00\\-2BA3|\\sPRO\\:6GK5202\\-2JR00\\-2BA6))|4IRT(\\:6GK5204\\-0BA00\\-2BA3|\\sPRO\\:6GK5204\\-0JA00\\-2BA6))|F20(1\\-3P\\sIRT\\:6GK5201\\-3BH00\\-2BD2|2\\-2P\\sIRT\\:6GK5202\\-2BH00\\-2BD2|4(\\-2BA\\sIRT\\:6GK5204\\-2AA00\\-2BD2|IRT\\:6GK5204\\-0BA00\\-2BF2))))|SIPLUS\\sNET\\sSCALANCE\\sX202\\-2P\\sIRT\\:6AG1202\\-2BH00\\-2BA3)\\b"}
+
+#arg1 regex link: https://regex101.com/r/X1KDjJ/1

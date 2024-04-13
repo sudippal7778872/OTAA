@@ -1,0 +1,16 @@
+#For Advisory https://www.se.com/us/en/download/document/SEVD-2022-221-01/
+Title:Schneider Electric Modicon M340/M580 CPU Vulnerability (SEVD-2022-221-01)
+Type:bhpp_vuln
+VulnID:591024
+Vulnflags:vuln
+manufacturer :"Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "3.50", model ="Modicon\sM340(.+)?\\:BMXP34\\w+"}
+arg#2:{min = "0.0.0", patched = "4.02", model ="Modicon\\sM580(.+)?\\:BME(P|H)\\w+"}
+
+
+#regex_link https://regex101.com/r/pNnNDE/1
+#regex_link https://regex101.com/r/feIQwV/1
+
+
+

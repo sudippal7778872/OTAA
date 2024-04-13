@@ -1,0 +1,10 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-252-03
+Title:Mitsubishi Electric Europe B.V. smartRTU and INEA ME-RTU multiple vulnerabalities (ICSA-21-252-03)
+Type:bhpp_vuln
+VulnID:590908
+Vulnflags:vuln
+manufacturer:"Mitsubishi Electric"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "00.00.00", patched = "3.3", model ="smartRTU|INEA\\sME\\-RTU\\b"}
+
+#https://regex101.com/r/21jcDC/2

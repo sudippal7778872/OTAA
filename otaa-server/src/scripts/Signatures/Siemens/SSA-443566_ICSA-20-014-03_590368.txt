@@ -1,0 +1,12 @@
+#For Advisory  https://cert-portal.siemens.com/productcert/html/ssa-443566.html and https://www.cisa.gov/uscert/ics/advisories/icsa-20-014-03
+Title: Siemens SCALANCE X Switches Authentication Bypass Vulnerability (Update B) (SSA-443566) (ICSA-20-014-03)
+Type: bhpp_vuln
+VulnID: 590368
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "3.2.7", model = "SCALANCE\\sX204RNA(\\:6GK5204\\-0BA00\\-2(M|K)B2|\\sEEC\\:6GK5204\\-0BS00\\-(2N|3(L|P))A3)\\b"}
+arg#2: {min = "0.0.0", patched = "4.1.3", model = "SCALANCE\\s(X302\\-7\\sEEC\\:6GK5302\\-7GD00\\-(2EA3|2GA3|4EA3|4GA3|1EA3|1GA3|3EA3|3GA3)|X304\\-2FE\\:6GK5304\\-2BD00\\-2AA3|X306\\-1LD\\sFE\\:6GK5306\\-1BF00\\-2AA3|X307\\-2EEC\\:6GK5307\\-2FD00\\-(2EA3|2GA3|4EA3|4GA3|1EA3|1GA3|3EA3|3GA3)|X307\\-3LD(\\s)?\\:6GK5307\\-3BM(0|1)0\\-2AA3|X307\\-3\\:6GK5307\\-3BL(0|1)0\\-2AA3|X308\\-2\\:6GK5308\\-2FL(0|1)0\\-2AA3|X308\\-2LD\\:6GK5308\\-2FM(0|1)0\\-2AA3|X308\\-2LH\\:6GK5308\\-2FN(0|1)0\\-2AA3|X308\\-2LH\\+\\:6GK5308\\-2FP(0|1)0\\-2AA3|X308\\-2M(\\s)?\\:6GK5308\\-2GG(1|0)0\\-2AA2|X308\\-2M\\sPoE\\:6GK5308\\-2QG(0|1)0\\-2AA2|X308\\-2M\\sTS\\:6GK5308\\-2GG(0|1)0\\-2CA2|X310\\:6GK5310\\-0FA(1|0)0\\-2AA3|X310FE\\:6GK5310\\-0BA(0|1)0\\-2AA3|X320\\-1\\sFE\\:6GK5320\\-1BD00\\-2AA3|X320\\-3LDFE\\:6GK5320\\-3BF00\\-2AA3|X408\\-2\\:6GK5408\\-2FD00\\-2AA2|XR324\\-4M\\sEEC\\:6GK5324\\-4GG(1|0)0\\-2ER2|XR324\\-4M\\sEEC\\:6GK5324\\-(4GG00\\-(2JR2|4ER2|4JR2|1ER2|1JR2|3ER2|3JR2)|4GG10\\-(2JR2|4ER2|4JR2|1ER2|1JR2|3ER2|3JR2))|XR324\\-4M\\sPoE\\:6GK5324\\-4QG00\\-(1AR2|1HR2|3AR2|3HR2|1CR2)|XR324\\-4M\\sPoE\\sTS\\:6GK5324\\-4QG00\\-1CR2|XR324\\-12M(\\s)?\\:6GK5324\\-0GG(0|1)0\\-1AR2|XR324\\-12M(\\s)?\\:6GK5324\\-0GG00\\-(1HR2|3AR2|3HR2)|XR324\\-12M(\\s)?\\:6GK5324\\-0GG10\\-(1HR2|3AR2|3HR2)|XR324\\-12M\\sTS\\:6GK5324\\-0GG(1|0)0\\-1CR2)\\b|SIPLUS\\sNET\\sSCALANCE\\sX308\\-2\\:6AG1308\\-2FL10\\-4AA3\\b"}
+
+#arg#1 regex: https://regex101.com/r/hsgta3/1
+#arg#2 regex: https://regex101.com/r/I7Nub6/1

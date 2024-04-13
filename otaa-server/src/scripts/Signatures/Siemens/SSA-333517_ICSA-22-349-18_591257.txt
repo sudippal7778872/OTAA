@@ -1,0 +1,10 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-333517.html
+Title: Siemens SCALANCE SC-600 Family Multiple Vulnerabilities (ICSA-22-349-18, SSA-333517)
+Type: bhpp_vuln
+VulnID: 591257
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "3.0", model = "SCALANCE\\sSC6(22\\-2C\\:6GK5622|26\\-2C:6GK5626|32\\-2C\\:6GK5632|36\\-2C\\:6GK5636|42\\-2C\\:6GK5642|46\\-2C\\:6GK5646)\\-2GS00\\-2AC2\\b"}
+
+#arg#1 regex: https://regex101.com/r/iyvZLC/1

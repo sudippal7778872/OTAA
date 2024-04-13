@@ -1,0 +1,10 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-552874.html & https://www.cisa.gov/uscert/ics/advisories/icsa-22-349-11
+Title: Siemens SIPROTEC 5 Devices denial-of-service (DoS) Vulnerability (ICSA-22-349-11,SSA-552874)
+Type: bhpp_vuln
+VulnID: 591258
+Vulnflags: vuln
+manufacturer: "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1 : {min = "0.0.0",patched = "99.99.99",model = "SIPROTEC\\s(6MD8(5|6)|5\\s6MD89|5\\s6MU85|5\\s(.+)7KE85|7SA8(2|6|7)|7SD8(2|6|7)|7SJ8(1|2|5|6)|7SK8(2|5)|7SL8(2|6|7)|7SS85|5\\-7ST85|7SX85|7UM85|7UT8(2|5|6|7)|7VE85|7VK87|7SX800)|(SIPROTEC\\s5\\:ETH\\-B(A|B|D)\\-2(E|F)(L|O))\\b"}
+
+#regex link : https://regex101.com/r/9hTfLA/1

@@ -1,0 +1,13 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-342-03
+Title: Rockwell Automation Logix controllers Improper Input Validation Vulnerability (ICSA-22-342-03)
+Type:bhpp_vuln
+VulnID: 591250
+Vulnflags:vuln
+manufacturer:"Rockwell Automation"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "31.011", patched = "99.99.99", model = "(CompactLogix\\s5380|Compact\\sGuardLogix\\s5380|ControlLogix\\s5580|GuardLogix\\s5580)\\sController\\b"}
+arg#2:{min = "32.011", patched = "99.99.99", model = "CompactLogix\\s5480\\sController\\b"}
+
+
+#regex_link1: https://regex101.com/r/mHgf9j/1
+#regex_link2: https://regex101.com/r/HUNqjw/1

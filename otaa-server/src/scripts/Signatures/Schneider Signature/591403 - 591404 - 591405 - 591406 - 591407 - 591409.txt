@@ -1,0 +1,93 @@
+#For Advisory https://www.se.com/ww/en/download/document/SEVD-2020-343-05/
+Title:Schneider Electric Modicon M340, Legacy Offers Modicon Quantum and Modicon Premium and Associated Communication Modules Path Traversal Vulnerability (SEVD-2020-343-05)
+Type:bhpp_vuln
+VulnID:591409
+Vulnflags:vuln
+manufacturer:"Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "3.30", model ="Modicon\\sM340\\:BMXP34\\d+"}
+arg#2:{min = "0.0.0", patched = "3.4", model ="(M340(.+?:|:)(BMXNOE0100H|BMXNOE(\\s)?0100))\\b"}
+arg#3:{min = "0.0.0", patched = "6.6", model ="Modicon\\sM340\\sEthernet.+Module\\:BMXNOE(\\s)?0110(H)?\\b"}
+arg#4:{min = "0.0.0", patched = "99.99.99", model ="Modicon\\s(M340\\sEthernet\\sCommunication.+\\:BMXNOC0401|Premium\\:TSXP57(4|5|6)634(\\w+)?|Quantum\\:140CPU65.+|Quantum\\sEthernet.+\\:140NOC(78(\\d|\\w)00|77101)|Premium\\sEthernet.+\\:TSXETY(4|5)103)\\b"}
+arg#5:{min = "0.0.0", patched = "7.3", model ="(Modicon\\sQuantum.+|Ethernet\\sNetwork\\sTCP\\/IP.+)\\:140NOE771\\d1\\b"}
+
+#Link for arg#1  https://regex101.com/r/PiXlv1/1
+#Link for arg#2  https://regex101.com/r/uO2zFI/4
+#Link for arg#3  https://regex101.com/r/ZxhCfj/2
+#Link for arg#4  https://regex101.com/r/jAnqTC/2
+#Link for arg#5  https://regex101.com/r/2h6KE5/2
+
+################################################
+
+#For Advisory https://www.se.com/ww/en/download/document/SEVD-2022-039-03
+Title:Schneider Electric Easergy P40 Series Use of Hard-coded Credentials Vulnerability (SEVD-2022-039-03)
+Type:bhpp_vuln
+VulnID:591407
+manufacturer:"Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "00.00.00", patched = "99.99.99", model ="Px40\\sSeries\\b"}
+
+#Link for arg#1 https://regex101.com/r/cdAHxT/3
+
+###############################################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-104-13
+Title:Siemens SIMATIC S7-1500 CPU GNU/Linux subsystem Multiple Vulnerabilities (SSB-439005, ICSA-22-104-13)
+Type:bhpp_vuln
+VulnID:591406
+Vulnflags:vuln
+manufacturer:"Siemens"
+Func:ics_device_firmware_exprudp
+arg#1:{device = "S7\\-1500\\sCPU\\s1518F\\-4\\sPN\\/DP\\sMFP\\b" version = "^2\\.(9\\.(3|4)|8\\.4)\\b|3\\.0\\.0"}
+
+#arg#1 https://regex101.com/r/BIFVLO/2  Version:  https://regex101.com/r/hPv7Bz/1
+
+######################################
+
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2021-130-02
+Title:Schneider Electric Harmony HMI Products Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability (SEVD-2021-130-02)
+Type:bhpp_vuln
+VulnID:591405
+Vulnflags:vuln
+manufacturer:"Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "00.00.00", patched = "99.99.99", model ="Magelis\\s(SCU\\sHMI|STO|STU|GTO|GTUX|GTU|GK)|Harmony\\s(GK|GTUX)"}
+arg#1:{min = "00.00.00", patched = "99.99.99", model ="HMISCU"}
+
+#link for arg#1 https://regex101.com/r/wPHhxg/1
+#link for arg#2 https://regex101.com/r/JEBHdc/1
+
+
+###############################################
+
+
+#For Advisory https://www.se.com/ww/en/download/document/SEVD-2020-287-03/
+Title:Schneider Electric Smartlink, PowerTag and Wiser Series Gateways Use of Insufficiently Random Values Vulnerability (SEVD-2020-287-03)
+Type:bhpp_vuln
+VulnID:591404
+Vulnflags:vuln
+manufacturer:"Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "00.00.00", patched = "002.004.002", model="Acti(\\s)?9\\s(Smartlink\sSI\\s(D|B))\\b"}
+arg#2:{min = "00.00.00", patched = "001.008.007", model="Acti9\\sPowerTag\\sLink\\sHD"}
+arg#3:{min = "00.00.00", patched = "1.5.0", model ="Wiser\\s(Energy|Link)"}
+arg#4:{min = "00.00.00", patched = "1.2.1", model ="Acti9\\sSmartlink\\sEL\\b"}
+
+#Link for arg#1 https://regex101.com/r/NvZ4Iu/
+#Link for arg#2 https://regex101.com/r/1duQXX/1
+#Link for arg#3 https://regex101.com/r/GYSO7S/1
+#Link for arg#4 https://regex101.com/r/0XlHbp/3
+
+
+################################################
+
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2021-130-01
+Title:Schneider Electric Modicon Managed Switch Vulnerability (SEVD-2021-130-01)
+Type:bhpp_vuln
+VulnID:591403
+Vulnflags:vuln
+manufacturer:"Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "00.00.00", patched = "8.22", model="Modicon.+Managed\\sSwitch\\:MCSES(M|P)\\d+"}
+
+#Link for arg#1 https://regex101.com/r/xoi0KD/1

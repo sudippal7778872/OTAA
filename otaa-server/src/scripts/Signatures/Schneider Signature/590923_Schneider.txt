@@ -1,0 +1,10 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2016-271-01
+Title:Schneider Electric Power Logic PM8ECC Vulnerability (SEVD-2016-271-01)
+Type: bhpp_vuln
+VulnID: 590923
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "2.652", model="PowerLogic.+\\:PM8ECC\\b"}
+
+#arg1 : https://regex101.com/r/sQvXUq/1

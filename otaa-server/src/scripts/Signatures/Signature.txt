@@ -1,0 +1,38 @@
+#For Advisory https://us-cert.cisa.gov/ics/advisories/ICSA-19-087-01
+Title: Rockwell Automation PowerFlex 525 AC Drives Vulnerability(ICSA-19-087-01)
+Type: bhpp_vuln 
+VulnID:1241
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Rockwell Automation"
+arg#1: {min = "0.0.0", patched = "5.001", model = "PowerFlex 525 AC Drives"} 
+
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/icsa-21-194-03
+Title: Siemens PROFINET Devices Vulnerability(ICSA-21-194-03)
+Type: bhpp_vuln
+VulnID:1242
+Vulnflags: vuln
+Func: ics_device_firmware_exprudp
+manufacturer: "Siemens"
+arg#1: {device = "SCALANCE (XF208|XF204|XP-200|XB-200|XC-200)\\b", version = "\\d+"}
+
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/icsa-21-194-03
+Title: Siemens PROFINET Devices(ICSA-21-194-03)
+Type: bhpp_vuln
+VulnID:1243
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "99.99", model = "SCALANCE X(216|224|307-3|C-200|B-200)\\b"}
+arg#2: {min = "0.0.0", patched = "5.5.0", model = "SCALANCE XF(201-3|202-2)P IRT\\b"}
+
+#https://us-cert.cisa.gov/ics/advisories/icsa-19-346-02
+Title: Omron PLC CJ and CS Series Multiple Vulnerabilities(ICSA-19-346-02)
+Type: bhpp_vuln
+VulnID: 1244
+Vulnflags: vuln
+Func: ics_device_firmware_exprudp
+manufacturer: "Omron"
+arg#1: {device = "C(J|S)", version = "\\d+"}

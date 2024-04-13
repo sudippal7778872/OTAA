@@ -1,0 +1,13 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-130874.pdf
+Title: Siemens SCALANCE X Switches denial of service (DoS) Vulnerability (SSA-130874)
+Type: bhpp_vuln
+VulnID: 591283
+Vulnflags: vuln
+manufacturer: "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0",patched = "3.7.2",model = "(SIPLUS\\sNET\\s)?SCALANCE\\sX[A-Z]?3\\d\\d"}
+arg#2: {min = "0.0.0",patched = "3.7.1",model = "SCALANCE\\sX414\\-3E\\b"}
+
+#arg1 regex link : https://regex101.com/r/gOOTvj/3
+#arg2 regex link : https://regex101.com/r/BUz4nI/1
+

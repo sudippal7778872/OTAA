@@ -1,0 +1,12 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-287-03 and https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2021-011_en.pdf
+Title: Mitsubishi Electric MELSEC iQ-R Series Authorization Bypass Through User-controlled Key Vulnerability (Update A)(ICSA-21-287-03)(2021-011)
+Type: bhpp_vuln
+VulnID:590650
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Mitsubishi Electric"
+arg#1: {min = "0.0.0", patched = "27", model = "(MELSEC\\siQ\\-R\\sSeries.+\\:R(08|16|32|120)SFCPU)\\b"}
+arg#2: {min = "0.0.0", patched = "99.99.99", model = "(MELSEC\\siQ\\-R\\sSeries.+\\:R(08|16|32|120)PSFCPU)\\b"}
+
+#arg#1 regex: https://regex101.com/r/l70TxP/1
+#arg#2 regex: https://regex101.com/r/4YkaLN/1

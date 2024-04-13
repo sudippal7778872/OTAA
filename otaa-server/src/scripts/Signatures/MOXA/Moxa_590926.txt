@@ -1,0 +1,16 @@
+#For Advisory https://www.moxa.com/en/support/product-support/security-advisory/mgate-mb3170-mb3270-mb3280-mb3480-protocol-gateways-vulnerability
+Title: Moxa MGate MB3170/MB3270/MB3280/MB3480 Series Protocol Gateways Vulnerability
+Type: bhpp_vuln
+VulnID: 590926
+Vulnflags: vuln
+manufacturer : "Moxa"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "4.3", model = "MGate\\sMB(31|32)70\\sSeries\\b"}
+arg#2: {min = "0.0.0", patched = "4.2", model = "MGate\\sMB3280\\sSeries\\b"}
+arg#3: {min = "0.0.0", patched = "3.3", model = "MGate\\sMB3480\\sSeries\\b"}
+
+#arg1 https://regex101.com/r/9IxJZq/1
+#arg2 https://regex101.com/r/owPuOL/1
+#arg3 https://regex101.com/r/25i4Lx/1
+
+##All in one regex https://regex101.com/r/8LMkjR/1

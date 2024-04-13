@@ -1,0 +1,10 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-354-05
+Title: Delta Industrial Automation 4G Router DX-3021 Command Injection Vulnerability (ICSA-22-354-05)
+Type: bhpp_vuln
+VulnID: 591318
+Vulnflags: vuln
+manufacturer : "Delta Industrial Automation"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.24", model = "DX\\-3021L9\\b"}
+
+#arg#1 regex: https://regex101.com/r/NkBcio/1

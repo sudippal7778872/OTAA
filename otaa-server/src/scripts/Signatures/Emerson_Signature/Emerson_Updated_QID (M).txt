@@ -1,0 +1,100 @@
+#For Advisory https://us-cert.cisa.gov/ics/advisories/icsa-20-135-02
+Title: Emerson WirelessHART Gateway Improper Access Control Vulnerability (ICSA-20-135-02)
+Type: bhpp_vuln
+VulnID:590582
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Emerson"
+arg#1: {min = "4.6.43", patched = "4.7.85", model = "Wireless\\s(14(10|20)|1552WU)\\sGateway"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/ICSA-19-148-01
+Title: Emerson Ovation OCR400 Controller Multiple Vulnerabilities (ICSA-19-148-01)
+Type: bhpp_vuln
+VulnID:590583
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Emerson"
+arg#1: {min = "0.0.0", patched = "3.3.2", model = "Ovation\\sController\\:OCR400"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/ICSA-13-259-01B
+Title: Emerson ROC800 (Update B) Multiple Vulnerabilities (ICSA-13-259-01B)
+Type: bhpp_vuln
+VulnID:590584
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Emerson"
+arg#1: {min = "0.0.0", patched = "3.51", model = "ROC800\\-Series\\sRemote\\sOperations\\sController\\:(ROC800)\\b"}
+arg#2: {min = "0.0.0", patched = "1.21", model = "ROC800\\-Series\\sRemote\\sOperations\\sController\\:ROC800L"}
+arg#3: {min = "0.0.0", patched = "2.31", model = "DL8000\\sPreset\\sController\\:DL8000"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/ICSA-13-053-01
+Title: Emerson DeltaV Uncontroller Resource Consumption Denial of Service (DoS) Vulnerability (ICSA-13-053-01)
+Type: bhpp_vuln
+VulnID:590586
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Emerson"
+arg#1: {min = "0.0.0", patched = "10.3.2", model = "DeltaV.+MD\\sController\\:VE3005|DeltaV.+MD\\sPlus\\sController\\:VE3006"}
+arg#2: {min = "10.3.3", patched = "11.3.2", model = "DeltaV.+SD\\sPlus\\sController\\:SE3006|DeltaV.+MD\\sController\\:VE3005|DeltaV.+MD\\sPlus\\sController:VE3006"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/ICSA-18-058-03
+Title: Emerson ControlWave Micro Process Automation Controller Denial of Service (DoS) Vulnerability (ICSA-18-058-03)
+Type: bhpp_vuln
+VulnID:590587
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Emerson"
+arg#1: {min = "0.0.0", patched = "05.79.00", model = "ControlWave\\sMicro"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/ICSA-16-334-03
+Title: Emerson DeltaV Wireless I/O Card Open SSH Port Vulnerability (ICSA-16-334-03)
+Type: bhpp_vuln
+VulnID:590585
+Func: ics_device_firmware_exprudp
+manufacturer: "Emerson"
+arg#1: {device = "(DeltaV\\sWireless\\sI\\/O\\sCard\\:SE4801T(0\\d|1[0-6]))", version = "13\\.3"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/ICSA-15-008-01A
+Title: Emerson HART DTM Vulnerability (Update A) Denial of Service (DoS) Vulnerability (ICSA-15-008-01A)
+Type: bhpp_vuln
+VulnID:590578
+Func: ics_device_firmware_expr_not_match
+manufacturer: "Emerson"
+arg#1: {device = "(DVC6000\\sDigital\\sValve\\sController)", version = "^2\\.01\\b"}
+arg#2: {device = "(DVC2000\\sDigital\\sValve\\sController)", version = "^1\\.01\\b"}
+arg#3: {device = "(Micro\\sMotion\\sTransmitter\\:(1700|2500|2700|1500))", version = "^5\\b|^6\\b"}
+arg#4: {device = "(Micro\\sMotion\\sTransmitter\\:2400S)", version = "^2\\b|^3\\b|^4\\b"}
+arg#5: {device = "(Micro\\sMotion.*(Controller\\:3\\d+|Transmitter\\:3\\d+)\\b)", version = "^7\\b"}
+arg#6: {device = "(Rosemount\\s1151\\sPressure\\sTransmitter)", version = "^5\\b|^6\\b"}
+arg#7: {device = "(Rosemount\\s2051\\w+.*(Meter|Transmitter)\\b)", version = "^3\\b|^9\\b|^10\\b"}
+arg#8: {device = "(Rosemount\\s2090.*(Meter|Transmitter)\\b)", version = "^3\\b"}
+arg#9: {device = "(Rosemount\\s3100\\sUltrasonic\\sLiquid\\sLevel\\sTransmitter)", version = "^5\\b"}
+arg#10: {device = "(Rosemount\\s3144P\\b.*Transmitter\\b)", version = "^3\\b|^4\\b|^5\\b|^6\\b"}
+arg#11: {device = "(Rosemount\\s333.*Tri\\-Loop)", version = "^1\\b"}
+arg#12: {device = "((Rosemount\\s4500)\\b.*(Pressure\\sTransmitter)\\b)", version = "^7\\b"}
+arg#13: {device = "((Rosemount\\s4600)\\b.*(Pressure\\sTransmitter)\\b)", version = "^1\\b"}
+arg#14: {device = "((Rosemount\\s5300)\\b.*Transmitter\\b)", version = "^1\\b|^2\\b|^3\\b"}
+arg#15: {device = "((Rosemount\\s5400)\\b.*Transmitter\\b)", version = "^1\\b|^2\\b"}
+arg#16: {device = "((Rosemount\\s644)\\b.*Transmitter\\b)", version = "^6\\b|^7\\b|^8\\b|^9\\b"}
+arg#17: {device = "(Rosemount\\s8712\\sMagnetic\\sFlowmeter.*\\:(8712D)\\b)", version = "^1\\b"}
+arg#18: {device = "(Rosemount\\s8712\\sMagnetic\\sFlowmeter.*\\:(8712E)\\b)", version = "^3\\b"}
+arg#19: {device = "(Rosemount\\s8712\\sMagnetic\\sFlowmeter.*\\:(8712H)\\b)", version = "^1\\b"}
+arg#20: {device = "(Rosemount\\s8732\\sMagnetic\\sFlowmeter.*\\:(8732C)\\b)", version = "^7\\b"}
+arg#21: {device = "(Rosemount\\s8732\\sMagnetic\\sFlowmeter.*\\:(8732E)\\b)", version = "^2\\b"}
+arg#22: {device = "(Rosemount.*Flowmeter\\:8800C)", version = "^3\\b"}
+arg#23: {device = "(Rosemount.*Flowmeter\\:8800D)", version = "^1\\b|^2\\b"}
+arg#24: {device = "(Metran\\-(150)\\b|Metran\\-150\\D+|Metran\\-(75)\\b|Metran\\-75\\D+)", version = "^9\\b|^10\\b"}
+arg#25: {device = "(Micro\\sMotion2.*\\:2200S)", version = "^1\\b"}
+arg#26: {device = "(Rosemount\\s(2088)\\b.*(Pressure\\sTransmitter)\\b)", version = "^3\\b|^9\\b|^10\\b"}
+arg#27: {device = "(Micro\\sMotion.*(Transmitter)\\b\\:(RFT9739)\\b)", version = "^4\\b"}
+arg#28: {device = "(Rosemount\\s(330\\d)\\b.*Radar\\sLevel\\sand\\sInterface\\sTransmitter)", version = "^3\\b"}
+arg#29: {device = "(Rosemount\\s(1056)\\b.*(Analyzer)\\b)", version = "^1\\b|^2\\b"}
+arg#30: {device = "((5081\\-A)\\b.*Transmitter)", version = "^2\\b"}
+arg#31: {device = "((5081\\-P)\\b.*Transmitter)", version = "^2\\b"}
+arg#32: {device = "((Amperometric|Rosemount).*(HART\\sAnalyzer\\/Controller)\\b\\:(54eA)\\b)", version = "^2\\b"}
+arg#33: {device = "(Conductivity.*Analyzer\\:(54eC)\\b)", version = "^1\\b"}
+arg#34: {device = "(pH.*Controller\\:(54e\\spH|54epH)\\b)", version = "^2\\b"}
+arg#35: {device = "((Rosemount.*OCX8800)\\b)", version = "^3\\b"}
+arg#36: {device = "(Solu.+?Xmt\\-A.*Transmitter\\:XMT\\-A)", version = "^1\\b"}
+arg#37: {device = "(Rosemount\\s3095\\s(Multivariable|MultiVariable).*Transmitter\\b\\:(3095M\\w+|3095M))", version = "^2\\b"}
+arg#38: {device = "(Rosemount.*Analytical.*:Xmt\\-P\\-H)", version = "^1\\b"}
+arg#39: {device = "((Rosemount\\s3051).*(Transmitter|Meter|Flowmeter)\\b)", version = "^3\\b|^7\\b|^9\\b|^10\\b",not_match="^(Rosemount\\s3051S\\w+|Rosemount\\s3051S).*"}
+arg#40: {device = "(Rosemount\\s3051S\\sAdvanced\\sDiagnostics)", version = "^2\\b|^3\\b"}
+arg#41: {device = "(Rosemount\\s3051S)\\sElectronic\\sRemote\\s.*(Sensor|System)\\b", version = "^1\\b"}
+arg#42: {device = "((Rosemount\\s3051S|Rosemount\\s3051S\\w+).*(Transmitter)\\b\\:3051SMV)", version = "^1\\b"}

@@ -1,0 +1,11 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-506569.html and https://www.cisa.gov/uscert/ics/advisories/icsa-22-314-10
+Title: Siemens SCALANCE W1750D Multiple Vulnerabilities (ICSA-22-314-10, SSA-506569)
+Type: bhpp_vuln
+VulnID:591188
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "SCALANCE\\sW1750D(.+)?\\:6GK5750\\-2HX01\\-1A(D|A|B)0\\b"}
+
+#regex_link 1 https://regex101.com/r/ay7xSA/1
+

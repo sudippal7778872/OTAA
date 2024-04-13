@@ -1,0 +1,10 @@
+#For Advisory https://talosintelligence.com/vulnerability_reports/TALOS-2017-0478
+Title: Moxa EDR-810 Web Server Cross-Site Request Forgery Vulnerability (TALOS-2017-0478)
+Type: bhpp_vuln
+VulnID: 591015
+Vulnflags: vuln
+manufacturer : "Moxa"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "(EDR\\-810)\\b", version = "^4\\.1\\b"}
+
+#arg1 regex: https://regex101.com/r/LsozJ2/1 , https://regex101.com/r/j4iMMk/1

@@ -1,0 +1,11 @@
+#For Advisory https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2019-005_en.pdf
+Title:Mitsubishi Electric MELSOFT Remote Access Vulnerability (2019-005)
+Type:bhpp_vuln
+VulnID:590925
+Vulnflags: vuln
+manufacturer:"Mitsubishi Electric"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "00.00.00", patched = "99.99.99", model ="MELSEC(((\\siQ\\-R|\\siQ\\-F|\\-L)\\sSeries\\sCPU\\sModule)|(\\-Q\\sSeries\\sUniversal\\sModel|\\-Q\\sSequencer\\sUniversal\\sProcess\\sModel\\sCPU|\\-Q\\sSeries\\sStand\\-Alone.+Controller)|(\\-F\\sSeries\\sProgrammable\\sController)|\\siQ\\-R\\sSeries\\sMotion\\sController|\\siQ\\-F\\sSeries\\sCommunication\\sModule.+CPU|\\siQ\\-R\\sSeries\\sCamera.+CPU\\sModule|\\siQ\\-R\\sseries\\sC\\sController\\sModule|\\-Q\\sSeries\\sMotion\\sController)"}
+
+#link for arg#1 - https://regex101.com/r/2U9NS7/1
+

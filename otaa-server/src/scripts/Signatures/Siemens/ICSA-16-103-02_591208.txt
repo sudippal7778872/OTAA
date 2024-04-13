@@ -1,0 +1,10 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-16-103-02 & https://cert-portal.siemens.com/productcert/pdf/ssa-751155.pdf
+Title:  Siemens SCALANCE S613 Denial-of-Service Vulnerability (ICSA-16-103-02, SSA-751155)
+Type: bhpp_vuln
+VulnID: 591208
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0",patched = "99.99",model = "(SCALANCE\\sS613\\:6GK5613\\-0BA00\\-2AA3\\b)"}
+
+#regex link = https://regex101.com/r/pveScv/1

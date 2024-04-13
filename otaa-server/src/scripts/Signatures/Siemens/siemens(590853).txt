@@ -1,0 +1,18 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-104-12
+Title:Siemens SIMATIC S7-400 Vulnerability (icsa-22-104-12) (ssa-557541)
+Type:bhpp_vuln
+VulnID:590853
+Vulnflags:vuln
+manufacturer:"Siemens"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "6.0.0", patched = "6.0.10", model = "(SIPLUS|SIMATIC)\\sS7\\-400\\sCPU\\s4\\d\\d(H|.+?H)"}
+arg#2:{min = "7.0.0", patched = "7.9.9", model = "(SIMATIC|SIPLUS)\\sS7\\-400\\sCPU(.+)?PN\\/DP\\b"}
+arg#3:{min = "8.0.0", patched = "8.9.9", model = "(SIMATIC|SIPLUS)\\s.+?CPU\\s410\\b"}
+arg#4:{min = "10.0.0", patched = "10.1", model = "(SIMATIC|SIPLUS)\\s.+?CPU\\s410\\b"}
+
+#arg#1 https://regex101.com/r/xRYGBQ/2
+#arg#2 https://regex101.com/r/yKTizi/3
+#arg#3&4 https://regex101.com/r/y5VucW/2
+
+#All in one Regex https://regex101.com/r/d7ld3U/1
+ 

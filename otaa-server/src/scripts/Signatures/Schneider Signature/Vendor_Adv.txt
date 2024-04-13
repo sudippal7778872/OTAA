@@ -1,0 +1,47 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2021-257-02
+Title: Schneider Electric Web Server on Modicon M340, Legacy Offers Modicon Quantum and Premium and Associated Communication Modules Multiple Vulnerabilities (SEVD-2021-257-02)
+Type: bhpp_vuln
+VulnID: 590815
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "3.40", model = "Modicon\\sM340(.+)?\\:BMXP34.+"}
+arg#2: {min = "0.0.0", patched = "1.70", model = "Modicon\\sRTU\\sModule\\:BMXNOR(\\s)?0200H\\b"}
+arg#3: {min = "0.0.0", patched = "99.99.99", model = "Modicon\\s(M340\\sEthernet\\s(Communication|.+)\\sModule\\:BMXNOE(\\s)?01(0|1)0(H)?\\b|M340\\sEthernet\\sCommunication\\sModule\\:BMXNOC0401\\b|Premium\\:TSXP57(4|5|6)634\\b|Quantum\\:140CPU65\\d+)|(Modicon\\sQuantum.+)?Module\\:(140NOE771\\d1|140NOC78\\d00|140NOC77101)\\b|(Modicon\\sPremium.+)?Module\\:TSXETY(4|5)103\\b"}
+
+
+#regex:
+#Modicon M340 CPUs :              https://regex101.com/r/m82d4u/1
+#BMXNOR0200H RTU:                 https://regex101.com/r/2qlUqS/1
+#Modicon M340|Premium |Quantum    https://regex101.com/r/7l8dQx/1
+
+ 
+###########################################################################################################################
+
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2020-343-04
+Title: Schneider Electric Web Server on Modicon M340, Legacy Offers Modicon Quantum and Modicon Premium and associated Communication Modules Vulnerability (SEVD-2020-343-04)
+Type: bhpp_vuln
+VulnID: 590813
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "3.30", model = "Modicon\\sM340(.+)?\\:BMXP34.+"}
+arg#2: {min = "0.0.0", patched = "3.3", model = "Modicon\\sM340\\sEthernet\\s(Communication|.+)\\sModule\\:BMXNOE(\\s)?0100(H)?\\b"}
+arg#3: {min = "0.0.0", patched = "6.5", model = "Modicon\\sM340\\sEthernet\\s(Communication|.+)\\sModule\\:BMXNOE(\\s)?0110(H)?\\b"}
+arg#4: {min = "0.0.0", patched = "2.10", model = "Modicon\\sM340\\sEthernet\\sCommunication\\sModule\\:BMXNOC0401\\b"}
+arg#5: {min = "0.0.0", patched = "6.2", model = "Modicon\\sPremium.+Module\\:TSXETY4103\\b"}
+arg#6: {min = "0.0.0", patched = "6.4", model = "Modicon\\sPremium.+Module\\:TSXETY5103\\b"}
+arg#7: {min = "0.0.0", patched = "6.1", model = "Modicon\\s(Premium\\:TSXP57(4|5|6)634(M)?\\b|Quantum\\:140CPU65\\d\\d0\\b)"}
+arg#8: {min = "0.0.0", patched = "7.1", model = "(Modicon\\sQuantum.+)?Module\\:140NOE771\\d1\\b"}
+arg#9: {min = "0.0.0", patched = "1.74", model = "Modicon\\sQuantum\\s.+Module\\:140NOC78\d00\\b"}
+arg#10: {min = "0.0.0", patched = "1.08", model = "Modicon\\sQuantum\\s.+Comunication\\sModule\\:140NOC77101\\b"}
+arg#11: {min = "0.0.0", patched = "1.70", model = "Modicon\\sRTU\\sModule\\:BMXNOR(\\s)?0200H\\b"}
+
+#regex:-                                                                                             
+#Modicon M340 CPUs                                                  https://regex101.com/r/m82d4u/1   
+#Modicon M340 Ethernet Communication modules                        https://regex101.com/r/GzrNWZ/1       
+#Modicon Premium communication modules                              https://regex101.com/r/2EjYBg/1
+#Modicon Premium|Quantum processors with integrated Ethernet COPRO  https://regex101.com/r/33Xj3x/1
+#Modicon Quantum communication modules                              https://regex101.com/r/xY6gLe/1 
+#Modicon X80 BMXNOR0200H RTU module                                 https://regex101.com/r/2qlUqS/1
+

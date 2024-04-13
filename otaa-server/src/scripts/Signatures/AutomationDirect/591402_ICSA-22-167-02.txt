@@ -1,0 +1,22 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-167-02
+Title: AutomationDirect DirectLOGIC controller Cleartext Transmission of Sensitive Information Vulnerability (ICSA-22-167-02)
+Type: bhpp_vuln
+VulnID: 591402
+manufacturer: "AutomationDirect"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "2.72", model = "D0\\-06(DD((1|2)\\-D|(1|2))|DR\\-D|(A|D)(A|R))\\b"}
+arg#2: {min = "0.0.0", patched = "5.41", model = "D0\\-05(D(D|R)\\-D|(A|D)(A|D|R))\\b"}
+arg#3: {min = "0.0.0", patched = "99.99.99", model = "(D2\\-(2(40|50|30))|D3\\-350|D4\\-4(30|40|50)|F1\\-130(A|D)(A|D|R)|\\-D)\\b"}
+arg#4: {min = "0.0.0", patched = "4.91", model = "D2\\-250\\-1\\b"}
+arg#5: {min = "0.0.0", patched = "2.71", model = "D2\\-260\\b"}
+arg#6: {min = "0.0.0", patched = "1.06", model = "D2\\-262\\b"}
+arg#7: {min = "0.0.0", patched = "1.04", model = "D4\\-454\\b"}
+
+
+#arg1 regex link: https://regex101.com/r/MrJUJI/1
+#arg2 regex link: https://regex101.com/r/wCDrXE/1
+#arg3 regex link: https://regex101.com/r/PRzQHn/1
+#arg4 regex link: https://regex101.com/r/ZIPkYX/1 
+#arg5 regex link: https://regex101.com/r/ssw81i/1
+#arg6 regex link: https://regex101.com/r/bHx1GB/1
+#arg7 regex link: https://regex101.com/r/1Xsr9C/1

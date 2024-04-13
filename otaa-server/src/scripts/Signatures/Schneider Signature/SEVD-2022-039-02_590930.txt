@@ -1,0 +1,10 @@
+#For Advisory https://www.se.com/ww/en/download/document/SEVD-2022-039-02/
+Title: Schneider Electric EcoStruxure EV Charging Expert Multiple Vulnerabilities (V2.0) (SEVD-2022-039-02)
+Type: bhpp_vuln
+VulnID: 590930
+Vulnflags: vuln
+manufacturer : "Schneider Electric"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0.0", patched = "4.0.0.13", model = "EV\\sCharge\\sController\\:HMIBSCEA53D1E(DB|DS|DM|DL|SS|SM|ML)\\b"}
+
+#arg#1 regex: https://regex101.com/r/s82a0P/1

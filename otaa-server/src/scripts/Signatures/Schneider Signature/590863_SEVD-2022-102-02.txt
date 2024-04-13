@@ -1,0 +1,13 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2022-102-02
+Title:Schneider Electric Modicon M340 Controller and Communication Modules Vulnerability (SEVD-2022-102-02)
+Type: bhpp_vuln
+VulnID: 590863
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "3.50.0", model="Modicon\\sM340.*?\\:BMXP34"}
+arg#2: {min = "0.0.0", patched = "99.99.99", model="(Modicon\\sM340.+\\:BMXNOE(\\s)?01(0|1)0(H)?|Modicon\\sRTU\\sModule\\:BMXNOR(0200H|\\s0200H))\\b"}
+
+#arg1:  https://regex101.com/r/aQF3JA/1
+#arg2:  https://regex101.com/r/xCu5gF/1
+
+

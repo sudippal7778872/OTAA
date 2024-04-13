@@ -1,0 +1,22 @@
+#For Advisory https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1130763
+Title: Rockwell Automation Stratix Switches Impacted by IOS and IOS XE Software Multiple Vulnerabilities (PN1558)
+Type: bhpp_vuln
+VulnID: 590879
+Vulnflags:vuln
+manufacturer : "Rockwell Automation"
+Func:ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = " 17.04.02", model ="Allen\\-Bradley\\sStratix\\s5800\\b"}
+arg#2: {min = "0.0.0", patched = " 99.99.99", model ="Allen\\-Bradley\\sStratix\\s8300\\b"}
+#regex_link 1 https://regex101.com/r/b1NiEs/1
+#regex_link 2 https://regex101.com/r/gloLKN/1
+
+#For Advisory https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1130763
+Title: Rockwell Automation Stratix Switches Impacted by IOS and IOS XE Software Multiple Vulnerabilities (PN1558)
+Type: bhpp_vuln
+VulnID: 590879
+manufacturer : "Rockwell Automation"
+Func:ics_device_firmware_exprudp
+arg#1:{device = "Allen\\-Bradley\\sStratix\\s(8000|5700|5410|5400)\\b", version = "\d"}
+#regex_link 1 https://regex101.com/r/fXWbVw/1
+   
+   

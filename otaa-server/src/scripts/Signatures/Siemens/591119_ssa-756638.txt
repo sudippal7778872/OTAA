@@ -1,0 +1,11 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-756638.pdf
+Title: Siemens LOGO! CMR Family and SIMATIC RTU 3000 Family Multiple Vulnerabilities (ssa-756638)
+Type: bhpp_vuln
+VulnID: 591119
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched="2.2",model="LOGO\\!\\sCMR20(20\\:6GK7142\\-7BX00|40\\:6GK7142\\-7EX00)\\-0AX0\\b"}
+arg#2: {min = "0.0.0", patched="5.0.14",model="SIMATIC\\sRTU30(10C\\:6NH3112\\-0BA00|30C\\:6NH3112\\-3BA00|31C\\:6NH3112\\-3BB00|41C\\:6NH3112\\-4BB00)\\-0XX0\\b"}
+
+

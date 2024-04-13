@@ -1,0 +1,10 @@
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Technical+leaflet&p_File_Name=SEVD-2019-281-03_Modicon_Controllers.pdf&p_Doc_Ref=SEVD-2019-281-03&_ga=2.147944304.615652763.1662967748-875329093.1650947280
+Title:Schneider Electric Modicon Controllers Vulnerability (SEVD-2019-281-03) 
+Type: bhpp_vuln
+VulnID: 591072
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched="99.99.99",model="Modicon\\s(M340|Quantum|Premium)\\b|(Modicon.+)?M580\\b"}
+
+#arg1:https://regex101.com/r/XE6ZE5/1
+ 

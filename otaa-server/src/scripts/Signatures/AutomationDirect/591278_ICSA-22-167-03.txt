@@ -1,0 +1,25 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-167-03 
+Title: AutomationDirect DirectLOGIC with Ethernet Communication Modules denial-of-service (DoS) Multiple Vulnerabilities (ICSA-22-167-03)
+Type: bhpp_vuln
+VulnID: 591278
+manufacturer: "AutomationDirect"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "2.72", model = "D0\\-06(DD((1|2)\\-D|(1|2))|DR\\-D|(A|D)(A|R))\\b"}
+arg#2: {min = "0.0.0", patched = "5.41", model = "D0\\-05(D(D|R)\\-D|(A|D)(A|D|R))\\b"}
+arg#3: {min = "0.0.0", patched = "99.99.99", model = "(D2\\-(240|250)|D4\\-4(30|40|50))\\b"}
+arg#4: {min = "0.0.0", patched = "4.91", model = "D2\\-250\\-1\\b"}
+arg#5: {min = "0.0.0", patched = "2.71", model = "D2\\-260\\b"}
+arg#6: {min = "0.0.0", patched = "1.06", model = "D2\\-262\\b"}
+arg#7: {min = "0.0.0", patched = "1.04", model = "D4\\-454\\b"}
+
+
+#arg1 regex link: https://regex101.com/r/zowECi/2
+#arg2 regex link: https://regex101.com/r/EFAqyw/2
+#arg3 regex link: https://regex101.com/r/bgSefH/2
+#arg4 regex link: https://regex101.com/r/L1faiT/2 
+#arg5 regex link: https://regex101.com/r/Oplxdn/2
+#arg6 regex link: https://regex101.com/r/t9aUJc/2
+#arg7 regex link: https://regex101.com/r/mMTj6Z/2
+
+
+

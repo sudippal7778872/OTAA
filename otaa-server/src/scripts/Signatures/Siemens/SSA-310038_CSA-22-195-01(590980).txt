@@ -1,0 +1,13 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-310038.html and https://www.cisa.gov/uscert/ics/advisories/icsa-22-195-01                            
+Title:Siemens SCALANCE X Switch Devices Multiple Vulnerabilities (ICSA-22-195-01)(SSA-310038)
+Type:bhpp_vuln
+VulnID:590980
+Vulnflags:vuln
+manufacturer :"Siemens"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "99.99.99", model ="SCALANCE\\s(X200\\-4PIRT\\:6GK5200\\-4AH(00|10)\\-2BA3|X201\\-3P(.+)?IRT\\:6GK5201\\-3BH(00|10)\\-2BA3|XF201\\-3P\\sIRT\\:6GK5201\\-3BH00\\-2BD2|X201\\-3P\\sIRT\\:6GK5201\\-3JR10\\-2BA6|X202\\-2IRT\\:6GK5202\\-2BB(00|10)\\-2BA3|X202\\-2P(.+)?IRT\\:6GK5202\\-2BH(00|10)\\-2BA3|X202\\-2P(.+)?IRT\\sPRO\\:6GK5202\\-2JR(00|10)\\-2BA6|X204IRT\\:6GK5204\\-0BA(00|10)\\-2BA3|X204IRT\\sPRO\\:6GK5204\\-0JA(00|10)\\-2BA6|X201\\-3PIRT\\sPRO\\:6GK5201\\-3JR00\\-2BA6|XF202\\-2P\\sIRT\\:6GK5202\\-2BH00\\-2BD2|XF204\\-2BA\\sIRT\\:6GK5204\\-2AA00\\-2BD2|XF204IRT\\:6GK5204\\-0BA(00|10)\\-2BF2)\\b"}
+arg#2:{min = "0.0.0", patched = "5.2.6", model ="SCALANCE\\s(X204\\-2\\:6GK5204\\-2BB10\\-2AA3|X204\\-2FM\\:6GK5204\\-2BB11\\-2AA3|X204\\-2LD\\:6GK5204\\-2BC10\\-2AA3|X204\\-2LD\\sTS(.+)?\\:6GK5204\\-2BC10\\-2CA2|X204\\-2TS\\:6GK5204\\-2BB10\\-2CA2|X206\\-1\\:6GK5206\\-1BB10\\-2AA3|X206\\-1LD\\:6GK5206\\-1BC10\\-2AA3|X208\\:6GK5208\\-0BA10\\-2AA3|X208PRO\\:6GK5208\\-0HA10\\-2AA6|X212\\-2\\:6GK5212\\-2BB00\\-2AA3|X212\\-2LD\\:6GK5212\\-2BC00\\-2AA3|X216\\:6GK5216\\-0BA00\\-2AA3|X224\\:6GK5224\\-0BA00\\-2AA3|XF204\\:6GK5204\\-0BA00\\-2AF2|XF204\\-2:6GK5204\\-2BC00\\-2AF2|XF206\\-1\\:6GK5206\\-1BC00\\-2AF2|XF208\\:6GK5208\\-0BA00\\-2AF2)\\b"}
+
+#regex_link https://regex101.com/r/Ges78C/1
+#regex_link https://regex101.com/r/aRvcm3/1
+

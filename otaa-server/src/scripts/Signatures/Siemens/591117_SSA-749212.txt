@@ -1,0 +1,10 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-749212.pdf
+Title: Siemens SINUMERIK Controllers Multiple Vulnerabilities (SSA-749212)
+Type: bhpp_vuln
+VulnID: 591117
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "4.4", patched="4.7",model="SINUMERIK\\s(828D|840D\\ssl)\\b"}
+
+

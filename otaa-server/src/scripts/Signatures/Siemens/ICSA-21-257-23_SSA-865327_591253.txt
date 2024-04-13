@@ -1,0 +1,18 @@
+#For https://www.cisa.gov/uscert/ics/advisories/icsa-21-257-23 and https://cert-portal.siemens.com/productcert/pdf/ssa-865327.pdf
+Title: Siemens SIMATIC Controllers and TIM Incorrect Authorization Vulnerability (ICSA-21-257-23, SSA-865327)
+Type: bhpp_vuln
+VulnID: 591253
+Vulnflags: vuln 
+Func: ics_device_multiple_version_range_non_rgp
+manufacturer : "Siemens"
+arg#1: {min = "0.0.0", patched = "2.9.2", model = "SIMATIC\\sS7\\-1500\\sDrive\\sController"}
+arg#2: {min = "0.0.0", patched = "21.9", model = "CPU(\\s)?1515SP\\sPC2\\b"}
+arg#3: {min = "4.4.0", patched = "4.4.1", model = "(SIMATIC|SIPLUS)\\sS7\\-1200\\sCPU"}
+arg#4: {min = "2.5.1", patched = "2.9.2", model = "(S7\\-1500\\sCPU|ET\\s200.+CPU(\\s)?15\\d\\d)",not_match="CPU(\\s)?1515SP\\s(PC2|PC)\\b"}
+arg#5: {min = "2.1", patched = "2.2", model = "TIM\\s1531\\sIRC"}
+
+#regex_link 1  https://regex101.com/r/Svvten/1 
+#regex_link 2  https://regex101.com/r/mJ9Ess/1
+#regex_link 3  https://regex101.com/r/QIkxHZ/1
+#regex_link 4  https://regex101.com/r/jSW29I/1      not_match= https://regex101.com/r/mJ9Ess/2
+#regex_link 5  https://regex101.com/r/41EFZd/1

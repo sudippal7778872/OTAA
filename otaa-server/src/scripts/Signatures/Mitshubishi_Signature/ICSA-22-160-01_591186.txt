@@ -1,0 +1,18 @@
+#For advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-160-01
+Title: Mitsubishi Electric Air Conditioning Systems Multiple Vulnerabilities (ICSA-22-160-01)
+Type: bhpp_vuln
+VulnID:591186
+manufacturer :"Mitsubishi Electric"
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "7.11", model = "EB\\-50GU\\-(A|J)\\b"}
+arg#2: {min = "0.0.0", patched = "7.98", model = "(AE(\\-200(J|A|E)|\\-50(J|A|E))|EW\\-50(J|A|E)|TE\\-(200|50)A|TW\\-50A)\\b"}
+arg#3: {min = "0.0.0", patched = "3.22", model = "(G\\-150AD|AG\\-150A\\-(A|J)|GB\\-50(ADA\\-(A|J)|AD))\\b"}
+
+#regex_link 1 https://regex101.com/r/XgXKnx/1
+#regex_link 2 https://regex101.com/r/cn0ayr/1
+#regex_link 3 https://regex101.com/r/1M17Rs/1
+
+
+
+

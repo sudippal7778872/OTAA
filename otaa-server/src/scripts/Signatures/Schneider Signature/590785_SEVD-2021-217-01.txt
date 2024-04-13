@@ -1,0 +1,12 @@
+#For Advisory https://www.se.com/ww/en/download/document/SEVD-2021-217-01/
+Title: Schneider Electric Lexium ILE ILA ILS and Altivar Multiple Vulnerabilities (SEVD-2021-217-01)
+Type: bhpp_vuln
+VulnID: 590785
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "01.111", model = "Lexium\\sIntegrated\\sDrive\\:IL(A|S|E)"}
+arg#2: {min = "0.0.0", patched = "99.99.99", model = "(Altivar\\sProfinet.+\\:VW3A3(3|6)27)\\b|(Altivar\\sEthernet\\sTCP\\/IP.+:VW3A3616)\\b"}
+
+#arg1 regex link : https://regex101.com/r/tHiatX/1
+#arg2 regex link : https://regex101.com/r/n5vcRj/1

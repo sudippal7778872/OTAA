@@ -1,0 +1,11 @@
+
+
+#For advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-17-157-01
+Title: Rockwell Automation PanelView Plus 6 700-1500 Vulnerability(ICSA-17-157-01)
+Type: bhpp_vuln
+VulnID: 590346
+manufacturer : "Rockwell Automation"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "PanelView\\sPlus\\s6\\b", version = "\\d"}
+
+###Regex https://regex101.com/r/3tckvp/1

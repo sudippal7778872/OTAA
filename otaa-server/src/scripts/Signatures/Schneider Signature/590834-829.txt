@@ -1,0 +1,24 @@
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Technical+leaflet&p_File_Name=SEVD-2020-161-01-Modicon_M218_Logic_Controller_Security_Notification.pdf&p_Doc_Ref=SEVD-2020-161-01
+Title: Schneider Electric Modicon M218 Logic Controller Vulnerability (SEVD-2020-161-01)
+Type: bhpp_vuln
+VulnID: 590834
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "4.4.0", model = "Modicon\\sM218"}
+
+# arg#1 #https://regex101.com/r/HlGW08/1
+
+############
+
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Software+-+Hotfix+%26+Patch&p_File_Name=SEVD+2013-345-01.pdf&p_Doc_Ref=SEVD+2013-345-01
+Title: Schneider Electric SCADAPack 330, SCADAPack 334, SCADAPack 350, and SCADAPack 357 Firmware Vulnerability (SEVD 2013-345-01)
+Type: bhpp_vuln
+VulnID: 590829
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.72", model = "SCADAPack\\s3(3|5)\\d"}
+
+
+#arg1 https://regex101.com/r/4Lbm26/1

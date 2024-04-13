@@ -1,0 +1,9 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-019-02
+Title: Reolink P2P Cameras Multiple Vulnerabilities (icsa-21-019-02)
+Type: bhpp_vuln
+VulnID:591062
+manufacturer : "Reolink"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "(RLC\\-(4|5)\\w+|RLN.+10)\\b", version = "\\d"}
+
+#arg1:https://regex101.com/r/z9J5ZW/1

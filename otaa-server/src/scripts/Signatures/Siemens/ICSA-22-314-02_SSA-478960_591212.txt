@@ -1,0 +1,29 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-478960.pdf and https://www.cisa.gov/uscert/ics/advisories/icsa-22-314-02
+Title:Siemens SIMATIC CSRF Vulnerability (ICSA-22-314-02, SSA-478960)
+Type: bhpp_vuln
+VulnID:591212
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_range_non_rgp
+arg#1: {min = "0.0.0", patched = "3.2.19", model = "SIMATIC\\s((ET\\s200)(pro\\sIM\\s154\\-(8FX\\sPN\\/DP\\sCPU\\:6ES7154\\-8FX00\\-0AB0|8F\\sPN\\/DP\\sCPU\\:6ES7154\\-8FB01\\-0AB0|8\\sPN\\/DP\\sCPU\\:6ES7154\\-8AB01\\-0AB0)|S\\sIM(\\s)?151\\-(8F\\sPN\\/DP\\sCPU\\:6ES7151\\-8FB01\\-0AB0|8\\sPN\\/DP\\sCPU\\:6ES7151\\-8AB01\\-0AB0))|S7\\-300\\sCPU\\s31(5\\-2\\sPN\\/DP\\:6ES7315\\-2EH14\\-0AB0|5F\\-2\\sPN\\/DP\\:6ES7315\\-2FJ14\\-0AB0|5T\\-3\\sPN\\/DP\\:6ES7315\\-7TJ10\\-0AB0|7\\-2\\sPN\\/DP\\:6ES7317\\-2EK14\\-0AB0|7F\\-2\\sPN\\/DP\\:6ES7317\\-2FK14\\-0AB0|7T\\-3\\sPN\\/DP\\:6ES7317\\-7TK10\\-0AB0|7TF\\-3\\sPN\\/DP\\:6ES7317\\-7UL10\\-0AB0|9\\-3\\sPN\\/DP\\:6ES7318\\-3EL01\\-0AB0|9F\\-3\\sPN\\/DP\\:6ES7318\\-3FL01\\-0AB0))|SIPLUS\\s(ET\\s200S\\sIM\\s151\\-(8F\\sPN\\/DP\\sCPU\\:6AG1151\\-8FB01\\-2AB0|8\\sPN\\/DP\\sCPU\\:6AG1151\\-8AB01\\-7AB0)|S7\\-300\\sCPU\\s(315\\-2\\sPN\\/DP\\:6AG1315\\-2EH14\\-7AB0|315F\\-2\\sPN\\/DP\\:6AG1315\\-2FJ14\\-2AB0|317\\-2\\sPN\\/DP\\:6AG1317\\-2EK14\\-7AB0|317F\\-2\\sPN\\/DP\\:6AG1317\\-2FK14\\-2AB0))\\b"}
+arg#2: {min = "0.0.0", patched = "3.3.19", model = "(SIMATIC|SIPLUS)\\sS7\\-300\\sCPU\\s314C\\-2PN\\/DP\\:(6ES7314-6EH04\\-0AB0|6AG1314\\-6EH04\\-7AB0)\\b"}
+arg#3: {min = "6.0.0.", patched = "7.0.0", model = "S7\\-400\\sCPU(.+)?PN\\/DP\\b"}
+arg#4: {min = "7.0.0.", patched = "7.99.99", model = "S7\\-400\\sCPU(.+)?PN\\/DP\\b"}
+arg#5: {min = "0.0.0.", patched = "3.0.1", model = "(SIMATIC\\sS7\\-1500\\sDrive\\sController|S7\\-(1500(H)?)\\sCPU)|(SIMATIC|SIPLUS)\\sET\\s200(.+)?CPU(\\s)?15\\d{2}" ,not_match="CPU(\\s)?1515SP\\s(PC2|PC)"}
+arg#6: {min = "0.0.0.", patched = "4.6.0", model = "(SIMATIC|SIPLUS)\\sS7\\-1200\\sCPU"}
+arg#7: {min = "0.0.0.", patched = "99.99.99", model = "SINUMERIK\\sONE"}
+
+
+#regex_link 1 https://regex101.com/r/H8WA1l/1
+#regex_link 2 https://regex101.com/r/oPepAK/1
+#regex_link 3 https://regex101.com/r/JT4oS5/1
+#regex_link 4 https://regex101.com/r/JT4oS5/1
+#regex_link 5 https://regex101.com/r/kdC6rT/1       Not Match-https://regex101.com/r/Booisc/3
+#regex_link 6 https://regex101.com/r/XmxMgc/2
+#regex_link 7 https://regex101.com/r/EGI6T7/1
+
+
+
+
+
+

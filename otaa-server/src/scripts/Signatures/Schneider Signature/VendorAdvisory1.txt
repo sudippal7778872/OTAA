@@ -1,0 +1,50 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2021-222-06
+Title: Schneider Electric CODESYS V2 Vulnerabilities in Programmable Automation Controller (PacDrive) M Multiple Vulnerabilities (SEVD-2021-222-06)
+Type: bhpp_vuln
+VulnID: 590818
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "PacDrive\\sM\\b"}
+
+regex:-
+https://regex101.com/r/RHlXH2/1
+------------------------------------------------------------------------------------------------------------------------------------------------------
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2020-353-02
+Title: Schneider Electric Treck HTTP Server Vulnerability on TM3 Bus Coupler Modules Vulnerability (SEVD-2020-353-02)
+Type: bhpp_vuln
+VulnID: 590817
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "2.2.1.1", model = "TM3\\sBus\\sCoupler\\sModule\\:TM3BCEIP"}
+arg#2: {min = "0.0.0", patched = "2.1.1.1", model = "TM3\\sBus\\sCoupler\\sModule\\:TM3BC(SL|CO)"}
+
+Regex:-
+TM3 Bus Coupler – EIP,SL,CANOpen       https://regex101.com/r/61TQw2/1
+------------------------------------------------------------------------------------------------------------------------------------------------------
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2021-194-02
+Title: Schneider Electric Easergy T300 Multiple Vulnerabilities (SEVD-2021-194-02)
+Type: bhpp_vuln
+VulnID: 590816
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "2.8", model = "Easergy\\sT300\\sRemote\\sTerminal\\sUnit"}
+
+Regex:-                                 
+https://regex101.com/r/1tw6Oe/1         
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2021-130-05
+Title: Schneider Electric Modicon M241 and M251 Logic Controllers Vulnerability (SEVD-2021-130-05)
+Type: bhpp_vuln
+VulnID: 590812
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "5.1.9.14", model = "Modicon\\s(M241|M251)\\b"}
+
+Regex:-                                
+https://regex101.com/r/psHBru/1        
+

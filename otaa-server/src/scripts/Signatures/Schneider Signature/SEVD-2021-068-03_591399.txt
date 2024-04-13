@@ -1,0 +1,17 @@
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Technical+leaflet&p_File_Name=SEVD-2021-068-03_PowerLogic_ION8650_ION8800_ION7x50_ION7700_73xx_ION83xx-84xx-85xx-8600_Power_Meters_Security_Notification_V2.0.pdf&p_Doc_Ref=SEVD-2021-068-03&_ga=2.41397413.608450962.1667454791-414360940.1654493530
+Title: Schneider Electric PowerLogic ION8650/ION8800/ION7x50/ION7700/73xx /ION83xx/84xx/85xx/8600 Power Meters Vulnerability (SEVD-2021-068-03)
+Type: bhpp_vuln
+VulnID:591399
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "416", model = "PowerLogic\\sION7\\d50\\b"}
+arg#2: {min = "0.0.0", patched = "4.40.1", model = "PowerLogic\\sION8650\\b"}
+arg#3: {min = "0.0.0", patched = "372", model = "PowerLogic\\sION8800\\b"}
+arg#4: {min = "0.0.0", patched = "99.99.99", model = "(PowerLogic\\s)?ION(77|73|83|84|85|86)00\\b"}
+
+#regex_link 1 https://regex101.com/r/jpA2Ru/1
+#regex_link 2 https://regex101.com/r/ZnkGQf/1
+#regex_link 3 https://regex101.com/r/zDcrIw/1
+#regex_link 4  https://regex101.com/r/ppIQ7h/1
+

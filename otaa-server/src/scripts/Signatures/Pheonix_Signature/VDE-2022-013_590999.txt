@@ -1,0 +1,19 @@
+#For advisory https://dam-mdc.phoenixcontact.com/asset/156443151564/d98ef17b0dd8e44798e61a15105a834b/Security_Advisory_CVE-2022-0778.pdf
+Title: PHOENIX CONTACT FL MGUARD, TC MGUARD, mGuard Device Manager and FL WLAN devices Vulnerability (VDE-2022-013)
+Type: bhpp_vuln
+VulnID: 590999
+Vulnflags:vuln
+manufacturer : "Phoenix Contact"
+Func:ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "8.8.6", model ="FL\\sMGUARD\\s(RS(2000\\sTX\\/TX\\sVPN|2000\\sTX\\/TX\\-B|2005\\sTX\\sVPN|4000\\sTX\\/TX\\sVPN\\/(K1|K2)|4000\\sTX\\/TX\\-(P|M)|4000\\sTX\\/TX\\sVPN|4000\\sTX\\/TX|4004\\sTX\\/DTX\\sVPN|4004\\sTX\\/DTX|4000\\sVPN\\/K2)|PCIE(4000\\sVPN\\/K2|4000\\sVPN|4000)|PCI(4000\\sVPN\\/K2|4000\\sVPN|4000)|DELTA\\s(TX\\/TX\\sVPN|TX\\/TX)|SMART2\\s(VPN\\/K1|VPN)|SMART2|CORE\\s(TX\\sVPN|TX)|GT\\/GT\\sVPN|GT\\/GT|CENTERPORT\\sVPN\\-1000|CENTERPORT)|TC\\sMGUARD\\s(RS2000\\s4G\\s(ATT\\sVPN|VZW\\sVPN|VPN)|RS2000\\s3G\\sVPN|RS4000\\s3G\\sVPN|RS4000\\s4G\\s(ATT\\sVPN|VZW\\sVPN|VPN))\\b"}
+arg#2: {min = "0.0.0", patched = "1.13.0.2", model ="FL\\sMGUARD\\sDM\\sUNLIMITED\\b"}
+arg#3: {min = "0.0.0", patched = "2.71", model ="FL\\sWLAN\\s(1010|1011|1100|1101|2010|2011|2100|2101)\\b"}
+arg#4: {min = "0.0.0", patched = "3.22", model ="FL\\sWLAN\\s(51(00|01|02|10|11))\\b"}
+
+#regex_link 1 https://regex101.com/r/9RCbit/1
+#regex_link 2 https://regex101.com/r/UhfWDp/1 
+#regex_link 3 https://regex101.com/r/hr6VPS/1 
+#regex_link 4 https://regex101.com/r/JnEROW/1 
+
+
+

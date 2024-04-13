@@ -1,0 +1,10 @@
+#For Advisory https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1133645
+Title:Rockwell Automation 1783-NATR Multiple Vulnerabilities (PN1580)
+Type: bhpp_vuln
+VulnID:590961
+manufacturer : "Rockwell Automation"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "1783\\-NATR\\b", version = "^1\\.005$"}
+
+#regex_link https://regex101.com/r/VKtQ3d/1
+

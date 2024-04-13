@@ -1,0 +1,21 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-153-01
+Title: Carrier LenelS2 HID Mercury access panels Multiple Vulnerabilities (ICSA-22-153-01))
+Type: bhpp_vuln
+VulnID: 590928
+manufacturer : "HID Global"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched="99.99.99",model="LP\\-(1501|4502|2500|1502)\\b"}
+
+#arg1 : https://regex101.com/r/cJ8GOk/1
+
+############################################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-153-01
+Title: Carrier LenelS2 HID Mercury access panels Multiple Vulnerabilities (ICSA-22-153-01)
+Type: bhpp_vuln
+VulnID: 590928
+manufacturer : "Carrier"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched="99.99.99",model="LNL\\-(X2210|X2220|X3300|X4420|4420)\\b"}
+
+#arg1 : https://regex101.com/r/kC2LCx/1

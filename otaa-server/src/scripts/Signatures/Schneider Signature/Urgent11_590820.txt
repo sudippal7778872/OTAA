@@ -1,0 +1,94 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SESB-2019-214-01
+Title: Schneider Electric Wind River VxWorks (URGENT/11) Vulnerability (SESB-2019-214-01)
+Type: bhpp_vuln
+VulnID:590820
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider"
+arg#1: {min = "0.0.0", patched = "5.34", model = "ConneXium\\sIndustial\\sFirewall\\:TCSEFEC2(CF3|3FC|3F3)F21\\b"}
+arg#2: {min = "0.0.0", patched = "5.25", model = "ConneXium\\sIndustial\\sFirewall\\:TCSEFEC2(CF3|3FC|3F3)F20\\b"}
+arg#3: {min = "0.0.0", patched = "1.3.0.0", model = "E\\+PLC(1|4)00\\sCombination\\sPLC"}
+arg#4: {min = "0.0.0", patched = "1.1.0.33", model = "HMIGXU"}
+arg#5: {min = "0.0.0", patched = "99.99.99", model = "Magelis\\s(GTO\\:HMIGTO|SCU\\sHMI\\s.+\\:HMISCU|GTUX|GTU\\:HMI)"}
+arg#6: {min = "0.0.0", patched = "1.40", model = "Modicon\\sX80\\sAnalog\\s(Input\\sModule\\:BMEAHI0812|Output\\sModule\\:BMEAHO0412)\\b"}
+arg#7: {min = "0.0.0", patched = "1.03", model = "Modicon\\sX80\\sNetwork\\sOption\\sSwitch\\sModule\\:BMENOS0300\\b"}
+arg#8: {min = "0.0.0", patched = "2.41", model = "Modicon\\sX80\\sEthernet\\sRIO\\sDrop\\sAdaptor\\:(BMXCRA31200|BMXCRA31210|BMECRA31210)\\b"}
+arg#9: {min = "0.0.0", patched = "1.51.15.06", model = "Modicon\\sLMC078\\b"}
+arg#10: {min = "0.0.0", patched = "5.1.9.14 ", model = "Modicon\\s(M241|M251)\\b"}
+arg#11: {min = "0.0.0", patched = "5.0.3.3", model = "Modicon\\sM262\\b"}
+arg#12: {min = "0.0.0", patched = "2.20", model = "Ethernet\\sModule\\sM580\\:BMENOC0301\\b|Modicon\\sM580\\sCommunication\\sModule\\:BMENOC0311\\b"}
+arg#13: {min = "0.0.0", patched = "1.08", model = "Modicon\\sM580\\sCommunication\\sModule\\:BMENOC0321\\b"}
+arg#14: {min = "0.0.0", patched = "2.2", model = "Modicon\\sM580\\sCommunication\\sModule\\:BMENOP0300\\b"}
+arg#15: {min = "0.0.0", patched = "3.10", model = "Modicon\\sM580\\s(ePAC|.+?)\\:(BMEP58(4040(S)?|6040(C)?|1020(H)?|2020(H)?|2040(H)?|3020|3040|4020|5040(C)?|2040S)|BMEH58(4040(C|S)?|6040(C|S)?|2040(C)?))\\b"}
+arg#16: {min = "0.0.0", patched = "1.5", model = "Modicon\\sMC80\\b"}
+arg#17: {min = "0.0.0", patched = "2.40", model = "Modicon\\sUnity\\sMomentum"}
+arg#18: {min = "0.0.0", patched = "99.99.99", model = "Modicon\\sQuantum\\sEthernet\\sModule\\:140NOC78\\d00\\b"}
+arg#19: {min = "0.0.0", patched = "2.50", model = "Modicon.+?Quantum\\s.+\\:140CRA31(200|908)\\b"}
+arg#20: {min = "0.0.0", patched = "99.99.99", model = "Modicon\\sQuantum\sEthernet\\sRIO\\sHead\\:140CRP31200\\b"}
+arg#21: {min = "0.0.0", patched = "99.99.99", model = "Modicon\\sQuantum\\s.+Module\\:140NOC\\d+"}
+arg#22: {min = "0.0.0", patched = "8.16", model = "nanodac\\sRecorder\\/Controller"}
+arg#23: {min = "0.0.0", patched = "1.62.5.7", model = "PacDrive\\s3\\s.+(Eco|Pro2|Pro)\\b"}
+arg#24: {min = "0.0.0", patched = "99.99.99", model = "Pro\\-face.+HMI\\:GP4000(R|H|E)\\b|GP(4100\\sCompact|4000E)\\sSeries|LT4000M\\sModular\\sSeries|SP5000(X)?\\sSeries|(IFE|PowerLogic.+)\\sGateway"}
+arg#25: {min = "0.0.0", patched = "8.14.8", model = "SCADAPack\\s53\\dE\\sRemote"}
+arg#26: {min = "0.0.0", patched = "9.2.4", model = "SCADAPack\\sRTU\\:57\\d"}
+arg#27: {min = "0.0.0", patched = "7.0.36", model = "SCD6000\\sRTU"}
+arg#28: {min = "11.1", patched = "11.5", model = "Tricon"}
+arg#29: {min = "0.0.0", patched = "2.41", model = "versadac\\sScalable\\sData\\sRecorder"}
+arg#30: {min = "0.0.0", patched = "99.99.99", model = "MiCOM\\sC264\\b|Micom\\s(Px30|Px40)\\b"}
+arg#31: {min = "0.0.0", patched = "2.7", model = "Easergy\\sT300\\b"}
+arg#32: {min = "0.0.0", patched = "2.2.1", model = "ION7400\\b"}
+arg#33: {min = "0.0.0", patched = "2.2.1", model = "ION7400\\s.+\\:METSEION74001\\b"}
+arg#34: {min = "0.0.0", patched = "2.2.1", model = "ION9000"}
+arg#35: {min = "0.0.0", patched = "2.2.1", model = "PM8000\\b"}
+arg#36: {min = "0.0.0", patched = "2.2.1", model = "PM8000\\s.+\\:METSEPM82401\\b"}
+arg#37: {min = "0.0.0", patched = "11.04.18", model = "Saitel\\sDR\\b"}
+
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SESB-2019-214-01
+Title: Wind River VxWorks Vulnerabilities (URGENT/11) Vulnerability (SESB-2019-214-01)
+Type: bhpp_vuln
+VulnID:590820
+Func: ics_device_firmware_exprudp
+manufacturer : "Schneider"
+arg#1: {device = "Trident\\sCommunication\\sIntegration\\sModule", version = "^3\\.0$"}
+arg#2: {device = "Easergy\\sP5\\b", version = "^01$"}
+arg#3: {device = "SAGE.+RTU", version = "\\d"}
+arg#4: {device = "TeSys\\sisland\\b", version = "^01\\.0100$"}
+
+
+#Regex :-                                                                                                   
+ 
+#ConneXium Industrial Firewall/ Router                 https://regex101.com/r/e81I78/1
+#E+PLC100 & E+PLC400 Combination PLC                   https://regex101.com/r/ep2jI3/1 
+#HMIGXU                                                https://regex101.com/r/5wUyN9/1
+#Magelis HMI                                           https://regex101.com/r/dAKGAV/1
+#Modicon X80                                           https://regex101.com/r/QCUZPs/1
+#Modicon LMC078 Controller                             https://regex101.com/r/qrE5jE/1
+#Modicon M241|M251 Micro PLC                           https://regex101.com/r/fzoJQ8/1 
+#Modicon M262 Logic/Motion Controller                  https://regex101.com/r/SIKqaO/1 
+#Modicon M580 Ethernet Communications Modules          https://regex101.com/r/45kSM1/1
+#Modicon M580 ePAC CPUs                                https://regex101.com/r/xwll8L/1 ..
+#Modicon MC80 Programmable Logic Controller            https://regex101.com/r/vuGsBa/1 
+#Modicon Momentum Unity                                https://regex101.com/r/kOOjJU/2 
+#Modicon Quantum Ethernet DIO network module           https://regex101.com/r/RQaWL2/1
+#Modicon Quantum 140 CRA                               https://regex101.com/r/Hn3wpw/1 ..
+#Modicon Quantum Head 140 CRP module                   https://regex101.com/r/S8W01H/1
+#Modicon Quantum 140 NOP Communications Module         https://regex101.com/r/1GkLyM/1   #its NOC and not NOP - printing mistake#
+#Nanodac Recorder / Controller                         https://regex101.com/r/EijQ1T/2
+#PacDrive 3 Eco/Pro/Pro2 Motion Controllers            https://regex101.com/r/d1PlK8/1
+#Pro-face HMI -GP4000H/R/E Series, IoT Gateway         https://regex101.com/r/MaWHlz/1
+#SCADAPack 53xE RTUs                                   https://regex101.com/r/5IuxMv/1 
+#SCADAPack 57x RTUs                                    https://regex101.com/r/9PJWVJ/1 
+#SCD6000 Industrial RTU                                https://regex101.com/r/g14ScR/2
+#Tricon Communication Modules                          https://regex101.com/r/gWPTMu/1
+#Trident Communication Integration Module              https://regex101.com/r/WbIIbY/1 
+#versadac™ Scalable Data Recorder                      https://regex101.com/r/1nCRQ3/1
+#Easergy MiCOM C264|MiCOM P30 & Easergy MiCOM Px40     https://regex101.com/r/MtlPeM/1                                       
+#Easergy P5                                            https://regex101.com/r/eiBKof/1 
+#Easergy T300 (SC150 & LV150)                          https://regex101.com/r/C0tOGf/1
+#ION7400                                               https://regex101.com/r/q8vOQ3/1
+#ION7400 MID                                           https://regex101.com/r/IIfFyC/1 
+#ION9000                                               https://regex101.com/r/FJyX5x/1 
+#PM8000                                                https://regex101.com/r/Fiy4D7/1
+#PM8000 MID (METSEPM82401)                             https://regex101.com/r/jO6fTj/1
+#SAGE RTU                                              https://regex101.com/r/QuYIa6/1   
+#Saitel DR with HU_A CPU                               https://regex101.com/r/7odrlP/1 
+#TeSys island                                          https://regex101.com/r/1TmlcF/1

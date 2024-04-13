@@ -1,0 +1,10 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-103-13 and https://cert-portal.siemens.com/productcert/pdf/ssa-669158.pdf
+Title: Siemens SIMOTICS CONNECT 400 Multiple Vulnerabilities (Update A)(ICSA-21-103-13) (SSA-669158)
+Type: bhpp_vuln
+VulnID: 590720
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0.0", patched = "1.0.0.0", model = "SIMOTICS\\sCONNECT\\s400\\b"}
+
+#arg#1 regex: https://regex101.com/r/OrHjVT/1

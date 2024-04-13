@@ -1,0 +1,18 @@
+#For Advisory https://www.moxa.com/en/support/product-support/security-advisory/secure-router-edr-n-tn-series-improper-input-validation-vulnerabilities
+Title: Moxa EDR and TN Series Improper Input Validation Vulnerabilities (MPSA-221105)
+Type: bhpp_vuln
+VulnID: 591339
+Vulnflags: vuln
+manufacturer : "Moxa"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "5.12.13", model = "EDR\\-810\\sSeries\\b"}
+arg#2: {min = "0.0.0", patched = "5.7.9", model = "EDR\\-G902\\sSeries\\b"}
+arg#3: {min = "0.0.0", patched = "5.7.11", model = "EDR\\-G903\\sSeries\\b"}
+arg#4: {min = "0.0.0", patched = "3.3", model = "TN\\-59(.+)?\\:TN\\-5916\\b"}
+arg#5: {min = "0.0.0", patched = "1.1", model = "TN\\-4900\\sSeries\\b"}
+
+#arg#1 regex: https://regex101.com/r/zwebIG/1 
+#arg#2 regex: https://regex101.com/r/D0DQ4H/1 
+#arg#3 regex: https://regex101.com/r/Ku0KPR/1  
+#arg#4 regex: https://regex101.com/r/kcxSMP/1 
+#arg#5 regex: https://regex101.com/r/4WABJu/1

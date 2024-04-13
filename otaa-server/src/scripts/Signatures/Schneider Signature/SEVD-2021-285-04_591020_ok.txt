@@ -1,0 +1,11 @@
+#For Advisory https://www.se.com/us/en/download/document/SEVD-2021-285-04/
+Title: Schneider Electric Modicon M218 Logic Controller Vulnerability (SEVD-2021-285-04)
+Type: bhpp_vuln
+VulnID: 591020
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "5.1.0.8", model = "Modicon M218"}
+
+
+https://regex101.com/r/HlGW08/3

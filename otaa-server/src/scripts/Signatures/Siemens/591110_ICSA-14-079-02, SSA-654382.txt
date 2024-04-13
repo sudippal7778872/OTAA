@@ -1,0 +1,11 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-14-079-02
+Title: Siemens SIMATIC S7-1200 Multiple Vulnerabilities (ICSA-14-079-02, SSA-654382)
+Type: bhpp_vuln
+VulnID: 591110
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched="4.0",model="(SIMATIC|SIPLUS)\\sS7\\-1200\\sCPU\\b"}
+
+
+

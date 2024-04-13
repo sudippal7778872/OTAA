@@ -1,0 +1,17 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-336-05 [cisa.gov]
+Title:Hitachi Energy Relion 670/650/SAM600-IO Vulnerability (ICSA-21-336-05)
+Type:bhpp_vuln
+VulnID:590909
+Vulnflags:cancel
+manufacturer:"Hitachi ABB Power Grids"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "2.2.3.4", patched = "2.2.3.99", model ="Relion\\s(670|650)\\sseries\\b"}
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-336-05
+Title:Hitachi Energy Relion 670/650/SAM600-IO Vulnerability (ICSA-21-336-05)
+Type:bhpp_vuln
+VulnID:590909
+Vulnflags:vuln
+manufacturer:"Hitachi ABB Power Grids"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "00.00.00", patched = "2.2.5", model ="Relion\\s(670|650)\\sseries|SAM600\\-IO\\b"}

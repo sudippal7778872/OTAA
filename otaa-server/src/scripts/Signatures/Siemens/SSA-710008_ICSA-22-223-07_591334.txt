@@ -1,0 +1,38 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-710008.html and https://www.cisa.gov/uscert/ics/advisories/icsa-22-223-07
+Title: Siemens SCALANCE denial-of-service (DoS) Multiple Vulnerabilities (SSA-710008, ICSA-22-223-07)
+Type: bhpp_vuln
+VulnID: 591334
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "7.1.2", model = "(RUGGEDCOM\\sRM1224\\-(EU|NAM)\\s4G\\sRouter\\:6GK6108\\-4AM00\\-(2BA2|2DA2)|SCALANCE\\s(M8(04PB\\:6GK5804\\-0AP00\\-2AA2|12\\-1\\sADSL\\-Router\\:6GK5812\\-1(A|B)A00\\-2AA2|16\\-1\\sADSL\\-Router\\:(6GK5816\\-1(A|B)A00\\-2AA2)|26\\-2\\sSHDSL\\-Router\\:6GK5826\\-2AB00\\-2AB2|74\\-(2.+\\:6GK5874\\-2AA00\\-2AA2|3.+\\:6GK5874\\-3AA00\\-2AA2)|76\\-3.+\\:6GK5876\\-3AA02\\-2(B|E)A2|76\\-4.+\\:6GK5876\\-4AA00\\-2(B|D)A2)|MUM85(3\\-1.+\\:6GK5853\\-2EA00\\-2DA1|6\\-1.+\\:6GK5856\\-2EA00\\-3(D|A)A1)|S615.+\\:6GK5615\\-0AA00\\-2AA2))\\b"}
+arg#2: {min = "0.0.0", patched = "2.3.1", model = "SCALANCE\\sSC6(22\\-2C\\:6GK5622\\-2GS00\\-2AC2|32\\-2C\\:6GK5632\\-2GS00\\-2AC2|36\\-2C\\:6GK5636\\-2GS00\\-2AC2|42\\-2C\\:6GK5642\\-2GS00\\-2AC2|46\\-2C\\:6GK5646\\-2GS00\\-2AC2)\\b"}
+arg#3: {min = "0.0.0", patched = "2.0.0", model = "SCALANCE\\s(WAM76(3\\-1\\:6GK5763\\-1AL00\\-7DA0|6\\-1\\:6GK5766\\-1GE00\\-7D(A|B)0|6\\-1\\sEEC\\:6GK5766\\-1GE00\\-7T(A|B)0)|WUM76(3\\-1\\:6GK5763\\-1AL00\\-3(A|D)A0|6\\-1\\:6GK5766\\-1GE00\\-3D(A|B)0))\\b"}
+arg#4: {min = "0.0.0", patched = "99.99.99", model = "SCALANCE\\s(W7(21\\-1\\sRJ45\\:6GK5721\\-1FC00\\-0A(A|B)0|22\\-1\\sRJ45\\:6GK5722\\-1FC00\\-0A(A|B|C)0|34\\-1\\sRJ45\\:6GK5734\\-1FX00\\-0A(A0|A6|B0|B6)|38\\-1\\sM12\\:6GK5738\\-1GY00\\-0A(A|B)0|48\\-1.+\\:6GK5748\\-1GD00\\-0A(A|B)0|48\\-1\\sRJ45\\:6GK5748\\-1FC00\\-0A(A|B)0|61\\-1\\sRJ45\\:6GK5761\\-1FC00\\-0A(A|B)0|74\\-1(.+)?\\:6GK5774\\-(1FY00\\-0T(A|B)0|1FX00\\-0A(A0|A6|B0|C0|B6))|78\\-1\\sM12(.+)?\\:6GK5778\\-1GY00\\-0(T|A)(A|B)0|86\\-(1\\sRJ45\\:6GK5786\\-1FC00\\-0A(A|B)0|2(\\sRJ45\\:6GK5786\\-2FC00\\-0A(A|B|C)0|\\sSFP\\:6GK5786\\-2FE00\\-0A(A|B)0)|2IA\\sRJ45\\:6GK5786\\-2HC00\\-0A(A|B)0)|88\\-(1\\s(M12\\:6GK5788\\-1GD00\\-0A(A|B)0|RJ45\\:6GK5788\\-1FC00\\-0A(A|B)0)|2\\sM12\\:6GK5788\\-2GD00\\-0(AB|AA)0|2\\sM12(.+)\\:6GK5788\\-2GD00\\-0T(A|B|C)0|2\\sRJ45\\:6GK5788\\-2FC00\\-0A(A|B|C)0)))\\b"}
+arg#5: {min = "0.0.0", patched = "99.99.99", model = "SCALANCE\\sW17(48\\-1\\sM12(.+)?\\:6GK5748\\-1GY01\\-0(A|T)A0|88\\-(1\\sM12\\:6GK5788\\-1GY01\\-0AA0|2\\sM12(.+)?\\:6GK5788\\-2GY01\\-0(A|T)A0|2IA\\sM12\\:6GK5788\\-2HY01\\-0AA0))\\b"}
+arg#6: {min = "0.0.0", patched = "99.99.99", model = "SCALANCE\\sXB2(05\\-3\\:6GK5(\\s)?205\\-(3(BB|BD)00\\-2(AB|TB)2)|05\\-3LD\\:6GK5205\\-3BF00\\-2(AB|TB)2|08\\:6GK5208\\-0BA00\\-2(TB|AB)2|13\\-3\\:6GK5213\\-3(BB|BD)00\\-2(TB|AB)2|13\\-3LD\\:6GK5213\\-3BF00\\-2(TB|AB)2|16\\:6GK5(\\s)?216\\-0BA00\\-2(TB|AB)2)\\b"}
+arg#7: {min = "0.0.0", patched = "99.99.99", model = "SCALANCE\\sXC2(06\\-2\\:6GK5(\\s)?206\\-2(BD|BB)00\\-2AC2|06\\-2G\\sPoE(.+)?\\:6GK5206\\-2RS00\\-(2AC2|5AC2|5FC2)|06\\-2SFP\\:6GK5(\\s)?206\\-2BS00\\-2AC2|06\\-2SFP\\sEEC\\:6GK5206\\-2BS00\\-2FC2|06\\-2SFP\\sG(.+)?\\:6GK5(\\s)?206\\-2GS00\\-2(AC|TC|FC)2|08\\:6GK5208\\-0BA00\\-2AC2|08EEC\\:6GK5208\\-0BA00\\-2FC2|08G(.+)?\\:6GK5208\\-0GA00\\-2(AC|TC|FC)2|08G\\sPoE\\:6GK5208\\-0RA00\\-(2AC2|5AC2)|16\\:6GK5216\\-0BA00\\-2AC2|16\\-3G\\sPoE\\:6GK5216\\-3RS00\\-(2|5)AC2|16\\-4C\\:6GK5(\\s)?216\\-4BS00\\-2AC2|16-4C\\sG(\\s)?\\:6GK5216\\-4GS00\\-2(AC|TC)2|16\\-4C\\sG\\sEEC\\:6GK5216\\-4GS00\\-2FC2|16EEC\\:6GK5216\\-0BA00\\-2FC2|24\\:6GK5(\\s)?224\\-0BA00\\-2AC2|24-4C\\sG(.+)?:6GK5224-4GS00\\-2(AC|TC|FC)2)\\b"}
+arg#8: {min = "0.0.0", patched = "99.99.99", model = "SCALANCE\\sXF2(04\\:6GK5204\\-0BA00\\-2GF2|04\\sDNA\\:6GK5204\\-0BA00\\-2YF2|04\\-2BA\\:6GK5204\\-2AA00\\-2GF2|04\\-2BA\\sDNA\\:6GK5204\\-2AA00\\-2YF2)\\b"}
+arg#9: {min = "0.0.0", patched = "99.99.99", model = "SCALANCE\\sXM4(08\\-4C\\:6GK5408\\-4(GP|GQ)00\\-2AM2|08\\-8C\\:6GK5408\\-8(GS|GR)00\\-2AM2|16\\-4C\\:6GK5416\\-4(GS|GR)00\\-2AM2)\\b"}
+arg#10: {min = "0.0.0", patched = "99.99.99", model = "SCALANCE\\sXP2(08\\:6GK5208-0HA00-2(AS|TS)6|08EEC\\:6GK5208\\-0HA00\\-2ES6|08PoE\\sEEC\\:6GK5208\\-0UA00\\-5ES6|16\\:6GK5216\\-0HA00\\-2AS6|16\\:6GK5216\\-0HA00\\-2TS6|16EEC\\:6GK5216\\-0HA00\\-2ES6|16PoE\\sEEC\\:6GK5216\\-0UA00\\-5ES6)\\b"}
+arg#11: {min = "0.0.0", patched = "99.99.99", model = "SCALANCE\\sXR3(24WG\\:6GK5324\\-0BA00\\-(2|3)AR3|26\\-2C\\sPoE\\sWG\\:6GK5326\\-2QS00\\-3(AR|RR)3|28\\-4C\\sWG(\\s)?\\:6GK5328\\-(4FS00\\-(2|3)(AR|RR)3|4SS00\\-(2|3)AR3))\\b"}
+arg#12: {min = "0.0.0", patched = "99.99.99", model = "SCALANCE\\sXR5(24\\-8C\\:6GK5524\\-8(GS|GR)00-(2|3|4)AR2|26\\-8C\\:6GK5526\\-8(GS|GR)00\\-(2|3|4)AR2|28\\-6M\\:6GK5528\\-0(AA|AR)00\\-2(HR|AR)2|52\\-12M\\:6GK5552\\-0(AA|AR)00\\-2(HR|AR)2)\\b"}
+arg#13: {min = "0.0.0", patched = "99.99.99", model = "SIPLUS\\sNET\\sSCALANCE\\sXC2(06\\-2\\:6AG1206\\-2BB00\\-7AC2|06\\-2SFP\\:6AG1206\\-2BS00\\-7AC2|08\\:6AG1208\\-0BA00\\-7AC2|16\\-4C\\:6AG1216\\-4BS00\\-7AC2)\\b"}
+
+#arg#1 https://regex101.com/r/TbcJKn/2
+#arg#2 https://regex101.com/r/jPHVDq/1
+#arg#3 https://regex101.com/r/KxGrAF/1
+#arg#4 https://regex101.com/r/lErEnB/3 SCALANCE W700 
+#arg#5 https://regex101.com/r/nMiiEx/1 SCALANCE W1700 
+#arg#6 https://regex101.com/r/zdvWSb/2 SCALANCE XB200
+#arg#7 https://regex101.com/r/lVzMon/2 SCALANCE XC200
+#arg#8 https://regex101.com/r/zrcRPq/2 SCALANCE XF200
+#arg#9 https://regex101.com/r/u66t0E/2 SCALANCE XM400
+#arg#10 https://regex101.com/r/Rwer0o/1 SCALANCE XP200
+#arg#11 https://regex101.com/r/9x7wH3/1 SCALANCE XR300
+#arg#12 https://regex101.com/r/8TcyCB/1 SCALANCE XR500
+#arg#13 https://regex101.com/r/fNgb4g/1 SIPLUS NET SCALANCE XC200
+
+#ALL in One Regex https://regex101.com/r/WFvUXJ/1
+
+

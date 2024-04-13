@@ -1,0 +1,12 @@
+#For Advisory https://www.moxa.com/en/support/support/security-advisory/edr-g903-g902-810-secure-router-vulnerability
+Title: Moxa EDR-G903, EDR-G902, and EDR-810 Secure Router Improper Restriction of Operations Vulnerability (MPSA-201002)
+Type: bhpp_vuln
+VulnID: 591323
+Vulnflags: vuln
+manufacturer : "Moxa"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0", patched = "5.6", model = "EDR\\-G90(2|3)\\sSeries\\b"}
+arg#2: {min = "0.0.0", patched = "5.7", model = "EDR\\-810\\sSeries\\b"}
+
+#arg#1 regex: https://regex101.com/r/VY17B8/1
+#arg#2 regex: https://regex101.com/r/zwebIG/1

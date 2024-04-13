@@ -1,0 +1,12 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-336-04 and https://search.abb.com/library/Download.aspx?utm_campaign=2021.11_5282_Cybersecurity%20Advisory&utm_content=2021.11_5282_Cybersecurity%20Advisory&utm_medium=email&utm_source=Eloqua&DocumentID=8DBD000063&LanguageCode=en&DocumentPartId=&Action=Launch&elqTrackId=af857fe4745f4180a42aa0778f76b1b9&elq=38e0453737cf4db980910db6ef0c9e36&elqaid=3812&elqat=1&elqCampaignId=3243
+Title: Hitachi Energy RTU500 series BCI Vulnerability (ICSA-21-336-04,8DBD000063)
+Type: bhpp_vuln
+VulnID: 591148
+manufacturer : "Hitachi Energy"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "12.0.0", patched = "12.1.0", model = "RTU\\s500\\sSeries"}
+arg#2: {min = "12.2.0", patched = "12.3.0", model = "RTU\\s500\\sSeries"}
+arg#3: {min = "12.4.0", patched = "12.5.0", model = "RTU\\s500\\sSeries"}
+
+#regex_link https://regex101.com/r/cvn1lN/1
+

@@ -1,0 +1,27 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-446448.pdf and https://www.cisa.gov/uscert/ics/advisories/icsa-22-104-06
+Title: Siemens PROFINET Stack Integrated on Interniche Stack (Update D) Vulnerability (ICSA-22-104-06, SSA-446448)
+Type: bhpp_vuln
+VulnID: 591199
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "5.1.1", patched = "99.99.99", model = "SIMATIC\\sET\\s200eco\\sPN\\,\\s(CM\\s8x\\sIO\\-Link(.+)?M12\\-L\\:6ES7148\\-6JG|DI\\s8x\\s24\\sV\\sDC\\,\\sM12\\-L\\:6ES7141\\-6BG|DI\\s16x\\s24\\sV\\sDC\\,\\sM12\\-L\\:6ES714(1|3)\\-6BH|DQ\\s8x\\s24\\sV\\sDC\\/(0\\.5\\sA\\,\\sM12\\-L\\:6ES7142\\-6BG|2A\\,\\sM12\\-L(.+)?\\:6ES7142\\-6BR))00\\-0BB0\\b"}
+arg#2: {min = "4.2.0", patched = "99.99.99", model = "((SIPLUS|SIMATIC)\\s(ET(\\s)?200MP\\sIM(\\s)?155\\-5\\sPN\\sHF|ET(\\s)?200SP\\sIM(\\s)?155\\-6(\\s)?(PN|PN\\/2|PN\\/3)\\sHF)|SIMATIC\\sPN\\/PN\\sCoupler\\:6ES7158\\-3AD10\\-0XA0|SIPLUS\\sPN\\/PN\\sCoupler\\:6AG2158\\-3AD10\\-4XA0)\\b"}
+arg#3: {min = "0.0.0", patched = "3.2.19", model = "(SIMATIC\\sET\\s200(pro\\sIM\\s154\\-8(\\sPN\\/DP\\sCPU\\:6ES7154\\-8AB01\\-0AB0|F\\sPN\\/DP\\sCPU\\:6ES7154\\-8FB01\\-0AB0|FX\\sPN\\/DP\\sCPU\\:6ES7154\\-8FX00\\-0AB0)|S\\sIM\\s151\\-8(\\sPN\\/DP\\sCPU\\:6ES7151\\-8AB01\\-0AB0|F\\sPN\\/DP\\sCPU\\:6ES7151\\-8FB01\\-0AB0))|SIMATIC\\sS7\\-300\\sCPU\\s31(5(\\-2\\sPN\\/DP\\:6ES7315\\-2EH14\\-0AB0|F\\-2\\sPN\\/DP\\:6ES7315\\-2FJ14\\-0AB0|T\\-3\\sPN\\/DP\\:6ES7315\\-7TJ10\\-0AB0)|7(\\-2\\sPN\\/DP\\:6ES7317\\-2EK14\\-0AB0|F\\-2\\sPN\\/DP\\:6ES7317\\-2FK14\\-0AB0|T\\-3\\sPN\\/DP\\:6ES7317\\-7TK10\\-0AB0|TF\\-3\\sPN\\/DP\\:6ES7317\\-7UL10\\-0AB0)|9(\\-3\\sPN\\/DP\\:6ES7318\\-3EL01\\-0AB0|F\\-3\\sPN\\/DP\\:6ES7318\\-3FL01\\-0AB0))|SIPLUS\\s(ET\\s200S\\sIM\\s151\\-8(\\sPN\\/DP\\sCPU\\:6AG1151\\-8AB01\\-7AB0|F\\sPN\\/DP\\sCPU\\:6AG1151\\-8FB01\\-2AB0)|S7\\-300\\sCPU\\s31(5(\\-2\\sPN\\/DP\\:6AG1315\\-2EH14\\-7AB0|F\\-2\\sPN\\/DP\\:6AG1315\\-2FJ14\\-2AB0)|7(\\-2\\sPN\\/DP\\:6AG1317\\-2EK14\\-7AB0|F\\-2\\sPN\\/DP\\:6AG1317\\-2FK14\\-2AB0))))\\b"}
+arg#4: {min = "0.0.0", patched = "3.3.19", model = "(SIPLUS\\sS7\\-300\\sCPU\\s314C\\-2PN\\/DP\\:6AG1314\\-6EH04\\-7AB0|SIMATIC\\sS7\\-300\\sCPU\\s314C\\-2PN\\/DP\\:6ES7314\\-6EH04\\-0AB0)\\b"}
+arg#5: {min = "6.0.0", patched = "6.0.10", model = "(SIPLUS|SIMATIC)\\sS7\\-400\\sCPU\\s4\\d{2}(H|.+?H)"}
+arg#6: {min = "8.0.0", patched = "8.2.3", model = "(SIMATIC|SIPLUS)\\sPCS\\s7\\sCPU\\s410\\-\\d"}
+arg#7: {min = "10.0.0", patched = "11.0.0", model = "(SIMATIC|SIPLUS)\\sPCS\\s7\\sCPU\\s410\\-\\d"}
+arg#8: {min = "0.0.0", patched = "2.0.0", model = "(SIMATIC|SIPLUS)\\s(S7\\-1500(.+)?\\sCPU|ET\\s200.+CPU(\\s)?15\\d\\d)"}
+arg#9: {min = "0.0.0", patched = "99.99.99", model = "SIMATIC\\s(CFU\\sDIQ\\:6ES7655\\-5PX31\\-1XX0|Compact\\sField\\sUnit\\:6ES7655\\-5PX11\\-0XX0|ET(\\s)?200(AL(.+)?IM(\\s)?157\\-1\\sPN|SP\\sIM(\\s)?155\\-6\\s(MF\\sHF|PN\\sHA))|PN\\/MF\\sCoupler\\:6ES7158\\-3MU10\\-0XA0)|SIPLUS\\sET200SP\\sIM155\\-6\\sPN\\sHA|(SIMATIC|SIPLUS)\\sS7\\-400\\sCPU\\s4\\d{2}\\-\\d\\sPN\\/DP|SIMATIC\\sTDC(.+)?(CP(\\s)?51M1|CPU555)|SIMATIC\\sWinAC\\sRTX|SINAMICS\\s(DCM|G110M(.+)?\\:6SL3544\\-0(L|M|P|T|N|Q)B02\\-1FA0)|(SINAMICS|SIPLUS)\\s(G120(.+)?PN|S120)|SINAMICS\\s(G115D(.+)?\\:\\w+\\-\\w+\\-\\dAF\\d|G1(3|5)0|(S110(.+)?PN|S150|S210)|V90\\:\\w+\\-\\w+\\-\\dUF\\d)|SIPLUS\\s(HCS4200\\sCIM4210(\\:6BK1942\\-1AA00\\-0AA0|C\\:6BK1942\\-1AA00\\-0AA1)|HCS4300\\sCIM4310\\:6BK1943\\-1AA00\\-0AA0)\\b"}
+
+
+#arg#1 regex: https://regex101.com/r/rA2gKH/1
+#arg#2 regex: https://regex101.com/r/PwqEtI/1
+#arg#3 regex: https://regex101.com/r/KLMMAJ/1
+#arg#4 regex: https://regex101.com/r/852Ppk/1
+#arg#5 regex: https://regex101.com/r/stM4an/1
+#arg#6 regex: https://regex101.com/r/6gVvUg/1
+#arg#7 regex: https://regex101.com/r/6gVvUg/1
+#arg#8 regex: https://regex101.com/r/k92KYB/1
+#arg#9 regex: https://regex101.com/r/NXemQz/3

@@ -1,0 +1,14 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-172-03
+Title: Phoenix Contact Classic Line Controllers Vulnerability (ICSA-22-172-03)
+Type: bhpp_vuln
+VulnID: 590969
+Vulnflags: vuln
+manufacturer : "Phoenix Contact"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "(ILC\\s(1\\d(1|0)(\\sGSM\\/GPRS)?|3\\d{2})|AXC\\s(1050\\s(XC)?|3050)|RFC\\s4(80S\\sPN\\s4TX|70(S)?\\sPN\\s3TX|60R\\sPN\\s3TX|(30|50)\\sETH\\-IB)|FC\\s350\\sPCI\\sETH)\\b"}
+
+#arg1 https://regex101.com/r/ZIoduC/4
+
+##Remarks
+##QID and title are generated
+##Ready to release

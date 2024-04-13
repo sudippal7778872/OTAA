@@ -1,0 +1,10 @@
+#For Advisory https://www.gegridsolutions.com/app/DownloadFile.aspx?prod=ml1200&type=21&file=12
+Title: General Electric MultiLink Managed Switches Hard-coded Credentials Vulnerability (GET-20042)
+Type: bhpp_vuln
+VulnID: 591321
+Vulnflags: vuln
+manufacturer : "General Electric"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "5.5.0", model = "MultiLink\\sML(800|1200|1600|2400|810|3000|3100)\\b"}
+
+#arg#1 regex: https://regex101.com/r/jV9qda/1

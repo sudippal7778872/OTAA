@@ -1,0 +1,95 @@
+#For Advisory https://us-cert.cisa.gov/ics/advisories/icsa-19-283-01
+Title: Siemens Industrial Real-Time (IRT) Devices (Update E) Vulnerability(ICSA-19-283-01)
+Type: bhpp_vuln
+VulnID:590362
+Vulnflags: vuln
+Func: ics_device_multiple_version_range_non_rgp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "2.8", model = "((CP)\\s(1604)\\b|(CP)\\s(1616)\\b)"}
+arg#2: {min = "0.0.0", patched = "99.99.99", model = "(SIMATIC\\sET\\s200eco\\s(PN)\\b)",not_match="(6ES7146\\-6FF00\\-0AB0|6ES7148\\-6JD00\\-0AB0)"}
+arg#3: {min = "0.0.0", patched = "99.99.99", model = "(SIMATIC\\sPN\\/PN\\sCoupler\\:6ES7158\\-3AD01\\-0XA0)"}
+arg#4: {min = "0.0.0", patched = "1.3", model = "(SINAMICS\\s(DCP)\\b)"}
+arg#5: {min = "0.0.0", patched = "4.8", model = "(SINAMICS\\sG150\\b.*Control\\sUnit)"}
+arg#6: {min = "0.0.0", patched = "99.99.99", model = "(SINAMICS.*\\b(GH150))"}
+arg#7: {min = "0.0.0", patched = "99.99.99", model = "(SINAMICS.*\\bGL150)"}
+arg#8: {min = "0.0.0", patched = "99.99.99", model = "(SINAMICS.*\\bGM150)"}
+arg#9: {min = "0.0.0", patched = "99.99.99", model = "(SINAMICS\\s(S110)\\sControl\\sUnit)"}
+arg#10: {min = "0.0.0", patched = "4.8", model = "(SINAMICS\\s(S150)\\b)"}
+arg#11: {min = "0.0.0", patched = "5.2.1", model = "((SCALANCE|SIPLUS)\\b.*\\b(X2\\d\\dIRT|X2\\d\\d\\-\\dIRT|\\b(IRT)))"}
+arg#12: {min = "0.0.0", patched = "99.99.99", model = "((SIMATIC|SIPLUS)\\s(ET\\s(200M)\\b|(ET200M)\\b))"}
+arg#13: {min = "0.0.0", patched = "99.99.99", model = "((SIMATIC|SIPLUS)\\s((ET\\s2\\d\\dS)\\b|(ET2\\d\\dS)\\b))"}
+arg#14: {min = "0.0.0", patched = "99.99.99", model = "(SIMATIC\\sET\\s200pro)"}
+arg#15: {min = "0.0.0", patched = "99.99.99", model = "(SIMATIC\\sET\\s200pro\\s4AO\\sU\\/I\\s4xM12\\:6ES7145\\-6HD00\\-0AB0)"}
+arg#16: {min = "0.0.0", patched = "99.99.99", model = "(SIMATIC\\sDP\\sET200eco\\sPN\\,\\s8\\sDIO\\,\\sDC24V\\/1\\,3A\\,\\s8xM12\\:6ES7147\\-6BG00\\-0AB0)"}
+arg#17: {min = "0.0.0", patched = "99.99.99", model = "(ET200eco\\sPN\\,\\s8\\sDO\\,\\sDC24V\\/2A\\,\\s8xM12\\:6ES7142\\-6BR00\\-0AB0)"}
+arg#18: {min = "0.0.0", patched = "99.99.99", model = "(SIMATIC\\sET\\s200eco\\sPN\\s8AI\\sRTD\\/TC\\s8xM12\\:6ES7144\\-6KD50\\-0AB0)"}
+arg#19: {min = "0.0.0", patched = "99.99.99", model = "(SIMATIC\\sET\\s200eco\\sPN\\s8AI\\,\\s4\\sU\\/I\\,\\s4\\sRTD\\/TC\\s8xM12\\:6ES7144\\-6KD00\\-0AB0)"}
+arg#20: {min = "0.0.0", patched = "99.99.99", model = "(SIMATIC\\sET\\s200eco\\sPN\\s8DI\\,\\sDC24V\\,\\s4xM12\\:6ES7141\\-6BF00\\-0AB0)"}
+arg#21: {min = "0.0.0", patched = "99.99.99", model = "(SIMATIC\\sET\\s200eco\\sPN\\s8DI\\,\\sDC24V\\,\\s8xM12\\:6ES7141\\-6BG00\\-0AB0)"}
+arg#22: {min = "0.0.0", patched = "99.99.99", model = "(ET200eco\\sPN\\,\\s8DO\\,\\sDC24V\\/0\\,5A\\,\\s4xM12\\:6ES7142\\-6BF50\\-0AB0)"}
+arg#23: {min = "0.0.0", patched = "99.99.99", model = "(ET200eco\\sPN\\,\\s8DO\\,\\sDC24V\\/1\\,3A\\,\\s4xM12\\:6ES7142\\-6BF00\\-0AB0)"}
+arg#24: {min = "0.0.0", patched = "99.99.99", model = "(ET200eco\\sPN\\,\\s8DO\\,\\sDC24V\\/1\\,3A\\,\\s8xM12\\:6ES7142\\-6BG00\\-0AB0)"}
+arg#25: {min = "0.0.0", patched = "99.99.99", model = "(SIMATIC\\sET\\s200eco\\sPN\\s16DI\\,\\sDC24V\\,\\s8xM12\\:6ES7141\\-6BH00\\-0AB0)"}
+arg#26: {min = "0.0.0", patched = "99.99.99", model = "(ET200eco\\sPN\\,\\s16DO\\sDC24V\\/1\\,3A\\,\\s8xM12\\:6ES7142\\-6BH00\\-0AB0)"}
+arg#27: {min = "0.0.0", patched = "99.99.99", model = "(ET\\s200eco\\sPN\\,\\s4xIO\\-Link\\s\\+\\s8DI\\/4DO\\,\\s8xM12\\:6ES7148\\-6JA00\\-0AB0)"}
+arg#28: {min = "0.0.0", patched = "3.3", model = "(((SIMATIC|SIPLUS)\\sS7\\-300\\sCPU)|((SIMATIC|SIPLUS)\\sET\\s200.*CPU))"}
+arg#29: {min = "0.0.0", patched = "99.99.99", model = "((SIMATIC|SIPLUS)\\sS7\\-400\\sCPU)"}
+arg#30: {min = "0.0.0", patched = "99.99.99", model = "(SIMOTION)"}
+arg#31: {min = "0.0.0", patched = "99.99.99", model = "(SINAMICS.*\\b(SM120)\\b)"}
+arg#32: {min = "0.0.0", patched = "99.99.99", model = "(SINUMERIK.*(840D)\\b.*\\b(sl)\\b)"}
+#arg#33: {min = "0.0.0", patched = "99.99.99", model = "(^(SINUMERIK).*(828D)\b)"}
+#arg#34: {min = "0.0.0", patched = "5.2", model = "(^(SINAMICS).*(SL150)\\b)"}
+#arg#35: {min = "0.0.0", patched = "99.99.99", model = "(SIMATIC\\sWinAC\\sRTX\\sF\\b)"}
+#arg#36: {min = "0.0.0", patched = "99.99.99", model = "((ERTEC)\\s(200)\\b)"}
+#arg#37: {min = "0.0.0", patched = "4.5.0", model = "(((EK\-ERTEC)\\s(200P)\\b)"}
+#arg#38: {min = "0.0.0", patched = "1.5", model = "(SINAMICS\\s(DCM)\\b)"}
+#arg#39: {min = "0.0.0", patched = "4.7.10", model = "(SINAMICS\\sG110M\\sControl\\sUnit)"}
+#arg#40: {min = "0.0.0", patched = "5.2.3", model = "(SINAMICS\\sG130\\b.*Control\\sUnit)"}
+#arg#41: {min = "0.0.0", patched = "4.7.10", model = "((SINAMICS|SIPLUS)\\s.*G120.*(Control\\sUnit)\\b)"}
+#arg#42: {min = "0.0.0", patched = "5.2", model = "((SINAMICS|SIPLUS).*S120.*(Control\\sUnit)\\b)"}
+
+
+https://regex101.com/r/a3EOLF/1 ------> CP 1604|CP 1616 Sign Done                            
+https://regex101.com/r/Uerru7/1 ------> EK-ERTEC 200 ###WIP Version Info NA	 	     
+https://regex101.com/r/F5L7TT/1 ------> SIMATIC ET 200eco PN (Match) Sign Done               
+https://regex101.com/r/aoSqT9/1 ------> SIMATIC ET 200eco PN (Not Match) Sign Done           
+https://regex101.com/r/98YNCM/1 ------> SIMATIC PN/PN Coupler Sign Done                      
+https://regex101.com/r/IFgIZQ/1 ------> SIMATIC WinAC RTX ###WIP Version Info NA             
+https://regex101.com/r/W17ps7/2 ------> SINAMICS DCM Sign Done                               
+https://regex101.com/r/mESJUf/1 ------> SINAMICS DCP Sign Done                               
+https://regex101.com/r/aF26fv/1 ------> SINAMICS G110M Sign Done                             
+https://regex101.com/r/hKgt2q/1 ------> SINAMICS G130 Sign Done                              
+https://regex101.com/r/kPSjuU/1 ------> SINAMICS G150 Sign Done                              
+https://regex101.com/r/1frqRp/1 ------> SINAMICS GH150 Sign Done                             
+https://regex101.com/r/2IdLt0/1 ------> SINAMICS GL150 Sign Done                             
+https://regex101.com/r/TBlvte/1 ------> SINAMICS GM150 Sign Done                             
+https://regex101.com/r/JwPyJx/1 ------> SINAMICS S110 (Control Unit) Sign Done               
+https://regex101.com/r/hJ6BwS/1 ------> SINAMICS S150 ###There is no such control unit available for this model name### Sign Done    
+https://regex101.com/r/IDSHva/1 ------> SCALANCE X200IRT including it SILPUS Varient Sign Done                                       
+https://regex101.com/r/z1BNiX/1 ------> SIMATIC ET 200M|SIPLUS ET200M Sign Done                                                      
+https://regex101.com/r/U44x45/1 ------> SIMATIC ET 200S|SIPLUS ET200S Sign Done                                                      
+https://regex101.com/r/dFoWep/1 ------> SIMATIC ET 200pro (SIPLUS varient is not available in siemens site) Sign Done                
+https://regex101.com/r/TGR8jP/1 ------> SIMATIC ET200ecoPN, 4AO U/I 4xM12 (6ES7145-6HD00-0AB0) Sign Done                             
+https://regex101.com/r/HlJb4J/1 ------> SIMATIC ET200ecoPN, 8 DIO, DC24V/1,3A, 8xM12 (6ES7147-6BG00-0AB0) Sign Done                  
+https://regex101.com/r/BToJgI/1 ------> SIMATIC ET200ecoPN, 8 DO, DC24V/2A, 8xM12 (6ES7142-6BR00-0AB0) Sign Done                     
+https://regex101.com/r/mBb1pO/1 ------> SIMATIC ET200ecoPN, 8AI RTD/TC 8xM12 (6ES7144-6KD50-0AB0) Sign Done                          
+https://regex101.com/r/yCrC5R/1 ------> SIMATIC ET200ecoPN, 8AI; 4 U/I; 4 RTD/TC 8xM12 (6ES7144-6KD00-0AB0) Sign Done                
+https://regex101.com/r/INxFCi/1 ------> SIMATIC ET200ecoPN, 8DI, DC24V, 4xM12 (6ES7141-6BF00-0AB0) Sign Done                         
+https://regex101.com/r/kZpVoy/1 ------> SIMATIC ET200ecoPN, 8DI, DC24V, 8xM12 (6ES7141-6BG00-0AB0) Sign Done                         
+https://regex101.com/r/MwrkNb/1 ------> SIMATIC ET200ecoPN, 8DO, DC24V/0,5A, 4xM12 (6ES7142-6BF50-0AB0) Sign Done                    
+https://regex101.com/r/EXR7gg/1 ------> SIMATIC ET200ecoPN, 8DO, DC24V/1,3A, 4xM12 (6ES7142-6BF00-0AB0) Sign Done                    
+https://regex101.com/r/OKDHjg/1 ------> SIMATIC ET200ecoPN, 8DO, DC24V/1,3A, 8xM12 (6ES7142-6BG00-0AB0) Sign Done                    
+https://regex101.com/r/i4dUfu/1 ------> SIMATIC ET200ecoPN, 16DI, DC24V, 8xM12 (6ES7141-6BH00-0AB0) Sign Done                        
+https://regex101.com/r/Btue5H/1 ------> SSIMATIC ET200ecoPN, 16DO DC24V/1,3A, 8xM12 (6ES7142-6BH00-0AB0) Sign Done                   
+https://regex101.com/r/Gn6bJU/1 ------> SIMATIC ET200ecoPN: IO-Link Master (6ES7148-6JA00-0AB0) Sign Done                            
+
+https://regex101.com/r/ESxO7D/1 ------> SIMATIC S7-300 CPU family (incl. related ET200 CPUs and SIPLUS variants) Sign Done           
+https://regex101.com/r/V8sKBI/1 ------> SIMATIC S7-400 (incl. F) v6 and below CPU family (incl. SIPLUS variants) Sign Done           
+                                        SIMATIC S7-400 PN/DP v7 CPU family (incl. SIPLUS variants) Sign Done                         
+https://regex101.com/r/HlIDWI/1 ------> SIMOTION (incl. SIPLUS variants)###Product with model number 6AG1435-2AD00-4AA0 is the relevent SIPLUS varient### Sign Done  
+https://regex101.com/r/mThllK/1 ------> SINAMICS G120 v4.7 Control Unit (incl. SIPLUS variants) Sign Done                            
+https://regex101.com/r/26PKJn/1 ------> SINAMICS S120 v4.7 Control Unit (incl. SIPLUS variants) Sign Done                            
+https://regex101.com/r/d9ppfa/1 ------> SINAMICS SL150 v4.7 (Control Unit) ###Version Info Not Available### Sign Done                
+https://regex101.com/r/AYhBO1/1 ------> SINAMICS SM120 v4.7 (Control Unit)                                                           
+https://regex101.com/r/uIay4E/1 ------> SINUMERIK 828D ###Version Info Not Available### Sign Done                                    
+https://regex101.com/r/6NIhaV/1 ------> SINUMERIK 840D sl Sign Done                                                                  

@@ -1,0 +1,12 @@
+#For https://dam-mdc.phoenixcontact.com/asset/156443151564/fb5c372c2bbf534da918eeb10bdbd3fb/Security_Advisory_CVE-2021-2100-3-5.pdf
+Title: Phoenix Contact FL SWITCH SMCS series switches Denial of Service (DoS) Multiple Vulnerabilities (VDE-2021-023)
+Type: bhpp_vuln
+VulnID: 591306
+Vulnflags: vuln
+manufacturer: "Phoenix Contact"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "4.71", model = "FL\\sSWITCH\\s(SMCS\\s(16TX|14TX\\/2FX\\-SM|14TX\\/2FX|8GT|6GT\\/2SFP|8TX\\-PN|4TX\\-PN|8TX|6TX\\/2SFP)|SMN\\s(6TX\\/2POF\\-PN|8TX\\-PN|6TX\\/2FX\\sSM|6TX\\/2FX))\\b"}
+arg#2: {min = "0.0.0", patched = "4.64", model = "FL\\sNAT\\sSMN\\s(8TX\\-M|8TX)\\b"}
+
+#arg1 regex link: https://regex101.com/r/9LSmh6/1
+#arg2 regex link: https://regex101.com/r/Zdimt3/1 

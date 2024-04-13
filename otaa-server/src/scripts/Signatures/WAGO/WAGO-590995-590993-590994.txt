@@ -1,0 +1,44 @@
+#For Advisory https://talosintelligence.com/vulnerability_reports/TALOS-2019-0939
+Title:WAGO PFC100/200 Web-Based Management (WBM) FastCGI configuration insufficient resource pool denial of service (DoS) Vulnerability (TALOS-2019-0939)
+Type:bhpp_vuln
+VulnID:590995
+Vulnflags:vuln
+manufacturer:"WAGO"
+Func:ics_device_firmware_exprudp
+arg#1:{device = "WAGO.+PFC200\\b",version = "^03\\.01\\.07\\b|^03\\.00\\.39\\b"}
+arg#2:{device = "WAGO.+PFC100\\b",version = "^03\\.02\\.02\\b|^03\\.00\\.39\\b"}
+
+#1 https://regex101.com/r/wQjIxR/1 & https://regex101.com/r/kDQbWG/3
+#2 https://regex101.com/r/UTr2fY/1 & https://regex101.com/r/0fKQHT/3
+
+##########################################################################
+
+#For Advisory https://talosintelligence.com/vulnerability_reports/TALOS-2019-0923
+Title:WAGO PFC100/200 Web-Based Management (WBM) Authentication Regex Information Disclosure Vulnerability (TALOS-2019-0923)
+Type:bhpp_vuln
+VulnID:590993
+Vulnflags:vuln
+manufacturer:"WAGO"
+Func:ics_device_firmware_exprudp
+arg#1:{device = "WAGO.+\\sPFC(200|100)\\b",version = "^03\\.00\\.39\\b"}
+arg#2:{device = "WAGO.+\\sPFC200\\b", version = "^03\\.01\\.07\\b"}
+
+# 1 - https://regex101.com/r/aRUKvY/2 & - https://regex101.com/r/n7F5oG/3
+# 2 - https://regex101.com/r/erwtjD/1 & - https://regex101.com/r/CDdsOy/4
+
+#########################################################################
+
+#For Advisory https://talosintelligence.com/vulnerability_reports/TALOS-2019-0924
+Title:WAGO PFC100/200 Web-Based Management (WBM) Authentication Timing Information Disclosure Vulnerability (TALOS-2019-0924)
+Type:bhpp_vuln
+VulnID:590994
+Vulnflags:vuln
+manufacturer:"WAGO"
+Func:ics_device_firmware_exprudp
+arg#1:{device = "WAGO.+\\sPFC(200|100)\\b", version = "^03\\.00\\.39\\b"}
+arg#2:{device = "WAGO.+\\sPFC200\\b", version = "^03\\.01\\.07\\b"}
+
+# 1 - https://regex101.com/r/aRUKvY/2 & - https://regex101.com/r/bXBFOH/3
+# 2 - https://regex101.com/r/erwtjD/1 & - https://regex101.com/r/CDdsOy/5
+
+

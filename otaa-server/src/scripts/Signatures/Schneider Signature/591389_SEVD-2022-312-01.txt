@@ -1,0 +1,10 @@
+#For Advisory https://www.se.com/za/en/download/document/SEVD-2022-312-01/
+Title: Schneider Electric NetBotz 4 - 355/450/455/550/570 Multiple Vulnerabilities (SEVD-2022-312-01)
+Type: bhpp_vuln
+VulnID: 591389
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "4.7.1", model = "NetBotz(.+)?\\:NB(RK|WL)0(355|450|455|550|570)\\b"}
+
+#arg#1 regex: https://regex101.com/r/qmmUN6/1

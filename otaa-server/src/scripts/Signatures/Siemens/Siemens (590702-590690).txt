@@ -1,0 +1,26 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-21-131-13
+Title:Siemens SINAMICS Medium Voltage Products Telnet (Update A) Vulnerability (ICSA-21-131-13)
+Type:bhpp_vuln
+VulnID:590702
+Vulnflags:vuln
+manufacturer:"Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "16", model ="SINAMICS\\s(.+)?(GH15|GL15|GM15|SH15|SM12)0\\b"}
+arg#2:{min = "0.0.0", patched = "15", model ="SINAMICS\\s(SL|SM)150\\b"}
+
+#link for arg#1  https://regex101.com/r/M7oDFD/2
+#link for arg#2  https://regex101.com/r/N3i5xE/2
+
+############################################
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-21-315-09 ##AWB AND AWM  are same
+Title:Siemens Climatix POL909 (Update A)Vulnerability(ICSA-21-315-09)
+Type: bhpp_vuln
+VulnID:590690
+Vulnflags:vuln
+manufacturer:"Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "11.34", model ="Climatix\\sAWM\\sModule\\:Climatix\\sPOL909$"}
+
+#link for arg#1 https://regex101.com/r/piDtGE/2
+

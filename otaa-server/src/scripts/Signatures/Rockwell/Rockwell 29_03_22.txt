@@ -1,0 +1,66 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-16-175-01
+Title: Rockwell Automation Allen-Bradley Stratix 5400 and 5410 Packet Corruption Vulnerability Vulnerability(ICSA-16-175-01)
+Type: bhpp_vuln
+VulnID: 590335
+Func: ics_device_firmware_exprudp
+manufacturer : "Rockwell Automation"
+arg#1: {device = "Allen\\-Bradley\\sStratix\\s5400\\b", version = "\\d"}
+arg#2: {device = "Allen\\-Bradley\\sStratix\\s5410\\b", version = "\\d"}
+
+#arg#1 https://regex101.com/r/dWYquG/1
+#arg#2 https://regex101.com/r/rFduHq/1
+
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-18-107-04
+Title: Rockwell Automation Stratix and ArmorStratix Switches Multiple Vulnerabilities(ICSA-18-107-04)
+Type: bhpp_vuln
+VulnID: 590338
+Func: ics_device_firmware_exprudp
+manufacturer : "Rockwell Automation"
+arg#1: {device = "(Allen\\-Bradley\\sStratix\\s(5410|5400|5700|8000)|Allen\\-Bradley\\sArmorStratix\\s5700)\\b", version = "\\d"}
+
+#arg#1 https://regex101.com/r/LfN9Ju/1
+
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-18-107-05
+Title: Rockwell Automation Stratix Industrial Managed Ethernet Switch Multiple Vulnerabilities(ICSA-18-107-05)
+Type: bhpp_vuln
+VulnID: 590339
+Func: ics_device_firmware_exprudp
+manufacturer : "Rockwell Automation"
+arg#1: {device = "Allen\\-Bradley\\sStratix\\s8300\\b", version = "\\d"}
+
+#arg#1 https://regex101.com/r/FMkWCG/1 
+
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-18-184-01
+Title: Rockwell Automation Allen-Bradley Stratix 5950 Multiple Vulnerabilities(ICSA-18-184-01)
+Type: bhpp_vuln
+VulnID: 590341
+Func: ics_device_firmware_exprudp
+manufacturer : "Rockwell Automation"
+arg#1: {device = "Allen\\-Bradley\\sStratix\\s5950.+\\:1783\\-SAD(4T0|2T2)S(B|P)K9\\b", version = "\\d"}
+
+#arg#1  https://regex101.com/r/m8dl6y/1
+
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-16-287-04
+Title: Rockwell Automation Stratix Denial-of-Service and Memory Leak Multiple Vulnerabilities(ICSA-16-287-04)
+Type: bhpp_vuln
+VulnID: 590348
+Func: ics_device_firmware_exprudp
+manufacturer : "Rockwell Automation"
+arg#1: {device = "(Allen\\-Bradley\\sStratix\\s(5410|5400|5700|8000)|Allen\\-Bradley\\sArmorStratix\\s5700)\\b", version = "\\d"}
+
+#arg#1 https://regex101.com/r/LfN9Ju/1
+
+
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-17-094-03
+Title: Rockwell Automation Allen-Bradley Stratix and Allen-Bradley ArmorStratix Vulnerability(ICSA-17-094-03)
+Type: bhpp_vuln
+VulnID: 590350
+Func: ics_device_firmware_exprudp
+manufacturer : "Rockwell Automation"
+arg#1: {device = "(Allen\\-Bradley\\sStratix\\s(5410|5400|5700|8000|8300)|Allen\\-Bradley\\sArmorStratix\\s5700)\\b", version = "\\d"}
+
+#arg#1  https://regex101.com/r/w1b5sA/1

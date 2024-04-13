@@ -1,0 +1,46 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2021-012-03
+Title: Schneider Electric Sepam ACE850 Treck HTTP Server Vulnerability (SEVD-2021-012-03)
+Type: bhpp_vuln
+VulnID:590789
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider Electric"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "(Sepam.+communication\\sInterface\\:ACE850\\b)"}
+
+
+Regex:- https://regex101.com/r/L6DANA/1
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2021-159-02
+Title:Schneider Electric PowerLogic PM55xx and PowerLogic PM8ECC Multiple Vulnerabilities (SEVD-2021-159-02)
+Type: bhpp_vuln
+VulnID:590786
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider Electric"
+arg#1: {min = "0.0.0", patched = "2.8.3", model = "(.+?PM55(60|63)\\b)"}
+arg#2: {min = "0.0.0", patched = "10.7.3", model = "(.+?PM5561\\b)"}
+arg#3: {min = "0.0.0", patched = "2.5.5", model = "(PM5562\\b)"}
+arg#4: {min = "0.0.0", patched = "99.99.99", model = "(.+?PM8ECC\\b)"}
+
+
+Regex:-													
+PM5560|PM5563   https://regex101.com/r/ahbP8F/1
+PM5561          https://regex101.com/r/wW8egB/1
+PM5562         	https://regex101.com/r/NmIuuC/2
+PM8ECC          https://regex101.com/r/TzXljF/1 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2021-159-03
+Title:Schneider Electric PowerLogic EGX100 and PowerLogicEGX300 Multiple Vulnerabilities (SEVD-2021-159-03)
+Type: bhpp_vuln
+VulnID:590787
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Schneider Electric"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "(EGX(100|300))"}
+
+Regex:-														
+EGX100|EGX300        https://regex101.com/r/LFT6Uf/2
+

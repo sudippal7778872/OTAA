@@ -1,0 +1,9 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2017-048-01
+Title: Schneider Electric Modicon M221 Vulnerability (SEVD-2017-048-01)
+Type: bhpp_vuln
+VulnID: 591113
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model="Modicon\\sM221\\b"}
+
+

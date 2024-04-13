@@ -1,0 +1,12 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-185638.html
+Title:Siemens SICAM A8000 Web Server Module Improper Access Control Vulnerability (ICSA-22-223-05, SSA-185638)
+Type: bhpp_vuln
+VulnID:591287
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "(SICAM\\sA8000\\s)?CP\\-8000(.+)?\\:(6MF2101\\-(0AB10|1AB10)\\-0AA0)\\b|CP\\-80(21(.+)?\\:6MF2802\\-1AA00|22(.+)?\\:6MF2802\\-2AA00)\\b"}
+
+
+#Regex Link 1 https://regex101.com/r/jKgFYy/1
+

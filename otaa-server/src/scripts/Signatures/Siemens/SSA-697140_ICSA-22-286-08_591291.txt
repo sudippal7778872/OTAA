@@ -1,0 +1,12 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-697140.html and https://www.cisa.gov/uscert/ics/advisories/icsa-22-286-08
+Title: Siemens SCALANCE and RUGGEDCOM Products Denial of Service (DoS) Vulnerability (ICSA-22-286-08, SSA-697140)
+Type: bhpp_vuln
+VulnID: 591291
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "7.1.2", model = "RUGGEDCOM\\sRM1224(.+)?\\:6GK6108\\-4AM00\\-2(B|D)A2|SCALANCE\\sM8(04PB\\:6GK5804\\-0AP00\\-2AA2|12\\-1\\sADSL\\-Router\\:6GK5812\\-1(A|B)A00\\-2AA2|16\\-1\\sADSL\\-Router\\:6GK5816\\-1(A|B)A00\\-2AA2|26\\-2\\sSHDSL\\-Router\\:6GK5826\\-2AB00\\-2AB2|74\\-(2(.+)?Router\\:6GK5874\\-2AA00\\-2AA2|3(.+)?\\:6GK5874\\-3AA00\\-2AA2)|76\\-3(.+)\\:6GK5876\\-3AA02\\-2(B|E)A2|76\\-4(.+)?\\:6GK5876\\-4AA00\\-2(B|D)A2)|SCALANCE\\sMUM85(3\\-1(.+)?\\:6GK5853\\-2EA00\\-2DA1|6\\-1(.+)?\\:6GK5856\\-2EA00\\-3(D|A)A1)|SCALANCE\\sS615(.+)?\\:6GK5615\\-0AA00\\-2AA2\\b"}
+arg#2: {min = "1.1.0", patched = "2.0.0", model = "SCALANCE\\sWAM76(3\\-1\\:6GK5763\\-1AL00\\-7DA0|6\\-1\\:6GK5766\\-1GE00\\-7D(A|B)0|6\\-1\\sEEC\\:6GK5766\\-1GE00\\-7T(A|B)0)|SCALANCE\\sWUM76(3\\-1\\:6GK5763\\-1AL00\\-3(A|D)A0|6\\-1\\:6GK5766\\-1GE00\\-3D(A|B)0)\\b"}
+
+#arg#1 regex: https://regex101.com/r/dm8rUf/1
+#arg#2 regex: https://regex101.com/r/oBytBn/1

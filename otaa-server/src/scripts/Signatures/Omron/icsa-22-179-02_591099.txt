@@ -1,0 +1,26 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-179-02
+Title: Omron SYSMAC CS/CJ/CP Series and NJ/NX Series(Update A) Multiple Vulnerabilities (ICSA-22-179-02)
+Type: bhpp_vuln
+VulnID: 591099
+manufacturer : "Omron"
+Func: ics_device_multiple_version_range_non_rgp
+arg#1: {min = "0.0.0", patched = "4.1", model ="(CS1H|CJ1G)\\b"}
+arg#2: {min = "0.0.0", patched = "1.4", model ="CS1D\\sCPU(.+)?\\:CS1D\\-CPU\\d\\d(HA|H|P)\\b"}
+arg#3: {min = "0.0.0", patched = "2.1", model ="(CS1D\\sCPU(.+)?\\:CS1D\\-CPU\\d\\d(SA|S)|CJ2M\\sCPU)\\b"}
+arg#4: {min = "0.0.0", patched = "1.5", model ="CJ2H\\sCPU\\b"}
+arg#5: {min = "0.0.0", patched = "1.30", model ="(CP1E|CP1H)\\sCPU\\b"}
+arg#6: {min = "0.0.0", patched = "1.1", model ="CP1L\\sCPU\\b"}
+arg#7: {min = "0.0.0", patched = "99.99.99", model ="CP1W\\-CIF41\\b"}
+arg#8: {min = "0.0.0", patched = "1.49", model ="(NX|NJ)(.+)?Controller",not_match="NX7(.+)?Controller"}
+arg#9: {min = "0.0.0", patched = "1.29", model ="NX7(.+)?Controller"}
+
+#regex_link 1 https://regex101.com/r/lXQDrm/1 
+#regex_link 2 https://regex101.com/r/CsyntN/1 
+#regex_link 3 https://regex101.com/r/nTFV1W/1
+#regex_link 4 https://regex101.com/r/26wnni/1
+#regex_link 5 https://regex101.com/r/2WoZgG/1
+#regex_link 6 https://regex101.com/r/SboHcP/1
+#regex_link 7 https://regex101.com/r/SOKZmN/1
+#regex_link 8 https://regex101.com/r/7FGjsU/2
+#regex_link 9 https://regex101.com/r/vHHLum/2
+

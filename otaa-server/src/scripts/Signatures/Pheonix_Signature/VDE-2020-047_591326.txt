@@ -1,0 +1,10 @@
+#For Advisory https://cert.vde.com/en/advisories/VDE-2020-047/
+Title: Phoenix Contact BTP Touch Panels uncontrolled resource consumption Vulnerability (VDE-2020-047)
+Type: bhpp_vuln
+VulnID: 591326
+Vulnflags: vuln
+manufacturer : "Phoenix Contact"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "BTP\\s2(043|102|070)W\\b"}
+
+#arg#1 regex: https://regex101.com/r/8iuQf0/1

@@ -1,0 +1,12 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2022-193-04&p_enDocType=Security+and+Safety+Notice&p_File_Name=SEVD-2022-193-04_Easergy_P5_Security_Notification.pdf&_ga=2.84367067.379817086.1657688302-364830623.1643890284
+Title:Schneider Electric Easergy P5 Multiple Vulnerabilities (SEVD-2022-193-04)
+Type:bhpp_vuln
+VulnID:590965
+Vulnflags:vuln
+manufacturer:"Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "01.402.101", model ="Easergy\\sP5\\b"}
+
+#regex_link https://regex101.com/r/L6aNbC/1
+
+

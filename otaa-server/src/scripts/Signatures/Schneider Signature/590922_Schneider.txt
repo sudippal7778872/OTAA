@@ -1,0 +1,9 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2016-300-01
+Title:Schneider Electric ConneXium Firewalls Vulnerability (SEVD-2016-300-01)
+Type: bhpp_vuln
+VulnID: 590922
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model="(TCSEFEC23F3F20|TCSEFEC23F3F21|TCSEFEC23FCF20|TCSEFEC23FCF21|TCSEFEC2CF3F20)\\b"}
+
+#args1:https://regex101.com/r/yktpAl/1

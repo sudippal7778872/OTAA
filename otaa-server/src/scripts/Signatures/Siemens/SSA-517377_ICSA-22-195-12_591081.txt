@@ -1,0 +1,16 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-517377.pdf and https://www.cisa.gov/uscert/ics/advisories/icsa-22-195-12
+Title: Siemens SIMATIC CP Devices Multiple Vulnerabilities (SSA-517377) (ICSA-22-195-12) 
+Type: bhpp_vuln
+VulnID: 591081
+Vulnflags:vuln
+manufacturer: "Siemens"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "3.3.46", model ="(CP\\s1242\\-7\\sV2\\:6GK7242\\-7KX31\\-0XE0|CP\\s1243\\-1\\:6GK7243\\-1BX30\\-0XE0|CP\\s1243\\-7\\sLTE\\sEU\\:6GK7243\\-7KX30\\-0XE0|CP\\s1243\\-7\\sLTE\\sUS\\:6GK7243\\-7SX30\\-0XE0|CP\\s1243\\-8\\sIRC\\:6GK7243\\-8RX30\\-0XE0|SIPLUS\\sNET\\sCP\\s1242\\-7\\sV2\\:6AG1242\\-7KX31\\-7XE0|SIPLUS\\sS7\\-1200\\sCP\\s1243\\-1\\:6AG1243\\-1BX30\\-2AX0|SIPLUS\\sS7\\-1200\\sCP\\s1243\\-1\\sRAIL\\:6AG2243\\-1BX30\\-1XE0)\\b"}
+arg#2:{min = "0.0.0", patched = "3.0.22", model ="(CP\\s1543\\-1\\:6GK7543\\-1AX00\\-0XE0|SIPLUS\\sNET\\sCP\\s1543\\-1\\:6AG1543\\-1AX00\\-2XE0)\\b"}
+arg#3:{min = "2.0", patched = "99.99.99", model ="(SIMATIC\\sNET\\s)?CP\\s15(42SP\\-1\\sIRC\\:6GK7542\\-6VX00\\-0XE0|43SP\\-1\\:6GK7543\\-6WX00\\-0XE0)|SIPLUS\\sET\\s200SP\\sCP\\s15(42SP\\-1\\sIRC\\:6AG2542\\-6VX00\\-4XE0|43SP\\-1\\:(6AG1543\\-6WX00\\-7XE0|6AG2543\\-6WX00\\-4XE0))\\b"}
+
+
+#regex_link https://regex101.com/r/13Y1wo/1  
+#regex_link https://regex101.com/r/1W6xbY/1 
+#regex_link https://regex101.com/r/DUMbR5/1  
+

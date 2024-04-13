@@ -1,0 +1,16 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-856721.pdf & https://www.cisa.gov/uscert/ics/advisories/ICSA-17-271-01B
+Title: Siemens Ruggedcom ROS, SCALANCE Improper Access Control Multiple Vulnerabilities (ICSA-17-271-01B, SSA-856721)
+Type: bhpp_vuln
+VulnID: 591401
+Vulnflags: vuln
+manufacturer: "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1 : {min = "0.0.0",patched = "5.0.1" ,model = "RUGGEDCOM\\sRSL910\\b"}
+arg#2 : {min = "0.0.0",patched = "4.3.4" ,model = "RUGGEDCOM\\s(RMC\\b|RMC(20|30|41|8388|40)\\b|i80(0|1|2|3)\\b|RS(900|900G|900GP|400|401|416|416P|900L|900W|920L|920W|930L|930W|969|8000|8000(A|H|T)|1600|1600(F|T)|900M|940G|950G)\\b|RSG(2488|908C|910C|907R|920P|2100|2100P|2200|2300|2300P|909R|2288|900|900(R|G|C))\\b|RST(2228|2228P|916(C|P))\\b|M(969|2100|2200)\\b|RX(15(00|01|24|36|10|11|12)|5000|1400)\\b|MX(5000|5000RE)\\b|WIN(5100|5200|7000|7200)\\b|RM(1224)\\b|RP(100|110|S1300)\\b)\\b"}
+arg#3 : {min = "3.0.0",patched = "3.0.2" ,model = "SCALANCE\\s((X(B|C|P)(2\\d\\d))|XR3\\d\\d.+?WG|XR(3\\d\\dWG)\\b)\\b"}
+arg#4 : {min = "6.1.0",patched = "6.1.1" ,model = "SCALANCE\\s(XR(5\\d\\d)|XM(4\\d\\d))\\b"}
+
+#arg1 regex link : https://regex101.com/r/2aXUdl/1
+#arg2 regex link : https://regex101.com/r/to8IX1/1
+#arg3 regex link : https://regex101.com/r/PHe34E/1
+#arg4 regex link : https://regex101.com/r/oPk3x3/1

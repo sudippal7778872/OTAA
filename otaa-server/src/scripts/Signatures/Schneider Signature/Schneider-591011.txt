@@ -1,0 +1,18 @@
+#For Advisory https://www.se.com/ww/en/download/document/SEVD-2019-281-04/
+Title: Schneider Electric Modicon M580 Controllers and Communication Modules Multiple Vulnerabilities (SEVD-2019-281-04)
+Type:bhpp_vuln
+VulnID:591011
+Vulnflags:vuln
+manufacturer:"Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "3.20", model ="Modicon\\sM580.+\\:BME\\w58"}
+arg#2:{min = "0.0.0", patched = "2.19", model ="Modicon\\sM580\\sCommunication\\sModule\\:BMENOC0311\\b"}
+arg#3:{min = "0.0.0", patched = "1.08", model ="Modicon\\sM580\\sCommunication\\sModule\\:BMENOC0321\\b"}
+
+#1-https://regex101.com/r/7G9fM6/5
+#2-https://regex101.com/r/rfXwqB/2
+#3-https://regex101.com/r/kuBktV/2
+
+
+
+

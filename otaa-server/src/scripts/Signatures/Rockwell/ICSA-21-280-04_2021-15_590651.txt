@@ -1,0 +1,11 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-280-04 and https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2021-015_en.pdf
+Title: Mitsubishi Electric MELSEC iQ-R Series C Controller Module (Update B) Denial of Service (DoS) Vulnerability (ICSA-21-280-04)
+Type: bhpp_vuln
+VulnID:590651
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Mitsubishi Electric"
+arg#1: {min = "0.0.0", patched = "17", model = "MELSEC\\siQ\\-R\\sseries\\sC\\sController\\sModule\\:R12CCPU\\-V\\b"}
+
+#regex_link https://regex101.com/r/kPqwxd/1
+

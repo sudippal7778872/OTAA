@@ -1,0 +1,11 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-054-02
+Title:Advantech BB-ESWGP506-2SFP-T Vulnerability (ICSA-21-054-02)
+Type:bhpp_vuln
+VulnID:590958
+Vulnflags:vuln
+manufacturer:"Advantech"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "1.01.10", model ="Industrial\\sPoE\\sSwitch\\:BB\\-ESWGP506\\-2SFP\\-T\\b"}
+
+#1-https://regex101.com/r/4bCKy5/1
+

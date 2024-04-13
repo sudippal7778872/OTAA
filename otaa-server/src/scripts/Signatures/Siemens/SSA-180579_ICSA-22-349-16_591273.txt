@@ -1,0 +1,12 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-180579.html and https://www.cisa.gov/uscert/ics/advisories/icsa-22-349-16
+Title: Siemens APOGEE and TALON Improper Access Control Vulnerability (ICSA-22-349-16, SSA-180579)
+Type: bhpp_vuln
+VulnID: 591273
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "3.5.5", model = "APOGEE\\sPXC(.+)?\\(BACnet\\)|TALON\\sTC(.+)(\\(BACnet\\))?\\b"}
+arg#2: {min = "0.0.0", patched = "2.8.20", model = "APOGEE\\sPXC(.+)?\\(P2\\sEthernet\\)"}
+
+#arg#1 regex: https://regex101.com/r/g2uJt9/1
+#arg#2 regex: https://regex101.com/r/EHxcmy/1

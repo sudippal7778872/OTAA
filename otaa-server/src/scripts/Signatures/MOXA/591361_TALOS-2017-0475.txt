@@ -1,0 +1,10 @@
+#For Advisory https://talosintelligence.com/vulnerability_reports/TALOS-2017-0475
+Title: Moxa EDR-810 Cleartext Transmission of Password Vulnerability (TALOS-2017-0475)
+Type: bhpp_vuln
+VulnID: 591361
+Vulnflags: vuln
+manufacturer: "Moxa"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "EDR\\-810\\b", version = "^4\\.1\\b"}
+
+#arg1 regex link: https://regex101.com/r/19MLX7/1 & https://regex101.com/r/7mwN9b/1

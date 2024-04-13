@@ -1,0 +1,12 @@
+#For advisory https://talosintelligence.com/vulnerability_reports/TALOS-2021-1322
+Title: Lantronix PremierWave 2050 Web Manager Applications and FsBrowse local file inclusion Vulnerability (TALOS-2021-1322)
+Type: bhpp_vuln
+VulnID: 591355
+Vulnflags: vuln
+manufacturer : "Lantronix"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "PremierWave\\s2050\\b", version = "^8\\.9\\.0\\.0"}
+
+
+
+#arg#1 regex: https://regex101.com/r/ifzARO/1 , https://regex101.com/r/2icBi2/2

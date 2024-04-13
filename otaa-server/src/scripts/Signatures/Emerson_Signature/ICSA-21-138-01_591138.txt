@@ -1,0 +1,13 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-138-01
+Title: Emerson Rosemount X-STREAM Multiple Vulnerabilities (icsa-21-138-01)
+Type: bhpp_vuln
+VulnID:591138
+Vulnflags: vuln
+manufacturer : "Emerson"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "Rosemount\\sX\\-STREAM\\sEnhanced\\sXE(GP|GK|FD|XF)\\s(.+)?Gas\\sAnalyzer\\b"}
+
+#regex_link https://regex101.com/r/Luu3QW/1
+
+
+

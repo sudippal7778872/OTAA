@@ -1,0 +1,10 @@
+
+#For Advisory https://www.se.com/il/en/download/document/SEVD-2022-165-03/
+Title:Schneider Electric Conext Combox Multiple Vulnerabilities (SEVD-2022-165-03)
+Type: bhpp_vuln
+VulnID: 590742
+Vulnflags:vuln
+manufacturer : "Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = " 99.99.99", model ="Conext\\sComBox\\b"} 
+#regex_link https://regex101.com/r/kkIbXD/1

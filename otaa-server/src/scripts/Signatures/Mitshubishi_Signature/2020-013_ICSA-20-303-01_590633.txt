@@ -1,0 +1,17 @@
+#For Advisory https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2020-013_en.pdf and https://www.cisa.gov/uscert/ics/advisories/icsa-20-303-01
+Title: Mitsubishi Electric MELSEC iQ-R, Q and L Series Denial-of-Service Vulnerability (Update C) (2020-013) (ICSA-20-303-01)
+Type: bhpp_vuln
+VulnID:590633
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Mitsubishi Electric"
+arg#1: {min = "0.0.0", patched = "21", model = "MELSEC\\siQ\\-R.+\\:R0(0|1|2)CPU\\b"}
+arg#2: {min = "0.0.0", patched = "53", model = "MELSEC\\siQ\\-R.+\\:R(04|08|16|32|120)ENCPU\\b"}
+arg#3: {min = "0.0.0", patched = "23", model = "MELSEC\\siQ\\-R.+\\:R(08|16|32|120)SFCPU\\b"}
+arg#4: {min = "0.0.0", patched = "26", model = "MELSEC\\siQ\\-R.+\\:R(08|16|32|120)PCPU\\b"}
+arg#5: {min = "0.0.0", patched = "99.99.99", model = "(MELSEC(\\siQ\\-R.+\\:R(16|32|64)MTCPU|\\-Q.+\\:Q(03UDECPU|(04|06|100|13|20|26|50|10)UDEHCPU|(03|04|06|13|26)UDVCPU|17(2|3)D(CPU\\-S1|SCPU)|170MSCPU\\-S1)|\\sQ.+\\:Q170MCPU|\\-L.+\\:L(26CPU\\-PBT|(02|06|26)CPU\\-P))|MR\\-MQ100(.+)?)\\b"}
+
+#arg#1 regex: https://regex101.com/r/nDyVzR/3
+#arg#2 regex: https://regex101.com/r/Isrr8e/1
+#arg#3 regex: https://regex101.com/r/DteNjG/3
+#arg#4 regex: https://regex101.com/r/ZGhXGT/3
+#arg#5 regex: https://regex101.com/r/rrJSHK/2

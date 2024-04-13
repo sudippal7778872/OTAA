@@ -1,0 +1,9 @@
+#For advisory https://cert-portal.siemens.com/productcert/html/ssa-955858.html
+Title: Siemens LOGO! 8 BM Devices Multiple Vulnerabilities (ICSA-22-286-13, SSA-955858)
+Type: bhpp_vuln
+VulnID:591211
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "(SIPLUS\\s)?LOGO!8\\sBM\\b"}
+
+#regex_link: https://regex101.com/r/Pf7y0U/1

@@ -1,0 +1,41 @@
+#For advisory https://cert-portal.siemens.com/productcert/html/ssa-324955.html and https://www.cisa.gov/uscert/ics/advisories/icsa-21-131-03
+Title: Siemens Linux-based Products (Update J) Vulnerability (ICSA-21-131-03, SSA-324955)
+Type: bhpp_vuln
+VulnID: 591192
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "5.0", patched = "6.4", model = "(RUGGEDCOM\\sRM1224((.+)?\\:6GK6108\\-4AM00(.+))?|SCALANCE\\s(M8\\d{2}(.+)?|S615(.+)?\\:6GK5615\\-0AA00\\-2AA2))\\b"}
+arg#2: {min = "0.0.0", patched = "2.1.3", model = "(SCALANCE\\sSC6\\d{2})\\b"}
+arg#3: {min = "1.0", patched = "1.6", model = "SIMATIC\\sCC71(2\\:6GK1411\\-1AC00|6\\:6GK1411\\-5AC00)\\b"}
+arg#4: {min = "3.1.39", patched = "3.3", model = "(CP\\s124(2\\-7\\sV2(\\:6GK7242\\-7KX31\\-0XE0)?|3\\-7\\sLTE\\s(US(\\:6GK7243\\-7SX30\\-0XE0)?|EU(\\:6GK7243\\-7KX30\\-0XE0)?))|SIPLUS\\sNET\\sCP\\s1242\\-7\\sV2\\:6AG1242\\-7KX31\\-7XE0)\\b"}
+arg#5: {min = "3.1.39", patched = "3.3.46", model = "((SIMATIC\\s)?CP\\s1243\-(1\\:6GK7243\\-1BX30\\-0XE0|8\\sIRC\\:6GK7243\\-8RX30\\-0XE0)|SIPLUS\\sS7\\-1200\\sCP\\s1243\\-1(\\:6AG1243\\-1BX30\\-2AX0|\\sRAIL\\:6AG2243\\-1BX30\\-1XE0))\\b"}
+arg#6: {min = "2.0", patched = "99.99.99", model = "(CP\\s1542SP\\-1(\\:6GK7542\\-6UX00\\-0XE0|\\sIRC(\\:.+)?)|CP\\s1543SP\\-1(.+)?)\\b"}
+arg#7: {min = "2.2", patched = "3.0", model = "CP\\s1543(\\-1|SP\\-1\\:6GK7543\\-6WX00\\-0XE0)\\b"}
+arg#8: {min = "0.0.0", patched = "1.1", model = "CP\\s1545\\-1\\:6GK7545\\-1GX00\\-0XE0\\b"}
+arg#9: {min = "0.0.0", patched = "3.1", model = "(SIMATIC\\sMV5(40\\s(H\\:6GF3540\\-0GE10|S\\:6GF3540\\-0CD10)|50\\s(H\\:6GF3550\\-0GE10|S\\:6GF3550\\-0CD10)|60\\s(U\\:6GF3560\\-0LE10|X\\:6GF3560\\-0HE10)))\\b"}
+arg#10: {min = "0.0.0", patched = "2.2", model = "(SIPLUS\\sTIM\s1531\\sIRC\\:6AG1543\\-1MX00\\-7XE0|TIM\\s1531\\sIRC\\:6GK7543\\-1MX00\\-0XE0)\\b"}
+
+
+#arg1 regex: https://regex101.com/r/5vTclv/2
+#arg2 regex: https://regex101.com/r/rbg48v/1
+#arg3 regex: https://regex101.com/r/tcfuWc/1
+#arg4 regex: https://regex101.com/r/yEBYSf/4
+#arg5 regex: https://regex101.com/r/jQ4YGt/2
+#arg6 regex: https://regex101.com/r/RKoBDB/1
+#arg7 regex: https://regex101.com/r/JHJjmL/2
+#arg8 regex: https://regex101.com/r/iX8eiy/2
+#arg9 regex: https://regex101.com/r/uwu7LD/1
+#arg10 regex: https://regex101.com/r/FM2ZRO/2
+
+
+#For advisory https://cert-portal.siemens.com/productcert/pdf/ssa-324955.pdf & https://www.cisa.gov/uscert/ics/advisories/icsa-21-131-03
+Title: Siemens Linux-based Products (Update J) Vulnerability (ICSA-21-131-03, SSA-324955)
+Type: bhpp_vuln
+VulnID: 591192
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "(SCALANCE\\sW1750D)\\b", version = "^(8\\.(3\\.0\\.1|(6|7)\\.0))\\b"}
+
+#arg11 regex: https://regex101.com/r/MBNywM/1 , https://regex101.com/r/6JFprM/1

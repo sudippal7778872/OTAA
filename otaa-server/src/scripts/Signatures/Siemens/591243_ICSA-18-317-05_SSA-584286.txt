@@ -1,0 +1,12 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-18-317-05 & https://cert-portal.siemens.com/productcert/pdf/ssa-584286.pdf
+Title: Siemens SIMATIC S7-1200/1500 CPU family Resource Exhaustion Vulnerability (ICSA-18-317-05, SSA-584286)
+Type: bhpp_vuln
+VulnID:  591243
+Vulnflags: vuln
+manufacturer: "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1 : {min = "0.0.0",patched = "4.3" ,model = "((SIMATIC|SIPLUS)\\s(S7\\-1200(.+)?\\sCPU)\\s?12\\d\\d)"}
+arg#2 : {min = "0.0.0",patched = "2.6" ,model = "(SIMATIC|SIPLUS)\\s(S7\\-1500(.+)?\\sCPU|ET\\s200.+CPU(\\s)?15\\d\\d)"}
+
+#arg1 regex link : https://regex101.com/r/BEQf0Y/1
+#arg2 regex link : https://regex101.com/r/64HKmR/1

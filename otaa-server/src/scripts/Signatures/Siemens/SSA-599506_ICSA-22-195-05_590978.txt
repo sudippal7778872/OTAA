@@ -1,0 +1,12 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-599506.pdf and https://www.cisa.gov/uscert/ics/advisories/icsa-22-195-05
+Title:Siemens RUGGEDCOM ROX Vulnerability (ICSA-22-195-05) (SSA-599506)
+Type:bhpp_vuln
+VulnID:590978
+Vulnflags:vuln
+manufacturer :"Siemens"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "2.15.1",model ="RUGGEDCOM\\s(MX5000(RE)?|RX(1400|15(0(0|1)|1(0|1|2)|24|36)|5000))\\b"}
+
+#regex_link https://regex101.com/r/mVuiKf/2
+
+

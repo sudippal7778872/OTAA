@@ -1,0 +1,10 @@
+#For https://us-cert.cisa.gov/ics/advisories/icsa-21-033-01 and https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1129877/loc/en_US
+Title: Rockwell Automation MicroLogix 1400 (Update A) Vulnerability(ICSA-21-033-01, PN1545)
+Type: bhpp_vuln
+VulnID: 590327
+Func: ics_device_multiple_version_rangeudp
+manufacturer : "Rockwell Automation"
+arg#1: {min = "0.000", patched = "21.7", model = "Allen\\-Bradley\\sMicroLogix\\s1400\\sController"}
+
+#regex_link 1 https://regex101.com/r/hCjSmF/1
+

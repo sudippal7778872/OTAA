@@ -1,0 +1,18 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-104-04
+Title: Siemens SCALANCE FragAttacks Multiple Vulnerabilities (ICSA-22-104-04) (SSA-913875)
+Type: bhpp_vuln
+VulnID: 591035
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Siemens"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "SCALANCE W7(21-1 RJ45|22-1 RJ45|34-1 RJ45|38-1 M12|48-1 (M12|RJ45)|61-1 RJ45|74-1 (M12 EEC|RJ45)|78-1 (M12 EEC|M12)|86-1 RJ45|86-2( RJ45| SFP|IA RJ45)|88-1 (M12|RJ45)|88-2 (M12 EEC|RJ45|M12))\\b"}
+arg#2: {min = "0.0.0", patched = "3.0.0", model = "SCALANCE W17(48-1 M12|88-1 M12|88-2( M12 EEC| M12|IA M12))\\b"}
+arg#3: {min = "0.0.0", patched = "8.7.1.3", model = "SCALANCE W1750D\\b"}
+arg#4: {min = "0.0.0", patched = "1.2", model = "SCALANCE (WAM7(63-1|66-(1 EEC|1))|WUM76(3|6)-1)\\b"}
+
+#arg#1 https://regex101.com/r/M0EHlD/4
+#arg#2 https://regex101.com/r/WVhBzK/3
+#arg#3 https://regex101.com/r/UL5wso/3
+#arg#4 https://regex101.com/r/rgQyQ4/3
+
+##########################################

@@ -1,0 +1,15 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-23-033-04
+Title: Delta Electronics DVW-W02W2-E2 OS Command Injection Vulnerability (ICSA-23-033-04)
+Type: bhpp_vuln
+VulnID: 591352
+Vulnflags: vuln
+manufacturer : "Delta Industrial Automation"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "DVW\\-W02W2\\-E2\\b", version = "^2\\.42\\b"}
+
+
+#regex_link 1 https://regex101.com/r/H3NqQV/1         version=https://regex101.com/r/2AvsaF/1
+
+
+
+

@@ -1,0 +1,14 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-356-03 and https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2022-018_en.pdf
+Title: Mitsubishi Electric MELSEC iQ-R, iQ-L Series and MELIPC Series Improper Resource Shutdown or Release Vulnerability (ICSA-22-356-03, 2022-018)
+Type: bhpp_vuln
+VulnID: 591254
+Vulnflags: vuln
+manufacturer : "Mitsubishi Electric"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "33", model = "MELSEC\\siQ\\-R\\sSeries(.+)?\\:R0(0|1|2)CPU\\b"}
+arg#2: {min = "0.0.0", patched = "66", model = "MELSEC\\siQ\\-R\\sSeries(.+)?\\:R(0(4|8)|(16|32|120))ENCPU\\b"}
+arg#3: {min = "0.0.0", patched = "99.99.99", model = "(MELSEC\\siQ\\-(R\\sSeries(.+)?\\:R(08|16|32|120)SFCPU|R\\sseries(.+)?\\:R12CCPU\\-V|L\\sseries(.+)?\\:L(0(4|8)|16|32)HCPU)|MELIPC(.+)?Series\\:MI5122\\-VW)\\b"}
+
+#regex_link 1 https://regex101.com/r/axBjDc/1
+#regex_link 2 https://regex101.com/r/aCOOvX/1
+#regex_link 3 https://regex101.com/r/tGsc4g/1

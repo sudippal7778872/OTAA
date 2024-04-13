@@ -1,0 +1,10 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-090-04
+Title: Mitsubishi Electric FA Products (Update A) Multiple Vulnerabilities (ICSA-22-090-04)
+Type: bhpp_vuln
+VulnID: 590917
+Vulnflags: vuln
+manufacturer : "Mitsubishi Electric"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "MELSEC(\\-L.+\\:(LJ72GF15\\-T2|LJ71E71\\-100|LJ71C24\\-R2|L26CPU\\-(PBT|P)|L0(2|6)CPU\\-P)|\\-Q.+\\:Q((03UDE|(04|06|10|13|20|26|50|100)UDEH|(03|04|06|13|26)UDV|(04|06|13|26)UDPV)CPU|J71C24N\\-(R2|R4)|J71E71\\-100|J72BR15|J72LP25(G|\\-25))|\\siQ\\-R.+\\:R((02|00|01)CPU|(04|08|16|32|120)ENCPU|(08|16|32|120)SFCPU|(08|16|32|120)PCPU|(08|16|32|120)PSFCPU|(64|32|16)MTCPU|J71GN11\\-(T2|EIP)|J71C24\\-(R2|R4)|J71EN71|J71GF11\\-T2|J71GP21\\(S\\)\\-SX|J72GF15\\-T2)|\\siQ\\-F.+\\:(FX5UJ\\sCPU|FX5UC(\\sCPU)?))\\b"}
+
+#regex_link1: https://regex101.com/r/kyeN7M/3

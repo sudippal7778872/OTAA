@@ -1,0 +1,14 @@
+#For Advisory https://www.se.com/ww/en/download/document/SEVD-2022-011-06/
+Title:Schneider Electric CODESYS V3 Runtime Development System and Gateway Multiple Vulnerabilities (SEVD-2022-011-06)
+Type: bhpp_vuln
+VulnID:590763
+manufacturer :"Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "1.4.0.0", model ="E\\+PLC400\\b"}
+arg#2:{min = "0.0.0", patched = "5.1.9.34", model ="Modicon\\sM2(4|5)1\\b"}
+arg#3:{min = "0.0.0", patched = "99.99.99", model ="E\\+PLC100|Easy\\sHarmony\\s(GXU|ET6\\s\\(HMIET\\sSeries\\))|Magelis\\s(GTO\\:HMIGTO|GTU\\:HMI|STU\\:HMI|GK\\:HMIGK|GTUX)|Magelis\\sSCU\\sHMI\\b|Harmony\\s(GTUX|GK)|Harmony\\sSTU\\:HMISTU"}
+
+#regex_link 1 https://regex101.com/r/qzKuKD/1
+#regex_link 2 https://regex101.com/r/LbqV6R/2
+#regex_link 3 https://regex101.com/r/fvPfxS/1
+

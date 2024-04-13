@@ -1,0 +1,11 @@
+#For Advisory https://www.se.com/ww/en/download/document/SEVD%202013-023-01/
+Title:Schneider Electric M340 Quantum and Premium Ethernet communication modules Vulnerability (SEVD-2013-023-01)
+Type: bhpp_vuln
+VulnID: 590860
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "2.0", model = "M340(.+\\:BMXNOE(\\s)?(0110|0100)|\\:BMXP342020)\\b"}
+arg#2: {min = "0.0.0", patched = "99.99.99", model = "(Quantum.+\\:140NOE77111|M340.+\\:(BMXNOC0401|BMXNOE0100\\w\\b|BMXNOE0110\\w\\b|BMXNOE\\s(0100|0110)\\b)|(Premium.+)?\\:(TSXWMY100|TSXETY(4103|5103))|140NOE77101|140NWM10000|140NOE77111)\\b|Quantum\\:140CPU65"}
+
+#arg1 : https://regex101.com/r/6TFtqw/1
+#arg2 : https://regex101.com/r/THq6Kh/1

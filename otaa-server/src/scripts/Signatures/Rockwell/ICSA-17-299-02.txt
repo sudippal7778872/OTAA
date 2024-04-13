@@ -1,0 +1,10 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/ICSA-17-299-02
+Title: Rockwell Automation Stratix 5100 (Update A) Vulnerability (ICSA-17-299-02)
+Type: bhpp_vuln
+VulnID: 590332
+manufacturer : "Rockwell Automation"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "Stratix\\s5100\\b", version = "\\d"}
+
+#arg1 https://regex101.com/r/ukctDC/1
+## version https://regex101.com/r/ARixcz/1

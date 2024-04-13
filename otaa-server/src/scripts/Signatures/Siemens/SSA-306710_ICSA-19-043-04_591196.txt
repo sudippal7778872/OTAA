@@ -1,0 +1,14 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-306710.pdf and https://www.cisa.gov/uscert/ics/advisories/ICSA-19-043-04
+Title:SIMATIC S7-300 CPU Vulnerability (ICSA-19-043-04, SSA-306710)
+Type:bhpp_vuln
+VulnID:591196
+manufacturer:"Siemens"
+Func:ics_device_firmware_exprudp
+arg#1: {device = "(SIMATIC|SIPLUS)\\s(S7\\-300\\sCPU|ET\\s200S\\s(.+)?CPU)\\b", version = "^([0-2]\\.([0-9]|[0-9][0-9])\\.([0-9]|[0-9][0-9])|3\\.([0-9]|[0-9][0-9])\\.([0-9]|0[0-9]|1[0-5]))\\b"}
+
+
+#regex_link 1 https://regex101.com/r/iPldtL/1    version= https://regex101.com/r/VG4BB1/1
+
+
+# for 3.x.16 refer this for assumption: https://support.industry.siemens.com/cs/document/16750732/betriebssystem-updates-f%C3%BCr-cpu-315-2dp?dti=0&lc=de-WW
+

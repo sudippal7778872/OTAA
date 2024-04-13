@@ -1,0 +1,12 @@
+#For Advisory https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2022-009_en.pdf and https://www.cisa.gov/uscert/ics/advisories/icsa-22-221-01
+Title:Mitsubishi Electric Multiple Factory Automation Products (Update C) Multiple Vulnerabilities (ICSA-22-221-01)
+Type: bhpp_vuln
+VulnID:591184 
+Vulnflags: vuln
+manufacturer : "Mitsubishi Electric"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "09", model = "MELSEC\\siQ\\-R\\sSeries\\sOPC\\sUA\\sServer\\sModule\\:RD81OPC96\\b"}
+arg#2: {min = "0.0.0", patched = "04", model = "CC\\-Link\\sIE\\sTSN(.+)?industrial\\smanaged\\sswitch\\:NZ2MHG\\-TSNT(8F2|4)\\b"}
+
+#regex_link 1 https://regex101.com/r/TSknZH/1
+#regex_link 2 https://regex101.com/r/OAcWlC/1

@@ -1,0 +1,23 @@
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Software+-+Hotfix+%26+Patch&p_File_Name=SEVD+2013-364-01.pdf&p_Doc_Ref=SEVD+2013-364-01
+Title: Schneider Electric SAGE 3030 RTU DNP3 Vulnerability (SEVD-2013-364-01)
+Type: bhpp_vuln
+VulnID: 590830
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "SAGE\\s3030"}
+
+#arg1 https://regex101.com/r/GDUfS4/1
+
+
+############
+
+#For Advisory https://download.schneider-electric.com/files?p_enDocType=Technical+leaflet&p_File_Name=SEVD-2019-316-02-Modicon_Controllers_Security_Notification_V2.0.pdf&p_Doc_Ref=SEVD-2019-316-02
+Title: Modicon Controllers (V2.0) (SEVD-2019-316-02)
+Type: bhpp_vuln
+VulnID: 590847
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "Modicon\\s(M340(\\:BMXP34\\d+|((.+)?Communication\\sModule\\:(BMXNOE01(00|10)|BMXNOC0401))|.+\\:BMXP3420(20|302)H)|Premium\\:TSXP.+|Quantum\\:140CPU6\\d+|Quantum\\sEthernet.+Module\\:140(NOE771\\d1|NOC(78\\d00|77101))|Premium.+Module\\:TSXETY\\d103)\\b"}
+
+#arg1 https://regex101.com/r/oEx3dq/3

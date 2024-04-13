@@ -1,0 +1,14 @@
+#For Advisory https://www.moxa.com/en/support/product-support/security-advisory/moxa-vport-series-improper-input-validation-vulnerability
+Title: MOXA VPort Series Improper Input Validation Multiple Vulnerabilities (MPSA-221102)
+Type: bhpp_vuln
+VulnID: 591204
+Vulnflags: vuln
+manufacturer : "Moxa"
+Func: ics_device_multiple_version_range_non_rgp
+arg#1: {min = "0.0.0", patched = "1.4.0", model = "VPort\\sP16\\-1MP\\-M12\\b",not_match="VPort\\sP16\\-1MP\\-M12\\-IR\\b"}
+arg#2: {min = "0.0.0", patched = "1.5.0", model = "VPort\\sP16\\-1MP\\-M12\\-IR\\b"}
+arg#3: {min = "0.0.0", patched = "2.7.0", model = "VPort\\sP06\\-1MP\\-M12\\b"}
+
+#arg#1 regex: https://regex101.com/r/mTAaMN/1
+#arg#2 regex: https://regex101.com/r/M9sqxq/1
+#arg#3 regex: https://regex101.com/r/z8EZmf/1

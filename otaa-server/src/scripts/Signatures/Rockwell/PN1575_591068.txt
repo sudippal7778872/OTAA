@@ -1,0 +1,9 @@
+#For Advisory https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1132370
+Title: Rockwell Automation Products INFRA:HALT Interniche Multiple Vulnerabilities (PN1575) 
+Type: bhpp_vuln
+VulnID: 591068
+manufacturer : "Rockwell Automation"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "(20\\-COMM\\-ER|ArmorStart(.+)?\\:28\\dE|1715\\-AENTR|AADvance\\s(Controller|Eurocard\\sController))\\b"}
+
+#arg#1 regex: https://regex101.com/r/m4f9bf/1

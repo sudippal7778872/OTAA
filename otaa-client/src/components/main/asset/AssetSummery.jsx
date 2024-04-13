@@ -108,7 +108,7 @@ const AssetSummery = () => {
       sortable: false,
     },
     {
-      field: "Firmware_Version",
+      field: "Version",
       headerName: "Firmware Version",
       width: 190,
       disableClickEventBubbling: true,

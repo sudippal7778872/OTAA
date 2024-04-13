@@ -1,0 +1,12 @@
+#For advisory https://www.gegridsolutions.com/app/DownloadFile.aspx?prod=d20mx&type=21&file=195
+Title: General Electric D20MX OpenSSL Multiple Vulnerabilities (PRSN-0006)
+Type: bhpp_vuln
+VulnID: 591350
+Vulnflags: vuln
+manufacturer : "General Electric"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "Multilin\\sD20MX\\b", version = "^1\\.(00|10|20|21|30|31|32|33|40|50|51|60|61|62)\\b"}
+
+
+
+#arg#1 regex: https://regex101.com/r/X4kVEb/1 , https://regex101.com/r/Z9ixfx/1

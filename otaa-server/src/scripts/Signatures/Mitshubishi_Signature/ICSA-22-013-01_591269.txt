@@ -1,0 +1,11 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-013-01
+Title:Mitsubishi Electric MELSEC-F Series Vulnerabilities(ICSA-22-013-01)
+Type: bhpp_vuln
+VulnID:591269
+Vulnflags: vuln
+manufacturer : "Mitsubishi Electric"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.16", model = "MELSEC\\-F\\sSeries(.+)?\\:FX3U\\-(ENET\\-P502|ENET\\-L|ENET)\\b"}
+
+#regex_link 1 https://regex101.com/r/D8kuV3/1
+

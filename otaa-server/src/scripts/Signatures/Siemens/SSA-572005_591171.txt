@@ -1,0 +1,10 @@
+#For Advisory https://cert-portal.siemens.com/productcert/html/ssa-572005.html
+Title: Siemens SICAM P850 and P855 Devices Multiple Vulnerabilities (SSA-572005,ICSA-22-286-09)
+Type: bhpp_vuln
+VulnID: 591171
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "3.10", model = "SICAM\\sP85(0\\:7KG850(0\\-(0AA00\\-0|0AA00\\-2|0AA10\\-0|0AA10\\-2|0AA30\\-0|0AA30\\-2)|1\\-(0AA01\\-0|0AA01\\-2|0AA02\\-0|0AA02\\-2|0AA11\\-0|0AA11\\-2|0AA12\\-0|0AA12\\-2|0AA31\\-0|0AA31\\-2|0AA32\\-0|0AA32\\-2))|5\\:7KG855(0\\-(0AA00\\-0|0AA00\\-2|0AA10\\-0|0AA10\\-2|0AA30\\-0|0AA30\\-2)|1\\-(0AA01\\-0|0AA01\\-2|0AA02\\-0|0AA02\\-2|0AA11\\-0|0AA11\\-2|0AA12\\-0|0AA12\\-2|0AA31\\-0|0AA31\\-2|0AA32\\-0|0AA32\\-2)))AA0\\b"}
+
+#regex_link: https://regex101.com/r/TGhKgS/1

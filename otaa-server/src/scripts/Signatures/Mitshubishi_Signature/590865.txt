@@ -1,0 +1,9 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-102-02
+Title: Mitsubishi Electric MELSEC-Q Series C Controller Module Vulnerability (ICSA-22-102-02) (2022-001)
+Type: bhpp_vuln
+VulnID: 590865
+Func: ics_device_firmware_exprudp
+manufacturer : "Mitsubishi"
+arg#1: {device = "MELSEC\\-Q.+\\:Q12DCCPU\\-V", version = "\\d"}
+
+#arg#1  https://regex101.com/r/7RjAY4/1\

@@ -1,0 +1,14 @@
+#For Advisory https://cert-portal.siemens.com/productcert/pdf/ssa-724606.pdf
+Title:Siemens SIMATIC S7-1200 Improper Input Validation Multiple Vulnerabilities (SSA-724606) (ICSA-14-079-01)
+Type:bhpp_vuln
+VulnID:591025
+Vulnflags:vuln
+manufacturer:"Siemens"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched="4.0.0",model="(SIMATIC|SIPLUS)\\sS7\\-1200\\sCPU\\b"}
+
+#arg1 : https://regex101.com/r/JQaHs9/1
+
+
+
+

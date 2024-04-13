@@ -1,0 +1,24 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-21-194-07 and https://cert-portal.siemens.com/productcert/pdf/ssa-941426.pdf
+Title: Siemens Industrial Products LLDP (Update D) Multiple Vulnerabilities (icsa-21-194-07, SSA-941426)
+Type: bhpp_vuln
+VulnID: 591139
+Vulnflags: vuln
+manufacturer : "Siemens"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "3.3.46", model = "(CP\\s1243\\-(1\\:6GK7243\\-1BX30\\-0XE0|8\\sIRC\\:6GK7243\\-8RX30\\-0XE0)|SIPLUS\\sS7\\-1200\\sCP\\s1243\\-1(\\:6AG1243\\-1BX30\\-2AX0|\\sRAIL\\:6AG2243\\-1BX30\\-1XE0))\\b"}
+arg#2: {min = "0.0.0", patched = "3.0", model = "(SIPLUS\\sNET\\s)?CP\\s1543\\-1\\b"}
+arg#3: {min = "0.0.0", patched = "1.1", model = "CP\\s1545\\-1\\:6GK7545\\-1GX00\\-0XE0\\b"}
+arg#4: {min = "0.0.0", patched = "17", model = "SIMATIC\\sHMI(.+)?Unified\\sComfort\\sPanel\\b"}
+arg#5: {min = "0.0.0", patched = "2.0.1", model = "SINUMERIK\\sONE\\sMCP\\b"}
+arg#6: {min = "0.0.0", patched = "2.2", model = "(SIPLUS\\s)?TIM\\s1531\\sIRC\\b"}
+arg#7: {min = "0.0.0", patched = "99.99.99", model = "(CP\\s1542SP\\-1\\:6GK7542\\-6UX00\\-0XE0|(SIMATIC.+|SIPLUS.+)?CP\\s(1542SP\\-1\\sIRC|1543SP\\-1))\\b"}
+
+#regex_link https://regex101.com/r/zThw1A/1 
+#regex_link https://regex101.com/r/U5QsvG/1
+#regex_link https://regex101.com/r/vGt3Va/1 
+#regex_link https://regex101.com/r/gg4yWW/1 
+#regex_link https://regex101.com/r/j9sfLR/1 
+#regex_link https://regex101.com/r/IS6i4Q/1 
+#regex_link https://regex101.com/r/ga9lxU/1 
+
+

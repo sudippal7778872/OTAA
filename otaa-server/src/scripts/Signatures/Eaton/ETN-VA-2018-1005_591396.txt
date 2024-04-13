@@ -1,0 +1,13 @@
+#For advisory https://www.eaton.com/content/dam/eaton/company/news-insights/cybersecurity/security-bulletins/PXM-Advisory.pdf
+Title: Eaton Power Xpert Meter 4000/6000/8000 password less authentication Vulnerability (ETN-VA-2018-1005)
+Type: bhpp_vuln
+VulnID: 591396
+Vulnflags: vuln
+manufacturer : "Eaton"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "13.4.0.10", model = "Power\\sXpert\\sMeter\\:PXM\\s(4|6|8)000\\b"}
+
+
+
+
+#regex_link1: https://regex101.com/r/RD2u7J/1

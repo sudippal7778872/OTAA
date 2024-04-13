@@ -1,0 +1,15 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-188-01 and https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1135994
+Title:Rockwell Automation MicroLogix Vulnerability (ICSA-22-188-01) (PN1597)
+Type: bhpp_vuln
+VulnID:590934
+Vulnflags:vuln
+manufacturer : "Rockwell Automation"
+Func:ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model ="MicroLogix\\s1100\\sController\\b"}
+arg#2: {min = "0.0.0", patched = "21.008", model ="MicroLogix\\s1400\\sController\\b"}
+
+#regex_link https://regex101.com/r/S9h8ef/1
+#regex_link https://regex101.com/r/jcpPQN/1
+## All in one Regex https://regex101.com/r/J0yRgS/1
+
+

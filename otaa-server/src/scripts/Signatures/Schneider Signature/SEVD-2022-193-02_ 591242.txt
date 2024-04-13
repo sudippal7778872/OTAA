@@ -1,0 +1,12 @@
+#For Advisory https://www.se.com/ww/en/download/document/SEVD-2022-193-02/
+Title: Schneider Electric SpaceLogic C-Bus Home Controller OS Command Injection Vulnerability (SEVD-2022-193-02)
+Type: bhpp_vuln
+VulnID: 591242
+Vulnflags: vuln
+manufacturer : "Schneider"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "1.31.461", model = "SpaceLogic\\sC\\-Bus\\sHome\\scontroller\\:5200WHC2\\b"}
+
+#regex_link 1 https://regex101.com/r/U1fw10/1
+
+

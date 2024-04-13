@@ -1,0 +1,10 @@
+#For Advisory https://www.gegridsolutions.com/app/DownloadFile.aspx?prod=c90plus&type=21&file=15
+Title: General Electric C90Plus, D90Plus Missing Authentication Vulnerability (upsb1601)
+Type: bhpp_vuln
+VulnID: 591310
+Vulnflags: vuln
+manufacturer : "General Electric"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "(C|D)90Plus\\b", version = "1\\.84\\b"}
+
+#arg#1 regex: https://regex101.com/r/bXic1G/1 , https://regex101.com/r/uas4QL/1

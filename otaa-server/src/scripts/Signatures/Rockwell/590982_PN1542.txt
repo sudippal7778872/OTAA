@@ -1,0 +1,11 @@
+#For Advisory https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1129700
+Title:Rockwell Automation ControlLogix, GuardLogix, Compact GuardLogix, CompactLogix Vulnerability (PN1542)
+Type:bhpp_vuln
+VulnID:590982
+Vulnflags:vuln
+manufacturer:"Rockwell Automation"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "99.99.99", model = "1756\(EN4TR|EN4T|EN2T)|5069\\-AEN2TR|ControlLogix\\s5580.+\\:1756\\-L(81(E(P|K|XT|\\-NSE))|82(E(XT|K|\\-NSE))|83(EP|EK|E\\-NSE|EXT)|84(EK|EXT|E\\-NSE)|85(EP|EK|E\\-NSE|EXT))|GuardLogix\\s5580.+\\:1756\\-L(81(ESK|ES)|82(ESK|ES)|83(ESK|ES)|84(ESK|ES)|8SPK|8SP)|Compact\\sGuardLogix\\s5380.+\\:5069\\-L(306(ERM(S2|S3)|ERS2)|3100(ERMS(2|3)|ERS2)|310(ERS2|ERMS(2|3))|320(ERMS2K|ERMS3K|ERMS2|ERMS3|ERS2K|ERS2)|330(ERMS3K|ERMS2K|ERS2K|ERMS3|ERMS2|ERS2)|340(ERS2|ERMS(2|3))|350(ERMS3K|ERMS3|ERMS2K|ERS2K|ERMS2|ERS2)|380ERMS(2|3)|380ERS2)|CompactLogix\\s5380.+\\:5069\\-L(306(ERM|ER)|310(ER\\-NSE|ERM|ER)|320E(RMK|RM|RP|R)|330(ERMK|ERM|ER)|340E(RM|RP|R)|350(ERMK|ERM)|380ERM|3100ERM)|CompactLogix\\s5480.+\\:5069\\-L(450|4200|430|4100|46)ERMW|iTRAK\\s5730|iTRAK\\sMotor\\sModule\\:5750C|Kinetix\\s5700|PowerFlex\\s6000T|PowerFlex\\s755\\sT(L|M|R)\\b"}
+
+#regex_link https://regex101.com/r/YLNVXH/1
+

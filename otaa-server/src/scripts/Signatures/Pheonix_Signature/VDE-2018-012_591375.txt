@@ -1,0 +1,10 @@
+#For advisory https://cert.vde.com/en/advisories/VDE-2018-012/
+Title: Phoenix Contact ILC 1x1 ETH Denial of Service Vulnerability (VDE-2018-012)
+Type: bhpp_vuln
+VulnID: 591375
+Vulnflags: vuln
+manufacturer : "Phoenix Contact"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "ILC\\s(131|151|171|191\\sETH)\\b"}
+
+#regex_link1:https://regex101.com/r/xEuJpg/2

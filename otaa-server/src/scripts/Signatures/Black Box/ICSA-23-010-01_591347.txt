@@ -1,0 +1,12 @@
+#For advisory https://www.cisa.gov/uscert/ics/advisories/icsa-23-010-01
+Title: Black Box KVM Path Traversal Vulnerability (ICSA-23-010-01)
+Type: bhpp_vuln
+VulnID: 591347
+Vulnflags: vuln
+manufacturer : "Black Box"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "ACR10(20A\\-T|02A\\-R|02A\\-T|00A\\-T\\-R2|00A\\-R\\-R2)\\b", version = "^3\\.4\\.31307\\b"}
+
+
+
+#arg#1 regex: https://regex101.com/r/6w2Uc5/1 , https://regex101.com/r/YHI3AJ/1

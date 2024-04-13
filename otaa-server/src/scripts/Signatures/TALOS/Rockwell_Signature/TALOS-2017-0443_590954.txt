@@ -1,0 +1,11 @@
+#For Advisory https://talosintelligence.com/vulnerability_reports/TALOS-2017-0443
+Title:Rockwell Automation Micrologix 1400 Series B Unauthenticated Data/Program/Function File Improper Access Control Multiple Vulnerabilities (TALOS-2017-0443)
+Type: bhpp_vuln
+VulnID: 590954
+Vulnflags:vuln
+Func: ics_device_firmware_exprudp
+manufacturer : "Rockwell Automation"
+arg#1: {device = "Allen\\-Bradley\\sMicroLogix\\s1400.+\\:\\w+\\-\\w+\\/B", version = "^(21\\.2|21\\.0|15)\\b"}
+
+#regex_link https://regex101.com/r/AN1OU4/1                                   https://regex101.com/r/Lvf5fA/2
+

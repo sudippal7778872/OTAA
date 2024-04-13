@@ -1,0 +1,21 @@
+#For Advisory https://rockwellautomation.custhelp.com/app/answers/answer_view/a_id/1131196
+Title: Rockwell Automation Multiple Products DNS remote code execution Vulnerability (PN1564)
+Type: bhpp_vuln
+VulnID: 591039
+Vulnflags: vuln
+manufacturer : "Rockwell Automation"
+Func: ics_device_multiple_version_range_non_rgp
+arg#1: {min = "0.0.0", patched = "99.99.99", model ="Compact\\s5000\\sI\\/O\\sEtherNet\\/IP\\sAdapter\\:5069\\-AEN2TR\\b"}
+arg#2: {min = "0.0.0", patched = "11.001", model ="ControlLogix\\sEtherNet\\/IP\\sModule\\:1756\\-(EN2((TXT|TK|T)\\/D|(FK|F)\\/C|(TRXT|TRK|TR)\\/C|(TPXT|TPK)\\/A)|EN3(TRK|TR)\\/B)\\b"}
+arg#3: {min = "0.0.0", patched = "10.020", model = "ControlLogix\\sEtherNet\\/IP\\sModule\\:1756\\-EN2TP\\/A\\b"} 
+arg#4: {min = "0.0.0", patched = "30", model ="CompactLogix\\s5370(.+)?\\:1769\\-(L1|L2|L3)\\w+\\b|ControlLogix\\s5580(.+)?\\:1756\\-L8|CompactLogix\\s5380(.+)?\\:5069\\-L3",not_match="CompactLogix\\s5370\\sController\\:1769\\-L3\\w+S\\b"}
+arg#5: {min = "0.0.0", patched = "28.015", model ="CompactLogix\\s5370\\sController\\:1769\\-L3\\w+S\\b"}
+arg#6: {min = "28.016", patched = "30", model ="CompactLogix\\s5370\\sController\\:1769\\-L3\\w+S\\b"}
+
+#regex_link https://regex101.com/r/QKqngH/1
+#regex_link https://regex101.com/r/cvbe2x/1 
+#regex_link https://regex101.com/r/6DXNfD/1 
+#regex_link https://regex101.com/r/DsmCwR/1
+#regex_link https://regex101.com/r/T6aFo5/1
+
+

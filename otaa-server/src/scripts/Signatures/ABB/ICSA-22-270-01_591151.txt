@@ -1,0 +1,10 @@
+#For advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-270-01
+Title: Hitachi Energy AFS660/AFS665 Vulnerability (ICSA-22-270-01,8DBD000122)
+Type: bhpp_vuln
+VulnID: 591151
+Vulnflags: vuln
+manufacturer : "ABB"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "7.1.05", model = "AFS66(0|5)\\sSwitch\\b"}
+
+#regex_link: https://regex101.com/r/mbsltw/1

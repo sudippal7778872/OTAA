@@ -1,0 +1,15 @@
+#For Advisory https://download.schneider-electric.com/files?p_Doc_Ref=SEVD-2022-193-01&p_enDocType=Security+and+Safety+Notice&p_File_Name=SEVD-2022-193-01_OPC_UA_X80_Advanced_RTU_Modicon_Communication_Modules_Security_Notification_V3.0.pdf&_ga=2.48172071.1646393063.1661317774-364830623.1643890284                              
+Title:Schneider Electric OPC UA and X80 Advanced RTU Modicon Communication Modules Multiple Vulnerabilities (SEVD-2022-193-01)
+Type:bhpp_vuln
+VulnID:590966
+Vulnflags:vuln
+manufacturer:"Schneider"
+Func:ics_device_multiple_version_rangeudp
+arg#1:{min = "0.0.0", patched = "2.01", model ="OPC\\sUA(.+)?\\:BMENUA0100\\b"}
+arg#2:{min = "0.0.0", patched = "3.02.02", model ="X80\\sadvanced\\sRTU(.+)?\\:BMENOR2200H\\b"}
+
+#regex_link https://regex101.com/r/uAR9oo/1  
+#regex_link https://regex101.com/r/FbGf6F/1  
+
+
+

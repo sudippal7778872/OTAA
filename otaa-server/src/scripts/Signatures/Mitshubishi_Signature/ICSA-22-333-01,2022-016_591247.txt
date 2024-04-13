@@ -1,0 +1,13 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-333-01 and https://www.mitsubishielectric.com/en/psirt/vulnerability/pdf/2022-016_en.pdf
+Title:Mitsubishi Electric GOT2000 Series Improper Input Validation Vulnerability (ICSA-22-333-01, 2022-016)
+Type: bhpp_vuln
+VulnID: 591247
+Vulnflags: vuln
+manufacturer : "Mitsubishi Electric"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "01.40.00", model = "GOT2000\\sSeries\\sGT(27|25|23)\\sModel"}
+#Affected when using the “FTP server” function.
+
+
+#regex_link 1 https://regex101.com/r/k4A6el/1
+

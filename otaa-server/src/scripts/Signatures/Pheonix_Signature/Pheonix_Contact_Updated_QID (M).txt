@@ -1,0 +1,109 @@
+#For Advisory https://us-cert.cisa.gov/ics/advisories/icsa-20-063-02
+Title: PHOENIX CONTACT Emalytics Controller ILC Incorrect Permission Assignment for Critical Resource Vulnerability (ICSA-20-063-02)
+Type: bhpp_vuln
+VulnID:590570
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Phoenix Contact"
+arg#1: {min = "0.0.0", patched = "1.2.3", model = "Controller\\s\\-\\sILC\\s2050\\s(BI\\-L|BI)\\:ILC\\s2050\\s(BI\\-L|BI)"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/ICSA-19-155-01
+Title: PHOENIX CONTACT PLCNext AXC F 2152 Multiple Vulnerabilities (ICSA-19-155-01)
+Type: bhpp_vuln
+VulnID:590576
+Func: ics_device_firmware_exprudp
+manufacturer: "Phoenix Contact"
+arg#1: {device = "(AXC\\sF\\s2152)", version = "^1.\\d"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/ICSA-19-085-02
+Title: PHOENIX CONTACT RAD-80211-XD Vulnerability(ICSA-19-085-02)
+Type: bhpp_vuln
+VulnID:590573
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Phoenix Contact"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "RAD\\-80211\\-(XD\\/HP-BUS|XD)"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/ICSA-19-024-02
+Title: PHOENIX CONTACT FL SWITCH Multiple Vulnerabilities (ICSA-19-024-02)
+Type: bhpp_vuln
+VulnID:590572
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Phoenix Contact"
+arg#1: {min = "0.0.0", patched = "1.35", model = "FL\\sSWITCH\\s(3\\d\\d\\d|4\\d\\d\\d)"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/ICSA-18-137-02
+Title: PHOENIX CONTACT FL SWITCH 3xxx/4xxx/48xx Series Multiple Vulnerabilities (ICSA-18-137-02)
+Type: bhpp_vuln
+VulnID:590574
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Phoenix Contact"
+arg#1: {min = "1.0.0", patched = "1.33", model = "FL\\sSWITCH\\s(3\\d\\d\\d|4\\d\\d\\d)"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/ICSA-18-030-01
+Title: PHOENIX CONTACT mGuard Improper Validation of Integrity Check Value Vulnerability (ICSA-18-030-01)
+Type: bhpp_vuln
+VulnID:590577
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Phoenix Contact"
+arg#1: {min = "7.2.0", patched = "8.6.1", model = "^(Router\\s\\-\\s(FL|TC)\\sMGUARD)"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/ICSA-18-011-03
+Title: PHOENIX CONTACT FL SWITCH Multiple Vulnerabilities (ICSA-18-011-03)
+Type: bhpp_vuln
+VulnID:590568
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Phoenix Contact"
+arg#1: {min = "1.0.0", patched = "1.33", model = "FL\\sSWITCH\\s(3\\d\\d\\d|4\\d\\d\\d)"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/ICSA-17-341-03
+Title: PHOENIX CONTACT FL COMSERVER, FL COM SERVER, and PSI-MODEM/ETH Cross Site Scripting Vulnerability (ICSA-17-341-03)
+Type: bhpp_vuln
+VulnID:590566
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Phoenix Contact"
+arg#1: {min = "0.0.0", patched = "2.40", model = "(Gateways\\/Proxies|Interface\\sConverter)\\s\\-\\sFL\\sCOMSERVER\\s(BASIC|UNI|BAS)\\s232\\/422\\/(485\\-T|485)"}
+arg#2: {min = "0.0.0", patched = "1.99", model = "Interface\\sConverter\\s\\-\\sFL\\sCOM\\sSERVER\\sRS(232|485)"}
+arg#3: {min = "0.0.0", patched = "2.20", model = "^(Modem\\s\-\\sPSI\\-MODEM).*(\\/ETH)\\b"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/ICSA-17-325-01
+Title: PHOENIX CONTACT WLAN Capable Devices using the WPA2 Protocol Multiple Vulnerabilities (ICSA-17-325-01)
+Type: bhpp_vuln
+VulnID:590571
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Phoenix Contact"
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "Box\\sPC\\s\\-\\sBL2\\sBPC"}
+arg#2: {min = "0.0.0", patched = "99.99.99", model = "Industrial\\sPC\\s\\-\\sBL2\\sPPC"}
+arg#3: {min = "0.0.0", patched = "99.99.99", model = "FL\\sCOMSERVER\\sWLAN\\s232\\/422\\/485"}
+arg#4: {min = "0.0.0", patched = "2.21", model = "Wireless\\smodule\\s\\-\\sFL\\sWLAN\\s(110\\d|210\\d)"}
+arg#5: {min = "0.0.0", patched = "3.06", model = "Wireless\\smodule\\s\-\\sFL\\sWLAN\\s510\\d"}
+arg#6: {min = "0.0.0", patched = "99.99.99", model = "FL\\sWLAN\\s(230|24)\\s(AP|DAP|EC)\\s802-11\\b"}
+arg#7: {min = "0.0.0", patched = "99.99.99", model = "FL\\sWLAN\\s(EPA|SPA)\\b"}
+arg#8: {min = "0.0.0", patched = "99.99.99", model = "ITC\\s8113\\b"}
+arg#9: {min = "0.0.0", patched = "99.99.99", model = "RAD\\-80211\\-XD\\b"}
+arg#10: {min = "0.0.0", patched = "99.99.99", model = "RAD\\-WHG\\/WLAN\\-XD\\b"}
+arg#11: {min = "0.0.0", patched = "99.99.99", model = "TPC\\s6013\\b"}
+arg#12: {min = "0.0.0", patched = "99.99.99", model = "Industrial\\sPC\\s\\-\\sVMT\\s(30\\d\\d|70\\d\\d|50\\d\\d)\\b"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/ICSA-17-131-01
+Title: PHOENIX CONTACT mGuard Multiple Vulnerabilities (ICSA-17-131-01)
+Type: bhpp_vuln
+VulnID:590569
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Phoenix Contact"
+arg#1: {min = "8.3.0", patched = "8.4.3", model = "^(Router\\s\\-\\s(FL|TC)\\sMGUARD).*"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/ICSA-17-017-01
+Title: PHOENIX CONTACT mGuard Default Password Vulnerability (ICSA-17-017-01)
+Type: bhpp_vuln
+VulnID:590567
+Vulnflags: vuln
+Func: ics_device_firmware_exprudp
+manufacturer: "Phoenix Contact"
+arg#1: {device = "(^(Router\\s\\-\\s(FL|TC)\\sMGUARD).*)", version = "^8.4.0"}

@@ -1,0 +1,33 @@
+#For Advisory https://search.abb.com/library/Download.aspx?DocumentID=1MRG035816&DocumentPartId=
+Title:Hitachi ABB Power Grids Relion 670/650 series Relion SAM600-IO Multiple Vulnerabilities (1MRG035816)
+Type: bhpp_vuln
+VulnID: 590996
+Vulnflags: vuln
+manufacturer : "Hitachi ABB Power Grids"
+Func: ics_device_multiple_version_rangeudp
+arg#1:{min="2.2.0.9",patched="2.2.0.13",model="(Relion 670 series IED|Relion 650 series IED)\\b"}
+arg#2:{min="2.2.1.0",patched="2.2.1.6",model="(Relion 670 series IED|Relion 650 series IED)\\b"}
+arg#3:{min="1.3.0.0",patched="1.3.0.7",model="Relion 650 series IED\\b"}
+arg#4:{min="2.2.1.0",patched="2.2.1.5",model="SAM600 Process Bus I\\/O System:SAM600-IO\\b"}
+
+#arg1:https://regex101.com/r/jAZPhV/1
+#arg2:https://regex101.com/r/smAixt/1
+#arg3:https://regex101.com/r/blzzD4/1
+#arg4:https://regex101.com/r/ciLi5q/1
+
+
+
+#For Advisory https://search.abb.com/library/Download.aspx?DocumentID=1MRG035816&DocumentPartId=
+Title:Hitachi ABB Power Grids Relion 670/650 series Relion SAM600-IO Multiple Vulnerabilities (1MRG035816)
+Type: bhpp_vuln
+VulnID: 590996
+Vulnflags: vuln
+manufacturer : "Hitachi ABB Power Grids"
+Func: ics_device_firmware_exprudp
+arg#1: {device = "Relion 670 series IED\\b", version = "^(2\\.2\\.2\\.0|2\\.2\\.2\\.2)\\b"}
+arg#2: {device = "Relion 670 series IED\\b", version = "^(2\\.2\\.3\\.0|2\\.2\\.3\\.1)\\b"}
+
+#arg1:https://regex101.com/r/PuvzJ1/1
+#arg2:https://regex101.com/r/PuvzJ1/1
+
+

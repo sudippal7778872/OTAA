@@ -1,0 +1,10 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-22-242-07 
+Title: Honeywell Experion LX Missing Authentication for Critical Function Vulnerability (ICSA-22-242-07)
+Type: bhpp_vuln
+VulnID: 591319 
+Vulnflags: vuln
+manufacturer: "Honeywell"
+Func: ics_device_multiple_version_rangeudp
+arg#1: {min = "0.0.0", patched = "99.99.99", model = "Experion\\sLX\\b"}
+
+#regex link: https://regex101.com/r/acoFyD/1

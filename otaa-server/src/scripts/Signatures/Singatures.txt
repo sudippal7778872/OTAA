@@ -1,0 +1,42 @@
+#For Advisory https://us-cert.cisa.gov/ics/advisories/icsa-21-222-09
+Title: Siemens SIMATIC S7-1200 (Update A)(ISCA-21-222-09)
+Type: bhpp_vuln
+VulnID: 123453
+Vulnflags: vuln
+Func: ics_device_firmware_exprudp
+manufacturer : "Siemens"
+arg#1: {device = "(SIMATIC|SIPLUS) S7-1200.CPU 12\\d\\d(FC|C| FC)",version = "4.5.0"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/icsa-20-282-02
+Title: Mitsubishi Electric MELSEC iQ-R Series (Update C)(ICSA-20-282-02)
+Type: bhpp_vuln
+VulnID: 123455
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer : "Mitsubishi Electric"
+arg#1: {min = "0.0.0", patched = "21", model = "MELSEC iQ-R Series CPU Module:R0(0|1|2)CPU"}
+arg#2: {min = "0.0.0", patched = "53", model = "MELSEC iQ-R Series CPU Module:R[0-3](4|8|6|2|20)ENCPU"}
+arg#3: {min = "0.0.0", patched = "22", model = "MELSEC iQ-R Series Motion Controller:R[0-8]+MTCPU"}
+#arg#4: {min = "0.0.0", patched = "23", model = "MELSEC iQ-R Series CPU Module:R([0-8]+SFCPU)"}
+#arg#5: {min = "0.0.0", patched = "26", model = "MELSEC iQ-R Series CPU Module:R([0-8]+PCPU)"}
+#arg#6: {min = "0.0.0", patched = "07", model = "MELSEC iQ-R Series CPU Module:R([0-8]+PSFCPU)"}
+
+#For https://us-cert.cisa.gov/ics/advisories/icsa-21-063-01
+Title: Rockwell Automation 1734-AENTR Series B and Series C Multiple Vulnerabilities(ICSA-21-063-01)
+Type: bhpp_vuln
+VulnID: 123456
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer : "Rockwell Automation"
+arg#1: {min = "4.001", patched = "4.006", model = "Allen-Bradley POINT I\\/O 2-Port EtherNet I\\/O Adapter Module:1734-AENTR\\/B"}
+arg#2: {min = "5.011", patched = "5.018", model = "Allen-Bradley POINT I\\/O 2-Port EtherNet I\\/O Adapter Module:1734-AENTR\\/B"}
+arg#3: {min = "6.011", patched = "6.013", model = "Allen-Bradley POINT I\\/O 2-Port EtherNet I\\/O Adapter Module:1734-AENTR\\/C"}
+
+#For Advisory https://us-cert.cisa.gov/ics/advisories/icsa-21-110-02
+Title: Rockwell Automation Stratix Switches(ICSA-21-110-02)
+Type: bhpp_vuln
+VulnID: 12349
+Func: ics_device_firmware_exprudp
+manufacturer : "Rockwell Automation"
+arg#1: {device = "(Stratix|ArmorStratix)\\s(8000|5700|5410|5400)\\s(Switch|Industrial Ethernet Switch)", version = "^(\\d|0\\d|1[0-4]\\.|15\\.1\\(\\d\\)|15\\.2\\([0-6]\\)[A-Z]\\d)\\b"}
+#arg#2: {device = "Allen-Bradley Stratix 5800", version = ""}

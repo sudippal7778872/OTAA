@@ -1,0 +1,13 @@
+#For Advisory https://www.cisa.gov/uscert/ics/advisories/icsa-20-280-01
+Title: Rockwell Automation AADvance Controller and Micro800 family Multiple Vulnerabilities (ICSA-20-280-01)
+Type: bhpp_vuln
+VulnID:590781
+Vulnflags: vuln
+Func: ics_device_multiple_version_rangeudp
+manufacturer: "Rockwell Automation"
+arg#1: {min = "0.0.0", patched = "1.41", model = "(AADvance\\sController)"}   
+arg#2: {min = "0.0.0", patched = "99.99.99", model = "(Micro8\\d\\d)"}   
+
+regex:-														
+AADvance Controller - https://regex101.com/r/fqZ2Vj/1
+Micro800 family       https://regex101.com/r/h72AmY/1			

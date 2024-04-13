@@ -1,0 +1,10 @@
+#For Advisory https://cert.vde.com/en/advisories/VDE-2021-035/
+Title: Phoenix Contact FL MGUARD DM Improper Privilege Management Vulnerability (VDE-2021-035)
+Type: bhpp_vuln
+VulnID: 591246
+Vulnflags: vuln
+manufacturer: "Phoenix Contact"
+Func: ics_device_firmware_exprudp
+arg#1 : {device = "FL\\sMGUARD\\sDM",version = "^1\\.(12|13)\\.0\\b"}
+
+#regex link : https://regex101.com/r/buwWa0/1 & https://regex101.com/r/L0spl8/1
